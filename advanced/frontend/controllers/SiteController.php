@@ -210,4 +210,25 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+
+    public function actionAgenda()
+    {
+        $model = new AgendaForm();
+
+
+
+        return $this->render('agenda', ['model' => $model,]);
+    }
+
+    public function actionListaAlunos()
+    {
+        $model = new ListaAlunosForm();
+
+
+
+        return $this->render('listaAlunos', ['model' => $model,]);
+    }
+
+
 }
