@@ -7,6 +7,8 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use frontend\models\AgendaForm;
+use frontend\models\ListaAlunosForm;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
@@ -211,4 +213,25 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+
+    public function actionAgenda()
+    {
+        $model = new AgendaForm();
+
+
+
+        return $this->render('agenda', ['model' => $model,]);
+    }
+
+    public function actionListaAlunos()
+    {
+        $model = new ListaAlunosForm();
+
+
+
+        return $this->render('listaAlunos', ['model' => $model,]);
+    }
+
+
 }
