@@ -14,4 +14,9 @@ use yii\base\Model;
 class ListaAlunosForm extends Model
 {
     //array de alunos aqui com atributo presença
+
+    public function rules(){
+
+    }
+
 }

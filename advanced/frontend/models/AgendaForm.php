@@ -16,7 +16,9 @@ class AgendaForm extends Model
 {
     //array de aulas aqui??
 
+    public function rules(){
 
+    }
 
 
 }
