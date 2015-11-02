@@ -1,6 +1,6 @@
 <?php
 
-namespace frontend\models;
+namespace backend\models;
 
 use Yii;
 use yii\base\Model;
@@ -36,9 +36,9 @@ class ContactForm extends Model
      */
     public function attributeLabels()
     {
-        return [
-        //    'verifyCode' => 'Verification Code',
-        ];
+       /* return [
+            'verifyCode' => 'Verification Code',
+        ];*/
     }
 
     /**
@@ -49,6 +49,9 @@ class ContactForm extends Model
      */
     public function sendEmail($email)
     {
+        $message = "<p>Email: " . $this-> email ."</p>";
+        $message .= "<p>Name: " . $this->name ."</p>";
+
         return Yii::$app->mailer->compose()
             ->setTo($email)
             ->setFrom([$this->email => $this->name])
