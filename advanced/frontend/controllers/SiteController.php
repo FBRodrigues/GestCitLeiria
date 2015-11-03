@@ -14,6 +14,8 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use yii\db;
+
 
 /**
  * Site controller
@@ -217,11 +219,58 @@ class SiteController extends Controller
 
     public function actionAgenda()
     {
-        $model = new AgendaForm();
+
+        $connection = new \yii\db\Connection([
+            'dsn' => 'mysql:host=127.0.0.1;dbname=mydb',
+            'username' => 'root',
+            'password' => '',
+        ]);
+
+        $command = Yii::app() ->db ->createCommand('SELECT nome, horaInicio, horaFim, choveu FROM aula');
+        $reader = $command -> query();
+        $dataUser = $reader -> readAll();
+
+        $aulas = Application::model() ->findAll();
+
+        foreach($aulas as $aula){
+            $temp = array();
+            $nome = nome;
+            $horaInicio = horaInicio;
+            $horaFim = horaFim;
+            $choveu = choveu;
+
+            $temp['nome'] = $nome;
+            $temp['horaInicio'] = $horaInicio;
+            $temp['horaFim'] = $horaFim;
+            $temp['choveu'] = $choveu;
+            $result[] = $temp;
+
+        }
+
+        /*$connection = new \yii\db\Connection([
+            'dsn' => 'mysql:host=127.0.0.1;dbname=mydb',
+            'username' => 'root',
+            'password' => '',
+        ]);
+
+        $connection -> open();
+
+        $command = $connection -> createCommand('SELECT * FROM aula');
+        $command -> execute();
+        $aulas = $command -> queryAll();
+
+
+        /*$model = new AgendaForm();
+        $connection = Yii::app()->mydb;
+        $pesquisa = "SELECT * FROM aula";
+        $command = $connection->createCommand($pesquisa);
+
+        $dataReader = $command->query();*/
 
 
 
-        return $this->render('agenda', ['model' => $model,]);
+
+        $this->render('agenda',array('result'=>$result));
     }
 
     public function actionListaAlunos()
@@ -230,7 +279,7 @@ class SiteController extends Controller
 
 
 
-        return $this->render('listaAlunos', ['model' => $model,]);
+        return $this->render('listaAlunos');
     }
 
 
