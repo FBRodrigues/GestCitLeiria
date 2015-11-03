@@ -15,6 +15,9 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\db;
+use yii\widgets\ListView;
+use yii\data\ActiveDataProvider;
+use yii\db\ActiveRecord;
 
 
 /**
@@ -220,7 +223,7 @@ class SiteController extends Controller
     public function actionAgenda()
     {
 
-        $connection = new \yii\db\Connection([
+        /*$connection = new \yii\db\Connection([
             'dsn' => 'mysql:host=127.0.0.1;dbname=mydb',
             'username' => 'root',
             'password' => '',
@@ -245,9 +248,9 @@ class SiteController extends Controller
             $temp['choveu'] = $choveu;
             $result[] = $temp;
 
-        }
+        }*/
 
-        /*$connection = new \yii\db\Connection([
+        $connection = new \yii\db\Connection([
             'dsn' => 'mysql:host=127.0.0.1;dbname=mydb',
             'username' => 'root',
             'password' => '',
@@ -267,19 +270,48 @@ class SiteController extends Controller
 
         $dataReader = $command->query();*/
 
+        //CENAS A LISVIEW  ---  ver find(), findAll(), findBySql()
+        //na tá a encontrar a tabela
+        /*
+        $pesquisa = "SELECT * FROM aula";
+        //$aula = new Aula();
+        $dataProvider = new ActiveDataProvider([
+            //'query' => $this->actionAgenda(),
+            'query' => findBySql($pesquisa)->all(),
+        ]);
+
+        echo ListView::widget([
+            'dataProvider' => $dataProvider,
+            'itemView' => 'agenda'
+        ]);
+        */
 
 
+        return $this->render('agenda', [
+            'aulas' => $aulas
+        ]);
 
-        $this->render('agenda',array('result'=>$result));
     }
 
     public function actionListaAlunos()
     {
-        $model = new ListaAlunosForm();
+        $connection = new \yii\db\Connection([
+            'dsn' => 'mysql:host=127.0.0.1;dbname=mydb',
+            'username' => 'root',
+            'password' => '',
+        ]);
+
+        $connection -> open();
+
+        $command = $connection -> createCommand('SELECT * FROM aluno');
+        $command -> execute();
+        $alunos = $command -> queryAll();
 
 
+        return $this->render('listaAlunos', [
+            'alunos' => $alunos
+        ]);
 
-        return $this->render('listaAlunos');
     }
 
 

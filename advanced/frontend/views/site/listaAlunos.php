@@ -26,6 +26,12 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <!-- apresentar/carregar lista de alunos aqui -->
 
+            <!--foreach($alunos as $value){
+                //echo $value['aluno']['id'] ;
+                //var_dump($value);
+
+            //}
+
             <!-- checkbutton por cada linha(aluno) -->
 
 

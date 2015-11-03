@@ -5,6 +5,7 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use yii\helpers\HtmlPurifier;
 
 //use yii\captcha\Captcha;
 
@@ -23,17 +24,20 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php $form = ActiveForm::begin(['id' => 'agenda-form']); ?>
 
             <!-- apresentar/carregar lista de aulas aqui -->
+
             <?php foreach($aulas as $value){
-                echo $value['aula']['id'] ;
+                //echo $value['idAula'].'<br>';
+                echo '<br>'.$value['nome'].'<br>';
+                echo $value['horaInicio'].'<br>';
+                echo $value['horaFim'].'<br>';
+                echo $value['choveu'].'<br>';
+                echo '---';
                 //var_dump($value);
+
             }
-             ?>
 
 
-
-
-
-
+            ?>
 
 
             <div class="form-group">
@@ -43,6 +47,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <?php ActiveForm::end(); ?>
         </div>
+    </div>
+
+    <div class="agenda">
+        <h2><?= Html::encode($model->title) ?></h2>
+        <?= HtmlPurifier::process($model->text) ?>
     </div>
 
 </div>
