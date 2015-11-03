@@ -5,6 +5,7 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+
 //use yii\captcha\Captcha;
 
 $this->title = 'Agenda';
@@ -22,12 +23,22 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php $form = ActiveForm::begin(['id' => 'agenda-form']); ?>
 
             <!-- apresentar/carregar lista de aulas aqui -->
+            <?php foreach($aulas as $value){
+                echo $value['aula']['id'] ;
+                //var_dump($value);
+            }
+             ?>
+
+
+
+
 
 
 
 
             <div class="form-group">
                 <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'agenda-button']) ?>
+
             </div>
 
             <?php ActiveForm::end(); ?>

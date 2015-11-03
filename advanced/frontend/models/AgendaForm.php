@@ -10,11 +10,13 @@ namespace frontend\models;
 
 use Yii;
 use yii\base\Model;
+use yii\db;
 
 
 class AgendaForm extends Model
 {
     //array de aulas aqui??
+
 
     public function rules(){
 
