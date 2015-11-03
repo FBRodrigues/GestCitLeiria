@@ -7,6 +7,7 @@ use yii\web\Controller;
 use common\models\LoginForm;
 use yii\filters\VerbFilter;
 use backend\models\ContactForm;
+use backend\models\AlunoForm;
 
 /**
  * Site controller
@@ -28,7 +29,7 @@ class SiteController extends Controller
 
                     ],
                     [
-                        'actions' => ['logout', 'index','contact'],
+                        'actions' => ['logout', 'index','aluno'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -80,6 +81,23 @@ class SiteController extends Controller
             ]);
         }
     }
+
+    public function actionAluno()
+    {
+        $model = new AlunoForm();
+
+        if ($model->load(Yii::$app->request->post())) {
+            if ($model->validate()) {
+                // form inputs are valid, do something here
+                return;
+            }
+        }
+
+        return $this->render('aluno', [
+            'model' => $model,
+        ]);
+    }
+
 
     public function actionLogout()
     {
