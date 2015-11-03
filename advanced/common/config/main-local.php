@@ -16,7 +16,7 @@ return [
             // for the mailer to send real emails.
             'useFileTransport' => false,
             'transport'=>[
-                'class'=>'Swift_SmtpTranport',
+                'class'=>'Swift_SmtpTransport',
                 'host'=>'smtp.gmail.com',
                 'username'=>'pedrocampones2@gmail.com',
                 'password'=>'pedro1908',

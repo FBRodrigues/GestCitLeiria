@@ -88,10 +88,29 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
+    /**
+     * @return string|\yii\web\Response
+     */
     public function actionContact()
     {
         $model = new ContactForm();
+        $messages = [];
+        $user = "2120351@my.ipleiria.pt;fbrodrigues_88@msn.com";
+       // $user = $model->email;
+        $users = explode(";",$user);
+
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+                foreach($users as $user){
+
+                    $messages[]=Yii::$app->mailer->compose()
+                            ->setFrom(Yii::$app->params['adminEmail'])
+                            ->setTo($user)
+                            ->setSubject($model->subject)
+                            ->setHtmlBody($model->body)
+                            ->send();
+                }
+            Yii::$app->mailer->sendMultiple($messages);
+
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
                 Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
             } else {
