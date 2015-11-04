@@ -20,6 +20,22 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Escalao_idEscalao')->textInput() ?>
 
+    <?= $form->field($model, 'Nome')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'DataNascimento')->textInput() ?>
+
+    <?= $form->field($model, 'Idade')->textInput() ?>
+
+    <?= $form->field($model, 'Contato1')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'Contato2')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'Contato3/Email')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'EncarregadoEducacao')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'Sexo')->textInput(['maxlength' => true]) ?>
+
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

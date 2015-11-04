@@ -18,7 +18,8 @@ class AlunoSearch extends Aluno
     public function rules()
     {
         return [
-            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao'], 'integer'],
+            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Idade'], 'integer'],
+            [['Nome', 'DataNascimento', 'Contato1', 'Contato2', 'Contato3/Email', 'EncarregadoEducacao', 'Sexo'], 'safe'],
         ];
     }
 
@@ -59,7 +60,16 @@ class AlunoSearch extends Aluno
             'Pessoa_idPessoa' => $this->Pessoa_idPessoa,
             'Horario_idHorario' => $this->Horario_idHorario,
             'Escalao_idEscalao' => $this->Escalao_idEscalao,
+            'DataNascimento' => $this->DataNascimento,
+            'Idade' => $this->Idade,
         ]);
+
+        $query->andFilterWhere(['like', 'Nome', $this->Nome])
+            ->andFilterWhere(['like', 'Contato1', $this->Contato1])
+            ->andFilterWhere(['like', 'Contato2', $this->Contato2])
+            ->andFilterWhere(['like', 'Contato3/Email', $this->Contato3/Email])
+            ->andFilterWhere(['like', 'EncarregadoEducacao', $this->EncarregadoEducacao])
+            ->andFilterWhere(['like', 'Sexo', $this->Sexo]);
 
         return $dataProvider;
     }
