@@ -23,6 +23,22 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Escalao_idEscalao') ?>
 
+    <?= $form->field($model, 'Nome') ?>
+
+    <?php // echo $form->field($model, 'DataNascimento') ?>
+
+    <?php // echo $form->field($model, 'Idade') ?>
+
+    <?php // echo $form->field($model, 'Contato1') ?>
+
+    <?php // echo $form->field($model, 'Contato2') ?>
+
+    <?php // echo $form->field($model, 'Contato3/Email') ?>
+
+    <?php // echo $form->field($model, 'EncarregadoEducacao') ?>
+
+    <?php // echo $form->field($model, 'Sexo') ?>
+
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
         <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>

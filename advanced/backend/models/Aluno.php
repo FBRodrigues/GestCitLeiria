@@ -11,10 +11,18 @@ use Yii;
  * @property integer $Pessoa_idPessoa
  * @property integer $Horario_idHorario
  * @property integer $Escalao_idEscalao
+ * @property string $Nome
+ * @property string $DataNascimento
+ * @property integer $Idade
+ * @property string $Contato1
+ * @property string $Contato2
+ * @property string $Contato3/Email
+ * @property string $EncarregadoEducacao
+ * @property string $Sexo
  *
- * @property Escalao $escalaoIdEscalao
- * @property Horario $horarioIdHorario
  * @property Pessoa $pessoaIdPessoa
+ * @property Horario $horarioIdHorario
+ * @property Escalao $escalaoIdEscalao
  * @property Pagamento[] $pagamentos
  * @property Presenca[] $presencas
  */
@@ -35,7 +43,10 @@ class Aluno extends \yii\db\ActiveRecord
     {
         return [
             [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao'], 'required'],
-            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao'], 'integer']
+            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Idade'], 'integer'],
+            [['DataNascimento'], 'safe'],
+            [['Nome', 'Contato1', 'Contato2', 'Contato3/Email', 'EncarregadoEducacao'], 'string', 'max' => 45],
+            [['Sexo'], 'string', 'max' => 1]
         ];
     }
 
@@ -49,15 +60,23 @@ class Aluno extends \yii\db\ActiveRecord
             'Pessoa_idPessoa' => 'Pessoa Id Pessoa',
             'Horario_idHorario' => 'Horario Id Horario',
             'Escalao_idEscalao' => 'Escalao Id Escalao',
+            'Nome' => 'Nome',
+            'DataNascimento' => 'Data Nascimento',
+            'Idade' => 'Idade',
+            'Contato1' => 'Contato1',
+            'Contato2' => 'Contato2',
+            'Contato3/Email' => 'Contato3/ Email',
+            'EncarregadoEducacao' => 'Encarregado Educacao',
+            'Sexo' => 'Sexo',
         ];
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getEscalaoIdEscalao()
+    public function getPessoaIdPessoa()
     {
-        return $this->hasOne(Escalao::className(), ['idEscalao' => 'Escalao_idEscalao']);
+        return $this->hasOne(Pessoa::className(), ['idPessoa' => 'Pessoa_idPessoa']);
     }
 
     /**
@@ -71,9 +90,9 @@ class Aluno extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getPessoaIdPessoa()
+    public function getEscalaoIdEscalao()
     {
-        return $this->hasOne(Pessoa::className(), ['idPessoa' => 'Pessoa_idPessoa']);
+        return $this->hasOne(Escalao::className(), ['idEscalao' => 'Escalao_idEscalao']);
     }
 
     /**
