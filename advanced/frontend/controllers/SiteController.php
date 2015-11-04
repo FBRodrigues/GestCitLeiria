@@ -223,33 +223,6 @@ class SiteController extends Controller
     public function actionAgenda()
     {
 
-        /*$connection = new \yii\db\Connection([
-            'dsn' => 'mysql:host=127.0.0.1;dbname=mydb',
-            'username' => 'root',
-            'password' => '',
-        ]);
-
-        $command = Yii::app() ->db ->createCommand('SELECT nome, horaInicio, horaFim, choveu FROM aula');
-        $reader = $command -> query();
-        $dataUser = $reader -> readAll();
-
-        $aulas = Application::model() ->findAll();
-
-        foreach($aulas as $aula){
-            $temp = array();
-            $nome = nome;
-            $horaInicio = horaInicio;
-            $horaFim = horaFim;
-            $choveu = choveu;
-
-            $temp['nome'] = $nome;
-            $temp['horaInicio'] = $horaInicio;
-            $temp['horaFim'] = $horaFim;
-            $temp['choveu'] = $choveu;
-            $result[] = $temp;
-
-        }*/
-
         $connection = new \yii\db\Connection([
             'dsn' => 'mysql:host=127.0.0.1;dbname=mydb',
             'username' => 'root',
@@ -263,12 +236,6 @@ class SiteController extends Controller
         $aulas = $command -> queryAll();
 
 
-        /*$model = new AgendaForm();
-        $connection = Yii::app()->mydb;
-        $pesquisa = "SELECT * FROM aula";
-        $command = $connection->createCommand($pesquisa);
-
-        $dataReader = $command->query();*/
 
         //CENAS A LISVIEW  ---  ver find(), findAll(), findBySql()
         //na tá a encontrar a tabela

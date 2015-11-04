@@ -7,6 +7,8 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\helpers\HtmlPurifier;
 
+
+
 //use yii\captcha\Captcha;
 
 $this->title = 'Agenda';
@@ -26,13 +28,13 @@ $this->params['breadcrumbs'][] = $this->title;
             <!-- apresentar/carregar lista de aulas aqui -->
 
             <?php foreach($aulas as $value){
-                //echo $value['idAula'].'<br>';
+
                 echo '<br>'.$value['nome'].'<br>';
                 echo $value['horaInicio'].'<br>';
                 echo $value['horaFim'].'<br>';
-                echo $value['choveu'].'<br>';
+                // $value['choveu'].'<br>';
                 echo '---';
-                //var_dump($value);
+
 
             }
 
@@ -40,7 +42,11 @@ $this->params['breadcrumbs'][] = $this->title;
             ?>
 
 
+
+
+
             <div class="form-group">
+
                 <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'agenda-button']) ?>
 
             </div>
@@ -50,8 +56,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
     <div class="agenda">
-        <h2><?= Html::encode($model->title) ?></h2>
-        <?= HtmlPurifier::process($model->text) ?>
+
     </div>
 
 </div>
