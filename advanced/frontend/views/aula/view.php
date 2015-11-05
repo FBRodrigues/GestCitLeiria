@@ -37,4 +37,33 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]) ?>
 
+
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        //'filterModel' => $searchModel,
+
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            //'idAula',
+            'Nome',
+            'HoraInicio',
+            'HoraFim',
+            //'Choveu',
+
+            //linha seguinte gera os 3 bot�es (ver, editar e apagar)
+            //['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
+        ],
+
+
+        'rowOptions' => function($model, $key, $index, $grid) {
+            return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)'];
+        }
+
+
+
+
+    ]); ?>
+
+
 </div>

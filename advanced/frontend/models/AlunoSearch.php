@@ -18,8 +18,8 @@ class AlunoSearch extends Aluno
     public function rules()
     {
         return [
-            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'idade'], 'integer'],
-            [['nome', 'dataNascimento', 'sexo'], 'safe'],
+            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Idade'], 'integer'],
+            [['Nome', 'DataNascimento', 'Sexo'], 'safe'],
         ];
     }
 
@@ -39,9 +39,11 @@ class AlunoSearch extends Aluno
      *
      * @return ActiveDataProvider
      */
-    public function search($params)
+    public function search($params, $id)
     {
-        $query = Aluno::find();
+        $pesquisa = 'SELECT * FROM aluno al, presenca p, aula au WHERE al.idAluno = p.Aluno_idAluno AND p.Aluno_idAluno = au.idAula AND au.idAula = '.$id;
+
+        $query = Aluno::findBySql($pesquisa);
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -60,12 +62,12 @@ class AlunoSearch extends Aluno
             'Pessoa_idPessoa' => $this->Pessoa_idPessoa,
             'Horario_idHorario' => $this->Horario_idHorario,
             'Escalao_idEscalao' => $this->Escalao_idEscalao,
-            'dataNascimento' => $this->dataNascimento,
-            'idade' => $this->idade,
+            'DataNascimento' => $this->DataNascimento,
+            'Idade' => $this->Idade,
         ]);
 
-        $query->andFilterWhere(['like', 'nome', $this->nome])
-            ->andFilterWhere(['like', 'sexo', $this->sexo]);
+        $query->andFilterWhere(['like', 'Nome', $this->Nome])
+            ->andFilterWhere(['like', 'Sexo', $this->Sexo]);
 
         return $dataProvider;
     }

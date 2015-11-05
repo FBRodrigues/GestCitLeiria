@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use Yii;
 use frontend\models\Aula;
 use frontend\models\AulaSearch;
+use frontend\models\AlunoSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -48,8 +49,14 @@ class AulaController extends Controller
      */
     public function actionView($id)
     {
+        $searchModel = new AlunoSearch();
+        //$pesquisa = 'SELECT * FROM aluno al, presenca p, aula au WHERE al.idAluno = p.Aluno_idAluno AND p.Aluno_idAluno = au.idAula AND au.idAula = $id';
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $id);
+
+
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'dataProvider' => $dataProvider,
         ]);
     }
 

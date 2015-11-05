@@ -238,7 +238,7 @@ class SiteController extends Controller
 
 
         //CENAS A LISVIEW  ---  ver find(), findAll(), findBySql()
-        //na tá a encontrar a tabela
+        //na tï¿½ a encontrar a tabela
         /*
         $pesquisa = "SELECT * FROM aula";
         //$aula = new Aula();
@@ -270,7 +270,7 @@ class SiteController extends Controller
 
         $connection -> open();
 
-        $command = $connection -> createCommand('SELECT * FROM aluno');
+        $command = $connection -> createCommand('SELECT * FROM aluno al, presenca p, aula au WHERE al.idAluno = p.Aluno_idAluno AND p.Aluno_idAluno = au.idAula AND au.idAula = $idAula');
         $command -> execute();
         $alunos = $command -> queryAll();
 
