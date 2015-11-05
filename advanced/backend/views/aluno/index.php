@@ -61,11 +61,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
     ]);
 
-    $connection->open();
+    //$connection->open();
 
-    $command= $connection->createCommand('SELECT Contato3_Email FROM aluno');
-    $command->execute();
-    $email = $command->queryAll();
+    //$command= $connection->createCommand('SELECT Contato3_Email FROM aluno');
+    //$command->execute();
+    //$email = $command->queryAll();
 
     }
 
