@@ -19,18 +19,18 @@ $this->params['breadcrumbs'][] = $this->title;
 
     </p>
 
-   <!-- <div class="row">
+    <div class="row">
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
 
-                <//?= $form->field($model, 'name') ?>
+                <?= $form->field($model, 'name') ?>
 
-                <//?= $form->field($model, 'email') ?>
+                <?= $form->field($model, 'email') ?>
 
-                <//?= $form->field($model, 'subject') ?>
+                <?= $form->field($model, 'subject') ?>
 
-                <//?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>-->
+                <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
 
 
     <div class="form-group">
@@ -40,5 +40,5 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php ActiveForm::end(); ?>
         </div>
     </div>
--->
+
 </div>

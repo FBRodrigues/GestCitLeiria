@@ -22,6 +22,9 @@ class AlunoController extends Controller
                 'actions' => [
                     'delete' => ['post'],
                 ],
+                'actions'=>[
+                    ''
+                ],
             ],
         ];
     }

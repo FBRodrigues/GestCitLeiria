@@ -29,7 +29,7 @@ class SiteController extends Controller
 
                     ],
                     [
-                        'actions' => ['logout', 'index','aluno'],
+                        'actions' => ['logout', 'index','contact'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -82,7 +82,7 @@ class SiteController extends Controller
         }
     }
 
-    public function actionAluno()
+   /* public function actionAluno()
     {
         $model = new AlunoForm();
 
@@ -96,7 +96,7 @@ class SiteController extends Controller
         return $this->render('aluno', [
             'model' => $model,
         ]);
-    }
+    }*/
 
 
     public function actionLogout()
@@ -111,6 +111,8 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
+
+
         $model = new ContactForm();
         $messages = [];
         $user = "2120351@my.ipleiria.pt;fbrodrigues_88@msn.com";
