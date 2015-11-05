@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-
+use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Aula */
 
@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
         ]) ?>  -->
     </p>
 
+
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
@@ -35,7 +36,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'HoraFim',
             'Choveu',
         ],
-    ]) ?>
+    ])  ?>
+
 
 
     <?= GridView::widget([
@@ -45,11 +47,18 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            //'idAula',
+            //'idAluno',
+            //'Pessoa_idPessoa',
+            //'Horario_idHorario',
+            //'Escalao_idEscalao',
             'Nome',
-            'HoraInicio',
-            'HoraFim',
-            //'Choveu',
+            'DataNascimento',
+            'Idade',
+            'Contato1',
+            'Contato2',
+            'Contato3_Email',
+            'EncarregadoEducacao',
+            'Sexo',
 
             //linha seguinte gera os 3 bot�es (ver, editar e apagar)
             //['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
