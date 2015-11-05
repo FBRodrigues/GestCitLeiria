@@ -23,7 +23,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Escalao_idEscalao') ?>
 
-    <?= $form->field($model, 'Nome') ?>
+    <?= $form->field($model, 'Nome')  ?>
 
     <?php // echo $form->field($model, 'DataNascimento') ?>
 
