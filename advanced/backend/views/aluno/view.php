@@ -5,6 +5,7 @@ use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Aluno */
+/**/
 
 $this->title = $model->idAluno;
 $this->params['breadcrumbs'][] = ['label' => 'Alunos', 'url' => ['index']];
