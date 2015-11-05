@@ -15,6 +15,9 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\db;
+use yii\widgets\ListView;
+use yii\data\ActiveDataProvider;
+use yii\db\ActiveRecord;
 
 
 /**
@@ -226,33 +229,6 @@ class SiteController extends Controller
             'password' => '',
         ]);
 
-        $command = Yii::app() ->db ->createCommand('SELECT nome, horaInicio, horaFim, choveu FROM aula');
-        $reader = $command -> query();
-        $dataUser = $reader -> readAll();
-
-        $aulas = Application::model() ->findAll();
-
-        foreach($aulas as $aula){
-            $temp = array();
-            $nome = nome;
-            $horaInicio = horaInicio;
-            $horaFim = horaFim;
-            $choveu = choveu;
-
-            $temp['nome'] = $nome;
-            $temp['horaInicio'] = $horaInicio;
-            $temp['horaFim'] = $horaFim;
-            $temp['choveu'] = $choveu;
-            $result[] = $temp;
-
-        }
-
-        /*$connection = new \yii\db\Connection([
-            'dsn' => 'mysql:host=127.0.0.1;dbname=mydb',
-            'username' => 'root',
-            'password' => '',
-        ]);
-
         $connection -> open();
 
         $command = $connection -> createCommand('SELECT * FROM aula');
@@ -260,26 +236,49 @@ class SiteController extends Controller
         $aulas = $command -> queryAll();
 
 
-        /*$model = new AgendaForm();
-        $connection = Yii::app()->mydb;
+
+        //CENAS A LISVIEW  ---  ver find(), findAll(), findBySql()
+        //na tá a encontrar a tabela
+        /*
         $pesquisa = "SELECT * FROM aula";
-        $command = $connection->createCommand($pesquisa);
+        //$aula = new Aula();
+        $dataProvider = new ActiveDataProvider([
+            //'query' => $this->actionAgenda(),
+            'query' => findBySql($pesquisa)->all(),
+        ]);
 
-        $dataReader = $command->query();*/
+        echo ListView::widget([
+            'dataProvider' => $dataProvider,
+            'itemView' => 'agenda'
+        ]);
+        */
 
 
+        return $this->render('agenda', [
+            'aulas' => $aulas
+        ]);
 
-
-        $this->render('agenda',array('result'=>$result));
     }
 
     public function actionListaAlunos()
     {
-        $model = new ListaAlunosForm();
+        $connection = new \yii\db\Connection([
+            'dsn' => 'mysql:host=127.0.0.1;dbname=mydb',
+            'username' => 'root',
+            'password' => '',
+        ]);
+
+        $connection -> open();
+
+        $command = $connection -> createCommand('SELECT * FROM aluno');
+        $command -> execute();
+        $alunos = $command -> queryAll();
 
 
+        return $this->render('listaAlunos', [
+            'alunos' => $alunos
+        ]);
 
-        return $this->render('listaAlunos');
     }
 
 
