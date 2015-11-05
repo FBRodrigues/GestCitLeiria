@@ -6,6 +6,7 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Aluno */
 /* @var $form yii\widgets\ActiveForm */
+/*cenas*/
 ?>
 
 <div class="aluno-form">
@@ -36,7 +37,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Sexo')->textInput(['maxlength' => true]) ?>
 
+
     <div class="form-group">
+
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
