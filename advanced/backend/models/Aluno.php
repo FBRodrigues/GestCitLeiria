@@ -16,7 +16,7 @@ use Yii;
  * @property integer $Idade
  * @property string $Contato1
  * @property string $Contato2
- * @property string $Contato3/Email
+ * @property string $Contato3_Email
  * @property string $EncarregadoEducacao
  * @property string $Sexo
  *
@@ -45,7 +45,7 @@ class Aluno extends \yii\db\ActiveRecord
             [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao'], 'required'],
             [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Idade'], 'integer'],
             [['DataNascimento'], 'safe'],
-            [['Nome', 'Contato1', 'Contato2', 'Contato3/Email', 'EncarregadoEducacao'], 'string', 'max' => 45],
+            [['Nome', 'Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao'], 'string', 'max' => 45],
             [['Sexo'], 'string', 'max' => 1]
         ];
     }
@@ -65,7 +65,7 @@ class Aluno extends \yii\db\ActiveRecord
             'Idade' => 'Idade',
             'Contato1' => 'Contato1',
             'Contato2' => 'Contato2',
-            'Contato3/Email' => 'Contato3/ Email',
+            'Contato3_Email' => 'Contato3  Email',
             'EncarregadoEducacao' => 'Encarregado Educacao',
             'Sexo' => 'Sexo',
         ];

@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'Idade',
             // 'Contato1',
             // 'Contato2',
-            // 'Contato3/Email:email',
+            // 'Contato3_Email:email',
             // 'EncarregadoEducacao',
             // 'Sexo',
 

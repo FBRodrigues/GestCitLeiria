@@ -30,7 +30,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Contato2')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'Contato3/Email')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'Contato3_Email')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'EncarregadoEducacao')->textInput(['maxlength' => true]) ?>
 

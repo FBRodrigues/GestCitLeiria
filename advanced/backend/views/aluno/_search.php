@@ -33,11 +33,11 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'Contato2') ?>
 
-    <?php // echo $form->field($model, 'Contato3/Email') ?>
+    <?php // echo $form->field($model, 'Contato3_Email') ?>
 
     <?php // echo $form->field($model, 'EncarregadoEducacao') ?>
 
-    <?php // echo $form->field($model, 'Sexo') ?>
+    <?php  echo $form->field($model, 'Sexo') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
