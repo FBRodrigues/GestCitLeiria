@@ -19,7 +19,7 @@ class AulaSearch extends Aula
     {
         return [
             [['idAula'], 'integer'],
-            [['nome', 'horaInicio', 'horaFim', 'choveu'], 'safe'],
+            [['Nome', 'HoraInicio', 'HoraFim', 'Choveu'], 'safe'],
         ];
     }
 
@@ -57,12 +57,12 @@ class AulaSearch extends Aula
 
         $query->andFilterWhere([
             'idAula' => $this->idAula,
-            'horaInicio' => $this->horaInicio,
-            'horaFim' => $this->horaFim,
+            'HoraInicio' => $this->HoraInicio,
+            'HoraFim' => $this->HoraFim,
         ]);
 
-        $query->andFilterWhere(['like', 'nome', $this->nome])
-            ->andFilterWhere(['like', 'choveu', $this->choveu]);
+        $query->andFilterWhere(['like', 'Nome', $this->Nome])
+            ->andFilterWhere(['like', 'Choveu', $this->Choveu]);
 
         return $dataProvider;
     }

@@ -47,10 +47,10 @@ class Aula extends \yii\db\ActiveRecord
     {
         return [
             'idAula' => 'Id Aula',
-            'nome' => 'Nome',
-            'horaInicio' => 'Hora Inicio',
-            'horaFim' => 'Hora Fim',
-            'choveu' => 'Choveu',
+            'Nome' => 'Nome',
+            'HoraInicio' => 'Hora Inicio',
+            'HoraFim' => 'Hora Fim',
+            'Choveu' => 'Choveu',
         ];
     }
 

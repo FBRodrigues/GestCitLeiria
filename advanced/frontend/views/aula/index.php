@@ -27,12 +27,12 @@ $this->title = 'Aulas';
             ['class' => 'yii\grid\SerialColumn'],
 
             //'idAula',
-            'nome',
-            'horaInicio',
-            'horaFim',
-            //'choveu',
+            'Nome',
+            'HoraInicio',
+            'HoraFim',
+            //'Choveu',
 
-            //linha seguinte gera os 3 botões (ver, editar e apagar)
+            //linha seguinte gera os 3 botï¿½es (ver, editar e apagar)
             //['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
         ],
 
