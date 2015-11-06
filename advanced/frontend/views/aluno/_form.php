@@ -20,13 +20,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Escalao_idEscalao')->textInput() ?>
 
-    <?= $form->field($model, 'nome')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'Nome')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'dataNascimento')->textInput() ?>
+    <?= $form->field($model, 'DataNascimento')->textInput() ?>
 
-    <?= $form->field($model, 'idade')->textInput() ?>
+    <?= $form->field($model, 'Idade')->textInput() ?>
 
-    <?= $form->field($model, 'sexo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'Sexo')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

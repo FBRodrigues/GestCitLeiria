@@ -41,11 +41,11 @@ class AlunoSearch extends Aluno
      */
     public function search($params, $id)
     {
-        $pesquisa = 'SELECT * FROM aluno al, presenca p, aula au WHERE al.idAluno = p.Aluno_idAluno AND p.Aluno_idAluno = au.idAula AND au.idAula = '.$id;
+        $pesquisa = 'SELECT * FROM aluno al, presenca p, aula au WHERE al.idAluno = p.Aluno_idAluno AND p.Aluno_idAluno = au.idAula AND au.idAula ='.$id;
 
         $query = Aluno::findBySql($pesquisa);
 
-        $dataProvider = new ActiveDataProvider([
+        $alunosDataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
 
@@ -54,7 +54,7 @@ class AlunoSearch extends Aluno
         if (!$this->validate()) {
             // uncomment the following line if you do not want to return any records when validation fails
             // $query->where('0=1');
-            return $dataProvider;
+            return $alunosDataProvider;
         }
 
         $query->andFilterWhere([
@@ -75,6 +75,6 @@ class AlunoSearch extends Aluno
         $query->andFilterWhere(['like', 'Nome', $this->Nome])
             ->andFilterWhere(['like', 'Sexo', $this->Sexo]);
 
-        return $dataProvider;
+        return $alunosDataProvider;
     }
 }
