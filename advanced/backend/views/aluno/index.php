@@ -46,14 +46,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
 
-       <?= Html::a('Enviar Email', ['site/contact'], ['class' => 'btn btn-primary'],['onClick'=>'(getEmail($data))'])?>
+       <?= Html::a('Enviar Email', ['site/contact'], array('class' => 'btn btn-primary','name'=>'mail','onClick'=>'getEmail('.$email.')'))?>
     </p>
 
 
 
 
     <?php
-    function getEmail($email){
+    function getEmail(){
     $connection = new \yii\db\Connection([
         'dsn' =>'mysql:host=127.0.0.1;dbname=mydb',
         'username'=>'root',
@@ -61,11 +61,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
     ]);
 
-    //$connection->open();
+    $connection->open();
 
-    //$command= $connection->createCommand('SELECT Contato3_Email FROM aluno');
-    //$command->execute();
-    //$email = $command->queryAll();
+    $command= $connection->createCommand('SELECT Contato3_Email FROM aluno');
+    $command->execute();
+    $email = $command->queryAll();
 
     }
 
