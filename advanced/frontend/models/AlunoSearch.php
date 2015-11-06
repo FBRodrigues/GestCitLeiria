@@ -62,8 +62,14 @@ class AlunoSearch extends Aluno
             'Pessoa_idPessoa' => $this->Pessoa_idPessoa,
             'Horario_idHorario' => $this->Horario_idHorario,
             'Escalao_idEscalao' => $this->Escalao_idEscalao,
+            'Nome' => $this->Nome,
             'DataNascimento' => $this->DataNascimento,
             'Idade' => $this->Idade,
+            'Contato1' => $this->Contato1,
+            'Contato2' => $this->Contato2,
+            'Contato3_Email' => $this->Contato3_Email,
+            'EncarregadoEducacao' => $this->EncarregadoEducacao,
+            'Sexo' => $this->Sexo,
         ]);
 
         $query->andFilterWhere(['like', 'Nome', $this->Nome])
