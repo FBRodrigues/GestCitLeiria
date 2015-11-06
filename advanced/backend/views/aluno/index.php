@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 
+
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\AlunoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider  */
@@ -24,8 +25,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class'=>'yii\grid\CheckboxColumn'],
-           // 'checked'=> 'Yii::app()->controller->isChecked($data->idAluno)'],
-            //['class' => 'yii\grid\SerialColumn'],
+             //['class' => 'yii\grid\SerialColumn'],
+
 
             'idAluno',
             //'Pessoa_idPessoa',
@@ -46,30 +47,33 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
 
-       <?= Html::a('Enviar Email', ['site/contact'], ['class' => 'btn btn-primary'],['onClick'=>'(getEmail($data))'])?>
+       <?= Html::a('Enviar Email', ['site/contact'],array(['class' => 'btn btn-primary']) );
+       ?>
     </p>
-
 
 
 
     <?php
     function getEmail($email){
-    $connection = new \yii\db\Connection([
+        $connection = new \yii\db\Connection([
         'dsn' =>'mysql:host=127.0.0.1;dbname=mydb',
         'username'=>'root',
         'password'=>'',
 
     ]);
-
     $connection->open();
-
     $command= $connection->createCommand('SELECT Contato3_Email FROM aluno');
     $command->execute();
     $email = $command->queryAll();
-
     }
 
     ?>
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $("#email").click(function(){
+            var keys = $("#w1").yiiGridView("getSelectedRows");
+        });
+    </script>
 
 </div>
