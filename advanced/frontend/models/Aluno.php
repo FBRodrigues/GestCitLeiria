@@ -11,14 +11,14 @@ use Yii;
  * @property integer $Pessoa_idPessoa
  * @property integer $Horario_idHorario
  * @property integer $Escalao_idEscalao
- * @property string $nome
- * @property string $dataNascimento
- * @property integer $idade
- * @property string $sexo
+ * @property string $Nome
+ * @property string $DataNascimento
+ * @property integer $Idade
+ * @property string $Sexo
  *
- * @property Escalao $escalaoIdEscalao
- * @property Horario $horarioIdHorario
- * @property Pessoa $pessoaIdPessoa
+ * @property Escalao $EscalaoIdEscalao
+ * @property Horario $HorarioIdHorario
+ * @property Pessoa $PessoaIdPessoa
  * @property Pagamento[] $pagamentos
  * @property Presenca[] $presencas
  */
@@ -38,11 +38,11 @@ class Aluno extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'nome', 'dataNascimento', 'idade', 'sexo'], 'required'],
-            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'idade'], 'integer'],
-            [['dataNascimento'], 'safe'],
-            [['nome'], 'string', 'max' => 20],
-            [['sexo'], 'string', 'max' => 1]
+            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Nome', 'DataNascimento', 'Idade', 'Sexo'], 'required'],
+            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Idade'], 'integer'],
+            [['DataNascimento'], 'safe'],
+            [['Nome'], 'string', 'max' => 20],
+            [['Nexo'], 'string', 'max' => 1]
         ];
     }
 
@@ -56,10 +56,10 @@ class Aluno extends \yii\db\ActiveRecord
             'Pessoa_idPessoa' => 'Pessoa Id Pessoa',
             'Horario_idHorario' => 'Horario Id Horario',
             'Escalao_idEscalao' => 'Escalao Id Escalao',
-            'nome' => 'Nome',
-            'dataNascimento' => 'Data Nascimento',
-            'idade' => 'Idade',
-            'sexo' => 'Sexo',
+            'Nome' => 'Nome',
+            'DataNascimento' => 'Data Nascimento',
+            'Idade' => 'Idade',
+            'Sexo' => 'Sexo',
         ];
     }
 

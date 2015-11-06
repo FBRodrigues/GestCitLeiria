@@ -41,11 +41,11 @@ class AlunoSearch extends Aluno
      */
     public function search($params, $id)
     {
-        $pesquisa = 'SELECT * FROM aluno al, presenca p, aula au WHERE al.idAluno = p.Aluno_idAluno AND p.Aluno_idAluno = au.idAula AND au.idAula = '.$id;
+        $pesquisa = 'SELECT * FROM aluno al, presenca p, aula au WHERE al.idAluno = p.Aluno_idAluno AND p.Aluno_idAluno = au.idAula AND au.idAula ='.$id;
 
         $query = Aluno::findBySql($pesquisa);
 
-        $dataProvider = new ActiveDataProvider([
+        $alunosDataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
 
@@ -54,7 +54,7 @@ class AlunoSearch extends Aluno
         if (!$this->validate()) {
             // uncomment the following line if you do not want to return any records when validation fails
             // $query->where('0=1');
-            return $dataProvider;
+            return $alunosDataProvider;
         }
 
         $query->andFilterWhere([
@@ -62,13 +62,19 @@ class AlunoSearch extends Aluno
             'Pessoa_idPessoa' => $this->Pessoa_idPessoa,
             'Horario_idHorario' => $this->Horario_idHorario,
             'Escalao_idEscalao' => $this->Escalao_idEscalao,
+            'Nome' => $this->Nome,
             'DataNascimento' => $this->DataNascimento,
             'Idade' => $this->Idade,
+            'Contato1' => $this->Contato1,
+            'Contato2' => $this->Contato2,
+            'Contato3_Email' => $this->Contato3_Email,
+            'EncarregadoEducacao' => $this->EncarregadoEducacao,
+            'Sexo' => $this->Sexo,
         ]);
 
         $query->andFilterWhere(['like', 'Nome', $this->Nome])
             ->andFilterWhere(['like', 'Sexo', $this->Sexo]);
 
-        return $dataProvider;
+        return $alunosDataProvider;
     }
 }

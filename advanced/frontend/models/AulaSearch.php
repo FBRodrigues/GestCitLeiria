@@ -57,6 +57,7 @@ class AulaSearch extends Aula
 
         $query->andFilterWhere([
             'idAula' => $this->idAula,
+            //'Nome' => $this->Nome,
             'HoraInicio' => $this->HoraInicio,
             'HoraFim' => $this->HoraFim,
         ]);

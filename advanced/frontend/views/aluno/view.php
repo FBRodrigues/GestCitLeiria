@@ -32,10 +32,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'Pessoa_idPessoa',
             'Horario_idHorario',
             'Escalao_idEscalao',
-            'nome',
-            'dataNascimento',
-            'idade',
-            'sexo',
+            'Nome',
+            'DataNascimento',
+            'Idade',
+            'Sexo',
         ],
     ]) ?>
 
