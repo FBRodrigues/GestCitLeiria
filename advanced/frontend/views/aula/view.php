@@ -41,6 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     <?= GridView::widget([
+        //Lista de alunos carregada aqui
         'alunosDataProvider' => $alunosDataProvider,
         //'filterModel' => $searchModel,
 
@@ -61,7 +62,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'Sexo',
 
             //linha seguinte gera os 3 bot�es (ver, editar e apagar)
-            //['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
+            ['class' => 'yii\grid\ActionColumn', 'template' => '{view}', 'class' => 'yii\grid\ChekedboxColumn'],
         ],
 
 
