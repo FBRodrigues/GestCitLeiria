@@ -62,7 +62,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'Sexo',
 
             //linha seguinte gera os 3 bot�es (ver, editar e apagar)
-            ['class' => 'yii\grid\ActionColumn', 'template' => '{view}', 'class' => 'yii\grid\ChekedboxColumn'],
+            ['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
         ],
 
 
@@ -71,9 +71,11 @@ $this->params['breadcrumbs'][] = $this->title;
         }
 
 
-
+        //Mostrar dados
 
     ]); ?>
+
+
 
 
 </div>

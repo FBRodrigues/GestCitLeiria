@@ -63,4 +63,21 @@ class PresencaSearch extends Presenca
 
         return $dataProvider;
     }
+
+
+    //Criar métodos
+
+   /* public function searchAlunos($idP){
+        $searchAlunos = new  AlunoSearch();
+        $listaAlunos = $searchAlunos->search(Yii::$app->request->queryParams);
+
+        $listaAlunos = Presenca::findAll(idPresenca == $idP);
+
+        foreach($listaAlunos as $aluno){
+            if($aluno.$idP)
+
+
+        }
+
+    }*/
 }

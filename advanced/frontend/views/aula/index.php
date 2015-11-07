@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 
+
 /* @var $this yii\web\View */
 /* @var $searchModel frontend\models\AulaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -23,8 +24,17 @@ $this->title = 'Aulas';
         'dataProvider' => $dataProvider,
         //'filterModel' => $searchModel,
 
+        //Experiencia
+
+       /* 'columns' => array(
+            array(
+                'id' => 'selectedIds',
+                'class' => 'CCheckBoxColumn'
+            ),*/
+
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            ['class'=>'yii\grid\CheckboxColumn'],
+            //['class' => 'yii\grid\SerialColumn'],
 
             //'idAula',
             'Nome',
@@ -34,16 +44,36 @@ $this->title = 'Aulas';
 
             //linha seguinte gera os 3 bot�es (ver, editar e apagar)
             //['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
-        ],
+
+
+    ],
 
 
         'rowOptions' => function($model, $key, $index, $grid) {
-            return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)'];
-        }
+            return ['id' => $model['idAula'], /*'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)'*/];
+    }
 
 
 
 
-    ]); ?>
+    ]);
+
+
+    /*$data=Yii::$app->request->post();
+    if (!empty($data)) {
+    $data['User']['modules']=implode(",", $data['User']['modules']);
+
+
+
+    if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        $this->setRole($model);
+        $this->setTasks($model);
+        return $this->redirect(['view', 'id' => $model->id]);
+    } else {
+    Yii::$app->session->set("oldRole", $model->getCompanyRole($model->role));*/
+
+    ?>
+
+
 
 </div>
