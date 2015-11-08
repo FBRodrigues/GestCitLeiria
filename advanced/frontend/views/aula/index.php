@@ -70,7 +70,7 @@ $this->title = 'Aulas';
         $this->setTasks($model);
         return $this->redirect(['view', 'id' => $model->id]);
     } else {
-    Yii::$app->session->set("oldRole", $model->getCompanyRole($model->role));*/
+    Yii::$app->session->set("oldRole", $model->getCompanyRole($model->role));*///
 
     ?>
 
