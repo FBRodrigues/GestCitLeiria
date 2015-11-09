@@ -49,8 +49,13 @@ class PresencaController extends Controller
      */
     public function actionView($idPresenca, $Aula_idAula)
     {
+        $idPresenca = $this->getPresencaPorIDAula($Aula_idAula);
+        $listaAlunos = $this->getAlunosPorIDPresenca($idPresenca);
+
         return $this->render('view', [
             'model' => $this->findModel($idPresenca, $Aula_idAula),
+            'idPresenca' => $idPresenca,
+            'listaAlunos' => $listaAlunos,
         ]);
     }
 

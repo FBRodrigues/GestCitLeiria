@@ -2,9 +2,14 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Presenca */
+
+/* @var $modelPresencaController frontend\controllers\PresencaController */
+/* @var $idAula frontend\controllers\PresencaController */
+/* @var $idPresenca frontend\controllers\PresencaController */
 
 $this->title = $model->idPresenca;
 $this->params['breadcrumbs'][] = ['label' => 'Presencas', 'url' => ['index']];
@@ -25,6 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
         ]) ?>
     </p>
 
+    <!-- WTV DAS PRESENCAS -->
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
@@ -34,5 +40,22 @@ $this->params['breadcrumbs'][] = $this->title;
             'Presente',
         ],
     ]) ?>
+
+    <!-- LISTA DE ALUNOS -->
+    <?= GridView::widget([
+        'filterModel' => $searchModel,
+        'idPresenca' => $idPresenca,
+        'listaAlunos' => $listaAlunos,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            'idAluno',
+            'Nome',
+            'Idade',
+            'Sexo',
+
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+    ]); ?>
 
 </div>
