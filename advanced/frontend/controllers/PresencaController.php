@@ -122,4 +122,7 @@ class PresencaController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+
+    //Invocar métodos do search
 }
