@@ -128,7 +128,22 @@ class AulaController extends Controller
 
 
 
+   public function rules()
+    {
+        // NOTE: you should only define rules for those attributes that
+        // will receive user inputs.
 
+        $model = new Aula();
 
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            //return $model->selecionado = true;
+            return array(
+                array('active', 'numerical', 'integerOnly' => true),
+                //OR optional
+                array('active', 'safe'),
+            );
+        }
+    }
 
 }

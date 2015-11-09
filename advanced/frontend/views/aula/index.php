@@ -34,6 +34,7 @@ $this->title = 'Aulas';
 
         'columns' => [
             ['class'=>'yii\grid\CheckboxColumn'],
+
             //['class' => 'yii\grid\SerialColumn'],
 
             //'idAula',
@@ -46,14 +47,21 @@ $this->title = 'Aulas';
             //['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
 
 
-        ],
+    ],
 
 
-        'rowOptions' => function($model, $key, $index, $grid) {
-            return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)'];
-        }
+
+
+
+        'rowOptions' => function($model, $key, $index, $grid)
+    {
+        return ['id' => $model['idAula'],'checkBox' => array('Choveu')]; /*'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)']*/;
+    }
+
 
     ]);
+
+
 
 
     /*$data=Yii::$app->request->post();
