@@ -128,7 +128,7 @@ class AulaController extends Controller
 
 
 
-   public function rules()
+   /*public function rules()
     {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
@@ -144,6 +144,6 @@ class AulaController extends Controller
                 array('active', 'safe'),
             );
         }
-    }
+    }*/
 
 }

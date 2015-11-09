@@ -53,11 +53,9 @@ $this->title = 'Aulas';
 
 
 
-        'rowOptions' => function($model, $key, $index, $grid)
-    {
-        return ['id' => $model['idAula'],'checkBox' => array('Choveu')]; /*'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)']*/;
-    }
-
+        'rowOptions' => function($model, $key, $index, $grid) {
+            return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view').'&id="+(this.id)'];
+        }
 
     ]);
 
