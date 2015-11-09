@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Aluno */
@@ -38,6 +39,15 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'Sexo')->textInput(['maxlength' => true]) ?>
 
 
+   /* <?php
+    //$emails = ArrayHelper::map($emails,'Contato3_Email','Contato3_Email');
+    //$selected_keys = array_key_exists(ArrayHelper::map($model->Contato3_Email,'idAluno','Contato3_Email'),'Contato3_Email');
+    //var_dump($selected_keys);
+    //return $selected_keys;
+    //echo Html::checkboxList('Aluno[emails][]',$selected_keys,$emails);
+   // $selected_keys = array_keys(CHtml::listData( $model->books, 'id' , 'id'));
+   // CHtml::checkBoxList('Author[books][]', $selected_keys, $books);
+    ?>
     <div class="form-group">
 
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

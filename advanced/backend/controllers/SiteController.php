@@ -1,6 +1,7 @@
 <?php
 namespace backend\controllers;
 
+use backend\models\Aluno;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -115,8 +116,9 @@ class SiteController extends Controller
 
         $model = new ContactForm();
         $messages = [];
-        $user = "2120351@my.ipleiria.pt;fbrodrigues_88@msn.com";
-       // $user = $model->email;
+      //  $user = "2120351@my.ipleiria.pt;fbrodrigues_88@msn.com";
+        $user = $model->email;
+       // $user = $this->render('..\aluno\index', ['$selected_keys']);
         $users = explode(";",$user);
 
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {

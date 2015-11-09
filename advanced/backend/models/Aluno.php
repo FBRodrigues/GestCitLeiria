@@ -81,7 +81,8 @@ class Aluno extends \yii\db\ActiveRecord
 
     public function getEmail(){
 
-
+        $emails= $this->hasOne(Aluno::className(),['idAluno'=>'Contato3_Email']);
+        return $emails;
     }
     /**
      * @return \yii\db\ActiveQuery
@@ -114,4 +115,5 @@ class Aluno extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Presenca::className(), ['Aluno_idAluno' => 'idAluno']);
     }
+
 }

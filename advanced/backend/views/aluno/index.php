@@ -43,15 +43,28 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
 
 
+
         ],
-    ]); ?>
+    ]);
+
+
+    ?>
 
     <p>
-
-      <?= Html::a('Enviar Email', ['site/contact'], array('class' => 'btn btn-primary','name'=>'mail',''))?>
+      <?= Html::a('Enviar Email', ['site/contact'], array('class' => 'btn btn-primary','name'=>'mail'))?>
     </p>
 
-    <
+    <script>
+        jQuery(document).ready(function() {
+                mail  = $("#message");
+                mail.click(function() {
+                    var keys = $("#w0").yiiGridView("getSelectedRows");
+                    alert(keys);
 
+                });
+            });
+
+
+    </script>
 
 </div>
