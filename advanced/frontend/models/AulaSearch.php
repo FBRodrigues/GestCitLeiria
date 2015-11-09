@@ -5,7 +5,6 @@ namespace frontend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use frontend\models\Aula;
 
 /**
  * AulaSearch represents the model behind the search form about `frontend\models\Aula`.
@@ -57,7 +56,7 @@ class AulaSearch extends Aula
 
         $query->andFilterWhere([
             'idAula' => $this->idAula,
-            //'Nome' => $this->Nome,
+            'Nome' => $this->Nome,
             'HoraInicio' => $this->HoraInicio,
             'HoraFim' => $this->HoraFim,
         ]);

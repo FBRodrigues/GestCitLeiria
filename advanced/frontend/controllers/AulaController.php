@@ -50,7 +50,6 @@ class AulaController extends Controller
     public function actionView($id)
     {
         $searchModel = new AlunoSearch();
-        //$pesquisa = 'SELECT * FROM aluno al, presenca p, aula au WHERE al.idAluno = p.Aluno_idAluno AND p.Aluno_idAluno = au.idAula AND au.idAula = $id';
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $id);
 
 

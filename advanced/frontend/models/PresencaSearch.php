@@ -5,7 +5,6 @@ namespace frontend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use frontend\models\Presenca;
 
 /**
  * PresencaSearch represents the model behind the search form about `frontend\models\Presenca`.
@@ -64,20 +63,22 @@ class PresencaSearch extends Presenca
         return $dataProvider;
     }
 
+    public function procurarPresencaPorIDAula($idAula)
+    {
+        $aula = Aula::findOne($idAula);
+        $presenca = Presenca::findOne($aula->aulaIdAula);
 
-    //Criar métodos
+        return $presenca;
+    }
 
-   /* public function searchAlunos($idP){
-        $searchAlunos = new  AlunoSearch();
-        $listaAlunos = $searchAlunos->search(Yii::$app->request->queryParams);
+    public function procuraAlunosPorIDPesenca($idPresenca)
+    {
+        $presenca = Presenca::findOne($idPresenca);
+        $modelAluno = new Aluno();
+        $alunos = Aluno::findAll($modelAluno->idAluno==$presenca->idPresenca);
 
-        $listaAlunos = Presenca::findAll(idPresenca == $idP);
-
-        foreach($listaAlunos as $aluno){
-            if($aluno.$idP)
+        return $alunos;
+    }
 
 
-        }
-
-    }*/
 }
