@@ -46,15 +46,12 @@ $this->title = 'Aulas';
             //['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
 
 
-    ],
+        ],
 
 
         'rowOptions' => function($model, $key, $index, $grid) {
-            return ['id' => $model['idAula'], /*'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)'*/];
-    }
-
-
-
+            return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)'];
+        }
 
     ]);
 
