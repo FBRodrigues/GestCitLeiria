@@ -123,6 +123,19 @@ class PresencaController extends Controller
         }
     }
 
-
     //Invocar métodos do search
+    public function getPresencaPorIDAula($idAula){
+        $searchModel = new PresencaSearch();
+        $idPresenca = $searchModel->procurarPresencaPorIDAula($idAula);
+
+        return $idPresenca;
+    }
+
+    public function getAlunosPorIDPresenca($idPresenca){
+        $searchModel = new PresencaSearch();
+        $alunos = $searchModel->procuraAlunosPorIDPesenca($idPresenca);
+
+        return $alunos;
+    }
+
 }
