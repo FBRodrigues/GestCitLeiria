@@ -79,6 +79,10 @@ class Aluno extends \yii\db\ActiveRecord
         return $this->hasOne(Pessoa::className(), ['idPessoa' => 'Pessoa_idPessoa']);
     }
 
+    public function getEmail(){
+        return $this->hasMany(Aluno::className(),['']);
+
+    }
     /**
      * @return \yii\db\ActiveQuery
      */
