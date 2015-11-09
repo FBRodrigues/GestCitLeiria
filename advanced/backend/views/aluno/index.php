@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
@@ -26,11 +27,10 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class'=>'yii\grid\CheckboxColumn'],
            // 'checked'=> 'Yii::app()->controller->isChecked($data->idAluno)'],
             //['class' => 'yii\grid\SerialColumn'],
-
-            'idAluno',
+             'idAluno',
             //'Pessoa_idPessoa',
             //'Horario_idHorario',
-            'Escalao_idEscalao_valor',
+            'Escalao_idEscalao',
             'Nome',
             // 'DataNascimento',
              'Idade',
@@ -41,35 +41,17 @@ $this->params['breadcrumbs'][] = $this->title;
              'Sexo',
 
             ['class' => 'yii\grid\ActionColumn'],
+
+
         ],
     ]); ?>
 
     <p>
 
-       <?= Html::a('Enviar Email', ['site/contact'], array('class' => 'btn btn-primary','name'=>'mail','onClick'=>'getEmail('.$email.')'))?>
+      <?= Html::a('Enviar Email', ['site/contact'], array('class' => 'btn btn-primary','name'=>'mail',''))?>
     </p>
 
-
-
-
-    <?php
-    function getEmail(){
-    $connection = new \yii\db\Connection([
-        'dsn' =>'mysql:host=127.0.0.1;dbname=mydb',
-        'username'=>'root',
-        'password'=>'',
-
-    ]);
-
-    $connection->open();
-
-    $command= $connection->createCommand('SELECT Contato3_Email FROM aluno');
-    $command->execute();
-    $email = $command->queryAll();
-
-    }
-
-    ?>
+    <
 
 
 </div>

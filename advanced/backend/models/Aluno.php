@@ -80,7 +80,7 @@ class Aluno extends \yii\db\ActiveRecord
     }
 
     public function getEmail(){
-        return $this->hasMany(Aluno::className(),['']);
+
 
     }
     /**
