@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'name') ?>
 
-                <?= $form->field($model, 'email') ?>
+                <!--<7*?= $form->field($model, 'email') ?>-->
 
                 <?= $form->field($model, 'subject') ?>
 
