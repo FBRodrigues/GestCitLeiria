@@ -5,6 +5,8 @@ namespace frontend\controllers;
 use Yii;
 use frontend\models\Presenca;
 use frontend\models\PresencaSearch;
+use frontend\models\Aula;
+use frontend\models\Aluno;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -47,16 +49,20 @@ class PresencaController extends Controller
      * @param integer $Aula_idAula
      * @return mixed
      */
-    public function actionView($idPresenca, $Aula_idAula)
+    public function actionView($idAula)
     {
-        $idPresenca = $this->getPresencaPorIDAula($Aula_idAula);
-        $listaAlunos = $this->getAlunosPorIDPresenca($idPresenca);
+        $aula = Aula::findOne($idAula);
+        $listaAlunos = $aula->alunos;
+//        $presencas = $aula->presencas;
+/*        $listaAlunos = $this->getAlunosPorIDPresenca($idGetPresenca); */
 
-        return $this->render('view', [
-            'model' => $this->findModel($idPresenca, $Aula_idAula),
-            'idPresenca' => $idPresenca,
+      /*return $this->render('view', [
+            'model' => $this->findModel($idAula),
+            //'idGetPresenca' => $idGetPresenca,
             'listaAlunos' => $listaAlunos,
-        ]);
+        ]);*/
+
+        return \yii\helpers\Json::encode([$aula, $listaAlunos]);
     }
 
     /**

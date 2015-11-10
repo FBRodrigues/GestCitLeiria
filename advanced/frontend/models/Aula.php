@@ -69,4 +69,9 @@ class Aula extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Turma::className(), ['Aula_idAula' => 'idAula']);
     }
+
+    public function getAlunos()
+    {
+        return $this->hasMany(Aluno::className(), ['idAluno' => 'Aluno_idAluno'])->via('presencas');
+    }
 }

@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use frontend\controllers\PresencaController;
 
 
 /* @var $this yii\web\View */
@@ -14,7 +15,7 @@ $this->title = 'Aulas';
 <div class="aula-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
         <!-- <?= Html::a('Create Aula', ['create'], ['class' => 'btn btn-success']) ?> -->
@@ -46,6 +47,18 @@ $this->title = 'Aulas';
             //linha seguinte gera os 3 bot�es (ver, editar e apagar)
             //['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
 
+           /* $model = new SomeForm();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($model->checkbox == true){
+
+                $model->scenario = 'checked';
+            }
+        }*/
+
+
+
+
+
 
     ],
 
@@ -53,9 +66,24 @@ $this->title = 'Aulas';
 
 
 
-        'rowOptions' => function($model, $key, $index, $grid) {
-            return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view').'&id="+(this.id)'];
-        }
+
+
+        /*'rowOptions' => function($model, $key, $index, $grid) {
+            return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view',array('idPresenca'=>'0', 'Aula_idAula'=>'0')).'"'];
+        }*/
+
+
+
+        /*'rowOptions' => function($model, $key, $index, $grid) {
+        return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view').'&idPresenca="+(this.id)/&Aula_idAula="(idAula)'];
+    }*/
+
+
+         'rowOptions' => function($model, $key, $index, $grid) {
+        return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view').'&idAula="+(this.id)'];
+    }
+
+
 
     ]);
 

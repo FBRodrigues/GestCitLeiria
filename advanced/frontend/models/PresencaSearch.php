@@ -66,7 +66,7 @@ class PresencaSearch extends Presenca
     public function procurarPresencaPorIDAula($idAula)
     {
         $aula = Aula::findOne($idAula);
-        $presenca = Presenca::findOne($aula->aulaIdAula);
+        $presenca = Presenca::findOne($aula->Aula_idAula);
 
         return $presenca;
     }
