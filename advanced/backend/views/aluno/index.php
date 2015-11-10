@@ -20,6 +20,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Create Aluno', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
+    <?=Html::beginForm(['site/contact'],'post');?>
+    <?=Html::checkboxList(ArrayHelper::map(\backend\models\AlunoSearch::find()->all(),"idAluno","Contato3_Email"))?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -41,30 +43,18 @@ $this->params['breadcrumbs'][] = $this->title;
              'Sexo',
 
             ['class' => 'yii\grid\ActionColumn'],
-
-
-
         ],
+
     ]);
-
-
     ?>
 
-    <p>
-      <?= Html::a('Enviar Email', ['site/contact'], array('class' => 'btn btn-primary','name'=>'mail'))?>
-    </p>
+    <?=Html::submitButton('Send', ['class' => 'btn btn-info',]);
+    var_dump($dataProvider);?>
 
-    <script>
-        jQuery(document).ready(function() {
-                mail  = $("#message");
-                mail.click(function() {
-                    var keys = $("#w0").yiiGridView("getSelectedRows");
-                    alert(keys);
-
-                });
-            });
+    <?= Html::endForm();?>
 
 
-    </script>
+
+
 
 </div>
