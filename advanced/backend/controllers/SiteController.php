@@ -113,6 +113,11 @@ class SiteController extends Controller
     public function actionContact()
     {
 
+        $action = Yii::$app->request->post('action');
+        $selecao =(array) Yii::$app->request->post('selection');
+        foreach($selecao as $id){
+
+        }
 
         $model = new ContactForm();
         $messages = [];

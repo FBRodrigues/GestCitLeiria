@@ -21,7 +21,8 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 
     <?=Html::beginForm(['site/contact'],'post');?>
-    <?=Html::checkboxList(ArrayHelper::map(\backend\models\AlunoSearch::find()->all(),"idAluno","Contato3_Email"))?>
+   <?=Html::
+    checkboxList('action','',[''=>'getSelected'], array('class'=>'yii\grid\CheckboxColumn'))?>>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -48,8 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
     ?>
 
-    <?=Html::submitButton('Send', ['class' => 'btn btn-info',]);
-    var_dump($dataProvider);?>
+    <?=Html::submitButton('Send', ['class' => 'btn btn-info',]);?>
 
     <?= Html::endForm();?>
 
