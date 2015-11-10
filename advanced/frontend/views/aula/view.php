@@ -42,7 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= GridView::widget([
         //Lista de alunos carregada aqui
-        'alunosDataProvider' => $alunosDataProvider,
+        'dataProvider' => $dataProvider,
         //'filterModel' => $searchModel,
 
         'columns' => [

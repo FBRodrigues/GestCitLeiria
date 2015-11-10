@@ -43,8 +43,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <!-- LISTA DE ALUNOS -->
     <?= GridView::widget([
-        'filterModel' => $searchModel,
-        'idPresenca' => $idPresenca,
+/*        'filterModel' => $searchModel,
+        'idPresenca' => $idPresenca, */
         'listaAlunos' => $listaAlunos,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],

@@ -52,6 +52,9 @@ class AulaController extends Controller
         $searchModel = new AlunoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $id);
 
+/*        $aula = Aula::findOne($id);
+        $dataProvider = $aula->alunos; */
+
 
         return $this->render('view', [
             'model' => $this->findModel($id),
@@ -145,5 +148,18 @@ class AulaController extends Controller
             );
         }
     }*/
+
+    /*public function rules()
+    {
+        return [
+            ['cancelled',   'boolean'],
+            ['checkNumber', 'required'],
+            ['payee',       'required', 'when' => function ($model) {return !$model->cancelled;}],
+            ['particulars', 'required', 'when' => function ($model) {return !$model->cancelled;}],
+        ];
+    }*/
+
+
+
 
 }
