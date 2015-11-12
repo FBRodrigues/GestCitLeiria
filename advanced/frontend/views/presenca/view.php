@@ -30,21 +30,11 @@ $this->params['breadcrumbs'][] = $this->title;
         ]) ?>
     </p>
 
-    <!-- WTV DAS PRESENCAS -->
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'idPresenca',
-            'Aluno_idAluno',
-            'Aula_idAula',
-            'Presente',
-        ],
-    ]) ?>
-
-    <!-- LISTA DE ALUNOS -->
+    <?php var_dump($listaAlunos); ?>
     <?= GridView::widget([
-/*        'filterModel' => $searchModel,
-        'idPresenca' => $idPresenca, */
+        /*        'filterModel' => $searchModel,
+                'idPresenca' => $idPresenca, */
+        //'model' => $model,
         'listaAlunos' => $listaAlunos,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
@@ -57,5 +47,21 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+    <!-- WTV DAS PRESENCAS -->
+    <!--
+    <?= DetailView::widget([
+        'model' => $model,
+        'attributes' => [
+            'idPresenca',
+            'Aluno_idAluno',
+            'Aula_idAula',
+            'Presente',
+        ],
+    ]) ?>
+
+    -->
+
+    <!-- LISTA DE ALUNOS -->
+
 
 </div>
