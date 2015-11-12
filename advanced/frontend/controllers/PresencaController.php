@@ -56,13 +56,14 @@ class PresencaController extends Controller
 //        $presencas = $aula->presencas;
 /*        $listaAlunos = $this->getAlunosPorIDPresenca($idGetPresenca); */
 
-      /*return $this->render('view', [
-            'model' => $this->findModel($idAula),
-            //'idGetPresenca' => $idGetPresenca,
-            'listaAlunos' => $listaAlunos,
-        ]);*/
+        $variavel = 'Qualquer coisa';
+      return $this->render('view', [
+          'listaAlunos' => $listaAlunos,
+          'model' => $this->findModel($idAula , $idAula),
+          //'idGetPresenca' => $idGetPresenca,
+        ]);
 
-        return \yii\helpers\Json::encode([$aula, $listaAlunos]);
+        //return \yii\helpers\Json::encode([$aula, $listaAlunos]);
     }
 
     /**

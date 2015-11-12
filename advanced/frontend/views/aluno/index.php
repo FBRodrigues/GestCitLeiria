@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'Pessoa_idPessoa',
             'Horario_idHorario',
             'Escalao_idEscalao',
-            'Nome',
+            'NomeAluno',
             // 'dataNascimento',
             // 'idade',
             // 'sexo',
