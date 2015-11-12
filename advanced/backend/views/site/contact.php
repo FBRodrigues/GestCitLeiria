@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
 
-        <?=Html::beginForm('action','post')?>
+        <?=Html::beginForm('actionContact','post')?>
     <div class="form-group">
 
                     <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>

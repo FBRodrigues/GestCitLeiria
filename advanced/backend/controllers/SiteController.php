@@ -118,7 +118,7 @@ class SiteController extends Controller
         $action =Yii::$app->request->post('action');
         $selection = (array)Yii::$app->request->post('selection');
         var_dump($selection);
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+        if ($model->load($selection) && $model->validate()) {
             foreach($selection as $user) {
                   var_dump($selection);
                   $messages[]=Yii::$app->mailer->compose()
