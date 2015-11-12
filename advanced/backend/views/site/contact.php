@@ -37,6 +37,11 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
     </div>
 
+            <div class="Emails">
+             <div class="col-lg-push-5">
+                <!-- </*?=$form->field($model,'Selection')?>-->
+             </div>
+            </div>
             <?php ActiveForm::end(); ?>
         </div>
     </div>

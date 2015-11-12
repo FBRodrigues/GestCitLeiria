@@ -64,7 +64,7 @@ class AlunoSearch extends Aluno
             'Idade' => $this->Idade,
         ]);
 
-        $query->andFilterWhere(['like', 'Nome', $this->NomeAluno])
+        $query->andFilterWhere(['like', 'Nome', $this->Nome])
             ->andFilterWhere(['like', 'Contato1', $this->Contato1])
             ->andFilterWhere(['like', 'Contato2', $this->Contato2])
             ->andFilterWhere(['like', 'Contato3_Email', $this->Contato3_Email])

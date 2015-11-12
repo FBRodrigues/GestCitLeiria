@@ -22,13 +22,17 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?=Html::beginForm(['site/contact'],'post');?>
    <?=Html::
-    checkboxList('action','',[''=>'getSelected'], array('class'=>'yii\grid\CheckboxColumn'))?>>
+    checkboxList('action', array('selection'=>'checked'),[])?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class'=>'yii\grid\CheckboxColumn'],
-           // 'checked'=> 'Yii::app()->controller->isChecked($data->idAluno)'],
+            ['class'=>'yii\grid\CheckboxColumn',
+                 'checkboxOptions' => function($model, $key, $index, $widget) {
+                    return ["value" => $model->Contato3_Email
+                    ];
+                }],
+
             //['class' => 'yii\grid\SerialColumn'],
              'idAluno',
             //'Pessoa_idPessoa',
@@ -49,10 +53,21 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
     ?>
 
-    <?=Html::submitButton('Send', ['class' => 'btn btn-info',]);?>
+    <?=Html::submitButton('Send', ['class' => 'btn btn-info']);?>
 
     <?= Html::endForm();?>
 
+   <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $("#w0 input[type=checkbox]").click(function(){
+                var keys = $('#w0').yiiGridView('getSelectedRows');
+                alert(keys);
+            });
+
+        });
+    </script>-->
 
 
 
