@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="teste" type="FirefoxRemoteDebugType" factoryName="Firefox Remote" editBeforeRun="true" host="http://localhost:8080/GestCitLeiria/advanced/backend/web/index.php" port="8080">
+    <method>
+      <option name="FwBeforeLaunchTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

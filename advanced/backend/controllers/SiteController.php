@@ -115,34 +115,36 @@ class SiteController extends Controller
     {
         $model = new ContactForm();
         $messages = [];
-
+        $action =Yii::$app->request->post('action');
+        $selection = (array)Yii::$app->request->post('selection');
+        var_dump($selection);
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            $action =Yii::$app->request->post('action');
-            $selection = Yii::$app->request->post('selection');
-            var_dump($selection);
-          foreach($selection as $user) {
-              var_dump($selection);
-                    $messages[]=Yii::$app->mailer->compose()
-                        ->setFrom(Yii::$app->params['adminEmail'])
-                        ->setTo($user)
-                        ->setSubject($model->subject)
-                        ->setHtmlBody($model->body)
-                        ->send();
-          }
-                Yii::$app->mailer->sendMultiple($messages);
-                if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                    Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-                } else {
-                    Yii::$app->session->setFlash('error', 'There was an error sending email.');
-                }
+            foreach($selection as $user) {
+                  var_dump($selection);
+                  $messages[]=Yii::$app->mailer->compose()
+                      ->setFrom(Yii::$app->params['adminEmail'])
+                      ->setTo($user)
+                      ->setSubject($model->subject)
+                      ->setHtmlBody($model->body)
+                      ->send();
+              }
+              Yii::$app->mailer->sendMultiple($messages);
+              if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
+                  Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+              } else {
+                  Yii::$app->session->setFlash('error', 'There was an error sending email.');
+              }
 
-                return $this->refresh();
-            } else {
-                return $this->render('contact', [
-                    'model' => $model
-                ]);
-            }
-        }
+              return $this->refresh();
+          } else {
+
+              return $this->render('contact', [
+                  'model' => $model,
+              ]);
+          }
+          }
+
+
 
 
 
