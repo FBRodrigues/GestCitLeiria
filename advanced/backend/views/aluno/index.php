@@ -20,9 +20,11 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Create Aluno', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
-   <?=Html::beginForm();?>
+   <?=Html::beginForm(['site/init'],'post' );?>
+
    <?=Html::
-    checkboxList('', array('selection'=>'checked'),[])?>
+    checkboxList('action', array('selection'=>'checked'))?>
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -53,8 +55,10 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
     ?>
 
-    <?=Html::submitButton('Send', ['class' => 'btn btn-info','href'=>'site/contact']);?>
-   <?= Html::endForm();?>
+    <!--</*?=Html::submitButton('Send',['class' => 'btn btn-info']);?>-->
+    <?=Html::submitButton('Send',['class' => 'btn btn-info']);?>
+    <?=Html::endForm( );?>
+
 
    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">

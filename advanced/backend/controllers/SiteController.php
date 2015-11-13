@@ -31,7 +31,7 @@ class SiteController extends Controller
 
                     ],
                     [
-                        'actions' => ['logout', 'index','contact'],
+                        'actions' => ['logout', 'index', 'contact', 'init'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -84,21 +84,21 @@ class SiteController extends Controller
         }
     }
 
-   /* public function actionAluno()
-    {
-        $model = new AlunoForm();
+    /* public function actionAluno()
+     {
+         $model = new AlunoForm();
 
-        if ($model->load(Yii::$app->request->post())) {
-            if ($model->validate()) {
-                // form inputs are valid, do something here
-                return;
-            }
-        }
+         if ($model->load(Yii::$app->request->post())) {
+             if ($model->validate()) {
+                 // form inputs are valid, do something here
+                 return;
+             }
+         }
 
-        return $this->render('aluno', [
-            'model' => $model,
-        ]);
-    }*/
+         return $this->render('aluno', [
+             'model' => $model,
+         ]);
+     }*/
 
 
     public function actionLogout()
@@ -111,41 +111,80 @@ class SiteController extends Controller
     /**
      * @return string|\yii\web\Response
      */
+    public function actionInit()
+    {
+
+        $model = new ContactForm();
+        $model->select =implode(',', (array)Yii::$app->request->post('selection'));
+
+//        return \yii\helpers\Json::encode($model->select);
+
+      // $emails= implode(",",$selection);
+
+
+
+        return $this->render('contact', [
+                'model' => $model,
+
+            ]);
+
+
+    }
+
     public function actionContact()
     {
-        $model = new ContactForm();
+
+
+
+        $model= new ContactForm();
         $messages = [];
-        $action =Yii::$app->request->post('action');
-        $selection = (array)Yii::$app->request->post('selection');
-        var_dump($selection);
+
+        //$user= $model->select;
+
+
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            foreach($selection as $user) {
-                  var_dump($selection);
-                  $messages[]=Yii::$app->mailer->compose()
-                      ->setFrom(Yii::$app->params['adminEmail'])
-                      ->setTo($user)
-                      ->setSubject($model->subject)
-                      ->setHtmlBody($model->body)
-                      ->send();
+
+            $email_array = explode(",",$model->select);
+            $messages = Yii::$app->mailer->compose()
+                ->setTo($email_array)
+//                ->setTo(['dest@x.pt', 'abc@x.pt'])
+                ->setFrom(Yii::$app->params['adminEmail'])
+                ->setSubject($model->subject)
+              ->setTextBody($model->body)
+        //        ->setTextBody($model->select)
+                ;
+            var_dump($messages->toString());
+            $resultado= $messages->send();
+
+            var_dump($resultado);
+
+          /*  foreach ($users as $user) {
+                $messages[] = Yii::$app->mailer->compose()
+                    ->setFrom(Yii::$app->params['adminEmail'])
+                    ->setTo($user)
+                    ->setSubject($model->subject)
+                    ->setHtmlBody($model->body)
+                    ->send();
+            }*/
+
+
+            if ($resultado) {
+                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+            } else {
+                Yii::$app->session->setFlash('error', 'There was an error sending email.');
+            }
+
+           // return $this->refresh();
+        } else {
+
+                  return $this->render('contact', [
+                      'model' => $model,
+                  ]);
               }
-              Yii::$app->mailer->sendMultiple($messages);
-              if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                  Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-              } else {
-                  Yii::$app->session->setFlash('error', 'There was an error sending email.');
-              }
 
-              return $this->refresh();
-          } else {
-
-              return $this->render('contact', [
-                  'model' => $model,
-              ]);
-          }
-          }
-
-
-
+        }
 
 
 }
+
+

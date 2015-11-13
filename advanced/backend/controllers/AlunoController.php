@@ -37,12 +37,10 @@ class AlunoController extends Controller
     {
         $searchModel = new AlunoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $emails = $searchModel->Contato3_Email;
-           // $emails = "ola";
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-            'emails' => $emails,
+
         ]);
     }
 
@@ -53,8 +51,10 @@ class AlunoController extends Controller
      */
     public function actionView($id)
     {
+
         return $this->render('view', [
             'model' => $this->findModel($id),
+
         ]);
     }
 
