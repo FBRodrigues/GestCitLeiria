@@ -14,16 +14,13 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="aluno-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php  //echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
         <?= Html::a('Create Aluno', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
    <?=Html::beginForm(['site/init'],'post' );?>
-
-   <?=Html::
-    checkboxList('action', array('selection'=>'checked'))?>
+   <?=Html::checkboxList('action', array('selection'=>'checked'))?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -56,24 +53,10 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
     ?>
 
-    <!--</*?=Html::submitButton('Send',['class' => 'btn btn-info']);?>-->
-    <?=Html::submitButton('Send',['class' => 'btn btn-info']);?>
+    <?=Html::submitButton('Enviar mail',['class' => 'btn btn-info']);?>
     <?=Html::endForm( );?>
-
-
-   <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript">
-
-        $(document).ready(function(){
-            $("#w0 input[type=checkbox]").click(function(){
-                var keys = $('#w0').yiiGridView('getSelectedRows');
-                alert(keys);
-            });
-
-        });
-    </script>-->
-
-
-
+    <?=Html::beginForm(['site/pagamentos'],'post' );?>
+    <?=Html::submitButton('Enviar mail pagamentos',['class' => 'btn btn-danger']);?>
+    <?=Html::endForm( );?>
 
 </div>

@@ -13,6 +13,8 @@ use common\models\LoginForm;
 use yii\filters\VerbFilter;
 use backend\models\ContactForm;
 use backend\models\AlunoForm;
+use yii\helpers\BaseStringHelper;
+use yii\helpers\StringHelper;
 
 
 /**
@@ -157,23 +159,55 @@ class SiteController extends Controller
 
 
     }
+
+
     public function actionPagamentos()
     {
 
-        $model = new ContactForm();
-     //   $model->select =implode(',', (array)Yii::$app->request->post('selection'));
-        //   $model->emails =(array) Yii::$app->request->post('selection1');
+        $model= new ContactForm();
+        $model->body = "paga o que deves Já";
+        $emails = Aluno::find()->select('Contato3_Email')->all();
+        foreach ($emails as $user) {
+            // fazer o sting builder das variaveis
+            //$model->select = explode(',',$emails);
+            $str = substr($user, 13);
+            return \yii\helpers\Json::encode($str);
 
-//        return \yii\helpers\Json::encode($model->select);
-        // $emails= implode(",",$selection);
+        }
+        //$messages = [];
 
-      //  $emails =  Aluno::find()->select('Contato3_Email')->all();
-       // return \yii\helpers\Json::encode($emails);
+        //$user= $model->select;
 
-        return $this->render('contact', [
-            'model' => $model,
 
-        ]);
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+
+          //  $email_array = explode(",",$model->select);
+            $messages = Yii::$app->mailer->compose()
+                ->setTo($model->select)
+                //->setTo(['dest@x.pt', 'abc@x.pt'])
+                ->setFrom(array(Yii::$app->params['adminEmail']=>'CITL Leiria'))
+                ->setSubject($model->subject)
+                ->setTextBody($model->body)
+                //        ->setTextBody($model->select)
+            ;
+            var_dump($messages->toString());
+            $resultado= $messages->send();
+
+            var_dump($resultado);
+
+            if ($resultado) {
+                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+            } else {
+                Yii::$app->session->setFlash('error', 'There was an error sending email.');
+            }
+
+            return $this->refresh();
+        } else {
+
+            return $this->render('contact', [
+                'model' => $model,
+            ]);
+        }
 
 
     }
