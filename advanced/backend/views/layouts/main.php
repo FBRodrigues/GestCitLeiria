@@ -43,6 +43,7 @@ AppAsset::register($this);
             'items' => [
                 ['label' => 'Enviar Email Pagamentos', 'url' => ['site/pagamentos']],
                 ['label' => 'Enviar Email Assunto Formal', 'url' => ['site/init']],
+                ['label' => 'Aluno', 'url'=>['aluno/index']],
             ]
 
         ],

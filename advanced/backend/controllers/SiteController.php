@@ -6,6 +6,7 @@ use frontend\models\AlunoSearch;
 use Yii;
 use yii\filters\AccessControl;
 use yii\helpers\Json;
+use yii\helpers\Url;
 use yii\web\Controller;
 use common\models\LoginForm;
 use yii\filters\VerbFilter;
@@ -115,16 +116,44 @@ class SiteController extends Controller
     public function actionInit()
     {
 
-        $model = new ContactForm();
-        $model->select =implode(',', (array)Yii::$app->request->post('selection'));
+
+
+        $emails =(array)Yii::$app->request->post('selection');
+        //return \yii\helpers\Json::encode($emails);
+        if((empty($emails))){
+
+            $model = new Aluno();
+            $searchModel = new \backend\models\AlunoSearch();
+           $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+            Yii::$app->session->setFlash('error', 'Não tem nenhum email selecionado!');
+            return $this->render('..\aluno\index',
+                ['model'=>$model,
+                    'searchModel'=>$searchModel,
+                    'dataProvider'=>$dataProvider
+            ]);
+
+            $this->refresh();
+
+
+        }else {
+
+            $model = new ContactForm();
+            $model->select =implode(',', $emails);
+            return $this->render('contact', [
+                'model' => $model,
+
+            ]);
+        }
+        //return $this->render('aluno/index', [
+           // 'model' => $model,
+
+
+
      //   $model->emails =(array) Yii::$app->request->post('selection1');
 
 //        return \yii\helpers\Json::encode($model->select);
   // $emails= implode(",",$selection);
-        return $this->render('contact', [
-                'model' => $model,
 
-            ]);
 
 
     }
@@ -138,8 +167,8 @@ class SiteController extends Controller
 //        return \yii\helpers\Json::encode($model->select);
         // $emails= implode(",",$selection);
 
-        $emails =  Aluno::find()->select('Contato3_Email')->all();
-        return \yii\helpers\Json::encode($emails);
+      //  $emails =  Aluno::find()->select('Contato3_Email')->all();
+       // return \yii\helpers\Json::encode($emails);
 
         return $this->render('contact', [
             'model' => $model,
