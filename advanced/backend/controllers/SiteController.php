@@ -2,6 +2,7 @@
 namespace backend\controllers;
 
 use backend\models\Aluno;
+use common\widgets\Alert;
 use frontend\models\AlunoSearch;
 use Yii;
 use yii\filters\AccessControl;
@@ -12,6 +13,7 @@ use common\models\LoginForm;
 use yii\filters\VerbFilter;
 use backend\models\ContactForm;
 use backend\models\AlunoForm;
+
 
 /**
  * Site controller
@@ -115,16 +117,14 @@ class SiteController extends Controller
      */
     public function actionInit()
     {
-
-
-
         $emails =(array)Yii::$app->request->post('selection');
         //return \yii\helpers\Json::encode($emails);
         if((empty($emails))){
 
             $model = new Aluno();
             $searchModel = new \backend\models\AlunoSearch();
-           $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
             Yii::$app->session->setFlash('error', 'Não tem nenhum email selecionado!');
             return $this->render('..\aluno\index',
                 ['model'=>$model,
