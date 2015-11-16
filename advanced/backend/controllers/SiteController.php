@@ -5,6 +5,7 @@ use backend\models\Aluno;
 use frontend\models\AlunoSearch;
 use Yii;
 use yii\filters\AccessControl;
+use yii\helpers\Json;
 use yii\web\Controller;
 use common\models\LoginForm;
 use yii\filters\VerbFilter;
@@ -31,7 +32,7 @@ class SiteController extends Controller
 
                     ],
                     [
-                        'actions' => ['logout', 'index', 'contact', 'init'],
+                        'actions' => ['logout', 'index', 'contact', 'init','pagamentos'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -116,13 +117,10 @@ class SiteController extends Controller
 
         $model = new ContactForm();
         $model->select =implode(',', (array)Yii::$app->request->post('selection'));
+     //   $model->emails =(array) Yii::$app->request->post('selection1');
 
 //        return \yii\helpers\Json::encode($model->select);
-
-      // $emails= implode(",",$selection);
-
-
-
+  // $emails= implode(",",$selection);
         return $this->render('contact', [
                 'model' => $model,
 
@@ -130,12 +128,29 @@ class SiteController extends Controller
 
 
     }
+    public function actionPagamentos()
+    {
+
+        $model = new ContactForm();
+     //   $model->select =implode(',', (array)Yii::$app->request->post('selection'));
+        //   $model->emails =(array) Yii::$app->request->post('selection1');
+
+//        return \yii\helpers\Json::encode($model->select);
+        // $emails= implode(",",$selection);
+
+        $emails =  Aluno::find()->select('Contato3_Email')->all();
+        return \yii\helpers\Json::encode($emails);
+
+        return $this->render('contact', [
+            'model' => $model,
+
+        ]);
+
+
+    }
 
     public function actionContact()
     {
-
-
-
         $model= new ContactForm();
         $messages = [];
 
@@ -147,10 +162,10 @@ class SiteController extends Controller
             $email_array = explode(",",$model->select);
             $messages = Yii::$app->mailer->compose()
                 ->setTo($email_array)
-//                ->setTo(['dest@x.pt', 'abc@x.pt'])
-                ->setFrom(Yii::$app->params['adminEmail'])
+//              ->setTo(['dest@x.pt', 'abc@x.pt'])
+                ->setFrom(array(Yii::$app->params['adminEmail']=>'CITL Leiria'))
                 ->setSubject($model->subject)
-              ->setTextBody($model->body)
+                ->setTextBody($model->body)
         //        ->setTextBody($model->select)
                 ;
             var_dump($messages->toString());
@@ -174,7 +189,7 @@ class SiteController extends Controller
                 Yii::$app->session->setFlash('error', 'There was an error sending email.');
             }
 
-           // return $this->refresh();
+            return $this->refresh();
         } else {
 
                   return $this->render('contact', [

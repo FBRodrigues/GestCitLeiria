@@ -36,7 +36,18 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'Email', 'url' => ['/site/contact']],
+        ['label' => 'Aluno',
+            'url'=>['aluno/index'],
+            'options'=>['class'=>'dropdown'],
+            'template' => '<a href="{url}" class="href_class">{label}</a>',
+            'items' => [
+                ['label' => 'Enviar Email Pagamentos', 'url' => ['site/pagamentos']],
+                ['label' => 'Enviar Email Assunto Formal', 'url' => ['site/init']],
+            ]
+
+        ],
+        'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
+
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];

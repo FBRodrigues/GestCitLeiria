@@ -16,6 +16,7 @@ class ContactForm extends Model
     public $body;
     public $verifyCode;
     public $select;
+    public $emails;
 
     /**
      * @inheritdoc

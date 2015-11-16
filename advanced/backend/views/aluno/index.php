@@ -33,6 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
                  'checkboxOptions' => function($model, $key, $index, $widget) {
                     return ["value" => $model->Contato3_Email
                     ];
+
                 }],
 
             //['class' => 'yii\grid\SerialColumn'],
