@@ -202,6 +202,22 @@ class SiteController extends Controller
                 $mes = "Janeiro";
             case "Feb":
                 $mes = "Fevereiro";
+            case "Mar":
+                $mes = "Março";
+            case "Apr":
+                $mes = "Abril";
+            case "May":
+                $mes = "Maio";
+            case "Jun":
+                $mes = "Junho";
+            case "Jul":
+                $mes = "Julho";
+            case "Aug":
+                $mes = "Agosto";
+            case "Sep":
+                $mes = "Setembro";
+            case "Oct":
+                $mes = "Outubro";
             case "Nov":
                 $mes ="Novembro";
             case  "Dec":
