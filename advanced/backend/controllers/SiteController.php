@@ -141,10 +141,36 @@ class SiteController extends Controller
                     $this->refresh();
 
                 }else {
+
                     $model = new ContactForm();
-                    $today = date("F j, Y, g:i a");
+
+                    $nome = "Fábio";
+                    $date = date("Y-m-d");
+                    $date = strtotime(date("Y-m-d", strtotime($date)) . " +1 month");
+                    $date = date("M",$date);
+                    if ($date == "Jan")
+                    {
+                        $date = "Janeiro";
+                    }elseif ($date == "Feb")
+                    {
+
+                    }elseif ($date == "Mar")
+                    {
+                        $date = "Março";
+                    }
+                    elseif ($date == "Apr")
+                    {
+                        $date = "Abril";
+                    }
+                    elseif ($date == "May")
+                    {
+                        $date = "Maio";
+                    }//elseif ($date == )
+
+
                     $model->select =implode(',', $emails);
-                    $model->body ="cenas fhdfhifh iufhi wdfwebf iubgferiubwbg gigbigb divbivbs "  . $today ;
+                    $model->body ="Caro aluno,". $nome ." se ainda nao efectuou o pagamento da mensalidade tem ate o dia 8 do próximo mês de ". $date ." para efectua-lo.
+                    Cumprimentos, ". Yii::$app->user->identity->username;
                     $model->subject ="Pagamentos";
                     $model->name = "cenas";
                         return $this->render('contact', [
