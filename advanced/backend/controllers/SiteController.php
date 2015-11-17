@@ -145,17 +145,19 @@ class SiteController extends Controller
                     $model = new ContactForm();
 
                     $nome = "Fábio";
+                    date_default_timezone_set("Europe/Lisbon");
                     $date = date("Y-m-d");
                     $date = strtotime(date("Y-m-d", strtotime($date)) . " +1 month");
                     $date = date("M", $date);
+                    $date1 = date("Y-m-d h:iA");
                    $mes = $this->traduMes($date);
 
 
                     $model->select = implode(',', $emails);
-                    $model->body = "Caro aluno," . $nome . "
-                     se ainda nao efectuou o pagamento da mensalidade tem ate o dia 8 do próximo mês de "
-                        . $mes . " para efectua-lo.
-                    Cumprimentos, " . Yii::$app->user->identity->username;
+                    $model->body = "Caro aluno, se ainda nao efectuou o pagamento da mensalidade tem ate o dia 8 do próximo mês de " . $mes . " para efectua-lo.
+
+                                    Cumprimentos, " . Yii::$app->user->identity->username . "
+                                    " . $date1  ;
                     $model->subject = "Pagamentos";
                     $model->name = "cenas";
                     return $this->render('contact', [
