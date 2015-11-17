@@ -53,10 +53,8 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
     ?>
 
-    <?=Html::submitButton('Enviar mail',['class' => 'btn btn-info']);?>
-    <?=Html::endForm( );?>
-    <?=Html::beginForm(['site/pagamentos'],'post' );?>
-    <?=Html::submitButton('Enviar mail pagamentos',['class' => 'btn btn-danger']);?>
+    <?=Html::submitButton('Enviar mail',['class' => 'btn btn-info','name'=>'formal']);?>
+    <?=Html::submitButton('Enviar mail pagamentos',['class' => 'btn btn-danger','name'=>'paga']);?>
     <?=Html::endForm( );?>
 
 </div>

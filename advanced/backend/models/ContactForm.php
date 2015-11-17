@@ -18,6 +18,7 @@ class ContactForm extends Model
     public $select;
     public $emails;
 
+
     /**
      * @inheritdoc
      */

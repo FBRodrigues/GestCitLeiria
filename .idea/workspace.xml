@@ -2,51 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d6f771-c57d-446d-adff-4b2be8b5a5e5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a11f35c4a2.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a12022f878.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a120771da3.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a1213dce00.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a12168cea7.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a125cb6eeb.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a1262e221a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a1295e783d.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a1297a4b27.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a12b355fb0.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a12c27e695.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a133f83b8b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a1413361a0.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a142639f39.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a14ee9218f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a14f1310ec.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a14f28824d.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a14f5d3497.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a14fdc1947.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a15019c418.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a154572dd6.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a15477bab9.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a15623e53d.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a1566cbfa7.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a156aa367f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a1570bcfd8.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a157509cc1.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a1577ae30a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a157b26951.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a157e71717.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a158bb75a8.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a158d3d196.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a1594783f5.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a15bba5a07.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a15bbc7e15.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a15bc076e8.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a15c298714.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a15c377f5e.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a15c5c52bb.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a160f488ee.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a16218d9a3.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a1624d72d2.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/564a162b6c77f.data" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advanced/backend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/advanced/backend/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advanced/backend/models/ContactForm.php" afterPath="$PROJECT_DIR$/advanced/backend/models/ContactForm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/advanced/backend/runtime/debug/index.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advanced/backend/runtime/logs/app.log" afterPath="$PROJECT_DIR$/advanced/backend/runtime/logs/app.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advanced/backend/views/aluno/index.php" afterPath="$PROJECT_DIR$/advanced/backend/views/aluno/index.php" />
@@ -85,21 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/advanced/backend/views/site/contact.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615">
-              <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/advanced/backend/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5862069">
-              <caret line="176" column="25" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0609319">
+              <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
               <folding>
                 <element signature="e#38#63#0#PHP" expanded="true" />
               </folding>
@@ -107,21 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseStringHelper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/advanced/vendor/yiisoft/yii2/helpers/BaseStringHelper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="46" column="5" selection-start-line="43" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/advanced/backend/views/aluno/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.923077">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state vertical-scroll-proportion="-16.884615">
+              <caret line="56" column="93" selection-start-line="56" selection-start-column="93" selection-end-line="56" selection-end-column="93" />
               <folding>
                 <element signature="e#7#28#0#PHP" expanded="true" />
               </folding>
@@ -214,7 +152,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1370" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -456,129 +394,6 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.phpunit" />
     <property name="settings.editor.splitter.proportion" value="0.22700587" />
   </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/controllers/SiteController.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/index.data</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/logs/app.log</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/564a11afacad2.data</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/564a11afc4b57.data</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/564a11afdb271.data</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/564a11aff1416.data</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/564a11b0144f1.data</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/564a11b035798.data</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/564a11b04dcc2.data</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/564a11b0658b2.data</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/564a11b144a32.data</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/564a11b7b517a.data</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/advanced/backend/runtime/debug/564a11b951722.data</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
-  </component>
   <component name="RunManager" selected="PHPUnit.GestCitLeiria">
     <configuration default="false" name="GestCitLeiria" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$" />
@@ -792,12 +607,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26440176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.22995462" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -807,6 +621,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34369886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1207,43 +1022,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advanced/backend/models/ContactForm.php">
+    <entry file="file://$PROJECT_DIR$/advanced/vendor/yiisoft/yii2/helpers/BaseStringHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8312388">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.03046595">
+          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/advanced/backend/views/site/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
+        <state vertical-scroll-proportion="-7.730769">
           <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advanced/backend/models/ContactForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8530466">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/advanced/backend/views/aluno/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.923077">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state vertical-scroll-proportion="-16.884615">
+          <caret line="56" column="93" selection-start-line="56" selection-start-column="93" selection-end-line="56" selection-end-column="93" />
           <folding>
             <element signature="e#7#28#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advanced/vendor/yiisoft/yii2/helpers/BaseStringHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
-          <caret line="46" column="5" selection-start-line="43" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/advanced/backend/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5862069">
-          <caret line="176" column="25" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0609319">
+          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
           <folding>
             <element signature="e#38#63#0#PHP" expanded="true" />
           </folding>

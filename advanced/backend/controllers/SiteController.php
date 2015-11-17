@@ -120,32 +120,70 @@ class SiteController extends Controller
     public function actionInit()
     {
         $emails =(array)Yii::$app->request->post('selection');
-        //return \yii\helpers\Json::encode($emails);
-        if((empty($emails))){
 
-            $model = new Aluno();
-            $searchModel = new \backend\models\AlunoSearch();
-            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-            Yii::$app->session->setFlash('error', 'Não tem nenhum email selecionado!');
-            return $this->render('..\aluno\index',
-                ['model'=>$model,
-                    'searchModel'=>$searchModel,
-                    'dataProvider'=>$dataProvider
-            ]);
+            if (isset($_POST['paga'])) {
+                // btnPaga
+                if((empty($emails))) {
 
-            $this->refresh();
+                    $model = new Aluno();
+                    $searchModel = new \backend\models\AlunoSearch();
+                    $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+                    Yii::$app->session->setFlash('error', 'Não tem nenhum email selecionado!');
+                    return $this->render('..\aluno\index',
+                        ['model' => $model,
+                            'searchModel' => $searchModel,
+                            'dataProvider' => $dataProvider
+                        ]);
+
+                    $this->refresh();
+
+                }else {
+                    $model = new ContactForm();
+                    $today = date("F j, Y, g:i a");
+                    $model->select =implode(',', $emails);
+                    $model->body ="cenas fhdfhifh iufhi wdfwebf iubgferiubwbg gigbigb divbivbs "  . $today ;
+                    $model->subject ="Pagamentos";
+                    $model->name = "cenas";
+                        return $this->render('contact', [
+                            'model' => $model,
+
+                    ]);
+                }
+
+            } else {
+                //botão formal
+                if((empty($emails))){
+
+                    $model = new Aluno();
+                    $searchModel = new \backend\models\AlunoSearch();
+                    $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+                    Yii::$app->session->setFlash('error', 'Não tem nenhum email selecionado!');
+                    return $this->render('..\aluno\index',
+                        ['model'=>$model,
+                            'searchModel'=>$searchModel,
+                            'dataProvider'=>$dataProvider
+                        ]);
+
+                    $this->refresh();
 
 
-        }else {
+                }else {
 
-            $model = new ContactForm();
-            $model->select =implode(',', $emails);
-            return $this->render('contact', [
-                'model' => $model,
+                    $model = new ContactForm();
+                    $model->select =implode(',', $emails);
+                    return $this->render('contact', [
+                        'model' => $model,
 
-            ]);
+                    ]);
+                }
+
+            }
         }
+
         //return $this->render('aluno/index', [
            // 'model' => $model,
 
@@ -164,14 +202,16 @@ class SiteController extends Controller
     public function actionPagamentos()
     {
 
+        $emails =(array)Yii::$app->request->post('selection');
         $model= new ContactForm();
         $model->body = "paga o que deves Já";
-        $emails = Aluno::find()->select('Contato3_Email')->all();
-        foreach ($emails as $user) {
+      //  $emails = Aluno::find()->select('Contato3_Email')->all();
+        //foreach ($emails as $user) {
             // fazer o sting builder das variaveis
             //$model->select = explode(',',$emails);
-            $str = substr($user, 13);
-            return \yii\helpers\Json::encode($str);
+           //
+         //    $str =substr(($user,15);
+            return \yii\helpers\Json::encode($emails);
 
         }
         //$messages = [];
@@ -179,7 +219,7 @@ class SiteController extends Controller
         //$user= $model->select;
 
 
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+      /*  if ($model->load(Yii::$app->request->post()) && $model->validate()) {
 
           //  $email_array = explode(",",$model->select);
             $messages = Yii::$app->mailer->compose()
@@ -207,10 +247,11 @@ class SiteController extends Controller
             return $this->render('contact', [
                 'model' => $model,
             ]);
-        }
+        }*/
 
 
-    }
+
+
 
     public function actionContact()
     {
