@@ -149,7 +149,7 @@ class SiteController extends Controller
                     $date = date("Y-m-d");
                     $date = strtotime(date("Y-m-d", strtotime($date)) . " +1 month");
                     $date = date("M", $date);
-                    $date1 = date("Y-m-d h:iA");
+                    $date1 = date("Y-m-d");
                    $mes = $this->traduMes($date);
 
 
