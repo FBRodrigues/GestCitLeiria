@@ -172,3 +172,1388 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1446653303.321
     'REQUEST_TIME' => 1446653303
 ]
+2015-11-18 18:02:52 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\GridView::listaAlunos' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('listaAlunos', Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\GridView), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject(Array)
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(49): yii\base\Widget::widget(Array)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#12 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#13 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-18 18:02:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8qc57gmt21jdj5b27uoa51bqn5'
+    '_csrf' => '23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8m1xp5JC3hf_XB66B0s_vup3PiXftZS\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=8qc57gmt21jdj5b27uoa51bqn5; _csrf=23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8m1xp5JC3hf_XB66B0s_vup3PiXftZS%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '5561'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447866172.343
+    'REQUEST_TIME' => 1447866172
+]
+2015-11-18 18:39:42 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\GridView::listaAlunos' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('listaAlunos', Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\GridView), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject(Array)
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(49): yii\base\Widget::widget(Array)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#12 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#13 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-18 18:39:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8qc57gmt21jdj5b27uoa51bqn5'
+    '_csrf' => '23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8m1xp5JC3hf_XB66B0s_vup3PiXftZS\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=8qc57gmt21jdj5b27uoa51bqn5; _csrf=23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8m1xp5JC3hf_XB66B0s_vup3PiXftZS%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '7130'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447868382.228
+    'REQUEST_TIME' => 1447868382
+]
+2015-11-18 18:41:32 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\GridView::listaAlunos' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('listaAlunos', Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\GridView), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject(Array)
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(49): yii\base\Widget::widget(Array)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#12 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#13 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-18 18:41:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8qc57gmt21jdj5b27uoa51bqn5'
+    '_csrf' => '23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8m1xp5JC3hf_XB66B0s_vup3PiXftZS\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=8qc57gmt21jdj5b27uoa51bqn5; _csrf=23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8m1xp5JC3hf_XB66B0s_vup3PiXftZS%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '7213'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447868492.81
+    'REQUEST_TIME' => 1447868492
+]
+2015-11-18 18:41:34 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\GridView::listaAlunos' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('listaAlunos', Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\GridView), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject(Array)
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(49): yii\base\Widget::widget(Array)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#12 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#13 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-18 18:41:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8qc57gmt21jdj5b27uoa51bqn5'
+    '_csrf' => '23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8m1xp5JC3hf_XB66B0s_vup3PiXftZS\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=8qc57gmt21jdj5b27uoa51bqn5; _csrf=23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8m1xp5JC3hf_XB66B0s_vup3PiXftZS%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '7216'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447868493.898
+    'REQUEST_TIME' => 1447868493
+]
+2015-11-18 18:41:34 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\GridView::listaAlunos' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('listaAlunos', Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\GridView), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject(Array)
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(49): yii\base\Widget::widget(Array)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#12 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#13 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-18 18:41:34 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8qc57gmt21jdj5b27uoa51bqn5'
+    '_csrf' => '23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8m1xp5JC3hf_XB66B0s_vup3PiXftZS\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=8qc57gmt21jdj5b27uoa51bqn5; _csrf=23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8m1xp5JC3hf_XB66B0s_vup3PiXftZS%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '7218'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447868494.134
+    'REQUEST_TIME' => 1447868494
+]
+2015-11-18 18:41:34 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\GridView::listaAlunos' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('listaAlunos', Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\GridView), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject(Array)
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(49): yii\base\Widget::widget(Array)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#12 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#13 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-18 18:41:34 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8qc57gmt21jdj5b27uoa51bqn5'
+    '_csrf' => '23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8m1xp5JC3hf_XB66B0s_vup3PiXftZS\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=8qc57gmt21jdj5b27uoa51bqn5; _csrf=23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8m1xp5JC3hf_XB66B0s_vup3PiXftZS%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '7221'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447868494.33
+    'REQUEST_TIME' => 1447868494
+]
+2015-11-18 18:41:34 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\GridView::listaAlunos' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('listaAlunos', Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\GridView), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject(Array)
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(49): yii\base\Widget::widget(Array)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#12 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#13 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-18 18:41:34 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8qc57gmt21jdj5b27uoa51bqn5'
+    '_csrf' => '23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8m1xp5JC3hf_XB66B0s_vup3PiXftZS\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=8qc57gmt21jdj5b27uoa51bqn5; _csrf=23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8m1xp5JC3hf_XB66B0s_vup3PiXftZS%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '7220'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447868494.464
+    'REQUEST_TIME' => 1447868494
+]
+2015-11-18 18:41:39 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\widgets\DetailView::listaAlunos' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('listaAlunos', Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\widgets\DetailView), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject(Array)
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(50): yii\base\Widget::widget(Array)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#12 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#13 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-18 18:41:39 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8qc57gmt21jdj5b27uoa51bqn5'
+    '_csrf' => '23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8m1xp5JC3hf_XB66B0s_vup3PiXftZS\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=8qc57gmt21jdj5b27uoa51bqn5; _csrf=23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8m1xp5JC3hf_XB66B0s_vup3PiXftZS%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '7222'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447868499.579
+    'REQUEST_TIME' => 1447868499
+]
+2015-11-18 18:41:48 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\GridView::listaAlunos' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('listaAlunos', Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\GridView), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject(Array)
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(49): yii\base\Widget::widget(Array)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#12 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#13 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-18 18:41:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8qc57gmt21jdj5b27uoa51bqn5'
+    '_csrf' => '23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"F8m1xp5JC3hf_XB66B0s_vup3PiXftZS\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=8qc57gmt21jdj5b27uoa51bqn5; _csrf=23cfeafee5938a23ab7d2efa7e4ecc1137b6ff2d15ffe82bb31c6a1f9df346c3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22F8m1xp5JC3hf_XB66B0s_vup3PiXftZS%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '7228'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447868508.319
+    'REQUEST_TIME' => 1447868508
+]
+2015-11-19 17:09:51 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\GridView::listaAlunos' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('listaAlunos', Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\GridView), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject(Array)
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(49): yii\base\Widget::widget(Array)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#12 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#13 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-19 17:09:51 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'v7a88n045ttqn12d59ae1mo7o0'
+    '_csrf' => '80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=v7a88n045ttqn12d59ae1mo7o0; _csrf=80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '15005'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447949391.005
+    'REQUEST_TIME' => 1447949391
+]
+2015-11-19 17:12:00 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Aluno::nome' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('nome')
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('nome')
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(316): yii\helpers\BaseArrayHelper::getValue(Object(frontend\models\Aluno), 'nome')
+#3 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(36): yii\helpers\BaseArrayHelper::getColumn(Array, 'nome')
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#7 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#8 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#9 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#13 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+2015-11-19 17:12:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS\";}'
+    'PHPSESSID' => 'v7a88n045ttqn12d59ae1mo7o0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_csrf=80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS%22%3B%7D; PHPSESSID=v7a88n045ttqn12d59ae1mo7o0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '15047'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447949520.621
+    'REQUEST_TIME' => 1447949520
+]
+2015-11-19 17:13:40 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Aluno::NomeAluno' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('NomeAluno')
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('NomeAluno')
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(316): yii\helpers\BaseArrayHelper::getValue(Object(frontend\models\Aluno), 'NomeAluno')
+#3 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(36): yii\helpers\BaseArrayHelper::getColumn(Array, 'NomeAluno')
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#7 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#8 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#9 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#13 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+2015-11-19 17:13:40 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS\";}'
+    'PHPSESSID' => 'v7a88n045ttqn12d59ae1mo7o0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_csrf=80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS%22%3B%7D; PHPSESSID=v7a88n045ttqn12d59ae1mo7o0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '15075'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447949620.771
+    'REQUEST_TIME' => 1447949620
+]
+2015-11-19 17:15:58 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\GridView::$nomesAlunos' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('$nomesAlunos', Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\grid\GridView), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject(Array)
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php(54): yii\base\Widget::widget(Array)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(frontend\controllers\PresencaController))
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('view', Array, Object(frontend\controllers\PresencaController))
+#12 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render('view', Array)
+#13 [internal function]: frontend\controllers\PresencaController->actionView('1')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2015-11-19 17:15:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS\";}'
+    'PHPSESSID' => 'v7a88n045ttqn12d59ae1mo7o0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_csrf=80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS%22%3B%7D; PHPSESSID=v7a88n045ttqn12d59ae1mo7o0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '15117'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447949758.181
+    'REQUEST_TIME' => 1447949758
+]
+2015-11-19 17:16:16 [::1][-][v7a88n045ttqn12d59ae1mo7o0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php:134
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(62): frontend\controllers\PresencaController->findModel('2', '2')
+#1 [internal function]: frontend\controllers\PresencaController->actionView('2')
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-19 17:16:16 [::1][-][v7a88n045ttqn12d59ae1mo7o0][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => '80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS\";}'
+    'PHPSESSID' => 'v7a88n045ttqn12d59ae1mo7o0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_csrf=80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS%22%3B%7D; PHPSESSID=v7a88n045ttqn12d59ae1mo7o0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '15127'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=2'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=2'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447949776.085
+    'REQUEST_TIME' => 1447949776
+]
+2015-11-19 17:16:18 [::1][-][v7a88n045ttqn12d59ae1mo7o0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php:134
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(62): frontend\controllers\PresencaController->findModel('3', '3')
+#1 [internal function]: frontend\controllers\PresencaController->actionView('3')
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-19 17:16:18 [::1][-][v7a88n045ttqn12d59ae1mo7o0][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '3'
+]
+
+$_COOKIE = [
+    '_csrf' => '80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS\";}'
+    'PHPSESSID' => 'v7a88n045ttqn12d59ae1mo7o0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_csrf=80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS%22%3B%7D; PHPSESSID=v7a88n045ttqn12d59ae1mo7o0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '15127'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=3'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=3'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447949778.665
+    'REQUEST_TIME' => 1447949778
+]
+2015-11-19 17:23:46 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in C:\wamp\www\GestCitLeiria\advanced\frontend\views\presenca\view.php:37
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(64): yii\base\Controller->render()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\PresencaController->actionView()
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-11-19 17:23:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS\";}'
+    'PHPSESSID' => 'v7a88n045ttqn12d59ae1mo7o0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_csrf=80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS%22%3B%7D; PHPSESSID=v7a88n045ttqn12d59ae1mo7o0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '15294'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=1'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=1'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447950226.508
+    'REQUEST_TIME' => 1447950226
+]
+2015-11-19 17:27:09 [::1][-][v7a88n045ttqn12d59ae1mo7o0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php:134
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(62): frontend\controllers\PresencaController->findModel('2', '2')
+#1 [internal function]: frontend\controllers\PresencaController->actionView('2')
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-19 17:27:09 [::1][-][v7a88n045ttqn12d59ae1mo7o0][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => '80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS\";}'
+    'PHPSESSID' => 'v7a88n045ttqn12d59ae1mo7o0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_csrf=80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS%22%3B%7D; PHPSESSID=v7a88n045ttqn12d59ae1mo7o0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '15357'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=2'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=2'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447950428.98
+    'REQUEST_TIME' => 1447950428
+]
+2015-11-19 17:27:14 [::1][-][v7a88n045ttqn12d59ae1mo7o0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php:134
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(62): frontend\controllers\PresencaController->findModel('3', '3')
+#1 [internal function]: frontend\controllers\PresencaController->actionView('3')
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-19 17:27:14 [::1][-][v7a88n045ttqn12d59ae1mo7o0][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '3'
+]
+
+$_COOKIE = [
+    '_csrf' => '80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS\";}'
+    'PHPSESSID' => 'v7a88n045ttqn12d59ae1mo7o0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_csrf=80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS%22%3B%7D; PHPSESSID=v7a88n045ttqn12d59ae1mo7o0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '15357'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=3'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=3'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447950434.577
+    'REQUEST_TIME' => 1447950434
+]
+2015-11-19 17:31:09 [::1][-][v7a88n045ttqn12d59ae1mo7o0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php:134
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(62): frontend\controllers\PresencaController->findModel('2', '2')
+#1 [internal function]: frontend\controllers\PresencaController->actionView('2')
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-19 17:31:08 [::1][-][v7a88n045ttqn12d59ae1mo7o0][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => '80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS\";}'
+    'PHPSESSID' => 'v7a88n045ttqn12d59ae1mo7o0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_csrf=80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS%22%3B%7D; PHPSESSID=v7a88n045ttqn12d59ae1mo7o0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '15403'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=2'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=2'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447950668.957
+    'REQUEST_TIME' => 1447950668
+]
+2015-11-19 18:03:21 [::1][-][v7a88n045ttqn12d59ae1mo7o0][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php:134
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\frontend\controllers\PresencaController.php(62): frontend\controllers\PresencaController->findModel('2', '2')
+#1 [internal function]: frontend\controllers\PresencaController->actionView('2')
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('presenca/view', Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp\www\GestCitLeiria\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-19 18:03:21 [::1][-][v7a88n045ttqn12d59ae1mo7o0][info][application] $_GET = [
+    'r' => 'presenca/view'
+    'idAula' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => '80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS\";}'
+    'PHPSESSID' => 'v7a88n045ttqn12d59ae1mo7o0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/frontend/web/index.php?r=aula%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_csrf=80276798aff1b6e6577405461a4293a3f8907aabcd9a9dcfd514881c8b38bd17a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GHhae7GM8tWzLHdwSvdOSq5_jLu4IupS%22%3B%7D; PHPSESSID=v7a88n045ttqn12d59ae1mo7o0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '15721'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=presenca%2Fview&idAula=2'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/frontend/web/index.php?r=presenca%2Fview&idAula=2'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447952601.196
+    'REQUEST_TIME' => 1447952601
+]

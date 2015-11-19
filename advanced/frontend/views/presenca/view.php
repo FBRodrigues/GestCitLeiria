@@ -30,23 +30,18 @@ $this->params['breadcrumbs'][] = $this->title;
         ]) ?>
     </p>
 
-    <?php var_dump($listaAlunos); ?>
-    <?= GridView::widget([
-        /*        'filterModel' => $searchModel,
-                'idPresenca' => $idPresenca, */
-        //'model' => $model,
-        'listaAlunos' => $listaAlunos,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+    <?php
+        //var_dump($listaAlunos);
 
-            'idAluno',
-            'Nome',
-            'Idade',
-            'Sexo',
+        $nomesAlunos = \yii\helpers\ArrayHelper::getColumn($listaAlunos, 'Nome');
 
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
+        foreach($nomesAlunos as $nome){
+            echo $nome.'</br>';
+        }
+
+    ?>
+
+
     <!-- WTV DAS PRESENCAS -->
     <!--
     <?= DetailView::widget([
