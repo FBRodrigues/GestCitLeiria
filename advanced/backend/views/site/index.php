@@ -6,6 +6,18 @@ $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
+    <?php
+    $dataA = date('Y-m-d');
+
+    foreach($datasSel as $value)
+          $str = substr($value->DataNascimento,0,10);
+           // var_dump($dataA);
+          if($str==$dataA){
+              Yii::$app->session->setFlash('success', 'Cenas!');
+          }
+
+    ?>
+
     <div class="jumbotron">
         <h1>Congratulations!</h1>
 

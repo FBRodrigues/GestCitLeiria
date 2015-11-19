@@ -8,6 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
+
 $this->title = 'Lista de Sócios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -18,9 +19,16 @@ $this->params['breadcrumbs'][] = $this->title;
   <div class="row">
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+             <?= $form->field($model, 'name')?>
+            <?php
+            //pode ser necessario
+           // for($i =0, $c = count($emailsSel); $i <= $c; $i++){
+           //     $model->select = $emailsSel[$i++]->Contato3_Email;
+           // }
+            ?>
 
-                <?= $form->field($model, 'name')?>
-                <?= $form->field($model, 'select')->textarea(['rows'=>1]) ?>
+                <?= $form->field($model, 'select')->textarea(['rows' => 6])?>
+
                 <?= $form->field($model,'subject')?>
                 <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
 
@@ -31,9 +39,5 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php ActiveForm::end(); ?>
         </div>
     </div>
-
-    <?php $selection1 = Yii::$app->request->post('selection')?>
-    <div class="Emails">
-
-    </div>
 </div>
+
