@@ -3,6 +3,8 @@
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 use yii\grid\GridView;
+use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Presenca */
@@ -31,13 +33,26 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 
     <?php
-        //var_dump($listaAlunos);
 
-        $nomesAlunos = \yii\helpers\ArrayHelper::getColumn($listaAlunos, 'Nome');
+    //var_dump($listaAlunos);
+
+        $form = ActiveForm::begin();
+
+        $nomesAlunos = ArrayHelper::getColumn($listaAlunos, 'Nome');
 
         foreach($nomesAlunos as $nome){
-            echo $nome.'</br>';
+            //echo $nome.'</br>';
+            echo $form->field($model, 'Presente')->checkbox(['label'=>$nome,'checked'=>false,'uncheck'=>'0','value'=>'1']);
         }
+
+    /* foreach($listaAlunos as $aluno){
+        echo $aluno->Nome.'</br>';
+    } */
+
+        //botão pa submeter as presenças
+        //Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+
+        ActiveForm::end();
 
     ?>
 
