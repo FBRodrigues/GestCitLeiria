@@ -3,6 +3,7 @@ namespace backend\controllers;
 
 use backend\models\Aluno;
 use common\widgets\Alert;
+use Faker\Provider\DateTime;
 use frontend\models\AlunoSearch;
 use Yii;
 use yii\filters\AccessControl;
@@ -15,6 +16,7 @@ use backend\models\ContactForm;
 use backend\models\AlunoForm;
 use yii\helpers\BaseStringHelper;
 use yii\helpers\StringHelper;
+use yii\web\JsExpression;
 
 
 /**
@@ -71,9 +73,21 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+
+        $datasBD = Aluno::find()->select('DataNascimento');
+
+        $datasSel = array();
+       $datasSel = $datasBD->all();
+
+        return $this->render('index',['datasSel' => $datasSel]);
     }
 
+  /*  public function getDataNascimento ($dataNascimento){
+        $date = Aluno::find()->select('DataNascimento')->all();
+        $date = strtotime(date("Y-m-d", strtotime($date)));
+        $date = date("Y-m-d", $date);
+        return \yii\helpers\Json::encode($date);
+    }*/
     public function actionLogin()
     {
         if (!\Yii::$app->user->isGuest) {
@@ -89,23 +103,6 @@ class SiteController extends Controller
             ]);
         }
     }
-
-    /* public function actionAluno()
-     {
-         $model = new AlunoForm();
-
-         if ($model->load(Yii::$app->request->post())) {
-             if ($model->validate()) {
-                 // form inputs are valid, do something here
-                 return;
-             }
-         }
-
-         return $this->render('aluno', [
-             'model' => $model,
-         ]);
-     }*/
-
 
     public function actionLogout()
     {
@@ -144,20 +141,22 @@ class SiteController extends Controller
 
                     $model = new ContactForm();
 
-                    $nome = "Fábio";
+
+                    //Vai buscar o proximo mês
                     date_default_timezone_set("Europe/Lisbon");
                     $date = date("Y-m-d");
                     $date = strtotime(date("Y-m-d", strtotime($date)) . " +1 month");
                     $date = date("M", $date);
-                    $date1 = date("Y-m-d");
-                   $mes = $this->traduMes($date);
+                    // vai buscar a data Atual
+                    $date1 = date("Y-m-d ");
+                    //traduz o mes de Ing para Por
+                    $mes = $this->traduMes($date);
 
 
                     $model->select = implode(',', $emails);
-                    $model->body = "Caro aluno, se ainda nao efectuou o pagamento da mensalidade tem ate o dia 8 do próximo mês de " . $mes . " para efectua-lo.
+                    $model->body = "Caro aluno, se ainda nao efectuou o pagamento da mensalidade tem ate o dia 8 do próximo mês de " . $mes . " para efectua-lo. Cumprimentos, \n\t\t\t"
 
-                                    Cumprimentos, " . Yii::$app->user->identity->username . "
-                                    " . $date1  ;
+                        . Yii::$app->user->identity->username .  ",\t" . $date1  ;
                     $model->subject = "Pagamentos";
                     $model->name = "cenas";
                     return $this->render('contact', [
@@ -188,6 +187,7 @@ class SiteController extends Controller
 
                     $model = new ContactForm();
                     $model->select = implode(',', $emails);
+
                     return $this->render('contact', [
                         'model' => $model,
 
@@ -227,17 +227,6 @@ class SiteController extends Controller
         }
         return $mes;
     }
-        //return $this->render('aluno/index', [
-           // 'model' => $model,
-
-
-
-     //   $model->emails =(array) Yii::$app->request->post('selection1');
-
-//        return \yii\helpers\Json::encode($model->select);
-  // $emails= implode(",",$selection);
-
-
 
 
 
@@ -245,61 +234,37 @@ class SiteController extends Controller
     public function actionPagamentos()
     {
 
-        $emails = (array)Yii::$app->request->post('selection');
+       /*$emails = (array)Yii::$app->request->post('selection');
         $model = new ContactForm();
         $model->body = "paga o que deves Já";
-        $emails = Aluno::find()->select('Contato3_Email')->all();
-        foreach ($emails as $user) {
+        $emailsBD = Aluno::find()->select('Contato3_Email');
+        $emailsSel = array();
+        //if(empty($emailsSel)){
+
+        //}
+        $emailsSel = $emailsBD->all();
+      //  $model->select = implode(",",$emailsSel);
+      //  foreach($emailsSel as $value){
+
+        //}
+
+      //  foreach ($emailsBD->all() as $user) {
             // fazer o sting builder das variaveis
             //$model->select = explode(',',$emails);
-            $str = implode(",", $emails);
+          //  $str = implode(",", $emails);
             //   $str =substr($user,15);
-            return \yii\helpers\Json::encode($str);
+         //   return \yii\helpers\Json::encode($emailsSel);
 
-        }
+        //}
+        return $this->render('contact', [
+            'model' => $model,
+            'emailsSel' => $emailsSel
+        ]);*/
     }
-
-        //$messages = [];
-
-        //$user= $model->select;
-
-
-      /*  if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-
-          //  $email_array = explode(",",$model->select);
-            $messages = Yii::$app->mailer->compose()
-                ->setTo($model->select)
-                //->setTo(['dest@x.pt', 'abc@x.pt'])
-                ->setFrom(array(Yii::$app->params['adminEmail']=>'CITL Leiria'))
-                ->setSubject($model->subject)
-                ->setTextBody($model->body)
-                //        ->setTextBody($model->select)
-            ;
-            var_dump($messages->toString());
-            $resultado= $messages->send();
-
-            var_dump($resultado);
-
-            if ($resultado) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-            } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending email.');
-            }
-
-            return $this->refresh();
-        } else {
-
-            return $this->render('contact', [
-                'model' => $model,
-            ]);
-        }*/
-
-
-
-
 
     public function actionContact()
     {
+
         $model= new ContactForm();
         $messages = [];
 
@@ -310,35 +275,34 @@ class SiteController extends Controller
 
             $email_array = explode(",",$model->select);
             $messages = Yii::$app->mailer->compose()
+
+
                 ->setTo($email_array)
-//              ->setTo(['dest@x.pt', 'abc@x.pt'])
                 ->setFrom(array(Yii::$app->params['adminEmail']=>'CITL Leiria'))
                 ->setSubject($model->subject)
                 ->setTextBody($model->body)
-        //        ->setTextBody($model->select)
+
                 ;
-            var_dump($messages->toString());
+            $messages->toString();
             $resultado= $messages->send();
+         if ($resultado) {
+                Yii::$app->session->setFlash('success', 'Email enviado com sucesso!');
+                $model = new Aluno();
+                $searchModel = new \backend\models\AlunoSearch();
+                $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-            var_dump($resultado);
+                return $this->render('..\aluno\index',
+                    ['model' => $model,
+                        'searchModel' => $searchModel,
+                        'dataProvider' => $dataProvider
+                    ]);
 
-          /*  foreach ($users as $user) {
-                $messages[] = Yii::$app->mailer->compose()
-                    ->setFrom(Yii::$app->params['adminEmail'])
-                    ->setTo($user)
-                    ->setSubject($model->subject)
-                    ->setHtmlBody($model->body)
-                    ->send();
-            }*/
-
-
-            if ($resultado) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+                return $this->refresh();
             } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending email.');
+                Yii::$app->session->setFlash('error', 'Email não enviado.');
             }
 
-            return $this->refresh();
+
         } else {
 
                   return $this->render('contact', [

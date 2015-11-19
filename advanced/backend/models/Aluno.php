@@ -116,4 +116,13 @@ class Aluno extends \yii\db\ActiveRecord
         return $this->hasMany(Presenca::className(), ['Aluno_idAluno' => 'idAluno']);
     }
 
+
+    public function toString()
+
+    {
+
+        return  " Data Nascimento: " + $this->DataNascimento;
+
+    }
+
 }
