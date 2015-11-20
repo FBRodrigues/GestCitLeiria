@@ -34,7 +34,7 @@ $this->title = 'Aulas';
             ),*/
 
         'columns' => [
-            ['class'=>'yii\grid\CheckboxColumn'],
+         //   ['class'=>'yii\grid\CheckboxColumn'],
 
             //['class' => 'yii\grid\SerialColumn'],
 

@@ -52,8 +52,12 @@ class PresencaController extends Controller
     public function actionView($idAula)
     {
         $aula = Aula::findOne($idAula);
+
+        //$listaAlunos = Yii::$app->request->post('aulas');
         $listaAlunos = $aula->alunos;
-//        $presencas = $aula->presencas;
+
+      //  return \yii\helpers\Json::encode([$aula,$listaAlunos]);
+        //$presencas = $aula->presencas;
 /*        $listaAlunos = $this->getAlunosPorIDPresenca($idGetPresenca); */
 
         $variavel = 'Qualquer coisa';

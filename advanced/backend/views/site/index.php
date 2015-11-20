@@ -6,15 +6,19 @@ $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
-    <?php
-    $dataA = date('Y-m-d');
 
-    foreach($datasSel as $value)
-          $str = substr($value->DataNascimento,0,10);
-           // var_dump($dataA);
-          if($str==$dataA){
-              Yii::$app->session->setFlash('success', 'Cenas!');
-          }
+    <?php
+
+     foreach($datasSel as $value){
+         if(date('Y-m-d')== date('Y-m-d',strtotime($value->DataNascimento))){
+        //   echo '<script type="text/javascript">alert("O Associado do Clube '. $value->Nome . ' faz anos!");</script>';
+
+             echo '<script type="text/javascript">';
+             echo  'alert("O Associado do Clube '. $value->Nome .' faz Anos!")';
+            echo' ';
+             echo '</script>';
+         }
+    }
 
     ?>
 
@@ -63,3 +67,6 @@ $this->title = 'My Yii Application';
 
     </div>
 </div>
+
+
+

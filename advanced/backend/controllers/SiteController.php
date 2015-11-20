@@ -71,14 +71,17 @@ class SiteController extends Controller
         ];
     }
 
+    /**
+     * @return string
+     */
     public function actionIndex()
     {
 
-        $datasBD = Aluno::find()->select('DataNascimento');
-
+        $datasBD = Aluno::find();
         $datasSel = array();
-       $datasSel = $datasBD->all();
+        $datasSel = $datasBD->all();
 
+      //  return \yii\helpers\Json::encode($datasSel);
         return $this->render('index',['datasSel' => $datasSel]);
     }
 
