@@ -10,6 +10,7 @@ use yii\base\Model;
  */
 class ContactForm extends Model
 {
+    //trocar Nomes
     public $name;
     public $email;
     public $subject;

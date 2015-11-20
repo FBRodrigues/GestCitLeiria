@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
   <div class="row">
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
-             <?= $form->field($model, 'name')?>
+            <!-- por os nomes do modelos-->
             <?php
             //pode ser necessario
            // for($i =0, $c = count($emailsSel); $i <= $c; $i++){
@@ -28,7 +28,6 @@ $this->params['breadcrumbs'][] = $this->title;
             ?>
 
                 <?= $form->field($model, 'select')->textarea(['rows' => 6])?>
-
                 <?= $form->field($model,'subject')?>
                 <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
 
@@ -39,5 +38,16 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php ActiveForm::end(); ?>
         </div>
     </div>
+
+
 </div>
 
+<div class="Emails">
+    <?php
+    foreach($emails as $value){
+        echo '<br> '. $value .  '   <button class="btn btn-primary" onclick="remover()" type="button" >Remover</button> </br>';
+
+    }
+
+    ?>
+</div>
