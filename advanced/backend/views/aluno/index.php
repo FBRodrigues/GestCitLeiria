@@ -22,6 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
    <?=Html::beginForm(['site/init'],'post' );?>
    <?=Html::checkboxList('action', array('selection'=>'checked'))?>
 
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -53,8 +54,9 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
     ?>
 
-    <?=Html::submitButton('Enviar mail',['class' => 'btn btn-info','name'=>'formal']);?>
-    <?=Html::submitButton('Enviar mail pagamentos',['class' => 'btn btn-danger','name'=>'paga']);?>
-    <?=Html::endForm( );?>
+    <?=Html::submitButton('Executar',['class' => 'btn btn-info','name'=>'formal']);?>
+    <?=Html::dropDownList('action','',[','=>'Operação...',
+        'ePer'=>'Enviar Email Personalizado','pPag'=>'Enviar Email Pagamentos'],['class'=>'dropdown'])?>
+    <?=Html::endForm();?>
 
 </div>

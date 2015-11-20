@@ -7,7 +7,7 @@ $this->title = 'My Yii Application';
 <div class="site-index">
 
 
-    <?php
+  <!--  </*?php
 
      foreach($datasSel as $value){
          if(date('Y-m-d')== date('Y-m-d',strtotime($value->DataNascimento))){
@@ -20,7 +20,7 @@ $this->title = 'My Yii Application';
          }
     }
 
-    ?>
+    ?>-->
 
     <div class="jumbotron">
         <h1>Congratulations!</h1>
