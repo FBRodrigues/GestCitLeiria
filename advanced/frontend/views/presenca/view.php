@@ -38,16 +38,17 @@ $this->params['breadcrumbs'][] = $this->title;
 
         $form = ActiveForm::begin();
 
-        $nomesAlunos = ArrayHelper::getColumn($listaAlunos, 'Nome');
+        //$nomesAlunos = ArrayHelper::getColumn($listaAlunos, 'Nome');
 
-        foreach($nomesAlunos as $nome){
-            //echo $nome.'</br>';
-            echo $form->field($model, 'Presente')->checkbox(['label'=>$nome,'checked'=>false,'uncheck'=>'0','value'=>'1']);
+        foreach($listaAlunos as $aluno){
+            echo $aluno->idAluno.'__'.$aluno->Nome.'</br>';
+            echo $form->field($model, 'Presente')->checkbox(['label'=>$aluno->Nome,'checked'=>'s','uncheck'=>'n','value'=>'0']);
         }
 
-    /* foreach($listaAlunos as $aluno){
-        echo $aluno->Nome.'</br>';
-    } */
+    var_dump($listaPresencas);
+    /*foreach($listaPresencas as $presenca){
+        echo $presenca->Presente.'</br>';
+    }*/
 
         //botão pa submeter as presenças
         //Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
