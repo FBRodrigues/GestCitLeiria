@@ -63,12 +63,19 @@ class PresencaSearch extends Presenca
         return $dataProvider;
     }
 
-    public function procurarPresencaPorIDAula($idAula)
+    public function procurarPresencasPorIDAula($idAula)
     {
-        $aula = Aula::findOne($idAula);
-        $presenca = Presenca::findOne($aula->Aula_idAula);
+        //$aula = Aula::findOne($idAula);
+        //$presencas = Presenca::findAll($aula->idAula);
 
-        return $presenca;
+        $presenca = new Presenca();
+
+        //$aula = new Aula();
+        $presencas = $presenca->findAll([
+            'Aula_idAula' => $idAula ]);
+
+
+        return $presencas;
     }
 
     public function procuraAlunosPorIDPesenca($idPresenca)
