@@ -10,7 +10,7 @@ use frontend\controllers\PresencaController;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Aulas';
-//$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="aula-index">
 
@@ -54,24 +54,11 @@ $this->title = 'Aulas';
                 $model->scenario = 'checked';
             }
         }*/
-
-
-
-
-
-
     ],
-
-
-
-
-
-
 
         /*'rowOptions' => function($model, $key, $index, $grid) {
             return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view',array('idPresenca'=>'0', 'Aula_idAula'=>'0')).'"'];
         }*/
-
 
 
         /*'rowOptions' => function($model, $key, $index, $grid) {
