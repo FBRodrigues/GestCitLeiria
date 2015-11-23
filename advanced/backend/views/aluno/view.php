@@ -30,9 +30,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'idAluno',
-            'Pessoa_idPessoa',
-            'Horario_idHorario',
-            'Escalao_idEscalao',
+            //'Pessoa_idPessoa',
+            //'Horario_idHorario',
+            //'Escalao_idEscalao',
             'Nome',
             'DataNascimento',
             'Idade',

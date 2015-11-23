@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="aluno-search">
+<div class="Pesquisar Sócio">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
