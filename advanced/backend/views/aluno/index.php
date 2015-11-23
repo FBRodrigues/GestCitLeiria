@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Aluno', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Criar Aluno', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
    <?=Html::beginForm(['site/init'],'post' );?>
@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 }],
 
-            //['class' => 'yii\grid\SerialColumn'],
+           //['class' => 'yii\grid\SerialColumn'],
              'idAluno',
             //'Pessoa_idPessoa',
             //'Horario_idHorario',

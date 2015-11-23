@@ -39,7 +39,7 @@ class SiteController extends Controller
 
                     ],
                     [
-                        'actions' => ['logout', 'index', 'contact', 'init', 'pagamentos'],
+                        'actions' => ['logout', 'index', 'contact', 'init','delete'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -152,11 +152,10 @@ class SiteController extends Controller
                 $date1 = date("Y-m-d ");
                 //traduz o mes de Ing para Por
                 $mes = $this->traduMes($date);
-                $model->select = implode(',', $emails);
-                $model->body = "Caro aluno, se ainda nao efectuou o pagamento da mensalidade tem ate o dia 8 do próximo mês de " . $mes . " para efectua-lo. Cumprimentos, \n\t\t\t"
-
-                    . Yii::$app->user->identity->username . ",\t" . $date1;
-                $model->subject = "Pagamentos";
+                $model->emails_selecionados = implode(',', $emails);
+                $model->mensagem = "Caro aluno, se ainda nao efectuou o pagamento da mensalidade tem ate o dia 8 do próximo mês de " . $mes . " para efectua-lo. Cumprimentos, \n\t\t\t"
+                 . Yii::$app->user->identity->username . ", " . $date1;
+                $model->assunto = "Pagamentos";
                 $model->name = "cenas";
                 return $this->render('contact', [
                     'model' => $model,
@@ -183,7 +182,7 @@ class SiteController extends Controller
             } else {
 
                 $model = new ContactForm();
-                $model->select = implode(',', $emails);
+                $model->emails_selecionados = implode(',', $emails);
                 return $this->render('contact', [
                     'model' => $model,
                     'emails'=> $emails,
@@ -249,11 +248,6 @@ class SiteController extends Controller
 
 
 
-
-    public function actionPagamentos()
-    {
-    }
-
     public function actionContact()
     {
 
@@ -265,14 +259,14 @@ class SiteController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
 
-            $email_array = explode(",",$model->select);
+            $email_array = explode(",",$model->emails_selecionados);
             $messages = Yii::$app->mailer->compose()
 
 
                 ->setTo($email_array)
                 ->setFrom(array(Yii::$app->params['adminEmail']=>'CITL Leiria'))
-                ->setSubject($model->subject)
-                ->setTextBody($model->body)
+                ->setSubject($model->assunto)
+                ->setTextBody($model->mensagem)
 
                 ;
             $messages->toString();
@@ -303,6 +297,12 @@ class SiteController extends Controller
               }
 
         }
+
+    public function deleteAction($valor)
+    {
+
+
+    }
 
 
 }

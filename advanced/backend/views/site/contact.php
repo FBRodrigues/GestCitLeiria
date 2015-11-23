@@ -9,7 +9,7 @@ use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
 
-$this->title = 'Lista de Sócios';
+$this->title = 'Envio de Email';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-contact">
@@ -26,10 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
            //     $model->select = $emailsSel[$i++]->Contato3_Email;
            // }
             ?>
-
-                <?= $form->field($model, 'select')->textarea(['rows' => 6])?>
-                <?= $form->field($model,'subject')?>
-                <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
+                <?= $form->field($model,'assunto')?>
+                <?= $form->field($model, 'emails_selecionados')->textarea(['rows' => 2])?>
+                <?= $form->field($model, 'mensagem')->textArea(['rows' => 6]) ?>
 
     <div class="form-group">
          <?= Html::submitButton('Enviar', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
@@ -43,11 +42,33 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 
 <div class="Emails">
+
+
+    <!--<script>
+        function echoRemover(){
+            alert("<//?php remover(); ?>");
+        }
+    </script>-->
+  <!--  <//?php
+   /* function remover() {
+       // $form = ActiveForm::begin(['id' => 'contact-form']);
+        //foreach($emails as $value){
+
+        //}
+
+        echo "botão removido com sucesso!";
+
+    }*/
+    ?>-->
     <?php
     foreach($emails as $value){
-        echo '<br> '. $value .  '   <button class="btn btn-primary" onclick="remover()" type="button" >Remover</button> </br>';
+        echo '<br>'. $value . '    '.  Html::a('Remover', ['delete','valor'=>$value], [
+        'class' => 'btn btn-danger',
+        'data' => ['confirm' => 'Are you sure you want to delete this item?',],]);'</br>' ;
+
+
 
     }
-
     ?>
+
 </div>

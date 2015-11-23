@@ -117,12 +117,4 @@ class Aluno extends \yii\db\ActiveRecord
     }
 
 
-    public function toString()
-
-    {
-
-        return  " Data Nascimento: " + $this->DataNascimento;
-
-    }
-
 }

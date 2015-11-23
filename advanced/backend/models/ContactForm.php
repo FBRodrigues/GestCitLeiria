@@ -13,11 +13,11 @@ class ContactForm extends Model
     //trocar Nomes
     public $name;
     public $email;
-    public $subject;
-    public $body;
+    public $assunto;
+    public $mensagem;
     public $verifyCode;
     public $select;
-    public $emails;
+    public $emails_selecionados;
 
 
     /**
@@ -27,7 +27,7 @@ class ContactForm extends Model
     {
         return [
             // name, email, subject and body are required
-            [['subject', 'body','select'], 'required'],
+            [['assunto', 'mensagem','select'], 'required'],
             // email has to be a valid email address
             //['email', 'email'],
             // verifyCode needs to be entered correctly
@@ -57,8 +57,8 @@ class ContactForm extends Model
         return Yii::$app->mailer->compose()
             ->setTo($email)
             ->setFrom([$this->email => $this->name])
-            ->setSubject($this->subject)
-            ->setTextBody($this->body)
+            ->setSubject($this->assunto)
+            ->setTextBody($this->mensagem)
             ->send();
     }
 
