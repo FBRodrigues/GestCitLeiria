@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel frontend\models\AlunoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Sócios';
+$this->title = 'Alunos';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="aluno-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Novo Sócio', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Aluno', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
