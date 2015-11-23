@@ -8,7 +8,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\AlunoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider  */
 
-$this->title = 'Alunos';
+$this->title = 'Sócios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="aluno-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Criar Aluno', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Criar Sócio', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
    <?=Html::beginForm(['site/init'],'post' );?>
