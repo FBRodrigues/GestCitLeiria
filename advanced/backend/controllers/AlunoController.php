@@ -22,9 +22,6 @@ class AlunoController extends Controller
                 'actions' => [
                     'delete' => ['post'],
                 ],
-                'actions'=>[
-                    ''
-                ],
             ],
         ];
     }
@@ -37,10 +34,10 @@ class AlunoController extends Controller
     {
         $searchModel = new AlunoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-
         ]);
     }
 
@@ -51,10 +48,8 @@ class AlunoController extends Controller
      */
     public function actionView($id)
     {
-
         return $this->render('view', [
             'model' => $this->findModel($id),
-
         ]);
     }
 

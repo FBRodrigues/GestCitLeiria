@@ -285,7 +285,7 @@ class SiteController extends Controller
 
                 return $this->refresh();
             } else {
-                Yii::$app->session->setFlash('error', 'Email não enviado.');
+                Yii::$app->session->setFlash('error', 'Email não enviado!');
             }
 
 
@@ -298,11 +298,6 @@ class SiteController extends Controller
 
         }
 
-    public function deleteAction($valor)
-    {
-
-
-    }
 
 
 }

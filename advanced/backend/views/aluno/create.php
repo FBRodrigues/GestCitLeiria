@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\Alunoa */
+/* @var $model backend\models\Aluno */
 
 $this->title = 'Criar Sócio';
 $this->params['breadcrumbs'][] = ['label' => 'Alunos', 'url' => ['index']];

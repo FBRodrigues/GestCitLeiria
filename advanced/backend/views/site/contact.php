@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
            // }
             ?>
                 <?= $form->field($model,'assunto')?>
-                <?= $form->field($model, 'emails_selecionados')->textarea(['rows' => 2])?>
+                <?= $form->field($model, 'emails_selecionados')->textarea(['rows'=>2])?>
                 <?= $form->field($model, 'mensagem')->textArea(['rows' => 6]) ?>
 
     <div class="form-group">
@@ -60,7 +60,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     }*/
     ?>-->
-    <?php
+  <!--  </*?php
     foreach($emails as $value){
         echo '<br>'. $value . '    '.  Html::a('Remover', ['delete','valor'=>$value], [
         'class' => 'btn btn-danger',
@@ -69,6 +69,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     }
-    ?>
+    ?>-->
 
 </div>

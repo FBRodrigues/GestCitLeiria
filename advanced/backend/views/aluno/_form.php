@@ -2,23 +2,15 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Aluno */
 /* @var $form yii\widgets\ActiveForm */
-/*cenas*/
 ?>
 
 <div class="aluno-form">
 
     <?php $form = ActiveForm::begin(); ?>
-
-    <?= $form->field($model, 'idAluno')->textInput() ?>
-
-    <!--<//?= $form->field($model, 'Pessoa_idPessoa')->textInput() ?>-->
-
-    <!--<//?= $form->field($model, 'Horario_idHorario')->textInput() ?>-->
 
     <?= $form->field($model, 'Escalao_idEscalao')->textInput() ?>
 
@@ -39,7 +31,6 @@ use yii\helpers\ArrayHelper;
     <?= $form->field($model, 'Sexo')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
-
         <?= Html::submitButton($model->isNewRecord ? 'Criar' : 'Atualizar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 

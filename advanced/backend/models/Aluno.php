@@ -8,8 +8,6 @@ use Yii;
  * This is the model class for table "aluno".
  *
  * @property integer $idAluno
- * @property integer $Pessoa_idPessoa
- * @property integer $Horario_idHorario
  * @property integer $Escalao_idEscalao
  * @property string $Nome
  * @property string $DataNascimento
@@ -20,9 +18,8 @@ use Yii;
  * @property string $EncarregadoEducacao
  * @property string $Sexo
  *
- * @property Pessoa $pessoaIdPessoa
- * @property Horario $horarioIdHorario
  * @property Escalao $escalaoIdEscalao
+ * @property Marcacao[] $marcacaos
  * @property Pagamento[] $pagamentos
  * @property Presenca[] $presencas
  */
@@ -42,8 +39,8 @@ class Aluno extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao'], 'required'],
-            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Idade'], 'integer'],
+            [['Escalao_idEscalao'], 'required'],
+            [['Escalao_idEscalao', 'Idade'], 'integer'],
             [['DataNascimento'], 'safe'],
             [['Nome', 'Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao'], 'string', 'max' => 45],
             [['Sexo'], 'string', 'max' => 1]
@@ -57,8 +54,6 @@ class Aluno extends \yii\db\ActiveRecord
     {
         return [
             'idAluno' => 'Id Aluno',
-            'Pessoa_idPessoa' => 'Pessoa Id Pessoa',
-            'Horario_idHorario' => 'Horario Id Horario',
             'Escalao_idEscalao' => 'Escalao Id Escalao',
             'Nome' => 'Nome',
             'DataNascimento' => 'Data Nascimento',
@@ -74,30 +69,17 @@ class Aluno extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getPessoaIdPessoa()
-    {
-        return $this->hasOne(Pessoa::className(), ['idPessoa' => 'Pessoa_idPessoa']);
-    }
-
-    public function getEmail(){
-
-        $emails= $this->hasOne(Aluno::className(),['idAluno'=>'Contato3_Email']);
-        return $emails;
-    }
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getHorarioIdHorario()
-    {
-        return $this->hasOne(Horario::className(), ['idHorario' => 'Horario_idHorario']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
     public function getEscalaoIdEscalao()
     {
         return $this->hasOne(Escalao::className(), ['idEscalao' => 'Escalao_idEscalao']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getMarcacaos()
+    {
+        return $this->hasMany(Marcacao::className(), ['Aluno_idAluno' => 'idAluno']);
     }
 
     /**
@@ -115,6 +97,4 @@ class Aluno extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Presenca::className(), ['Aluno_idAluno' => 'idAluno']);
     }
-
-
 }
