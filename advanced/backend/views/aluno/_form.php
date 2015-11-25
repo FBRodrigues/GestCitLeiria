@@ -40,7 +40,7 @@ use kartik\date\DatePicker;
 
     <?= $form->field($model, 'EncarregadoEducacao')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'Sexo')->dropDownList($valor =$model->getSexo() )?>
+    <?= $form->field($model, 'Sexo')->textarea(['maxlength'=> true])?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Criar' : 'Atualizar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
