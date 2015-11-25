@@ -1,17 +1,32 @@
 <?php
 
 /* @var $this yii\web\View */
+use yii\bootstrap\Alert;
 
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
 
-    <?php
+  <!--  </*?php
 
      foreach($datasSel as $value){
          if(date('Y-m-d')== date('Y-m-d',strtotime($value->DataNascimento))){
         //   echo '<script type="text/javascript">alert("O Associado do Clube '. $value->Nome . ' faz anos!");</script>';
+
+             Alert::begin([
+                 'options' => [
+                     'class' => 'alert-warning',
+                 ],
+             ]);
+
+             echo 'Say hello...';
+
+             Alert::end();
+
+
+
+
 
              echo '<script type="text/javascript">';
              echo  'alert("O Associado do Clube '. $value->Nome .' faz Anos!")';
@@ -20,7 +35,7 @@ $this->title = 'My Yii Application';
          }
     }
 
-    ?>
+    ?>-->
 
     <div class="jumbotron">
         <h1>Congratulations!</h1>

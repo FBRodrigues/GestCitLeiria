@@ -32,6 +32,9 @@ class PresencaController extends Controller
      * Lists all Presenca models.
      * @return mixed
      */
+
+
+
     public function actionIndex()
     {
         $searchModel = new PresencaSearch();
@@ -51,7 +54,8 @@ class PresencaController extends Controller
      */
     public function actionView($idAula)
     {
-        $aula = Aula::findOne($idAula);
+
+          $aula = Aula::findOne($idAula);
 
         //$listaAlunos = Yii::$app->request->post('aulas');
         $listaAlunos = $aula->alunos;
@@ -61,15 +65,16 @@ class PresencaController extends Controller
 
       //  return \yii\helpers\Json::encode([$aula,$listaAlunos]);
         //$presencas = $aula->presencas;
-/*        $listaAlunos = $this->getAlunosPorIDPresenca($idGetPresenca); */
+        //$listaAlunos = $this->getAlunosPorIDPresenca($idGetPresenca);
 
-        $variavel = 'Qualquer coisa';
+        //$variavel = 'Qualquer coisa';
       return $this->render('view', [
           'listaAlunos' => $listaAlunos,
           'listaPresencas' => $listaPresencas,
           'model' => $this->findModel($idAula , $idAula),
           //'idGetPresenca' => $idGetPresenca,
         ]);
+
 
         //return \yii\helpers\Json::encode([$aula, $listaAlunos]);
     }
@@ -79,6 +84,13 @@ class PresencaController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
+
+
+
+
+
+
+
     public function actionCreate()
     {
         $model = new Presenca();

@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        'brandLabel' => 'CITL',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -38,16 +38,16 @@ AppAsset::register($this);
         ['label' => 'Home', 'url' => ['/site/index']],
         ['label' => 'Aluno',
             'url'=>['aluno/index'],
-            'options'=>['class'=>'dropdown'],
-            'template' => '<a href="{url}" class="href_class">{label}</a>',
-            'items' => [
+           // 'options'=>['class'=>'dropdown'],
+            //'template' => '<a href="{url}" class="href_class">{label}</a>',
+         /*   'items' => [
                 ['label' => 'Enviar Email Pagamentos', 'url' => ['site/pagamentos']],
                 ['label' => 'Enviar Email Assunto Formal', 'url' => ['site/init']],
                 ['label' => 'Aluno', 'url'=>['aluno/index']],
-            ]
+            ]*/
 
         ],
-        'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
+        //'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
 
     ];
     if (Yii::$app->user->isGuest) {

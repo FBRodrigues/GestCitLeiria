@@ -17,17 +17,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'idAluno') ?>
 
-    <?= $form->field($model, 'Pessoa_idPessoa') ?>
-
-    <?= $form->field($model, 'Horario_idHorario') ?>
-
     <?= $form->field($model, 'Escalao_idEscalao') ?>
 
-    <?= $form->field($model, 'Nome')?>
+    <?= $form->field($model, 'Nome') ?>
 
-    <?php // echo $form->field($model, 'DataNascimento') ?>
+    <?= $form->field($model, 'DataNascimento') ?>
 
-    <?php // echo $form->field($model, 'Idade') ?>
+    <?= $form->field($model, 'Idade') ?>
 
     <?php // echo $form->field($model, 'Contato1') ?>
 
@@ -37,11 +33,11 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'EncarregadoEducacao') ?>
 
-    <?php  echo $form->field($model, 'Sexo') ?>
+    <?php // echo $form->field($model, 'Sexo') ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
+        <?= Html::submitButton('Procurar', ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton('Reiniciar', ['class' => 'btn btn-default']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

@@ -39,7 +39,7 @@ class SiteController extends Controller
 
                     ],
                     [
-                        'actions' => ['logout', 'index', 'contact', 'init','pagamentos'],
+                        'actions' => ['logout', 'index', 'contact', 'init','delete'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -81,16 +81,11 @@ class SiteController extends Controller
         $datasSel = array();
         $datasSel = $datasBD->all();
 
-      //  return \yii\helpers\Json::encode($datasSel);
-        return $this->render('index',['datasSel' => $datasSel]);
+        //  return \yii\helpers\Json::encode($datasSel);
+        return $this->render('index',
+            ['datasSel' => $datasSel]);
     }
 
-  /*  public function getDataNascimento ($dataNascimento){
-        $date = Aluno::find()->select('DataNascimento')->all();
-        $date = strtotime(date("Y-m-d", strtotime($date)));
-        $date = date("Y-m-d", $date);
-        return \yii\helpers\Json::encode($date);
-    }*/
     public function actionLogin()
     {
         if (!\Yii::$app->user->isGuest) {
@@ -120,150 +115,138 @@ class SiteController extends Controller
     public function actionInit()
     {
         $emails = (array)Yii::$app->request->post('selection');
+        $action = Yii::$app->request->post('action');
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      /*  switch($action){
+            case 'pPag':
+                break;
+            case 'ePer':
+                break;
+            default :
+                break;
+        }*/
 
-            if (isset($_POST['paga'])) {
-                // btnPaga
-                if ((empty($emails))) {
+        if ($action == 'pPag') {
+            if ((empty($emails))) {
 
-                    $model = new Aluno();
-                    $searchModel = new \backend\models\AlunoSearch();
-                    $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-                    Yii::$app->session->setFlash('error', 'Não tem nenhum email selecionado!');
-                    return $this->render('..\aluno\index',
-                        ['model' => $model,
-                            'searchModel' => $searchModel,
-                            'dataProvider' => $dataProvider
-                        ]);
-
-                    $this->refresh();
-
-                } else {
-
-                    $model = new ContactForm();
-
-
-                    //Vai buscar o proximo mês
-                    date_default_timezone_set("Europe/Lisbon");
-                    $date = date("Y-m-d");
-                    $date = strtotime(date("Y-m-d", strtotime($date)) . " +1 month");
-                    $date = date("M", $date);
-                    // vai buscar a data Atual
-                    $date1 = date("Y-m-d ");
-                    //traduz o mes de Ing para Por
-                    $mes = $this->traduMes($date);
-
-
-                    $model->select = implode(',', $emails);
-                    $model->body = "Caro aluno, se ainda nao efectuou o pagamento da mensalidade tem ate o dia 8 do próximo mês de " . $mes . " para efectua-lo. Cumprimentos, \n\t\t\t"
-
-                        . Yii::$app->user->identity->username .  ",\t" . $date1  ;
-                    $model->subject = "Pagamentos";
-                    $model->name = "cenas";
-                    return $this->render('contact', [
-                        'model' => $model,
-
+                $model = new Aluno();
+                $searchModel = new \backend\models\AlunoSearch();
+                $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+                Yii::$app->session->setFlash('error', 'Não tem nenhum email selecionado!');
+                return $this->render('..\aluno\index',
+                    ['model' => $model,
+                        'searchModel' => $searchModel,
+                        'dataProvider' => $dataProvider
                     ]);
-                }
+
+                $this->refresh();
 
             } else {
-                //botão formal
-                if ((empty($emails))) {
-
-                    $model = new Aluno();
-                    $searchModel = new \backend\models\AlunoSearch();
-                    $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-                    Yii::$app->session->setFlash('error', 'Não tem nenhum email selecionado!');
-                    return $this->render('..\aluno\index',
-                        ['model' => $model,
-                            'searchModel' => $searchModel,
-                            'dataProvider' => $dataProvider
-                        ]);
-
-                    $this->refresh();
-
-
-                } else {
-
-                    $model = new ContactForm();
-                    $model->select = implode(',', $emails);
-
-                    return $this->render('contact', [
-                        'model' => $model,
-
-                    ]);
-                }
-
+                $model = new ContactForm();
+                //Vai buscar o proximo mês
+                date_default_timezone_set("Europe/Lisbon");
+                $date = date("Y-m-d");
+                $date = strtotime(date("Y-m-d", strtotime($date)) . " +1 month");
+                $date = date("M", $date);
+                // vai buscar a data Atual
+                $date1 = date("Y-m-d ");
+                //traduz o mes de Ing para Por
+                $mes = $this->traduMes($date);
+                $model->emails_selecionados = implode(',', $emails);
+                $model->mensagem = "Caro aluno, se ainda nao efectuou o pagamento da mensalidade tem ate o dia 8 do próximo mês de " . $mes . " para efectua-lo. Cumprimentos, \n\t\t\t"
+                 . Yii::$app->user->identity->username . ", " . $date1;
+                $model->assunto = "Pagamentos";
+                $model->name = "cenas";
+                return $this->render('contact', [
+                    'model' => $model,
+                    'emails'=> $emails,
+           ]);
             }
+
+        } else if($action == 'ePer') {
+            //botão formal
+            if ((empty($emails))) {
+
+                $model = new Aluno();
+                $searchModel = new \backend\models\AlunoSearch();
+                $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+                Yii::$app->session->setFlash('error', 'Não tem nenhum email selecionado!');
+                return $this->render('..\aluno\index',
+                    ['model' => $model,
+                        'searchModel' => $searchModel,
+                        'dataProvider' => $dataProvider
+                    ]);
+            $this->refresh();
+
+
+            } else {
+
+                $model = new ContactForm();
+                $model->emails_selecionados = implode(',', $emails);
+                return $this->render('contact', [
+                    'model' => $model,
+                    'emails'=> $emails,
+
+                ]);
+            }
+        }else {
+            $model = new Aluno();
+            $searchModel = new \backend\models\AlunoSearch();
+            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+            Yii::$app->session->setFlash('error', 'Escolha uma opção!');
+            return $this->render('..\aluno\index',
+                ['model' => $model,
+                    'searchModel' => $searchModel,
+                    'dataProvider' => $dataProvider
+                ]);
+
+            $this->refresh();
+
         }
     }
-
-        public function  traduMes($mes){
+    public function  traduMes($mes){
         switch($mes){
             case "Jan":
                 $mes = "Janeiro";
+                break;
             case "Feb":
                 $mes = "Fevereiro";
+                break;
             case "Mar":
                 $mes = "Março";
+                break;
             case "Apr":
                 $mes = "Abril";
+                break;
             case "May":
                 $mes = "Maio";
+                break;
             case "Jun":
                 $mes = "Junho";
+                break;
             case "Jul":
                 $mes = "Julho";
+                break;
             case "Aug":
                 $mes = "Agosto";
+                break;
             case "Sep":
                 $mes = "Setembro";
+                break;
             case "Oct":
                 $mes = "Outubro";
+                break;
             case "Nov":
                 $mes ="Novembro";
+                break;
             case  "Dec":
                 $mes = "Dezembro";
+                break;
         }
         return $mes;
     }
 
 
-
-
-    public function actionPagamentos()
-    {
-
-       /*$emails = (array)Yii::$app->request->post('selection');
-        $model = new ContactForm();
-        $model->body = "paga o que deves Já";
-        $emailsBD = Aluno::find()->select('Contato3_Email');
-        $emailsSel = array();
-        //if(empty($emailsSel)){
-
-        //}
-        $emailsSel = $emailsBD->all();
-      //  $model->select = implode(",",$emailsSel);
-      //  foreach($emailsSel as $value){
-
-        //}
-
-      //  foreach ($emailsBD->all() as $user) {
-            // fazer o sting builder das variaveis
-            //$model->select = explode(',',$emails);
-          //  $str = implode(",", $emails);
-            //   $str =substr($user,15);
-         //   return \yii\helpers\Json::encode($emailsSel);
-
-        //}
-        return $this->render('contact', [
-            'model' => $model,
-            'emailsSel' => $emailsSel
-        ]);*/
-    }
 
     public function actionContact()
     {
@@ -276,14 +259,14 @@ class SiteController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
 
-            $email_array = explode(",",$model->select);
+            $email_array = explode(",",$model->emails_selecionados);
             $messages = Yii::$app->mailer->compose()
 
 
                 ->setTo($email_array)
                 ->setFrom(array(Yii::$app->params['adminEmail']=>'CITL Leiria'))
-                ->setSubject($model->subject)
-                ->setTextBody($model->body)
+                ->setSubject($model->assunto)
+                ->setTextBody($model->mensagem)
 
                 ;
             $messages->toString();
@@ -302,7 +285,7 @@ class SiteController extends Controller
 
                 return $this->refresh();
             } else {
-                Yii::$app->session->setFlash('error', 'Email não enviado.');
+                Yii::$app->session->setFlash('error', 'Email não enviado!');
             }
 
 
@@ -314,6 +297,7 @@ class SiteController extends Controller
               }
 
         }
+
 
 
 }
