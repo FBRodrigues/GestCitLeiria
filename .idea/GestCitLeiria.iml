@@ -20,6 +20,9 @@
       <excludeFolder url="file://$MODULE_DIR$/advanced/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/advanced/vendor/ezyang/htmlpurifier" />
       <excludeFolder url="file://$MODULE_DIR$/advanced/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-krajee-base" />
+      <excludeFolder url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-datepicker" />
+      <excludeFolder url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-datetimepicker" />
       <excludeFolder url="file://$MODULE_DIR$/advanced/vendor/phpdocumentor/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/advanced/vendor/phpspec/php-diff" />
       <excludeFolder url="file://$MODULE_DIR$/advanced/vendor/phpspec/prophecy" />
@@ -70,6 +73,9 @@
           <root url="file://$MODULE_DIR$/advanced/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/advanced/vendor/ezyang/htmlpurifier" />
           <root url="file://$MODULE_DIR$/advanced/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-krajee-base" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-datepicker" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-datetimepicker" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpspec/prophecy" />
@@ -116,6 +122,9 @@
           <root url="file://$MODULE_DIR$/advanced/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/advanced/vendor/ezyang/htmlpurifier" />
           <root url="file://$MODULE_DIR$/advanced/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-krajee-base" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-datepicker" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-datetimepicker" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpspec/prophecy" />
