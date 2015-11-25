@@ -78,6 +78,7 @@ class PresencaSearch extends Presenca
         return $presencas;
     }
 
+    /*
     public function procuraAlunosPorIDPesenca($idPresenca)
     {
         $presenca = Presenca::findOne($idPresenca);
@@ -86,6 +87,7 @@ class PresencaSearch extends Presenca
 
         return $alunos;
     }
+    */
 
 
 }

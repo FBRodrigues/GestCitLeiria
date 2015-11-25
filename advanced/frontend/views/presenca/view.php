@@ -40,12 +40,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
         //$nomesAlunos = ArrayHelper::getColumn($listaAlunos, 'Nome');
 
+    /*
         foreach($listaAlunos as $aluno){
             echo $aluno->idAluno.'__'.$aluno->Nome.'</br>';
             echo $form->field($model, 'Presente')->checkbox(['label'=>$aluno->Nome,'checked'=>'s','uncheck'=>'n','value'=>'0']);
+        }*/
+
+        foreach($listaPresencas as $presenca){
+            echo 'idAluno: '.$presenca->Aluno_idAluno.'</br>Presente: '.$presenca->Presente.'</br>';
+            echo $form->field($model, 'Presente')->checkbox(['label'=>$presenca->Aluno_idAluno,'checked'=>'s','uncheck'=>'n', 'value'=>$presenca->Presente]);
+            var_dump(['value'=>$presenca->Presente]);
         }
 
-    var_dump($listaPresencas);
+    //var_dump($listaPresencas);
     /*foreach($listaPresencas as $presenca){
         echo $presenca->Presente.'</br>';
     }*/
