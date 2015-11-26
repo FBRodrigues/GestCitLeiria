@@ -116,7 +116,7 @@ class SiteController extends Controller
     {
         $emails = (array)Yii::$app->request->post('selection');
         $action = Yii::$app->request->post('action');
-
+        $model = new Aluno();
       /*  switch($action){
             case 'pPag':
                 break;
@@ -126,7 +126,10 @@ class SiteController extends Controller
                 break;
         }*/
 
+        //var_dump($emails);
+      //  return \yii\helpers\Json::encode($emails);
         if ($action == 'pPag') {
+
             if ((empty($emails))) {
 
                 $model = new Aluno();
