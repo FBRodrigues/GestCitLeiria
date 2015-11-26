@@ -11,7 +11,7 @@ use Yii;
  * @property integer $Pessoa_idPessoa
  * @property integer $Horario_idHorario
  * @property integer $Escalao_idEscalao
- * @property string $NomeAluno
+ * @property string $Nome
  * @property string $DataNascimento
  * @property integer $Idade
  * @property string $Sexo
@@ -38,10 +38,10 @@ class Aluno extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'NomeAluno', 'DataNascimento', 'Idade', 'Sexo'], 'required'],
+            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Nome', 'DataNascimento', 'Idade', 'Sexo'], 'required'],
             [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Idade'], 'integer'],
             [['DataNascimento'], 'safe'],
-            [['NomeAluno'], 'string', 'max' => 20],
+            [['Nome'], 'string', 'max' => 20],
             [['Sexo'], 'string', 'max' => 1]
         ];
     }
@@ -56,7 +56,7 @@ class Aluno extends \yii\db\ActiveRecord
             'Pessoa_idPessoa' => 'Pessoa Id Pessoa',
             'Horario_idHorario' => 'Horario Id Horario',
             'Escalao_idEscalao' => 'Escalao Id Escalao',
-            'NomeAluno' => 'Nome Aluno',
+            'Nome' => 'Nome',
             'DataNascimento' => 'Data Nascimento',
             'Idade' => 'Idade',
             'Sexo' => 'Sexo',

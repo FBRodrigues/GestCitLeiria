@@ -163,6 +163,14 @@ class PresencaController extends Controller
         return $presencas;
     }
 
+    public static function PresenteOuNao($presente){
+        if($presente == 1){
+            return true;
+        } else{
+            return false;
+        }
+    }
+
     /*
     public function getPresent($idAluno, $listaAlunos){
         foreach($listaAlunos as $aluno){

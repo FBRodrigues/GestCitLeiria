@@ -19,7 +19,7 @@ class AlunoSearch extends Aluno
     {
         return [
             [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Idade'], 'integer'],
-            [['NomeAluno', 'DataNascimento', 'Sexo'], 'safe'],
+            [['Nome', 'DataNascimento', 'Sexo'], 'safe'],
         ];
     }
 
@@ -62,7 +62,7 @@ class AlunoSearch extends Aluno
             'Pessoa_idPessoa' => $this->Pessoa_idPessoa,
             'Horario_idHorario' => $this->Horario_idHorario,
             'Escalao_idEscalao' => $this->Escalao_idEscalao,
-            'NomeAluno' => $this->NomeAluno,
+            'Nome' => $this->Nome,
             'DataNascimento' => $this->DataNascimento,
             'Idade' => $this->Idade,
             'Contato1' => $this->Contato1,
@@ -72,7 +72,7 @@ class AlunoSearch extends Aluno
             'Sexo' => $this->Sexo,
         ]);
 
-        $query->andFilterWhere(['like', 'NomeAluno', $this->NomeAluno])
+        $query->andFilterWhere(['like', 'Nome', $this->Nome])
             ->andFilterWhere(['like', 'Sexo', $this->Sexo]);
 
         return $alunosDataProvider;

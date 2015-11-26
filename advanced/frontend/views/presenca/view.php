@@ -48,14 +48,18 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
         foreach($listaAlunos as $aluno){
-
-
-            echo $aluno->idAluno.'__'.$aluno->NomeAluno.'</br>';
+            echo $aluno->idAluno.'__'.$aluno->Nome.'</br>';
             //echo ['class'=>'yii\grid\CheckboxColumn'];
-            echo $form->field($model, 'Presente')->checkbox(['label'=>$aluno->NomeAluno,'checked'=>'0','uncheck'=>'1','value'=>'1']);
-
-
+            echo $form->field($model, 'Presente')->checkbox(['label'=>$aluno->Nome,'checked'=>'0','uncheck'=>'1','value'=>'1']);
         }
+
+    foreach($listaPresencas as $presenca){
+        echo 'idAluno: '.$presenca->Aluno_idAluno.' Presente: '.$presenca->Presente.'</br>';
+        $presente = \frontend\controllers\PresencaController::PresenteOuNao($presenca->Presente);
+        echo 'Presente:';
+        var_dump($presente);
+        echo $form->field($model, 'Presente')->checkbox(['label'=>$presenca->Aluno_idAluno,'checked'=>true,'uncheck'=>false,'value'=>$presente]);
+    }
 
 
 
