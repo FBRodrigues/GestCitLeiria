@@ -158,16 +158,37 @@ class PresencaController extends Controller
     //Invocar métodos do search
     public function getPresencasPorIDAula($idAula){
         $searchModel = new PresencaSearch();
-        $idPresenca = $searchModel->procurarPresencasPorIDAula($idAula);
+        $presencas = $searchModel->procurarPresencasPorIDAula($idAula);
 
-        return $idPresenca;
+        return $presencas;
     }
 
+    public static function PresenteOuNao($presente){
+        if($presente == 1){
+            return true;
+        } else{
+            return false;
+        }
+    }
+
+    /*
+    public function getPresent($idAluno, $listaAlunos){
+        foreach($listaAlunos as $aluno){
+            if($aluno->idAluno == $idAluno){
+                return $aluno->presente;
+            }
+        }
+        return null;
+    }
+    */
+
+    /*
     public function getAlunosPorIDPresenca($idPresenca){
         $searchModel = new PresencaSearch();
         $alunos = $searchModel->procuraAlunosPorIDPesenca($idPresenca);
 
         return $alunos;
     }
+    */
 
 }
