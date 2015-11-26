@@ -2,61 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d6f771-c57d-446d-adff-4b2be8b5a5e5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fae747d55.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fbe8bab77.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fbfbb9428.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fc0438af1.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fc06f0950.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fc07c755b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fc1f83232.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fc3321e1b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fc3c9a83f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fc3cd2f4c.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fc424c01c.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fc4323b4a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fc47d5013.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fc6e97b36.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fce59906d.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fcedd0b5c.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fcee7ea69.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fcf711030.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fcfad2d9b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fcfb1a4b9.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fd0fa3faf.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fd128c32a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/5655fd197cabf.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/565609aade76a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/565609bca49de.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/565609c1ee49b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/565609ed6300a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/565609fe1b197.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a005f3e4.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a083a2fe.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a0f6f39d.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a0f8d2c5.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a123515a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a125258b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a158cf30.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a15a9faf.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a1812fa3.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a1837873.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a1b0c30c.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a1b2aad4.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a1d734ed.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a1d8f5ee.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a1f9594a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a1fba609.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a223bf6b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a226b5cf.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a59928a3.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a62d70f4.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a68423e4.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a7115027.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/56560a71aed9f.data" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advanced/backend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/advanced/backend/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advanced/backend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/advanced/backend/runtime/debug/index.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advanced/backend/runtime/logs/app.log" afterPath="$PROJECT_DIR$/advanced/backend/runtime/logs/app.log" />
     </list>
     <ignored path="GestCitLeiria.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,8 +41,8 @@
       <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/advanced/backend/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2064632">
-              <caret line="134" column="37" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.45960504">
+              <caret line="142" column="23" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -563,7 +509,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448476662770</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Adicionado DatePicker e DropDown no Criar Aluno 2">
+      <created>1448561704796</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1448561704796</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -611,7 +563,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19894099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20196672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.22995462" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -685,7 +637,8 @@
     <MESSAGE value="Limpeza de interface" />
     <MESSAGE value="Limpeza de interface 2" />
     <MESSAGE value="Adicionado DatePicker e DropDown no Criar Aluno" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado DatePicker e DropDown no Criar Aluno" />
+    <MESSAGE value="Adicionado DatePicker e DropDown no Criar Aluno 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionado DatePicker e DropDown no Criar Aluno 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1261595">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8014842">
           <caret line="50" column="79" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,7 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,9 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5421903">
           <caret line="42" column="66" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,7 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.030520646">
           <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,14 +1009,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7701975">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/advanced/backend/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2064632">
-          <caret line="134" column="37" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.45960504">
+          <caret line="142" column="23" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
           <folding />
         </state>
       </provider>
