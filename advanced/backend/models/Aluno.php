@@ -3,6 +3,7 @@
 namespace backend\models;
 
 use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "aluno".
@@ -96,5 +97,11 @@ class Aluno extends \yii\db\ActiveRecord
     public function getPresencas()
     {
         return $this->hasMany(Presenca::className(), ['Aluno_idAluno' => 'idAluno']);
+    }
+
+    public function getEscaloes()
+    {
+        $models = Escalao::find()->asArray()->all();
+        return ArrayHelper::map($models, 'idEscalao', 'Valor');
     }
 }

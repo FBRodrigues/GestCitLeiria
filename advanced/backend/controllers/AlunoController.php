@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use backend\models\Escalao;
 use Yii;
 use backend\models\Aluno;
 use backend\models\AlunoSearch;
@@ -62,11 +63,20 @@ class AlunoController extends Controller
     {
         $model = new Aluno();
 
+        //$escaloes = $model->getEscalaoIdEscalao();
+
+       // $escaloes = $this->getEscalao();
+
+        ///var_dump($escaloes);
+      //  return \yii\helpers\Json::encode($escaloes);
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->idAluno]);
         } else {
+
             return $this->render('create', [
                 'model' => $model,
+
             ]);
         }
     }
@@ -118,4 +128,5 @@ class AlunoController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
 }

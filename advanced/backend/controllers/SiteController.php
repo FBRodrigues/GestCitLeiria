@@ -181,13 +181,16 @@ class SiteController extends Controller
 
             } else {
 
-                $model = new ContactForm();
-                $model->emails_selecionados = implode(',', $emails);
-                return $this->render('contact', [
-                    'model' => $model,
-                    'emails'=> $emails,
 
-                ]);
+                    $model = new ContactForm();
+                    $model->emails_selecionados = implode(',', $emails);
+                    return $this->render('contact', [
+                        'model' => $model,
+                        'emails'=> $emails,
+
+                    ]);
+
+
             }
         }else {
             $model = new Aluno();
@@ -298,6 +301,16 @@ class SiteController extends Controller
 
         }
 
+    public function actionDelete($valor)
+    {
+
+        //$model = new ContactForm();
+       // if( var_dump($valor)==$model->emails_selecionados){
+         //a   $model->emails_selecionados->delete();
+         //   return $this->redirect(['contact']);
+        //}
+       // return $this->redirect(['index']);
+    }
 
 
 }

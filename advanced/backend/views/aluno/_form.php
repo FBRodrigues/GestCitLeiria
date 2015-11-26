@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\date\DatePicker;
+
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Aluno */
@@ -12,11 +14,21 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'Escalao_idEscalao')->textInput() ?>
+
+    <?= $form->field($model, 'Escalao_idEscalao')->dropDownList($model->getEscaloes())?>
 
     <?= $form->field($model, 'Nome')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'DataNascimento')->textInput() ?>
+    <?= $form->field($model, 'DataNascimento')->widget(DatePicker::className(),[
+        'name' => 'check_issue_date',
+        'options' => ['placeholder' => 'Selecione uma Data ...'],
+        'pluginOptions' => [
+            'format' => 'yyyy-mm-dd',
+            'todayHighlight' => true
+    ]
+    ]
+
+    ); ?>
 
     <?= $form->field($model, 'Idade')->textInput() ?>
 
@@ -28,7 +40,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'EncarregadoEducacao')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'Sexo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'Sexo')->textarea(['maxlength'=> true])?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Criar' : 'Atualizar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
