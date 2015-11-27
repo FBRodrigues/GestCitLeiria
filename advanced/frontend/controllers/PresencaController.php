@@ -166,8 +166,10 @@ class PresencaController extends Controller
     public static function PresenteOuNao($presente){
         if($presente == 1){
             return true;
-        } else{
+        } elseif($presente == 0){
             return false;
+        } else{
+            return -1;
         }
     }
 

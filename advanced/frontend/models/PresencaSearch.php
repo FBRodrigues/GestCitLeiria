@@ -56,7 +56,7 @@ class PresencaSearch extends Presenca
         $query->andFilterWhere([
             'idPresenca' => $this->idPresenca,
             'Aluno_idAluno' => $this->Aluno_idAluno,
-            'Aula_idAula' => $this->Aula_idAula,
+            'Aula_idAula' => Yii::$app->getRequest()->getQueryParam('idAula'),
             'Presente' => $this->Presente,
         ]);
 

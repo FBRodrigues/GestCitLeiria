@@ -53,13 +53,28 @@ $this->params['breadcrumbs'][] = $this->title;
             echo $form->field($model, 'Presente')->checkbox(['label'=>$aluno->Nome,'checked'=>'0','uncheck'=>'1','value'=>'1']);
         }
 
+    var_dump($listaPresencas);
+
+    /*
     foreach($listaPresencas as $presenca){
-        echo 'idAluno: '.$presenca->Aluno_idAluno.' Presente: '.$presenca->Presente.'</br>';
-        $presente = \frontend\controllers\PresencaController::PresenteOuNao($presenca->Presente);
-        echo 'Presente:';
+        echo 'idAluno: '.$presenca->Aluno_idAluno.'</br>Valor presente: '.$presenca->Presente.'</br>';
+        //$presente = \frontend\controllers\PresencaController::PresenteOuNao($presenca->Presente);
+        $presente = $presenca->Presente;
+        echo '----------------';
         var_dump($presente);
-        echo $form->field($model, 'Presente')->checkbox(['label'=>$presenca->Aluno_idAluno,'checked'=>true,'uncheck'=>false,'value'=>$presente]);
+        //echo 'check 1';
+        //echo $form->field($model, 'Presente')->checkbox(['value'=>$presente]);
+        echo (Html::activeCheckbox($model, 'Presente', [ 'value'=>$presente]));
+
+
+        //echo 'check 2';
+        //echo $form->field($model, 'Presente')->checkbox(['checked'=>true,'uncheck'=>false,'value'=>$presente])->label($presenca->Aluno_idAluno);
     }
+    */
+
+    $resultData = ['0'=>"Nome dele", '1'=>"teste", '2'=>"yftunj"];
+
+    echo ( Html::activeCheckboxList($model, 'Presente', $resultData ) );
 
 
 

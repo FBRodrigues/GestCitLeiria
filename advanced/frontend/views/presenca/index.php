@@ -9,6 +9,7 @@ use yii\grid\GridView;
 
 $this->title = 'Presencas';
 $this->params['breadcrumbs'][] = $this->title;
+$id = Yii::$app->getRequest()->getQueryParam('idAula');
 ?>
 <div class="presenca-index">
 
@@ -16,12 +17,21 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Presenca', ['create'], ['class' => 'btn btn-success']) ?>
+       <!-- <?=  Html::a('Create Presenca', ['create'], ['class' => 'btn btn-success']) ?> -->
     </p>
+
+    <?=
+        $id = Yii::$app->getRequest()->getQueryParam('idAula');
+    //echo $id;
+
+    //echo var_dump($searchModel);
+
+    ?>
+
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
+        //'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
