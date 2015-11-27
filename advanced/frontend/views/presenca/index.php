@@ -33,14 +33,15 @@ $id = Yii::$app->getRequest()->getQueryParam('idAula');
         'dataProvider' => $dataProvider,
         //'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            ['class' => 'yii\grid\CheckboxColumn'],
+            //['class' => 'yii\grid\SerialColumn'],
 
             'idPresenca',
             'Aluno_idAluno',
             'Aula_idAula',
             'Presente',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            //['class' => 'yii\grid\ActionColumn'],
         ],
 
 
@@ -49,7 +50,9 @@ $id = Yii::$app->getRequest()->getQueryParam('idAula');
     ]); ?>
 
 
-
+    <div class="form-group">
+        <?= Html::submitButton('Confirmar', ['class' => 'btn btn-primary']) ?>
+    </div>
 
 
 

@@ -48,9 +48,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
         foreach($listaAlunos as $aluno){
-            echo $aluno->idAluno.'__'.$aluno->Nome.'</br>';
+            echo $aluno->idAluno.'__'.$aluno->NomeAluno.'</br>';
             //echo ['class'=>'yii\grid\CheckboxColumn'];
-            echo $form->field($model, 'Presente')->checkbox(['label'=>$aluno->Nome,'checked'=>'0','uncheck'=>'1','value'=>'1']);
+            echo $form->field($model, 'Presente')->checkbox(['label'=>$aluno->NomeAluno,'checked'=>'0','uncheck'=>'1','value'=>'1']);
         }
 
     var_dump($listaPresencas);
