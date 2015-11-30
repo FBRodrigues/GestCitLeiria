@@ -52,7 +52,6 @@ class PresencaSearch extends Presenca
             // $query->where('0=1');
             return $dataProvider;
         }
-
         $query->andFilterWhere([
             'idPresenca' => $this->idPresenca,
             'Aluno_idAluno' => $this->Aluno_idAluno,

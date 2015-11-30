@@ -24,7 +24,8 @@ $id = Yii::$app->getRequest()->getQueryParam('idAula');
         $id = Yii::$app->getRequest()->getQueryParam('idAula');
     //echo $id;
 
-    //echo var_dump($searchModel);
+        //echo var_dump($listaAlunos);
+        //echo var_dump($listaPresencas)
 
     ?>
 
@@ -38,7 +39,7 @@ $id = Yii::$app->getRequest()->getQueryParam('idAula');
 
             'idPresenca',
             'Aluno_idAluno',
-            'Aula_idAula',
+            //'Aula_idAula',
             'Presente',
 
             //['class' => 'yii\grid\ActionColumn'],

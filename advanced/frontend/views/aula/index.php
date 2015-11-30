@@ -68,7 +68,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
          'rowOptions' => function($model, $key, $index, $grid) {
              //echo $model->idAula.'__';
-             return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/index').'&idAula="+(this.id)'];
+             return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view').'&idAula="+(this.id)'];
     }
 
 

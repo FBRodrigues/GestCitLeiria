@@ -40,7 +40,17 @@ class PresencaController extends Controller
         $searchModel = new PresencaSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+        //receber um idAula
+        $idAula = Yii::$app->getRequest()->getQueryParam('idAula');
+        $aula = Aula::findOne($idAula);
+
+        $listaAlunos = $aula->alunos;
+
+        $listaPresencas = $this->getPresencasPorIDAula($idAula);
+
         return $this->render('index', [
+            'listaAlunos' => $listaAlunos,
+            'listaPresencas' => $listaPresencas,
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
@@ -59,6 +69,7 @@ class PresencaController extends Controller
 
         //$listaAlunos = Yii::$app->request->post('aulas');
         $listaAlunos = $aula->alunos;
+        $idAula = Yii::$app->getRequest()->getQueryParam('idAula');
 
         $listaPresencas = $this->getPresencasPorIDAula($idAula);
         //vetor acociativo
@@ -70,8 +81,10 @@ class PresencaController extends Controller
         //$variavel = 'Qualquer coisa';
       return $this->render('view', [
           'listaAlunos' => $listaAlunos,
-          'listaPresencas' => $listaPresencas,
-          'model' => $this->findModel($idAula , $idAula),
+//          'listaPresencas' => $listaPresencas,
+//          'model' => $this->findModel($idAula , $idAula),
+            'alunosInscritos' => $aula->getAlunosInscritos($idAula),
+            'model' => $aula,
           //'idGetPresenca' => $idGetPresenca,
         ]);
 
