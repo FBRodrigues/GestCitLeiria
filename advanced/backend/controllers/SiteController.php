@@ -116,6 +116,7 @@ class SiteController extends Controller
     {
         $emails = (array)Yii::$app->request->post('selection');
         $action = Yii::$app->request->post('action');
+        $action1 = Yii::$app->request->post('action1');
         $model = new Aluno();
       /*  switch($action){
             case 'pPag':
@@ -128,7 +129,7 @@ class SiteController extends Controller
 
         //var_dump($emails);
       //  return \yii\helpers\Json::encode($emails);
-        if ($action == 'pPag') {
+        if ($action == 'pPag' || $action1 =='pPag') {
 
             if ((empty($emails))) {
 
@@ -166,7 +167,7 @@ class SiteController extends Controller
            ]);
             }
 
-        } else if($action == 'ePer') {
+        } else if($action == 'ePer' || $action1 == 'ePer') {
             //botão formal
             if ((empty($emails))) {
 

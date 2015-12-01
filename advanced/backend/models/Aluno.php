@@ -75,6 +75,11 @@ class Aluno extends \yii\db\ActiveRecord
         return $this->hasOne(Escalao::className(), ['idEscalao' => 'Escalao_idEscalao']);
     }
 
+    public function getNomeEscalao() {
+        return $this->escalaoIdEscalao->Valor;
+
+    }
+
     /**
      * @return \yii\db\ActiveQuery
      */

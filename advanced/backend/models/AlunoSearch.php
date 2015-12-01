@@ -43,9 +43,13 @@ class AlunoSearch extends Aluno
     {
         $query = Aluno::find();
 
+
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
+
+        $dataProvider->pagination->pageSize = 1000;
+
 
         $this->load($params);
 
@@ -57,7 +61,8 @@ class AlunoSearch extends Aluno
 
         $query->andFilterWhere([
             'idAluno' => $this->idAluno,
-            'Escalao_idEscalao' => $this->Escalao_idEscalao,
+            //'Escalao_idEscalao' => $this->Escalao_idEscalao,
+
             'DataNascimento' => $this->DataNascimento,
             'Idade' => $this->Idade,
         ]);

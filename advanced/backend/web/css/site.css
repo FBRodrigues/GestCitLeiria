@@ -93,3 +93,6 @@ a.desc:after {
 select.dropdown{
     font-style: italic;
 }
+.criarSo {
+    float: right;
+}

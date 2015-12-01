@@ -32,11 +32,11 @@ use kartik\date\DatePicker;
 
     <?= $form->field($model, 'Idade')->textInput() ?>
 
-    <?= $form->field($model, 'Contato1')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'Contato1')->textInput(['maxlength' => true])->label('Contato 1') ?>
 
-    <?= $form->field($model, 'Contato2')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'Contato2')->textInput(['maxlength' => true])->label('Contato 2') ?>
 
-    <?= $form->field($model, 'Contato3_Email')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'Contato3_Email')->textInput(['maxlength' => true])->label('Email') ?>
 
     <?= $form->field($model, 'EncarregadoEducacao')->textInput(['maxlength' => true]) ?>
 
