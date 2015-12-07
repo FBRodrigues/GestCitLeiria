@@ -25,6 +25,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Idade') ?>
 
+
     <?php // echo $form->field($model, 'Contato1') ?>
 
     <?php // echo $form->field($model, 'Contato2') ?>

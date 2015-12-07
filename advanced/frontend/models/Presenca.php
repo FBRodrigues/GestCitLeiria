@@ -32,7 +32,8 @@ class Presenca extends \yii\db\ActiveRecord
     {
         return [
             [['idPresenca', 'Aluno_idAluno', 'Aula_idAula'], 'required'],
-            [['idPresenca', 'Aluno_idAluno', 'Aula_idAula', 'Presente'], 'integer']
+            [['idPresenca', 'Aluno_idAluno', 'Aula_idAula'], 'integer'],
+            [['Estado'], 'string']
         ];
     }
 
@@ -45,7 +46,7 @@ class Presenca extends \yii\db\ActiveRecord
             'idPresenca' => 'Id Presenca',
             'Aluno_idAluno' => 'Aluno Id Aluno',
             'Aula_idAula' => 'Aula Id Aula',
-            'Presente' => 'Presente',
+            'Estado' => 'Estado',
         ];
     }
 
@@ -64,4 +65,21 @@ class Presenca extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Aula::className(), ['idAula' => 'Aula_idAula']);
     }
+
+
+    public function getNomes()
+    {
+        $models = Aluno::find()->asArray()->all();
+        return ArrayHelper::map($models, 'idAluno', 'NomeAluno');
+    }
+
+
+
+   /* public function atualizar()
+    {
+        $model = Aluno::findOne(idAluno);
+        $model->Presente = 'Presente';
+        $model->save();
+
+    }*/
 }

@@ -38,11 +38,13 @@ class Aluno extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Nome', 'DataNascimento', 'Idade', 'Sexo'], 'required'],
+            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'NomeAluno', 'DataNascimento', 'Idade', 'Sexo', 'Contato1'], 'required'],
             [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Idade'], 'integer'],
             [['DataNascimento'], 'safe'],
-            [['Nome'], 'string', 'max' => 20],
-            [['Sexo'], 'string', 'max' => 1]
+            [['NomeAluno'], 'string', 'max' => 20],
+            [['Sexo'], 'string', 'max' => 1],
+            [['Contato1'], 'string', 'max' => 45],
+
         ];
     }
 
@@ -56,10 +58,12 @@ class Aluno extends \yii\db\ActiveRecord
             'Pessoa_idPessoa' => 'Pessoa Id Pessoa',
             'Horario_idHorario' => 'Horario Id Horario',
             'Escalao_idEscalao' => 'Escalao Id Escalao',
-            'Nome' => 'Nome',
+            'NomeAluno' => 'NomeAluno',
             'DataNascimento' => 'Data Nascimento',
             'Idade' => 'Idade',
             'Sexo' => 'Sexo',
+            'Contato1' => 'Contato1',
+
         ];
     }
 

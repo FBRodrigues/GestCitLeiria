@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use kartik\date\DatePicker;
+use kartik\datetime\DateTimePicker;
 
 
 /* @var $this yii\web\View */
@@ -19,7 +19,7 @@ use kartik\date\DatePicker;
 
     <?= $form->field($model, 'Nome')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'DataNascimento')->widget(DatePicker::className(),[
+    <?= $form->field($model, 'DataNascimento')->widget(DateTimePicker::className(),[
         'name' => 'check_issue_date',
         'options' => ['placeholder' => 'Selecione uma Data ...'],
         'pluginOptions' => [

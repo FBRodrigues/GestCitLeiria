@@ -82,7 +82,7 @@ class PresencaController extends Controller
       return $this->render('view', [
           'listaAlunos' => $listaAlunos,
 //          'listaPresencas' => $listaPresencas,
-//          'model' => $this->findModel($idAula , $idAula),
+//            'aula' => $this->findModel($idAula , $idAula),
             'alunosInscritos' => $aula->getAlunosInscritos($idAula),
             'model' => $aula,
           //'idGetPresenca' => $idGetPresenca,
@@ -124,16 +124,27 @@ class PresencaController extends Controller
      * @param integer $Aula_idAula
      * @return mixed
      */
-    public function actionUpdate($idPresenca, $Aula_idAula)
+    public function actionUpdate($Aula_idAula)
     {
-        $model = $this->findModel($idPresenca, $Aula_idAula);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'idPresenca' => $model->idPresenca, 'Aula_idAula' => $model->Aula_idAula]);
+        $aula = Yii::$app->request->post('Aula');
+
+//        foreach($aula['presencas'] as $presenca){
+//
+//            $model = $this->findModel($presenca['idPresenca'],$Aula_idAula);
+//
+//            if ($model->load($presenca) && $model->save()) {
+//
+//            }
+//        }
+
+        $model = $this->findModel($aula['presencas']['idPresenca'], $Aula_idAula);
+
+        if ($model->load($aula['presencas']) && $model->save()) {
+            //return $this->redirect(['view', 'idPresenca' => $model->idPresenca, 'Aula_idAula' => $model->Aula_idAula]);
         } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+            var_dump($aula['presencas']);
+            var_dump($model->load($aula['presencas']));
         }
     }
 

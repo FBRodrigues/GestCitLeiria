@@ -6,7 +6,7 @@ use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\AlunoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-
+$escalao = null;
 $this->title = 'Sócios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -48,12 +48,19 @@ $this->params['breadcrumbs'][] = $this->title;
                ],*/
 
             'Nome',
-
-            ['label'=>'Escalao',
-              'attribute'=>'NomeEscalao',
+            [
+                'label'=>'Escalao',
+                'attribute'=>'Escalao_idEscalao',
+                'filter' => true
 
             ],
-                // 'DataNascimento',
+
+            [
+                'label'=>'Escalao',
+                'attribute'=>'Valor',
+
+            ],
+            // 'DataNascimento',
             //'Idade',
             ['label'=> ' Contato 1 ',
                 'attribute'=> 'Contato1',
@@ -73,10 +80,10 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
     ?>
 
+
     <?=Html::submitButton('Executar',['class' => 'btn btn-info','name'=>'formal']);?>
     <?=Html::dropDownList('action','',[','=>'Operação...',
         'ePer'=>'Enviar Email Personalizado','pPag'=>'Enviar Email Pagamentos'],['class'=>'dropdown'])?>
     <?=Html::endForm();?>
 
 </div>
-

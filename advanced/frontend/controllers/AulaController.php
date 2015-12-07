@@ -2,6 +2,7 @@
 
 namespace frontend\controllers;
 
+use frontend\models\Presenca;
 use Yii;
 use frontend\models\Aula;
 use frontend\models\AulaSearch;
@@ -52,13 +53,15 @@ class AulaController extends Controller
         $searchModel = new AlunoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $id);
 
-/*        $aula = Aula::findOne($id);
-        $dataProvider = $aula->alunos; */
+        $aula = Aula::findOne($id);
+        //$dataProvider = $aula->alunos; */
 
 
         return $this->render('view', [
             'model' => $this->findModel($id),
+            //'presencas' => Presenca::find()->where(['idAula' => $aula->idAula]),
             'dataProvider' => $dataProvider,
+            'alunosInscritos' => $aula->getAlunosInscritos($aula->idAula),
         ]);
     }
 
@@ -92,8 +95,19 @@ class AulaController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        var_dump(Yii::$app->request->post());
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $presencas = Yii::$app->request->post('Aula')['presencas'];
+
+            foreach($presencas as $index => $camposPresenca){
+                $presenca = Presenca::findOne($camposPresenca['idPresenca']);
+
+                $presenca->setAttributes($camposPresenca);//Não está a validar se os campos estão corretos
+                $presenca->save();
+            }
+
+
             return $this->redirect(['view', 'id' => $model->idAula]);
         } else {
             return $this->render('update', [

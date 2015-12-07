@@ -30,7 +30,16 @@ $this->params['breadcrumbs'][] = $this->title;
 
     //var_dump($alunosInscritos);
 
-    echo $form->field($model, 'alunosPresentes')->checkboxList($alunosInscritos);
+    //echo $form->field($model, 'alunosPresentes')->checkboxList($alunosInscritos);
+    //echo $form->field($model, 'alunosInscritos')->dropDownList($alunosInscritos);
+    //echo json_encode($alunosInscritos);
+    /*foreach($alunosInscritos as $alunoInscrito){
+        echo $form->field($model, 'Estado')->dropDownList(['0'=> 'Presente', '1'=> 'Ausente'])->label($alunoInscrito[0]." - ".$alunoInscrito[1]);
+    }*/
+
+    //echo $form->radioButtonList($model, 'campos', array('0'=>"Presente", '1'=>"Ausente"));
+
+
 
     echo Html::submitButton($model->isNewRecord ? 'Create' : 'Confirmar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
 

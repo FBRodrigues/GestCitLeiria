@@ -34,11 +34,11 @@ class Aula extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idAula', 'nome', 'horaInicio', 'horaFim', 'choveu'], 'required'],
+            [['idAula', 'Nome', 'HoraInicio', 'HoraFim', 'Estado'], 'required'],
             [['idAula'], 'integer'],
-            [['horaInicio', 'horaFim'], 'safe'],
-            [['nome'], 'string', 'max' => 10],
-            [['choveu'], 'string', 'max' => 1]
+            [['HoraInicio', 'HoraFim'], 'safe'],
+            [['Nome'], 'string', 'max' => 20],
+            [['Estado'], 'string', 'max' => 20]
         ];
     }
 
@@ -52,7 +52,7 @@ class Aula extends \yii\db\ActiveRecord
             'Nome' => 'Nome',
             'HoraInicio' => 'Hora Inicio',
             'HoraFim' => 'Hora Fim',
-            'Choveu' => 'Choveu',
+            'Estado' => 'Estado',
         ];
     }
 
@@ -84,17 +84,18 @@ class Aula extends \yii\db\ActiveRecord
             'Aula_idAula' => $idAula,
         ]);
 
-        $array = [];
+        $alunosInscritos = [];
         foreach($listaPresencas as $presenca){
-            $array[$presenca->Aluno_idAluno] = $presenca->alunoIdAluno->Nome;
+            $alunosInscritos[$presenca->idPresenca] = ['idAluno' => $presenca->alunoIdAluno->idAluno, 'nomeAluno' => $presenca->alunoIdAluno->NomeAluno, 'contatoAluno' => $presenca->alunoIdAluno->Contato1];
+            //$alunosInscritos[$presenca->Aluno_idAluno] = [$presenca->alunoIdAluno->NomeAluno, $presenca->alunoIdAluno->Contato1];
             // $v[] = $presenca->Aluno_idAluno;
         }
 
         //var_dump($alunosIncritos);
 
-        $alunosIncritos = $array;
+        //$alunosIncritos = $array;
 
-        return $alunosIncritos;
+        return $alunosInscritos;
 
         /*
         return [

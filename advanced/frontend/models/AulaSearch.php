@@ -18,7 +18,8 @@ class AulaSearch extends Aula
     {
         return [
             [['idAula'], 'integer'],
-            [['Nome', 'HoraInicio', 'HoraFim', 'Choveu'], 'safe'],
+            [['Estado'], 'string'],
+            [['Nome', 'HoraInicio', 'HoraFim'], 'safe'],
         ];
     }
 
@@ -59,10 +60,11 @@ class AulaSearch extends Aula
             'Nome' => $this->Nome,
             'HoraInicio' => $this->HoraInicio,
             'HoraFim' => $this->HoraFim,
-        ]);
+            'Estado' => $this->Estado]);
 
-        $query->andFilterWhere(['like', 'Nome', $this->Nome])
-            ->andFilterWhere(['like', 'Choveu', $this->Choveu]);
+        $query->andFilterWhere(['like', 'Nome', $this->Nome]);
+
+        $query->addOrderBy(['HoraInicio' => SORT_DESC]);
 
         return $dataProvider;
     }

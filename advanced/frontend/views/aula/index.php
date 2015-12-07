@@ -9,12 +9,14 @@ use frontend\controllers\PresencaController;
 /* @var $searchModel frontend\models\AulaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Aulas';
+
+
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="aula-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode("Bem vindo (nomeTreinador)") ?></h1>
+    <h3><?= Html::encode("Agenda") ?></h3>
     <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
@@ -34,15 +36,17 @@ $this->params['breadcrumbs'][] = $this->title;
             ),*/
 
         'columns' => [
-         //   ['class'=>'yii\grid\CheckboxColumn'],
+         //['class'=>'yii\grid\CheckboxColumn'],
+
 
             //['class' => 'yii\grid\SerialColumn'],
 
             //'idAula',
+            //'Choveu',
             'Nome',
             'HoraInicio',
             'HoraFim',
-            //'Choveu',
+
 
             //linha seguinte gera os 3 bot�es (ver, editar e apagar)
             //['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
@@ -68,7 +72,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
          'rowOptions' => function($model, $key, $index, $grid) {
              //echo $model->idAula.'__';
-             return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view').'&idAula="+(this.id)'];
+             return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)'];
     }
 
 

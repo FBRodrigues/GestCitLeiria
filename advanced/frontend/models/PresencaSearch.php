@@ -17,7 +17,9 @@ class PresencaSearch extends Presenca
     public function rules()
     {
         return [
-            [['idPresenca', 'Aluno_idAluno', 'Aula_idAula', 'Presente'], 'integer'],
+            [['idPresenca', 'Aluno_idAluno', 'Aula_idAula'], 'integer'],
+            [['Estado'], 'string'],
+
         ];
     }
 
@@ -56,7 +58,7 @@ class PresencaSearch extends Presenca
             'idPresenca' => $this->idPresenca,
             'Aluno_idAluno' => $this->Aluno_idAluno,
             'Aula_idAula' => Yii::$app->getRequest()->getQueryParam('idAula'),
-            'Presente' => $this->Presente,
+            'Estado' => $this->Estado,
         ]);
 
         return $dataProvider;
