@@ -9,6 +9,11 @@ use Yii;
  *
  * @property integer $idPagamento
  * @property integer $Aluno_idAluno
+ * @property integer $valor
+ * @property string $referencia
+ * @property string $data
+ * @property string $periodo
+ * @property integer $nAulas
  *
  * @property Aluno $alunoIdAluno
  */
@@ -29,7 +34,9 @@ class Pagamento extends \yii\db\ActiveRecord
     {
         return [
             [['Aluno_idAluno'], 'required'],
-            [['Aluno_idAluno'], 'integer']
+            [['Aluno_idAluno', 'valor', 'nAulas'], 'integer'],
+            [['data', 'periodo'], 'safe'],
+            [['referencia'], 'string', 'max' => 1000]
         ];
     }
 
@@ -41,6 +48,11 @@ class Pagamento extends \yii\db\ActiveRecord
         return [
             'idPagamento' => 'Id Pagamento',
             'Aluno_idAluno' => 'Aluno Id Aluno',
+            'valor' => 'Valor',
+            'referencia' => 'Referencia',
+            'data' => 'Data',
+            'periodo' => 'Periodo',
+            'nAulas' => 'N Aulas',
         ];
     }
 

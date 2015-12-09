@@ -14,6 +14,16 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Aluno_idAluno')->textInput() ?>
 
+    <?= $form->field($model, 'valor')->textInput() ?>
+
+    <?= $form->field($model, 'referencia')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'data')->textInput() ?>
+
+    <?= $form->field($model, 'periodo')->textInput() ?>
+
+    <?= $form->field($model, 'nAulas')->textInput() ?>
+
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
