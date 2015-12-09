@@ -43,10 +43,10 @@ class CategoriasSearch extends Categorias
     {
         $query = Categorias::find();
 
+
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
-
         $this->load($params);
 
         if (!$this->validate()) {
@@ -62,5 +62,7 @@ class CategoriasSearch extends Categorias
         $query->andFilterWhere(['like', 'Valor', $this->Valor]);
 
         return $dataProvider;
+       // var_dump($dataProvider);
+        //return \yii\helpers\Json::encode($dataProvider);
     }
 }
