@@ -44,7 +44,7 @@ class CategoriasSearch extends Categorias
         $query = Categorias::find();
 
         $dataProvider = new ActiveDataProvider([
-            'query' => $query,
+            'query ' => $query,
         ]);
 
         $this->load($params);
