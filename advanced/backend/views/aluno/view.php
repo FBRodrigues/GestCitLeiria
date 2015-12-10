@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model backend\models\Aluno */
 
 $this->title = $model->idAluno;
-$this->params['breadcrumbs'][] = ['label' => 'Sócios', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Alunos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="aluno-view">
@@ -30,7 +30,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'idAluno',
             'escalaoIdEscalao.Valor',
-            'Nome',
             'DataNascimento',
             //'Idade',
             'Contato1',
@@ -38,6 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'Contato3_Email:email',
             'EncarregadoEducacao',
             'Sexo',
+            'Nome',
         ],
     ]) ?>
 

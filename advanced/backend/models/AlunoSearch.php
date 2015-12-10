@@ -2,6 +2,7 @@
 
 namespace backend\models;
 
+
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
@@ -15,12 +16,13 @@ class AlunoSearch extends Aluno
     /**
      * @inheritdoc
      */
-    public $valor;
     public function rules()
     {
+
+
         return [
-            [['idAluno','Idade'], 'integer'],
-            [['Nome','Escalao_idEscalao', 'DataNascimento', 'Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Sexo','valor'], 'safe'],
+            [['idAluno',  'Idade'], 'integer'],
+            [['DataNascimento','Escalao_idEscalao', 'Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Sexo', 'Nome'], 'safe'],
         ];
     }
 
@@ -44,7 +46,6 @@ class AlunoSearch extends Aluno
     {
         $query = Aluno::find();
 
-
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
@@ -64,7 +65,7 @@ class AlunoSearch extends Aluno
 
         $query->andFilterWhere([
             'idAluno' => $this->idAluno,
-        'DataNascimento' => $this->DataNascimento,
+            'DataNascimento' => $this->DataNascimento,
             'Idade' => $this->Idade,
         ]);
 
@@ -79,13 +80,4 @@ class AlunoSearch extends Aluno
 
         return $dataProvider;
     }
-
-
-
-        /*
-         * The following line is additionally added for right aliasing
-         * of columns so filtering happen correctly in the self join
-         */
-
-
 }

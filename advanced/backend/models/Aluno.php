@@ -10,7 +10,6 @@ use yii\helpers\ArrayHelper;
  *
  * @property integer $idAluno
  * @property integer $Escalao_idEscalao
- * @property string $Nome
  * @property string $DataNascimento
  * @property integer $Idade
  * @property string $Contato1
@@ -18,8 +17,10 @@ use yii\helpers\ArrayHelper;
  * @property string $Contato3_Email
  * @property string $EncarregadoEducacao
  * @property string $Sexo
+ * @property string $Nome
  *
  * @property Escalao $escalaoIdEscalao
+ * @property Categorizacao[] $categorizacaos
  * @property Marcacao[] $marcacaos
  * @property Pagamento[] $pagamentos
  * @property Presenca[] $presencas
@@ -37,14 +38,15 @@ class Aluno extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+
     public function rules()
     {
         return [
             [['Escalao_idEscalao'], 'required'],
             [['Escalao_idEscalao', 'Idade'], 'integer'],
-            [['DataNascimento','Valor'], 'safe'],
-            [['Nome', 'Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao','Valor'], 'string', 'max' => 45],
-            [['Sexo'], 'string', 'max' => 1]
+            [['DataNascimento'], 'safe'],
+            [['Sexo'], 'string', 'max' => 1],
+            [['Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Nome'], 'string', 'max' => 45]
         ];
     }
 
@@ -56,9 +58,16 @@ class Aluno extends \yii\db\ActiveRecord
 
     }
 
+
+
+
+    /**
+     * @inheritdoc
+     */
     public function attributeLabels()
     {
         return [
+
             'Valor' => Yii::t('app','Escalao'),
             'idAluno' => 'Id Aluno',
             'Escalao_idEscalao'=> 'Id Escalao',
@@ -78,13 +87,16 @@ class Aluno extends \yii\db\ActiveRecord
      */
     public function getEscalaoIdEscalao()
     {
-
-       return $this->hasOne(Escalao::className(), ['idEscalao' => 'Escalao_idEscalao']);
-
+        return $this->hasOne(Escalao::className(), ['idEscalao' => 'Escalao_idEscalao']);
     }
 
-
-
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCategorizacaos()
+    {
+        return $this->hasMany(Categorizacao::className(), ['Aluno_idAluno' => 'idAluno']);
+    }
 
     /**
      * @return \yii\db\ActiveQuery
@@ -109,7 +121,6 @@ class Aluno extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Presenca::className(), ['Aluno_idAluno' => 'idAluno']);
     }
-
     public function getEscaloes()
     {
         $models = Escalao::find()->asArray()->all();
