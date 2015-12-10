@@ -42,26 +42,16 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 }],
 
-            //['class' => 'yii\grid\SerialColumn'],
-            /*['label'=> ' ID Aluno',
-              'attribute'=> 'idAluno',
-               ],*/
+
+
 
             'Nome',
             [
-                'label'=>'Escalao',
-                'attribute'=>'Escalao_idEscalao',
-                'filter' => true
-
+                'attribute' => 'Escalao_idEscalao',
+                'value' => 'escalaoIdEscalao.Valor',
+                'label' => 'Escalão',
             ],
 
-            [
-                'label'=>'Escalao',
-                'attribute'=>'Valor',
-
-            ],
-            // 'DataNascimento',
-            //'Idade',
             ['label'=> ' Contato 1 ',
                 'attribute'=> 'Contato1',
             ],
@@ -71,7 +61,6 @@ $this->params['breadcrumbs'][] = $this->title;
             ['label'=> 'Email',
                 'attribute'=> 'Contato3_Email',
             ],
-            // 'EncarregadoEducacao',
             'Sexo',
 
             ['class' => 'yii\grid\ActionColumn'],

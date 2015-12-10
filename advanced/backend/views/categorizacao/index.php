@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\CategorizacaoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Categorizacaos';
+$this->title = 'Pesquisa Avançada';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="categorizacao-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Categorizacao', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Adicionar Associaçao', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -25,9 +25,19 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'idCategorizacao',
+
             'Aluno_idAluno',
+           // [
+             //   'label' => 'Nome',
+               // 'attribute'=>'Nome'
+            //],
+
             'Categorias_idCategorias',
+            //[
+              //  'label' => 'Categoria',
+                //'attribute'=>'Valor'
+            //],
+
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

@@ -50,4 +50,6 @@ class Categorias extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Categorizacao::className(), ['Categorias_idCategorias' => 'idCategorias']);
     }
+
+
 }

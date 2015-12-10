@@ -3,6 +3,7 @@
 namespace backend\models;
 
 use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "categorizacao".
@@ -61,5 +62,17 @@ class Categorizacao extends \yii\db\ActiveRecord
     public function getCategoriasIdCategorias()
     {
         return $this->hasOne(Categorias::className(), ['idCategorias' => 'Categorias_idCategorias']);
+    }
+
+    public function getAlunos()
+    {
+        $models = Aluno::find()->asArray()->limit(1000)->all();
+        return ArrayHelper::map($models, 'idAluno', 'Nome');
+    }
+
+    public function getCategorias()
+    {
+        $models = Categorias::find()->asArray()->all();
+        return ArrayHelper::map($models, 'idCategorias', 'Valor');
     }
 }

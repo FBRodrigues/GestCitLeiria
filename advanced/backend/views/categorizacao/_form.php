@@ -11,10 +11,12 @@ use yii\widgets\ActiveForm;
 <div class="categorizacao-form">
 
     <?php $form = ActiveForm::begin(); ?>
+    <?php
+    var_dump($model->getAlunos())
+    ?>
+    <?= $form->field($model, 'Aluno_idAluno')->dropDownList($model->getAlunos())?>
 
-    <?= $form->field($model, 'Aluno_idAluno')->textInput() ?>
-
-    <?= $form->field($model, 'Categorias_idCategorias')->textInput() ?>
+    <?= $form->field($model, 'Categorias_idCategorias')->dropDownList($model->getCategorias())?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
