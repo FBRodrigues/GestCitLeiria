@@ -47,7 +47,11 @@ AppAsset::register($this);
             ]*/
 
         ],
-        ['label' => 'Categorias', 'url' => ['categorias/index'],],
+        ['label' => 'Categorias', 'items' => [
+            ['label' => 'Consultar Categorias', 'url' => ['categorias/index']],
+            ['label' => 'Criar Categorias', 'url' => ['categorias/create']],
+            ['label' => 'Associar com Sócio', 'url' => ['categorizacao/create']],
+        ]],
         ['label' => 'Pagamentos', 'url' => ['pagamento/index'],],
         //'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
 
