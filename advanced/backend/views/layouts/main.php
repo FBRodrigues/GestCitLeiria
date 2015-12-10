@@ -47,6 +47,8 @@ AppAsset::register($this);
             ]*/
 
         ],
+        ['label' => 'Categorias', 'url' => ['categorias/index'],],
+        ['label' => 'Pagamentos', 'url' => ['pagamento/index'],],
         //'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
 
     ];
