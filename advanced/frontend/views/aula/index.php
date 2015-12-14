@@ -12,16 +12,24 @@ use frontend\controllers\PresencaController;
 
 
 $this->params['breadcrumbs'][] = $this->title;
+$nomeUser = Yii::$app->user->identity->username;
+$idUser = Yii::$app->user->getId();
 ?>
 <div class="aula-index">
 
-    <h1><?= Html::encode("Bem vindo (nomeTreinador)") ?></h1>
+    <h1><?= Html::encode("Bem vindo ".$nomeUser) ?></h1>
+
     <h3><?= Html::encode("Agenda") ?></h3>
     <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <!-- <?= Html::a('Create Aula', ['create'], ['class' => 'btn btn-success']) ?> -->
-    </p>
+    <div class="botao-create">
+
+        <p>
+            <?= Html::a('Adicionar Aula', ['create'], ['class' => 'btn btn-success']) ?>
+        </p>
+
+
+    </div>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

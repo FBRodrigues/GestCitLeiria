@@ -14,13 +14,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'idAluno')->textInput() ?>
 
-    <?= $form->field($model, 'Pessoa_idPessoa')->textInput() ?>
+    <!-- <?= $form->field($model, 'Pessoa_idPessoa')->textInput() ?> -->
 
-    <?= $form->field($model, 'Horario_idHorario')->textInput() ?>
+    <!-- <?= $form->field($model, 'Horario_idHorario')->textInput() ?> -->
 
     <?= $form->field($model, 'Escalao_idEscalao')->textInput() ?>
 
-    <?= $form->field($model, 'NomeAluno')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'Nome')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'DataNascimento')->textInput() ?>
 

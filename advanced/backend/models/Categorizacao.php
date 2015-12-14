@@ -75,4 +75,12 @@ class Categorizacao extends \yii\db\ActiveRecord
         $models = Categorias::find()->asArray()->all();
         return ArrayHelper::map($models, 'idCategorias', 'Valor');
     }
+    public function getEscaloes(){
+        $models = Escalao::find()->asArray()->all();
+        return ArrayHelper::map($models, 'idEscalao', 'Valor');
+    }
+    public function getSexo(){
+        $model = Aluno::find()->asArray()->all();
+        return ArrayHelper::map($model,'idAluno','Sexo');
+    }
 }

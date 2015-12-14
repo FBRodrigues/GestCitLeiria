@@ -64,7 +64,7 @@ class AulaSearch extends Aula
 
         $query->andFilterWhere(['like', 'Nome', $this->Nome]);
 
-        $query->addOrderBy(['HoraInicio' => SORT_DESC]);
+        $query->addOrderBy(['HoraInicio' => SORT_ASC]);
 
         return $dataProvider;
     }

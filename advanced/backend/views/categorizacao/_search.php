@@ -15,15 +15,30 @@ use yii\widgets\ActiveForm;
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'idCategorizacao') ?>
+   <!-- <//?= $form->field($model, 'idCategorizacao') ?>-->
+    <?php
+    $dataProviderEsc= \backend\models\Escalao::find()->all();
+    $escaloes = [];
+        foreach($dataProviderEsc as $escalao){
+            $escaloes[$escalao->idEscalao]= $escalao->Valor;
+        }
 
-    <?= $form->field($model, 'Aluno_idAluno') ?>
 
-    <?= $form->field($model, 'Categorias_idCategorias') ?>
+    ?>
+    <?php
+    $dataProviderEsc= \backend\models\Categorias::find()->all();
+    $categorias = [];
+    foreach($dataProviderEsc as $cat){
+        $categorias[$cat->idCategorias]= $cat->Valor;
+    }
+  ?>
+    <?= $form->field($model,'Escaloes')->checkboxList($escaloes)->label('Escalões')?>
+    <?= $form->field($model, 'Aluno_idAluno')->dropDownList(['M'=>'M','F'=>'F'],['prompt'=>'Selecione uma Opção...'])->label('Sexo') ?>
+    <?= $form->field($model, 'Categorias_idCategorias')->checkboxList($categorias)->label('Categoria') ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
+        <?= Html::submitButton('Procurar', ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton('Reiniciar', ['class' => 'btn btn-default']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

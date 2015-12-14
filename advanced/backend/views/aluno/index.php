@@ -21,10 +21,12 @@ $this->params['breadcrumbs'][] = $this->title;
         </p>
     </div>
 
-    <div class="criarSo" >
+    <div class="pesquisaAvanc" >
+        <?=Html::beginForm(['aluno/view2'],'post' );?>
         <p>
-            <?= Html::a('Pesquisa Avançada', ['categorizacao/index'], ['class' => 'btn btn-success']) ?>
+            <?=Html::submitButton('Pesquisa Avançada',['class' => 'btn btn-info','name'=>'pesAva']);?>
         </p>
+        <?=Html::endForm();?>
     </div>
     <?=Html::beginForm(['site/init'],'post' );?>
 
@@ -38,35 +40,40 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
-
         'columns' => [
             ['class'=>'yii\grid\CheckboxColumn',
                 'checkboxOptions' => function($model, $key, $index, $widget) {
                     return ["value" => $model->Contato3_Email
                     ];
-
                 }],
-
-
-
-
-            'Nome',
+             'Nome',
             [
                 'attribute' => 'Escalao_idEscalao',
                 'value' => 'escalaoIdEscalao.Valor',
                 'label' => 'Escalão',
+                'format'=>'text'
             ],
 
-            ['label'=> ' Contato 1 ',
+            [
+                'label'=> ' Contato 1 ',
                 'attribute'=> 'Contato1',
             ],
-            ['label'=> ' Contato 2 ',
+            [
+                'label'=> ' Contato 2 ',
                 'attribute'=> 'Contato2',
             ],
-            ['label'=> 'Email',
+            [
+                'label'=> 'Email',
                 'attribute'=> 'Contato3_Email',
             ],
             'Sexo',
+            /*[
+                'class'=>'yii\grid\DataColumn',
+                'value'=>function($data){
+                    return $data->pagamentos[0]->idPagamento;
+                },
+
+            ],
            /* [
                 'attribute'=>'Categorias',
                 'value'=>'categorizacaos.idCategorias.Valor',

@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 use yii\grid\GridView;
 use yii\widgets\ActiveForm;
+use frontend\models\Aluno;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Aula */
 
@@ -13,6 +14,8 @@ $this->params['breadcrumbs'][] = ['label' => 'Aulas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="aula-view">
+
+
 
     <h3><?= Html::encode("Detalhe da aula") ?></h3>
 
@@ -36,26 +39,66 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php $form = ActiveForm::begin([
         'action' => \yii\helpers\Url::to(['aula/update','id' => $model->idAula])
+
     ]);
 
-    echo $form->field($model, 'Estado')->dropDownList(['0'=> 'Realizada', '1'=> 'Não realizada-Tempo', '2'=> 'Não realizada-FP', '3'=> 'Não realizada-FA']);
+    echo $form->field($model, 'Estado')->dropDownList(['0'=> 'Realizada', '1'=> 'Não realizada-Condições meteorológicas', '2'=> 'Não realizada-FP', '3'=> 'Não realizada-FA']);
 
     echo '<h3>'.Html::encode("Lista de inscritos").'</h3>';
 
     $index = 0;
-    foreach($model->presencas as $presenca){
-       echo $form->field($model, 'presencas['.$index.'][idPresenca]')->hiddenInput(['value' => $presenca->idPresenca])->label(false);
-       echo $form->field($model, 'presencas['.$index.'][Aluno_idAluno]')->hiddenInput(['value' => $presenca->alunoIdAluno->idAluno])->label(false);
-       echo $form->field($model, 'presencas['.$index.'][Aula_idAula]')->hiddenInput(['value' => $presenca->aulaIdAula->idAula])->label(false);
-       echo $form->field($model, 'presencas['.$index.'][Estado]')->dropDownList(['0'=> 'Presente', '1'=> 'Ausente', '2'=> 'Ausente-Doença', '3'=> 'Ausente-FP'])->label($presenca->alunoIdAluno->NomeAluno." - ".$presenca->alunoIdAluno->Contato1);
+    //var_dump($model->presencas);
+    if($model->presencas != null){
+        foreach($model->presencas as $presenca){
+            echo $form->field($model, 'presencas['.$index.'][idPresenca]')->hiddenInput(['value' => $presenca->idPresenca])->label(false);
+            echo $form->field($model, 'presencas['.$index.'][Aluno_idAluno]')->hiddenInput(['value' => $presenca->alunoIdAluno->idAluno])->label(false);
+            echo $form->field($model, 'presencas['.$index.'][Aula_idAula]')->hiddenInput(['value' => $presenca->aulaIdAula->idAula])->label(false);
 
-       $index++;
+
+            $cc;
+            $contato1 = $presenca->alunoIdAluno->Contato1;
+            $contato2 = $presenca->alunoIdAluno->Contato2;
+            $contato3 = $presenca->alunoIdAluno->Contato3_Email;
+
+            if($contato1 != ''){
+                $cc = $contato1;
+            }elseif($contato2 != ''){
+                $cc = $contato2;
+            }elseif($contato3 != ''){
+                $cc = $contato3;
+            }else{
+                $cc = 'Aluno não tem contato!';
+            }
+
+
+            echo $form->field($model, 'presencas['.$index.'][Estado]')->dropDownList(['0'=> 'Presente', '1'=> 'Ausente',
+                '2'=> 'Ausente-Doença', '3'=> 'Ausente-FP'])->label($presenca->alunoIdAluno->Nome." - ".$cc);
+
+            $index++;
+        }
+
+        echo Html::submitButton($model->isNewRecord ? 'Create' : 'Confirmar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+    } else {
+        echo "Esta aula não tem alunos";
     }
 
+
+
+    /*echo '<h3>'.Html::encode("Adicionar Aluno").'</h3>';
+
+    echo $form->field($model, 'presencas')->checkboxList($alunos, ['separator'=>'<br>','itemOptions' => ['checked' => true]])->label('Alunos existentes');
+
+
+
     echo Html::submitButton($model->isNewRecord ? 'Create' : 'Confirmar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']);
+*/
 
     ActiveForm::end();
     ?>
+
+
+
+
 
 
     <!-- <?= DetailView::widget([

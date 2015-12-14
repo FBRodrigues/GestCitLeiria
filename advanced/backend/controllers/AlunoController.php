@@ -21,7 +21,9 @@ class AlunoController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
+
                 ],
+
             ],
         ];
     }
@@ -32,13 +34,46 @@ class AlunoController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new AlunoSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+        $model = new Aluno();
+     //   $escolhCate = Yii::$app->request->post('selection');
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            $escolhCate = Yii::$app->request->post('selection');
+
+            if ($escolhCate == null) {
+
+            //   var_dump($escolhCate);
+                $model = new Aluno();
+                Yii::$app->session->setFlash('error', 'Escolha um Escalão!');
+                return $this->render('view2', [
+                    'model' => $model,
+
+                ]);
+
+              //  $this->refresh();
+            } else {
+
+              //   var_dump($escolhCate);
+
+                $searchModel = new AlunoSearch();
+                $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+
+                return $this->render('index', [
+                    'searchModel' => $searchModel,
+                    'dataProvider' => $dataProvider,
+                ]);
+
+            }
+        }else{
+
+            //var_dump($escolhCate);
+            return $this->render('view2',[
+                'model'=>$model,
+            ]);
+        }
     }
 
     /**
@@ -52,6 +87,15 @@ class AlunoController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
+
+    public function actionView2(){
+
+        $model = new Aluno();
+        return $this->render('view2', [
+            'model'=>$model
+        ]);
+    }
+
 
     /**
      * Creates a new Aluno model.

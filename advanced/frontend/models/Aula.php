@@ -34,8 +34,7 @@ class Aula extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idAula', 'Nome', 'HoraInicio', 'HoraFim', 'Estado'], 'required'],
-            [['idAula'], 'integer'],
+            [['Nome', 'HoraInicio', 'HoraFim'], 'required'],
             [['HoraInicio', 'HoraFim'], 'safe'],
             [['Nome'], 'string', 'max' => 20],
             [['Estado'], 'string', 'max' => 20]
@@ -52,7 +51,7 @@ class Aula extends \yii\db\ActiveRecord
             'Nome' => 'Nome',
             'HoraInicio' => 'Hora Inicio',
             'HoraFim' => 'Hora Fim',
-            'Estado' => 'Estado',
+            'Estado' => 'Estado'
         ];
     }
 
@@ -61,7 +60,13 @@ class Aula extends \yii\db\ActiveRecord
      */
     public function getPresencas()
     {
-        return $this->hasMany(Presenca::className(), ['Aula_idAula' => 'idAula']);
+        $presencas = $this->hasMany(Presenca::className(), ['Aula_idAula' => 'idAula']);
+        if($presencas == null){
+            return 0;
+        } else {
+            return $presencas;
+        }
+
     }
 
     /**
@@ -86,7 +91,7 @@ class Aula extends \yii\db\ActiveRecord
 
         $alunosInscritos = [];
         foreach($listaPresencas as $presenca){
-            $alunosInscritos[$presenca->idPresenca] = ['idAluno' => $presenca->alunoIdAluno->idAluno, 'nomeAluno' => $presenca->alunoIdAluno->NomeAluno, 'contatoAluno' => $presenca->alunoIdAluno->Contato1];
+            $alunosInscritos[$presenca->idPresenca] = ['idAluno' => $presenca->alunoIdAluno->idAluno, 'nomeAluno' => $presenca->alunoIdAluno->Nome, 'contatoAluno' => $presenca->alunoIdAluno->Contato1];
             //$alunosInscritos[$presenca->Aluno_idAluno] = [$presenca->alunoIdAluno->NomeAluno, $presenca->alunoIdAluno->Contato1];
             // $v[] = $presenca->Aluno_idAluno;
         }
@@ -127,4 +132,7 @@ class Aula extends \yii\db\ActiveRecord
 
         //return [0, 2];
     }
+
+
+
 }

@@ -34,6 +34,8 @@ class CategorizacaoController extends Controller
     {
         $searchModel = new CategorizacaoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $model = new Categorizacao();
+
 
         return $this->render('index', [
             'searchModel' => $searchModel,

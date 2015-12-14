@@ -27,6 +27,7 @@ use yii\helpers\ArrayHelper;
  */
 class Aluno extends \yii\db\ActiveRecord
 {
+
     /**
      * @inheritdoc
      */
@@ -49,17 +50,6 @@ class Aluno extends \yii\db\ActiveRecord
             [['Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Nome'], 'string', 'max' => 45]
         ];
     }
-
-    /**
-     * @inheritdoc
-     */
-    public function getValor() {
-        return $this->escalaoIdEscalao->Valor;
-
-    }
-
-
-
 
     /**
      * @inheritdoc
@@ -95,7 +85,7 @@ class Aluno extends \yii\db\ActiveRecord
      */
     public function getCategorizacaos()
     {
-        return $this->hasMany(Categorizacao::className(), ['Aluno_idAluno' => 'idAluno']);
+        return $this->hasMany(Categorizacao::className(), ['Aluno_idAluno' => 'idAluno'])->via('');
     }
 
     /**
@@ -125,5 +115,10 @@ class Aluno extends \yii\db\ActiveRecord
     {
         $models = Escalao::find()->asArray()->all();
         return ArrayHelper::map($models, 'idEscalao', 'Valor');
+    }
+
+    public function getCategorias(){
+        $models = Categorias::find()->asArray()->all();
+        return ArrayHelper::map($models,'idAluno','Valor');
     }
 }

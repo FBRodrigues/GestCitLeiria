@@ -2,7 +2,9 @@
 
 namespace backend\models;
 
+
 use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "pagamento".
@@ -46,7 +48,7 @@ class Pagamento extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idPagamento' => 'Id Pagamento',
+            'idPagamento' => 'ID Pagamento',
             'Aluno_idAluno' => 'Aluno Id Aluno',
             'valor' => 'Valor',
             'referencia' => 'Referencia',
@@ -62,5 +64,10 @@ class Pagamento extends \yii\db\ActiveRecord
     public function getAlunoIdAluno()
     {
         return $this->hasOne(Aluno::className(), ['idAluno' => 'Aluno_idAluno']);
+    }
+
+    public function getAlunos(){
+        $models= Aluno::find()->asArray()->all();
+        return ArrayHelper::map($models,'idAluno','Nome');
     }
 }

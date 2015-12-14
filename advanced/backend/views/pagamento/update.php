@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Pagamento */
 
-$this->title = 'Update Pagamento: ' . ' ' . $model->idPagamento;
+$this->title = 'Atualizar Pagamento: ' . ' ' . $model->idPagamento;
 $this->params['breadcrumbs'][] = ['label' => 'Pagamentos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->idPagamento, 'url' => ['view', 'id' => $model->idPagamento]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = 'Atualizar';
 ?>
 <div class="pagamento-update">
 

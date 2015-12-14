@@ -18,7 +18,8 @@ class CategorizacaoSearch extends Categorizacao
     public function rules()
     {
         return [
-            [['idCategorizacao', 'Aluno_idAluno', 'Categorias_idCategorias'], 'integer'],
+            [['idCategorizacao', 'Categorias_idCategorias'], 'integer'],
+            [['Aluno_idAluno'],'safe']
         ];
     }
 
@@ -45,6 +46,8 @@ class CategorizacaoSearch extends Categorizacao
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
+        $query->joinWith('categoriasIdCategorias');
+        $query->joinWith('alunoIdAluno');
 
         $this->load($params);
 
@@ -54,11 +57,12 @@ class CategorizacaoSearch extends Categorizacao
             return $dataProvider;
         }
 
-        $query->andFilterWhere([
-            'idCategorizacao' => $this->idCategorizacao,
-            'Aluno_idAluno' => $this->Aluno_idAluno,
-            'Categorias_idCategorias' => $this->Categorias_idCategorias,
+        $query->orFilterWhere([
+           // 'idCategorizacao' => $this->idCategorizacao,
+           // 'Aluno_idAluno' => $this->Aluno_idAluno,
+            'categorias.Valor' => $this->Categorias_idCategorias,
         ]);
+        $query->orFilterWhere(['like','aluno.Sexo',$this->Aluno_idAluno]);
 
         return $dataProvider;
     }

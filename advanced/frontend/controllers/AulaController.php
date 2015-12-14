@@ -5,8 +5,12 @@ namespace frontend\controllers;
 use frontend\models\Presenca;
 use Yii;
 use frontend\models\Aula;
+use frontend\models\Treinador;
+use frontend\models\Turma;
 use frontend\models\AulaSearch;
 use frontend\models\AlunoSearch;
+use frontend\models\Aluno;
+use yii\data\ArrayDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -37,9 +41,25 @@ class AulaController extends Controller
         $searchModel = new AulaSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+        $idUser = Yii::$app->user->getId();
+        $treinador = Treinador::find()->where(['Id_User' => $idUser])->one();
+
+        $aulas_turma = Turma::find()->where(['Treinador_idTreinador' => $treinador->idTreinador])->all();
+
+        $aulas = [];
+
+        foreach($aulas_turma as $index => $aula_turma){
+            $aula = Aula::findOne($aula_turma->Aula_idAula);
+            array_push($aulas, $aula);
+        }
+
+        $dataProvider = new ArrayDataProvider(['allModels' => $aulas]);
+      //$aulas = Aula::find()->where(['idAula' => $aulas_turma->Aula_idAula]);
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'aulas' => $aulas,
         ]);
     }
 
@@ -50,18 +70,27 @@ class AulaController extends Controller
      */
     public function actionView($id)
     {
-        $searchModel = new AlunoSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $id);
+        $searchModelAluno = new AlunoSearch();
+        $dataProvider = $searchModelAluno->search(Yii::$app->request->queryParams, $id);
+        $dataProviderAluno = Aluno::find()->all();
+
 
         $aula = Aula::findOne($id);
         //$dataProvider = $aula->alunos; */
 
+        $alunos = [];
+        foreach($dataProviderAluno as $aluno){
+            $alunos[$aluno->idAluno] = $aluno->Nome;
+        }
+
+        $array =  $aula->getAlunosInscritos($aula->idAula);
 
         return $this->render('view', [
             'model' => $this->findModel($id),
             //'presencas' => Presenca::find()->where(['idAula' => $aula->idAula]),
             'dataProvider' => $dataProvider,
-            'alunosInscritos' => $aula->getAlunosInscritos($aula->idAula),
+            'alunosInscritos' =>$array,
+            'alunos' => $alunos
         ]);
     }
 
@@ -77,13 +106,51 @@ class AulaController extends Controller
     {
         $model = new Aula();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idAula]);
+        $presencas = Yii::$app->request->post('Aula')['presencas'];
+
+        if($presencas != 0){
+            if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+
+                if($presencas == 0){
+                    echo 'Não selecionou nenhum aluno';
+                    return $this->render('create', [
+                        'model' => $model,
+                    ]);
+                } else {
+                    foreach($presencas as $index => $idAluno){
+                        $modelPresenca = new Presenca();
+
+                        $modelPresenca->Aluno_idAluno = $idAluno;
+                        $modelPresenca->Aula_idAula = $model->idAula;
+
+                        $modelPresenca->save();
+                    }
+                    $modelTurma = new Turma();
+                    $modelTurma->Aula_idAula = $model->idAula;
+
+                    $idUser = Yii::$app->user->getId();
+                    $idTreinador = $modelTurma->procurarTreinadorPorID($idUser);
+                    $idT = $idTreinador[0]['idTreinador'];
+
+                    $modelTurma->Treinador_idTreinador = $idT;
+                    $modelTurma->save();
+
+                }
+
+                return $this->redirect(['view', 'id' => $model->idAula]);
+            } else {
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
         } else {
             return $this->render('create', [
                 'model' => $model,
             ]);
         }
+
+
     }
 
     /**
@@ -95,25 +162,32 @@ class AulaController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        var_dump(Yii::$app->request->post());
+        //var_dump(Yii::$app->request->post());
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $presencas = Yii::$app->request->post('Aula')['presencas'];
+            //var_dump($presencas);
 
             foreach($presencas as $index => $camposPresenca){
                 $presenca = Presenca::findOne($camposPresenca['idPresenca']);
 
-                $presenca->setAttributes($camposPresenca);//Não está a validar se os campos estão corretos
-                $presenca->save();
-            }
+              $presenca->setAttributes($camposPresenca);
+               $presenca->save();
 
+           }
 
-            return $this->redirect(['view', 'id' => $model->idAula]);
+            Yii::$app->getSession()->setFlash('success', 'Alterações guardadas com sucesso!');
+
+//            return $this->redirect(['view', 'id' => $model->idAula]);
+            return $this->redirect(array('aula/index'));
+
         } else {
             return $this->render('update', [
                 'model' => $model,
             ]);
         }
+
+
     }
 
     /**

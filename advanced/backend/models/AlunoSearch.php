@@ -54,6 +54,7 @@ class AlunoSearch extends Aluno
 
         $query->joinWith(['escalaoIdEscalao']);
 
+
         $this->load($params);
 
         if (!$this->validate()) {
@@ -66,7 +67,7 @@ class AlunoSearch extends Aluno
         $query->andFilterWhere([
             'idAluno' => $this->idAluno,
             'DataNascimento' => $this->DataNascimento,
-            'Idade' => $this->Idade,
+            'Idade' => $this->Idade
         ]);
 
         $query->andFilterWhere(['like', 'Nome', $this->Nome])

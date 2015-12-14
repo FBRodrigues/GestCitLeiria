@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Pagamento */
 
-$this->title = 'Create Pagamento';
+$this->title = 'Criar Pagamento';
 $this->params['breadcrumbs'][] = ['label' => 'Pagamentos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

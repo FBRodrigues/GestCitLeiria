@@ -31,7 +31,7 @@ class Presenca extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idPresenca', 'Aluno_idAluno', 'Aula_idAula'], 'required'],
+            [['Aluno_idAluno', 'Aula_idAula'], 'required'],
             [['idPresenca', 'Aluno_idAluno', 'Aula_idAula'], 'integer'],
             [['Estado'], 'string']
         ];

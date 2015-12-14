@@ -31,13 +31,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'idAluno',
             'escalaoIdEscalao.Valor',
             'DataNascimento',
-            //'Idade',
             'Contato1',
             'Contato2',
             'Contato3_Email:email',
             'EncarregadoEducacao',
             'Sexo',
             'Nome',
+            'pagamentos.idPagamento'
         ],
     ]) ?>
 

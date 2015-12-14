@@ -12,20 +12,19 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'Aluno_idAluno')->textInput()->label('Aluno') ?>
+    <?= $form->field($model, 'Aluno_idAluno')->textInput()->dropDownList([$model->getAlunos()],['prompt'=>'Selecione uma opção...'])->label('Aluno') ?>
 
     <?= $form->field($model, 'valor')->textInput()->label('Valor do Pagamento') ?>
 
     <?= $form->field($model, 'referencia')->textInput(['maxlength' => true])->label('Referência') ?>
 
-    <?= $form->field($model, 'data')->textInput()->widget(\kartik\datetime\DateTimePicker::className(),[
-        'name' => 'check_issue_date',
-        'options' => ['placeholder' => 'Selecione uma Data ...'],
-        'pluginOptions' => [
-        'format' => 'yyyy-mm-dd',
-        'todayHighlight' => true
-            ]
-        ])->label('Data do Pagamento');
+    <?= $form->field($model, 'data')->textInput()->widget(
+        \kartik\datetime\DateTimePicker::className(),[
+            'name' => 'check_issue_date',
+            'options' => ['placeholder' => 'Selecione uma Data ...'],
+            'pluginOptions' => [
+            'format' => 'yyyy-mm-dd',
+            'todayHighlight' => true]])->label('Data do Pagamento');
     ?>
 
     <?= $form->field($model, 'periodo')->textInput()->label('Periodo do Pagamento') ?>

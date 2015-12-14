@@ -15,7 +15,7 @@ use kartik\datetime\DateTimePicker;
     <div class="aluno-form">
 
 
-        <?= $form->field($model, 'Escalao_idEscalao')->dropDownList($model->getEscaloes())?>
+        <?= $form->field($model, 'Escalao_idEscalao')->dropDownList([$model->getEscaloes(),],['prompt'=>'Selecione uma opção...'])?>
 
         <?= $form->field($model, 'Nome')->textInput(['maxlength' => true]) ?>
 
@@ -40,7 +40,7 @@ use kartik\datetime\DateTimePicker;
 
         <?= $form->field($model, 'EncarregadoEducacao')->textInput(['maxlength' => true]) ?>
 
-       <?= $form->field($model, 'Sexo')->dropDownList([ 'M' => 'M', 'F' => 'F', ], ['prompt' => '']) ?>
+       <?= $form->field($model, 'Sexo')->dropDownList([ 'M' => 'M', 'F' => 'F', ], ['prompt' => 'Selecione uma opção...']) ?>
 
         <div class="form-group">
             <?= Html::submitButton($model->isNewRecord ? 'Criar' : 'Atualizar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
