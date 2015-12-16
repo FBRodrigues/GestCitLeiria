@@ -88,7 +88,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     break;
            }
             $itemArray[$item] = $item;
-            $item= implode("&nbsp;,",$itemArray);
+            $item= implode("&nbsp;,&nbsp;",$itemArray);
             $escalao=$item;
         };
     }else {
