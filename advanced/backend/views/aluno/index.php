@@ -60,6 +60,46 @@ $this->params['breadcrumbs'][] = $this->title;
        $sexo = 'Não tem sexo selecionado';
    }
 
+   switch($item){
+       case "1":
+           $item = "Sub8";
+           break;
+       case "2":
+           $item = "Sub10";
+           break;
+       case "3":
+           $item = "Sub12";
+           break;
+       case "4":
+           $item = "Sub14";
+           break;
+       case "5":
+           $item = "Sub16";
+           break;
+       case "6":
+           $item = "Sub18";
+           break;
+       case "7":
+           $item = "Senior";
+           break;
+       case "8":
+           $item = "Vet+35";
+           break;
+       case "9":
+           $item = "Vet+45";
+           break;
+       case "10":
+           $item = "Vet+50";
+           break;
+       case "11":
+           $item = "Vet+55";
+           break;
+       case "12":
+           $item = "Vet+60";
+           break;
+
+
+   }
 
     echo 'Está a pesquisar com os Parametros : <br> Sexo : ' . $sexo . ' <br> Escalão(ões) : ' . $item  ?>
 </p>
