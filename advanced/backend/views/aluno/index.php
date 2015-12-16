@@ -88,7 +88,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     break;
            }
             $itemArray[$item] = $item;
-            $item= implode(",",$itemArray);
+            $item= implode("&nbsp;,",$itemArray);
             $value=$item;
         };
     }else {
