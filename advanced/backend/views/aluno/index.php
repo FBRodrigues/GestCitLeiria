@@ -47,21 +47,21 @@ $this->params['breadcrumbs'][] = $this->title;
 <p>
    <?php
     if($session['Escaloes']==null){
-     $item = "Nao tem nenhum Escalao selecionado";
+     $item = 'Indefenido';
     }else {
-
-        $item= implode(",",$session['Escaloes']);
+     $item= implode(",",$session['Escaloes']);
     };
       if($session['Sexo']=='M'){
        $sexo = 'Masculino';
    } else if($session['Sexo']=='F'){
         $sexo='Feminino';
    }else{
-       $sexo = 'Não tem sexo selecionado';
+       $sexo = 'Indefenido';
    }
 
 
-    echo 'Está a pesquisar com os Parametros : <br> Sexo : ' . $sexo . ' <br> Escalão(ões) : ' . $item  ?>
+    echo 'Parametros da Pesquisa Avançada : <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --> Sexo : ' . $sexo .
+        ' <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --> Escalão(ões) : ' . $item  ?>
 </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

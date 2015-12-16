@@ -37,13 +37,13 @@ use yii\widgets\ActiveForm;
         $categorias[$value->idCategorias] = $value->Valor;
     }
     ?>
-    <?= $form->field($model,'Escaloes')->checkboxList($esca,array('selection'=>'checked'))?>
-    <?= $form->field($model, 'Sexo')->dropDownList(['M'=>'M','F'=>'F'],['prompt'=>'Selecione uma opção'])->label('Sexo') ?>
-    <?= $form->field($model, 'idAluno')->checkboxList($categorias,['selection1'=>'checked'])->label('Categorias') ?>
+    <?= $form->field($model,'Escaloes')->checkboxList($esca,['selection'=>'checked'])?>
+    <?= $form->field($model, 'Sexo')->dropDownList(['M'=>'Masculino','F'=>'Feminino'],['prompt'=>'Selecione uma opção'])->label('Sexo') ?>
+    <?= $form->field($model, 'idAluno')->checkboxList($categorias,['selection1'=>'checked','separator'=>'<br>'])->label('Categorias') ?>
+
 
     <?=Html::submitButton('Pesquisa Avançada',['class' => 'btn btn-info','name'=>'pes']);?>
-
-
+    <?=Html::resetButton('Limpar Pesquisa', ['class' => 'btn btn-default']);?>
 
     </div>
     <?=Html::endForm();?>
