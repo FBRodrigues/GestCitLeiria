@@ -18,7 +18,6 @@ $this->params['breadcrumbs'][] = $this->title;
    $session['Sexo'] = Yii::$app->request->post('Aluno')['Sexo'];
    $session['Escaloes']=Yii::$app->request->post('Aluno')['Escaloes'];
 
-
    ?>
     <h1><?= Html::encode($this->title) ?></h1>
     <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -48,28 +47,10 @@ $this->params['breadcrumbs'][] = $this->title;
 <p>
    <?php
     if($session['Escaloes']==null){
-     $va = "Nao tem nenhum Escalao selecionado";
+     $item = "Nao tem nenhum Escalao selecionado";
     }else {
 
-        $va = implode(",",$session['Escaloes']);
-        $arrai = explode(",",$va);
-
-        foreach($arrai as $item){
-
-          //  var_dump($item);
-            if($item==0){
-                $no= "cenas";
-            }else if($item==1){
-                $no="Sub8";
-            }elseif($item==2){
-               $no="Sub10" ;
-            }
-        }
-
-     //   var_dump($arrai);
-      //  var_dump($no);
-
-
+        $item= implode(",",$session['Escaloes']);
     };
       if($session['Sexo']=='M'){
        $sexo = 'Masculino';
@@ -80,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
    }
 
 
-    echo 'Está a pesquisar com os Parametros : <br> Sexo : ' . $sexo . ' <br> Escalão(ões) : ' . $no = implode(",",$arrai); ?>
+    echo 'Está a pesquisar com os Parametros : <br> Sexo : ' . $sexo . ' <br> Escalão(ões) : ' . $item  ?>
 </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
