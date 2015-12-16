@@ -89,10 +89,10 @@ $this->params['breadcrumbs'][] = $this->title;
            }
             $itemArray[$item] = $item;
             $item= implode("&nbsp;,",$itemArray);
-            $value=$item;
+            $escalao=$item;
         };
     }else {
-       $value= 'Indefenido';
+        $escalao= 'Indefenido';
     }
 
    if($session['Sexo']=='M'){
@@ -102,9 +102,13 @@ $this->params['breadcrumbs'][] = $this->title;
    }else{
        $sexo = 'Indefenido';
    }
+   $categoria = 'Indefenido';
 
-    echo 'Parametros da Pesquisa Avançada : <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --> Sexo : ' . $sexo .
-        ' <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --> Escalão(ões) :  ' . $value . ' '  ?>
+    echo 'Parametros da Pesquisa Avançada :
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --> Sexo : ' . $sexo .
+        ' <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --> Escalão(ões) :  ' . $escalao .
+        ' <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --> Categoria(s) : ' .$categoria
+   ?>
 </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
