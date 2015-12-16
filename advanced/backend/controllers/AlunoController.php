@@ -5,6 +5,7 @@ namespace backend\controllers;
 use Yii;
 use backend\models\Aluno;
 use backend\models\AlunoSearch;
+use yii\db\Query;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -35,46 +36,21 @@ class AlunoController extends Controller
     public function actionIndex()
     {
 
-        $model = new Aluno();
-     //   $escolhCate = Yii::$app->request->post('selection');
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-
-            $escolhCate = Yii::$app->request->post('selection');
-
-            if ($escolhCate == null) {
-
-            //   var_dump($escolhCate);
-                $model = new Aluno();
-                Yii::$app->session->setFlash('error', 'Escolha um Escalão!');
-                return $this->render('view2', [
-                    'model' => $model,
-
-                ]);
-
-              //  $this->refresh();
-            } else {
-
-              //   var_dump($escolhCate);
-
-                $searchModel = new AlunoSearch();
-                $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $session = new Yii::$app->session;
+        $session->open();
+        $session['Sexo'] = Yii::$app->request->post('Aluno')['Sexo'];
+        $session['Escaloes']=Yii::$app->request->post('Aluno')['Escaloes'];
+        $searchModel = new AlunoSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
 
-                return $this->render('index', [
-                    'searchModel' => $searchModel,
-                    'dataProvider' => $dataProvider,
-                ]);
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
 
-            }
-        }else{
-
-            //var_dump($escolhCate);
-            return $this->render('view2',[
-                'model'=>$model,
-            ]);
-        }
     }
+
 
     /**
      * Displays a single Aluno model.
@@ -91,8 +67,15 @@ class AlunoController extends Controller
     public function actionView2(){
 
         $model = new Aluno();
+      //  $escolhCate = (array)Yii::$app->request->post('selection');
+
+       // var_dump($escolhCate);
+        //     //   return \yii\helpers\Json::encode($escolhCate);
+     //   $model->Escalao_idEscalao = $escolhCate;
+     //   var_dump( $model->Escalao_idEscalao);
         return $this->render('view2', [
-            'model'=>$model
+            'model'=>$model,
+
         ]);
     }
 

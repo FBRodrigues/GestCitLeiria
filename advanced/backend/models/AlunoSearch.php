@@ -7,6 +7,7 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use backend\models\Aluno;
+use yii\web\Session;
 
 /**
  * AlunoSearch represents the model behind the search form about `backend\models\Aluno`.
@@ -44,10 +45,33 @@ class AlunoSearch extends Aluno
      */
     public function search($params)
     {
-        $query = Aluno::find();
+        $session = new Session();
+        $session->open();
+        $value1 = $session['Sexo'];
+        $value2 = $session['Escaloes'];
+
+        if($value1=='' && $value2==''){
+            $query = Aluno::find();
+         }elseif($value1!='' && $value2=='') {
+            $query = Aluno::find()->where(['Sexo' => $value1]);
+
+        }elseif($value1 =='' && $value2 != '' ){
+
+            $query=Aluno::find()->where(['Escalao_idEscalao'=>$value2]);
+
+
+        }elseif($value1 !='' && $value2 !=''){
+
+
+            $query= Aluno::find();
+            $query->orWhere(['Sexo'=>$value1])
+                  ->orWhere(['Escalao_idEscalao'=>$value2]);
+
+        }
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+
         ]);
 
         $dataProvider->pagination->pageSize = 1000;

@@ -12,8 +12,16 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="aluno-index">
 
+   <?php
+   $session = new Yii::$app->session;
+   $session->open();
+   $session['Sexo'] = Yii::$app->request->post('Aluno')['Sexo'];
+   $session['Escaloes']=Yii::$app->request->post('Aluno')['Escaloes'];
+
+
+   ?>
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <div class="criarSo" >
         <p>
@@ -37,6 +45,43 @@ $this->params['breadcrumbs'][] = $this->title;
     <?=Html::dropDownList('action1','',[','=>'Operação...',
         'ePer'=>'Enviar Email Personalizado','pPag'=>'Enviar Email Pagamentos'],['class'=>'dropdown'])?>
 
+<p>
+   <?php
+    if($session['Escaloes']==null){
+     $va = "Nao tem nenhum Escalao selecionado";
+    }else {
+
+        $va = implode(",",$session['Escaloes']);
+        $arrai = explode(",",$va);
+
+        foreach($arrai as $item){
+
+          //  var_dump($item);
+            if($item==0){
+                $no= "cenas";
+            }else if($item==1){
+                $no="Sub8";
+            }elseif($item==2){
+               $no="Sub10" ;
+            }
+        }
+
+     //   var_dump($arrai);
+      //  var_dump($no);
+
+
+    };
+      if($session['Sexo']=='M'){
+       $sexo = 'Masculino';
+   } else if($session['Sexo']=='F'){
+        $sexo='Feminino';
+   }else{
+       $sexo = 'Não tem sexo selecionado';
+   }
+
+
+    echo 'Está a pesquisar com os Parametros : <br> Sexo : ' . $sexo . ' <br> Escalão(ões) : ' . $no = implode(",",$arrai); ?>
+</p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,

@@ -19,7 +19,7 @@ use yii\widgets\ActiveForm;
 <div class="aluno-view">
 
 
-    <?=Html::beginForm(['aluno/index'],'post' );?>
+    <?=Html::beginForm(['aluno/index'],'post' )?>
     <?php $form = ActiveForm::begin(); ?>
     <?php
             $dataProviderEsc = \backend\models\Escalao::find()->all();
@@ -37,11 +37,12 @@ use yii\widgets\ActiveForm;
         $categorias[$value->idCategorias] = $value->Valor;
     }
     ?>
-    <?= $form->field($model,'Escaloes')->checkboxList($esca, ['selection'=>'checked'])?>
-    <?= $form->field($model, 'idAluno')->dropDownList(['M'=>'M','F'=>'F'],['prompt'=>'Selecione uma Opção...'])->label('Sexo') ?>
+    <?= $form->field($model,'Escaloes')->checkboxList($esca,array('selection'=>'checked'))?>
+    <?= $form->field($model, 'Sexo')->dropDownList(['M'=>'M','F'=>'F'],['prompt'=>'Selecione uma opção'])->label('Sexo') ?>
     <?= $form->field($model, 'idAluno')->checkboxList($categorias,['selection1'=>'checked'])->label('Categorias') ?>
 
     <?=Html::submitButton('Pesquisa Avançada',['class' => 'btn btn-info','name'=>'pes']);?>
+
 
 
     </div>
