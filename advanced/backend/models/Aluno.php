@@ -88,10 +88,7 @@ class Aluno extends \yii\db\ActiveRecord
     {
 
        return $this->hasMany(Categorizacao::className(), ['Aluno_idAluno' => 'idAluno']);
-      /*  var_dump($categorizacaos);
-       $valCate = implode(",",$categorizacaos);
-        var_dump($valCate);
-        return $valCate;*/
+
     }
 
     /**

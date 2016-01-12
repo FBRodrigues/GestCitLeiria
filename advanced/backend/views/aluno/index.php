@@ -155,20 +155,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
             [
 
-                'attribute'=>'Categorizacaos',
+               // 'attribute'=>$categorizacao->Valor,
 
-                '<?php echo' . $categorizacao->Valor .' ?>',
             ],
-
-
-
-
-            /*[
-                'label' => 'Categorias',
-                'attribute'=>'Categorizacaoss'
-
-            ],*/
-
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
@@ -177,9 +166,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ?>
     <?php foreach($categorizacaos as $categorizacao)
 
-          $categorizacao->Valor . "," ;
-
-//ceifeijfeijflkkmkm
+        echo  " ".$categorizacao->Valor . "," ;
 
     ?>
 
