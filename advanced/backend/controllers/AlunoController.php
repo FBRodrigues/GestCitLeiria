@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use backend\models\Categorias;
 use Yii;
 use backend\models\Aluno;
 use backend\models\AlunoSearch;
@@ -40,13 +41,24 @@ class AlunoController extends Controller
         $session->open();
         $session['Sexo'] = Yii::$app->request->post('Aluno')['Sexo'];
         $session['Escaloes']=Yii::$app->request->post('Aluno')['Escaloes'];
+        $session['Categorizacaos'] = Yii::$app->request->post('Aluno')['Categorizacaos'];
+
         $searchModel = new AlunoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $categorizacao = Categorias::findBySql('Select Categorias.Valor from Categorias JOIN Categorizacao
+        WHERE Categorizacao.Categorias_idCategorias = Categorias.idCategorias AND  Categorizacao.Aluno_idAluno = 1')->all();
+
+
+       // $itemArray = implode(",",$categorizacao);
+       // var_dump($itemArray);
+     //   var_dump($categorizacao);
 
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'categorizacaos'=> $categorizacao,
+
         ]);
 
     }
@@ -61,6 +73,7 @@ class AlunoController extends Controller
     {
         return $this->render('view', [
             'model' => $this->findModel($id),
+            ''
         ]);
     }
 

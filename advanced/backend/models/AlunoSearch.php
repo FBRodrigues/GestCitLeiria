@@ -23,7 +23,8 @@ class AlunoSearch extends Aluno
 
         return [
             [['idAluno',  'Idade'], 'integer'],
-            [['DataNascimento','Escalao_idEscalao', 'Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Sexo', 'Nome'], 'safe'],
+            [['DataNascimento','Escalao_idEscalao',
+                'Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Sexo', 'Nome'], 'safe'],
         ];
     }
 
@@ -49,23 +50,31 @@ class AlunoSearch extends Aluno
         $session->open();
         $value1 = $session['Sexo'];
         $value2 = $session['Escaloes'];
+        //$value3 = $session['Categorizacaos'];
 
-        if($value1=='' && $value2==''){
+        if($value1=='' && $value2=='' //&& $value3 == ''
+            ){
             $query = Aluno::find();
-         }elseif($value1!='' && $value2=='') {
+         }elseif($value1!='' && $value2=='' //&& $value3 == ''
+            ) {
             $query = Aluno::find()->where(['Sexo' => $value1]);
 
-        }elseif($value1 =='' && $value2 != '' ){
+        }elseif($value1 =='' && $value2 != '' //&& $value3 == ''
+            ){
 
             $query=Aluno::find()->where(['Escalao_idEscalao'=>$value2]);
 
 
-        }elseif($value1 !='' && $value2 !=''){
+      //  }elseif($value1 =='' && $value2 == '' && $value3 != '' ){
+           // $query =Aluno::find()->where(['Categorizacaos'=>$value3]);
+        } elseif($value1 !='' && $value2 !='' //&& $value3 != null
+        ){
 
 
             $query= Aluno::find();
             $query->orWhere(['Sexo'=>$value1])
                   ->orWhere(['Escalao_idEscalao'=>$value2]);
+         //         ->orWhere(['Categorizacaos'=>$value3]);
 
         }
 
@@ -77,6 +86,7 @@ class AlunoSearch extends Aluno
         $dataProvider->pagination->pageSize = 1000;
 
         $query->joinWith(['escalaoIdEscalao']);
+       // $query->joinWith(['categorizacaos']);
 
 
         $this->load($params);
@@ -100,7 +110,10 @@ class AlunoSearch extends Aluno
             ->andFilterWhere(['like', 'Contato3_Email', $this->Contato3_Email])
             ->andFilterWhere(['like', 'EncarregadoEducacao', $this->EncarregadoEducacao])
             ->andFilterWhere(['like', 'Sexo', $this->Sexo])
-            ->andFilterWhere(['like', 'escalao.Valor', $this-> Escalao_idEscalao]);
+            ->andFilterWhere(['like', 'escalao.Valor', $this-> Escalao_idEscalao])
+        //    ->andFilterWhere(['like','categorizacaos',$this->Categorizacaos])
+        ;
+
 
 
         return $dataProvider;

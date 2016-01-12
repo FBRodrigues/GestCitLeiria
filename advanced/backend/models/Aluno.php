@@ -18,7 +18,7 @@ use yii\helpers\ArrayHelper;
  * @property string $EncarregadoEducacao
  * @property string $Sexo
  * @property string $Nome
- *
+ * @property string $valCate;
  * @property Escalao $escalaoIdEscalao
  * @property Categorizacao[] $categorizacaos
  * @property Marcacao[] $marcacaos
@@ -27,6 +27,7 @@ use yii\helpers\ArrayHelper;
  */
 class Aluno extends \yii\db\ActiveRecord
 {
+
 
     /**
      * @inheritdoc
@@ -85,7 +86,12 @@ class Aluno extends \yii\db\ActiveRecord
      */
     public function getCategorizacaos()
     {
-        return $this->hasMany(Categorizacao::className(), ['Aluno_idAluno' => 'idAluno'])->via('');
+
+       return $this->hasMany(Categorizacao::className(), ['Aluno_idAluno' => 'idAluno']);
+      /*  var_dump($categorizacaos);
+       $valCate = implode(",",$categorizacaos);
+        var_dump($valCate);
+        return $valCate;*/
     }
 
     /**
@@ -94,6 +100,7 @@ class Aluno extends \yii\db\ActiveRecord
     public function getMarcacaos()
     {
         return $this->hasMany(Marcacao::className(), ['Aluno_idAluno' => 'idAluno']);
+
     }
 
     /**
@@ -121,4 +128,41 @@ class Aluno extends \yii\db\ActiveRecord
         $models = Categorias::find()->asArray()->all();
         return ArrayHelper::map($models,'idAluno','Valor');
     }
+
+
+ /*   public function getCategorizacaoss(){
+
+        $itemsArray = array();
+        $categorizacaos  = (new \yii\db\Query())
+            ->select(['Categorias.Valor'])
+            ->from(['Categorias'])
+            ->join('LEFT JOIN','Categorizacao','Categorizacao.Categorias_idCategorias = Categorias.idCategorias')
+            ->where(['Aluno_idAluno'=> '1'])
+            ->all();
+      //  var_dump($categorizacaos);
+
+
+
+      //  var_dump($categorizacaos)
+
+       // var_dump($categorizacaos);
+        //foreach($categorizacaos->search()){
+
+        //}
+       // if(isset($categorizacaos)){
+           // foreach($categorizacaos as $categorizacao){
+            //    var_dump($categorizacaos);
+            //    $itemArray[$categorizacao] = $categorizacao;
+               //var_dump($itemArray[$categorizacao]);
+       //         $categorizacaoss= implode(",",$categorizacaos);
+           // }
+       // }
+
+
+       // var_dump($categorizacaoss);
+
+
+    }*/
+
+
 }

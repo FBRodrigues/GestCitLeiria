@@ -90,9 +90,10 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
-select.dropdown{
-    font-style: italic;
-}
 .criarSo {
     float: right;
+}
+option{
+    font-style:italic;
+    font-weight: bolder;
 }
