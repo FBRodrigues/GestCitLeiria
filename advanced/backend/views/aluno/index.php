@@ -154,6 +154,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'Sexo',
 
             [
+                'label' => 'Categorias',
+                //'attribute'=>$categorizacao->Valor,
+
+                //'value' => function ($idAluno){
+                  //  foreach($categorizacaos as $categorizacao){
+                    //    echo  " ".$categorizacao->Valor . "," ;
+                    //}
+                //}
 
                // 'attribute'=>$categorizacao->Valor,
 
