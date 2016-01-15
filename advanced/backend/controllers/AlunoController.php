@@ -52,6 +52,7 @@ class AlunoController extends Controller
             $categorizacao = Categorizacao::find()
                 ->where(['Aluno_idAluno'=> $aluno->idAluno])
                 ->all();
+            //lfdf
 
 
             var_dump($categorizacao);
