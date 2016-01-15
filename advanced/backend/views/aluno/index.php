@@ -164,11 +164,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
     ]);
     ?>
-    <?php foreach($categorizacaos as $categorizacao)
-
-        echo  " ".$categorizacao->Valor . "," ;
-
-    ?>
 
     <?=Html::submitButton('Executar',['class' => 'btn btn-info','name'=>'formal']);?>
 
