@@ -2952,3 +2952,1859 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1453223274.794
     'REQUEST_TIME' => 1453223274
 ]
+2016-01-19 18:42:53 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorizacaos' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:47
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 18:42:53 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'dUVMbHMxeTI/BAUVJ0RIdgwwfCIsZ0oEAy4dLUtgMWcxAQcfNwAcCg=='
+    'Aluno' => [
+        'Escaloes' => [
+            0 => '1'
+        ]
+        'Sexo' => 'M'
+        'idAluno' => [
+            0 => '1'
+        ]
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => 'M'
+    'Escaloes' => [
+        0 => '1'
+    ]
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '256'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6478'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453225373.743
+    'REQUEST_TIME' => 1453225373
+]
+2016-01-19 18:43:37 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorizacaos' in C:\wamp\www\GestCitLeiria\advanced\backend\views\aluno\index.php:20
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php(64): yii\base\Controller->render()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\AlunoController->actionIndex()
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-01-19 18:43:37 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'dUVMbHMxeTI/BAUVJ0RIdgwwfCIsZ0oEAy4dLUtgMWcxAQcfNwAcCg=='
+    'Aluno' => [
+        'Escaloes' => [
+            0 => '1'
+        ]
+        'Sexo' => 'M'
+        'idAluno' => [
+            0 => '1'
+        ]
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => 'M'
+    'Escaloes' => [
+        0 => '1'
+    ]
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '256'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6479'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453225417.1
+    'REQUEST_TIME' => 1453225417
+]
+2016-01-19 18:48:17 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorizacaos' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:47
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 18:48:17 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'Q1k2YlpVUGwJGH8bDiBhKDosBiwFA2NaNTJnI2IEGDkHHX0RHmQ1VA=='
+    'Aluno' => [
+        'Escaloes' => [
+            0 => '4'
+            1 => '12'
+        ]
+        'Sexo' => 'M'
+        'idAluno' => ''
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => 'M'
+    'Escaloes' => [
+        0 => '4'
+        1 => '12'
+    ]
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '254'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6506'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453225697.841
+    'REQUEST_TIME' => 1453225697
+]
+2016-01-19 18:48:46 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorizacaos' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:47
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 18:48:46 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'Q1k2YlpVUGwJGH8bDiBhKDosBiwFA2NaNTJnI2IEGDkHHX0RHmQ1VA=='
+    'Aluno' => [
+        'Escaloes' => [
+            0 => '4'
+            1 => '12'
+        ]
+        'Sexo' => 'M'
+        'idAluno' => ''
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => 'M'
+    'Escaloes' => [
+        0 => '4'
+        1 => '12'
+    ]
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '254'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6512'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453225726.262
+    'REQUEST_TIME' => 1453225726
+]
+2016-01-19 19:31:32 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorizacaos' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:47
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 19:31:32 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'Q1k2YlpVUGwJGH8bDiBhKDosBiwFA2NaNTJnI2IEGDkHHX0RHmQ1VA=='
+    'Aluno' => [
+        'Escaloes' => [
+            0 => '4'
+            1 => '12'
+        ]
+        'Sexo' => 'M'
+        'idAluno' => ''
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => 'M'
+    'Escaloes' => [
+        0 => '4'
+        1 => '12'
+    ]
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '254'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6633'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453228292.828
+    'REQUEST_TIME' => 1453228292
+]
+2016-01-19 19:32:29 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorizacaos' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:46
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 19:32:29 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'Q1k2YlpVUGwJGH8bDiBhKDosBiwFA2NaNTJnI2IEGDkHHX0RHmQ1VA=='
+    'Aluno' => [
+        'Escaloes' => [
+            0 => '4'
+            1 => '12'
+        ]
+        'Sexo' => 'M'
+        'idAluno' => ''
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => 'M'
+    'Escaloes' => [
+        0 => '4'
+        1 => '12'
+    ]
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '254'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6637'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453228349.302
+    'REQUEST_TIME' => 1453228349
+]
+2016-01-19 19:32:50 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorizacaos' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:46
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 19:32:49 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'Q1k2YlpVUGwJGH8bDiBhKDosBiwFA2NaNTJnI2IEGDkHHX0RHmQ1VA=='
+    'Aluno' => [
+        'Escaloes' => [
+            0 => '4'
+            1 => '12'
+        ]
+        'Sexo' => 'M'
+        'idAluno' => ''
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => 'M'
+    'Escaloes' => [
+        0 => '4'
+        1 => '12'
+    ]
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '254'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6641'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453228369.975
+    'REQUEST_TIME' => 1453228369
+]
+2016-01-19 19:33:29 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorizacaos' in C:\wamp\www\GestCitLeiria\advanced\backend\views\aluno\index.php:20
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php(71): yii\base\Controller->render()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\AlunoController->actionIndex()
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-01-19 19:33:28 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'Q1k2YlpVUGwJGH8bDiBhKDosBiwFA2NaNTJnI2IEGDkHHX0RHmQ1VA=='
+    'Aluno' => [
+        'Escaloes' => [
+            0 => '4'
+            1 => '12'
+        ]
+        'Sexo' => 'M'
+        'idAluno' => ''
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => 'M'
+    'Escaloes' => [
+        0 => '4'
+        1 => '12'
+    ]
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '254'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6643'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453228408.721
+    'REQUEST_TIME' => 1453228408
+]
+2016-01-19 19:33:42 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\wamp\www\GestCitLeiria\advanced\backend\views\aluno\index.php:163
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(190): ::call_user_func:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\DataColumn.php:190}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\grid\DataColumn->getDataCellValue()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow()
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#7 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection()
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection()
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): yii\widgets\BaseListView->yii\widgets\{closure}()
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): ::preg_replace_callback()
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#12 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#13 C:\wamp\www\GestCitLeiria\advanced\backend\views\aluno\index.php(176): yii\base\Widget::widget()
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#18 C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php(71): yii\base\Controller->render()
+#19 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\AlunoController->actionIndex()
+#20 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#21 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#22 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#23 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#24 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#25 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#26 {main}
+2016-01-19 19:33:42 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'Q1k2YlpVUGwJGH8bDiBhKDosBiwFA2NaNTJnI2IEGDkHHX0RHmQ1VA=='
+    'Aluno' => [
+        'Escaloes' => [
+            0 => '4'
+            1 => '12'
+        ]
+        'Sexo' => 'M'
+        'idAluno' => ''
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => 'M'
+    'Escaloes' => [
+        0 => '4'
+        1 => '12'
+    ]
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '254'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6646'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453228422.382
+    'REQUEST_TIME' => 1453228422
+]
+2016-01-19 19:34:23 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\wamp\www\GestCitLeiria\advanced\backend\views\aluno\index.php:163
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(190): ::call_user_func:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\DataColumn.php:190}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\grid\DataColumn->getDataCellValue()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow()
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#7 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection()
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection()
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): yii\widgets\BaseListView->yii\widgets\{closure}()
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): ::preg_replace_callback()
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#12 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#13 C:\wamp\www\GestCitLeiria\advanced\backend\views\aluno\index.php(176): yii\base\Widget::widget()
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#16 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#18 C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php(71): yii\base\Controller->render()
+#19 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\AlunoController->actionIndex()
+#20 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#21 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#22 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#23 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#24 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#25 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#26 {main}
+2016-01-19 19:34:22 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'Q1k2YlpVUGwJGH8bDiBhKDosBiwFA2NaNTJnI2IEGDkHHX0RHmQ1VA=='
+    'Aluno' => [
+        'Escaloes' => [
+            0 => '4'
+            1 => '12'
+        ]
+        'Sexo' => 'M'
+        'idAluno' => ''
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => 'M'
+    'Escaloes' => [
+        0 => '4'
+        1 => '12'
+    ]
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '254'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6653'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453228462.627
+    'REQUEST_TIME' => 1453228462
+]
+2016-01-19 19:43:14 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Categorias::Categorias_idCategorias' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('Categorias_idCa...')
+#1 C:\wamp\www\GestCitLeiria\advanced\backend\views\aluno\index.php(162): yii\db\BaseActiveRecord->__get('Categorias_idCa...')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\Aluno), 1, 0, Object(yii\grid\DataColumn))
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(190): call_user_func(Object(Closure), Object(backend\models\Aluno), 1, 0, Object(yii\grid\DataColumn))
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\grid\DataColumn->getDataCellValue(Object(backend\models\Aluno), 1, 0)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Aluno), 1, 0)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell(Object(backend\models\Aluno), 1, 0)
+#7 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow(Object(backend\models\Aluno), 1, 0)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#16 C:\wamp\www\GestCitLeiria\advanced\backend\views\aluno\index.php(175): yii\base\Widget::widget(Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#19 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\AlunoController))
+#20 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(backend\controllers\AlunoController))
+#21 C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php(71): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\AlunoController->actionIndex()
+#23 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#26 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/index', Array)
+#27 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+2016-01-19 19:43:13 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6885'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453228993.709
+    'REQUEST_TIME' => 1453228993
+]
+2016-01-19 19:43:29 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Categorias::Categorias_idCategorias' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('Categorias_idCa...')
+#1 C:\wamp\www\GestCitLeiria\advanced\backend\views\aluno\index.php(162): yii\db\BaseActiveRecord->__get('Categorias_idCa...')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\Aluno), 1, 0, Object(yii\grid\DataColumn))
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(190): call_user_func(Object(Closure), Object(backend\models\Aluno), 1, 0, Object(yii\grid\DataColumn))
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\grid\DataColumn->getDataCellValue(Object(backend\models\Aluno), 1, 0)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Aluno), 1, 0)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell(Object(backend\models\Aluno), 1, 0)
+#7 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow(Object(backend\models\Aluno), 1, 0)
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#10 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#15 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#16 C:\wamp\www\GestCitLeiria\advanced\backend\views\aluno\index.php(175): yii\base\Widget::widget(Array)
+#17 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#18 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#19 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\AlunoController))
+#20 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(backend\controllers\AlunoController))
+#21 C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php(71): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\AlunoController->actionIndex()
+#23 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#26 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/index', Array)
+#27 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+2016-01-19 19:43:28 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6891'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453229008.552
+    'REQUEST_TIME' => 1453229008
+]
+2016-01-19 19:47:04 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: categorizacaos' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:46
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 19:47:04 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'ek96TjBEYTYwDjM3ZDFQcgM6SgBvElIADCQrDwgVKWM.CzE9dHUEDg=='
+    'Aluno' => [
+        'Escaloes' => ''
+        'Sexo' => ''
+        'idAluno' => [
+            0 => '1'
+            1 => '2'
+        ]
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => ''
+    'Escaloes' => ''
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+    'categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '250'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6924'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453229224.074
+    'REQUEST_TIME' => 1453229224
+]
+2016-01-19 19:47:24 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: categorizacaos' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:46
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 19:47:24 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'ek96TjBEYTYwDjM3ZDFQcgM6SgBvElIADCQrDwgVKWM.CzE9dHUEDg=='
+    'Aluno' => [
+        'Escaloes' => ''
+        'Sexo' => ''
+        'idAluno' => [
+            0 => '1'
+            1 => '2'
+        ]
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => ''
+    'Escaloes' => ''
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+    'categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '250'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6929'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453229244.155
+    'REQUEST_TIME' => 1453229244
+]
+2016-01-19 19:49:26 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorias' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:46
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 19:49:26 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'ek96TjBEYTYwDjM3ZDFQcgM6SgBvElIADCQrDwgVKWM.CzE9dHUEDg=='
+    'Aluno' => [
+        'Escaloes' => ''
+        'Sexo' => ''
+        'idAluno' => [
+            0 => '1'
+            1 => '2'
+        ]
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => ''
+    'Escaloes' => ''
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+    'categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '250'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6954'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453229366.12
+    'REQUEST_TIME' => 1453229366
+]
+2016-01-19 19:50:20 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorias' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:46
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 19:50:20 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'ek96TjBEYTYwDjM3ZDFQcgM6SgBvElIADCQrDwgVKWM.CzE9dHUEDg=='
+    'Aluno' => [
+        'Escaloes' => ''
+        'Sexo' => ''
+        'idAluno' => [
+            0 => '1'
+            1 => '2'
+        ]
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => ''
+    'Escaloes' => ''
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+    'categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '250'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6962'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453229420.777
+    'REQUEST_TIME' => 1453229420
+]
+2016-01-19 19:52:05 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorias2' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:45
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 19:52:05 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'ek96TjBEYTYwDjM3ZDFQcgM6SgBvElIADCQrDwgVKWM.CzE9dHUEDg=='
+    'Aluno' => [
+        'Escaloes' => ''
+        'Sexo' => ''
+        'idAluno' => [
+            0 => '1'
+            1 => '2'
+        ]
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => ''
+    'Escaloes' => ''
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+    'categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '250'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6968'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453229525.354
+    'REQUEST_TIME' => 1453229525
+]
+2016-01-19 19:53:50 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorias2' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:45
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 19:53:50 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'ek96TjBEYTYwDjM3ZDFQcgM6SgBvElIADCQrDwgVKWM.CzE9dHUEDg=='
+    'Aluno' => [
+        'Escaloes' => ''
+        'Sexo' => ''
+        'idAluno' => [
+            0 => '1'
+            1 => '2'
+        ]
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => ''
+    'Escaloes' => ''
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+    'categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '250'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6975'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453229630.454
+    'REQUEST_TIME' => 1453229630
+]
+2016-01-19 19:55:20 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorias2' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:45
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 19:55:20 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'ek96TjBEYTYwDjM3ZDFQcgM6SgBvElIADCQrDwgVKWM.CzE9dHUEDg=='
+    'Aluno' => [
+        'Escaloes' => ''
+        'Sexo' => ''
+        'idAluno' => [
+            0 => '1'
+            1 => '2'
+        ]
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => ''
+    'Escaloes' => ''
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+    'categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '250'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6989'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453229720.319
+    'REQUEST_TIME' => 1453229720
+]
+2016-01-19 19:56:27 [::1][-][no5mbltutash56vjjjq7fgsa46][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Categorias2' in C:\wamp\www\GestCitLeiria\advanced\backend\views\aluno\index.php:20
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php(52): yii\base\Controller->render()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\AlunoController->actionIndex()
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-01-19 19:56:27 [::1][-][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/index'
+]
+
+$_POST = [
+    '_csrf' => 'ek96TjBEYTYwDjM3ZDFQcgM6SgBvElIADCQrDwgVKWM.CzE9dHUEDg=='
+    'Aluno' => [
+        'Escaloes' => ''
+        'Sexo' => ''
+        'idAluno' => [
+            0 => '1'
+            1 => '2'
+        ]
+    ]
+    'pes' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => ''
+    'Escaloes' => ''
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+    'categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '250'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '6996'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453229787.483
+    'REQUEST_TIME' => 1453229787
+]
+2016-01-19 19:59:32 [::1][1][no5mbltutash56vjjjq7fgsa46][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/view', Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-19 19:59:32 [::1][1][no5mbltutash56vjjjq7fgsa46][info][application] $_GET = [
+    'r' => 'aluno/view'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'no5mbltutash56vjjjq7fgsa46'
+    '_csrf' => '03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => 'M'
+    'Escaloes' => [
+        0 => '1'
+        1 => '2'
+        2 => '3'
+    ]
+    'Categorizacaos' => null
+    '__id' => 1
+    'idAluno' => null
+    'categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=no5mbltutash56vjjjq7fgsa46; _csrf=03f552b5f3fd76cf7a25f96415034a4882d893bcc27773378e30e5cc10cc982ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JAIyTu1Dyu0N_V36vkQA8QHUDDKsD1e8%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '7029'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=aluno%2Fview'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno%2Fview'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453229972.723
+    'REQUEST_TIME' => 1453229972
+]

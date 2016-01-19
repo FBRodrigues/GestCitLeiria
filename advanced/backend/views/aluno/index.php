@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
    $session->open();
    $session['Sexo'] = Yii::$app->request->post('Aluno')['Sexo'];
    $session['Escaloes']=Yii::$app->request->post('Aluno')['Escaloes'];
-   $session['Categorizacaos']= Yii::$app->request->post('Aluno')['Categorizacaos'];
+ //  $session['Categorias2']= Yii::$app->request->post('Aluno')['Categorias2'];
 
    ?>
     <h1><?= Html::encode($this->title) ?></h1>
@@ -96,11 +96,11 @@ $this->params['breadcrumbs'][] = $this->title;
                     $str .= '<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Escalão :<font size="3"> <b> ' . $escalao .'</font></b>';
                 }
-          //      if($session['Categorizacaos']){
+                if($session['Categorias']){
 
 
 
-              //  }
+                }
 
 
             }else {
@@ -155,18 +155,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
             [
                 'label' => 'Categorias',
-
                 'value' => function($dataProvider){
                $str ='';
-               foreach($dataProvider->categorias2 as $query){
-
-               //    var_dump($query);
+               foreach($dataProvider->categorias as $query){
                 $str .= ' ';
-
                 $str .= $query->Valor. ',';
 
                }
-                   // var_dump($str);
                     return $str;
                 },
 
