@@ -155,15 +155,21 @@ $this->params['breadcrumbs'][] = $this->title;
 
             [
                 'label' => 'Categorias',
-                //'attribute'=>$categorizacao->Valor,
 
-                //'value' => function ($idAluno){
-                  //  foreach($categorizacaos as $categorizacao){
-                    //    echo  " ".$categorizacao->Valor . "," ;
-                    //}
-                //}
+                'value' => function($dataProvider){
+               $str ='';
+               foreach($dataProvider->categorias2 as $query){
 
-               // 'attribute'=>$categorizacao->Valor,
+               //    var_dump($query);
+                $str .= ' ';
+
+                $str .= $query->Valor. ',';
+
+               }
+                   // var_dump($str);
+                    return $str;
+                },
+
 
             ],
 
@@ -173,7 +179,10 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
     ?>
 
+
+
     <?=Html::submitButton('Executar',['class' => 'btn btn-info','name'=>'formal']);?>
+
 
     <?=Html::dropDownList('action','',[','=>'Operação...',
         'ePer'=>'Enviar Email Personalizado','pPag'=>'Enviar Email Pagamentos'],array('class'=>'dropdown'))?>

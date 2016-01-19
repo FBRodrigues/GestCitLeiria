@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'EncarregadoEducacao',
             'Sexo',
             'Nome',
-            'pagamentos.idPagamento'
+          //  'categorias.Valor'
         ],
     ]) ?>
 

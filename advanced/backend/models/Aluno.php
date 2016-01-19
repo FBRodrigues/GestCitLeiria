@@ -3,6 +3,7 @@
 namespace backend\models;
 
 use Yii;
+use yii\data\ActiveDataProvider;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -126,40 +127,29 @@ class Aluno extends \yii\db\ActiveRecord
         return ArrayHelper::map($models,'idAluno','Valor');
     }
 
+    public function getCategorias2(){
+        return $this->hasMany(Categorias::className(), ['idCategorias' => 'Categorias_idCategorias'])->via('categorizacaos');
+    }
 
- /*   public function getCategorizacaoss(){
 
-        $itemsArray = array();
-        $categorizacaos  = (new \yii\db\Query())
-            ->select(['Categorias.Valor'])
-            ->from(['Categorias'])
-            ->join('LEFT JOIN','Categorizacao','Categorizacao.Categorias_idCategorias = Categorias.idCategorias')
-            ->where(['Aluno_idAluno'=> '1'])
+    public function getCenas(){
+
+        $query = new \yii\db\Query();
+        $data = $query->select(['Valor','Aluno.idAluno'])
+            ->from('Categorias')
+            ->join('INNER JOIN ', 'Categorizacao','Categorizacao.Categorias_idCategorias = Categorias.idCategorias')
+            ->join('INNER JOIN','Aluno','Categorizacao.Aluno_idAluno = Aluno.idAluno')
+            ->distinct()
             ->all();
-      //  var_dump($categorizacaos);
+        return $data;
+      //  var_dump($data);
+    }
 
 
-
-      //  var_dump($categorizacaos)
-
-       // var_dump($categorizacaos);
-        //foreach($categorizacaos->search()){
-
-        //}
-       // if(isset($categorizacaos)){
-           // foreach($categorizacaos as $categorizacao){
-            //    var_dump($categorizacaos);
-            //    $itemArray[$categorizacao] = $categorizacao;
-               //var_dump($itemArray[$categorizacao]);
-       //         $categorizacaoss= implode(",",$categorizacaos);
-           // }
-       // }
-
-
-       // var_dump($categorizacaoss);
-
-
+   /* public static function getAllCategorias($id){
+        $query = Categorizacao::find()->where(['Categorias_idCategorias'=>$id]);
+        $dataProvider = new ActiveDataProvider(['query'=> $query,]);
+        return $dataProvider;
     }*/
-
 
 }

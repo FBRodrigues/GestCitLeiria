@@ -42,25 +42,21 @@ class AlunoController extends Controller
         $session->open();
         $session['Sexo'] = Yii::$app->request->post('Aluno')['Sexo'];
 
+
         $session['Escaloes']=Yii::$app->request->post('Aluno')['Escaloes'];
         $session['Categorizacaos'] = Yii::$app->request->post('Aluno')['Categorizacaos'];
-        $alunos = Aluno::find()->all();
 
-
-        foreach($alunos as $aluno){
-
-            $categorizacao = Categorizacao::find()
-                ->where(['Aluno_idAluno'=> $aluno->idAluno])
-                ->all();
-            //lfdf
-
-
-            var_dump($categorizacao);
-        }
+       /* $query = new \yii\db\Query();
+        $data = $query->select(['Valor','Aluno.idAluno'])
+            ->from('Categorias')
+            ->join('INNER JOIN ', 'Categorizacao','Categorizacao.Categorias_idCategorias = Categorias.idCategorias')
+            ->join('INNER JOIN','Aluno','Categorizacao.Aluno_idAluno = Aluno.idAluno')
+            ->all();*/
 
 
         $searchModel = new AlunoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        //var_dump($dataProvider);
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -77,8 +73,10 @@ class AlunoController extends Controller
      */
     public function actionView($id)
     {
+      //  $dataProvider = Aluno::getAllCategorias($id);
         return $this->render('view', [
             'model' => $this->findModel($id),
+          //  'dataProvider'=>$dataProvider,
         ]);
     }
 
