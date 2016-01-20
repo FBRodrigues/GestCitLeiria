@@ -62,6 +62,7 @@ class CategorizacaoController extends Controller
      */
     public function actionCreate()
     {
+
         $model = new Categorizacao();
         $listaalunos= Yii::$app->request->post('Categorizacao')['Aluno_idAluno'];
         if (count($listaalunos)>0) {
