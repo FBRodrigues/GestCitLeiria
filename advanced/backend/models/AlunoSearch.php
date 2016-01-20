@@ -52,31 +52,30 @@ class AlunoSearch extends Aluno
         $session->open();
         $value1 = $session['Sexo'];
         $value2 = $session['Escaloes'];
-        //$value3 = $session['Categorizacaos'];
+       // $value3 = $session['Categorias2'];
 
-        if($value1=='' && $value2=='' //&& $value3 == ''
+        if($value1=='' && $value2==''// && $value3 == ''
             ){
             $query = Aluno::find();
-         }elseif($value1!='' && $value2=='' //&& $value3 == ''
+         }elseif($value1!='' && $value2==''// && $value3 == ''
             ) {
             $query = Aluno::find()->where(['Sexo' => $value1]);
 
-        }elseif($value1 =='' && $value2 != '' //&& $value3 == ''
+        }elseif($value1 =='' && $value2 != ''// && $value3 == ''
             ){
 
             $query=Aluno::find()->where(['Escalao_idEscalao'=>$value2]);
 
 
-      //  }elseif($value1 =='' && $value2 == '' && $value3 != '' ){
-           // $query =Aluno::find()->where(['Categorizacaos'=>$value3]);
+        //}elseif($value1 =='' && $value2 == '' && $value3 != '' ){
+        //    $query =Aluno::find()->where(['Categorias2'=>$value3]);
         } elseif($value1 !='' && $value2 !='' //&& $value3 != null
         ){
-
-
-            $query= Aluno::find();
-            $query->orWhere(['Sexo'=>$value1])
-                  ->orWhere(['Escalao_idEscalao'=>$value2]);
-         //         ->orWhere(['Categorizacaos'=>$value3]);
+              $query= Aluno::find();
+              $query->orWhere(['Sexo'=>$value1])
+                //TODO: alterar para andWhere
+                    ->orWhere(['Escalao_idEscalao'=>$value2]);
+                  //->orWhere(['Categorias2'=>$value3])
 
 
         }

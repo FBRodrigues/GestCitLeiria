@@ -12,6 +12,7 @@ use yii\helpers\ArrayHelper;
  * @property integer $idAluno
  * @property integer $Escalao_idEscalao
  * @property string $DataNascimento
+ * @property string $Categorizacao
  * @property integer $Idade
  * @property string $Contato1
  * @property string $Contato2
@@ -19,7 +20,6 @@ use yii\helpers\ArrayHelper;
  * @property string $EncarregadoEducacao
  * @property string $Sexo
  * @property string $Nome
- * @property string $valCate;
  * @property Escalao $escalaoIdEscalao
  * @property Categorizacao[] $categorizacaos
  * @property Marcacao[] $marcacaos
@@ -49,7 +49,7 @@ class Aluno extends \yii\db\ActiveRecord
             [['Escalao_idEscalao', 'Idade'], 'integer'],
             [['DataNascimento'], 'safe'],
             [['Sexo'], 'string', 'max' => 1],
-            [['Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Nome'], 'string', 'max' => 45]
+            [['Contato1','Categorizacao', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Nome'], 'string', 'max' => 45]
         ];
     }
 
@@ -63,6 +63,7 @@ class Aluno extends \yii\db\ActiveRecord
             'Valor' => Yii::t('app','Escalao'),
             'idAluno' => 'Id Aluno',
             'Escalao_idEscalao'=> 'Id Escalao',
+            'Categorizacao'=>'Categorias',
             'Nome' => 'Nome',
             'DataNascimento' => 'Data Nascimento',
             'Idade' => 'Idade',
@@ -122,33 +123,17 @@ class Aluno extends \yii\db\ActiveRecord
         return ArrayHelper::map($models, 'idEscalao', 'Valor');
     }
 
-    public function getCategorias(){
+  /*  public function getCategorias(){
         $models = Categorias::find()->asArray()->all();
         return ArrayHelper::map($models,'idAluno','Valor');
     }
+*/
 
-    public function getCategorias2(){
+
+    public function getCategorias(){
         return $this->hasMany(Categorias::className(), ['idCategorias' => 'Categorias_idCategorias'])->via('categorizacaos');
     }
 
-//    public function getCategorias ()
-//    {
-//        $categoriaS = $this -> hasMany(Categorias::className(),['idCategorias'=>'Categorias_idCategorias']) -> via('categorizacaos');
-//
-//        $str = '';
-//        foreach($categoriaS as $cc){
-//            $str .= $cc->Valor. ',';
-//        }
-//
-//
-//        return $str;
-//    }
 
-
-   /* public static function getAllCategorias($id){
-        $query = Categorizacao::find()->where(['Categorias_idCategorias'=>$id]);
-        $dataProvider = new ActiveDataProvider(['query'=> $query,]);
-        return $dataProvider;
-    }*/
 
 }
