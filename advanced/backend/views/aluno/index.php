@@ -152,9 +152,15 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute'=> 'Contato3_Email',
             ],
             'Sexo',
+//            [
+//                'attribute'=> 'categorias',
+//                'value'=>'categorias.Valor'
+//            ],
 
             [
+                'attribute' => 'categorias2',
                 'label' => 'Categorias',
+                'format' => 'text',
 
                 'value' => function($dataProvider){
                $str ='';

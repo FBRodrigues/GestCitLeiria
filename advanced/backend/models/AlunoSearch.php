@@ -17,6 +17,7 @@ class AlunoSearch extends Aluno
     /**
      * @inheritdoc
      */
+    //public $categorias;
     public function rules()
     {
 
@@ -25,6 +26,7 @@ class AlunoSearch extends Aluno
             [['idAluno',  'Idade'], 'integer'],
             [['DataNascimento','Escalao_idEscalao',
                 'Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Sexo', 'Nome'], 'safe'],
+            //[['categorias'], 'safe'],
         ];
     }
 
@@ -76,12 +78,21 @@ class AlunoSearch extends Aluno
                   ->orWhere(['Escalao_idEscalao'=>$value2]);
          //         ->orWhere(['Categorizacaos'=>$value3]);
 
+
         }
+
+        //$query->joinWith('categorias');
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
 
         ]);
+
+//        $dataProvider -> sort->attributes ['categorias'] = [
+//            'asc' => ['Categorias.Valor' => SORT_ASC],
+//            'desc' => ['Categorias.Valor' => SORT_DESC]
+//
+//        ];
 
         $dataProvider->pagination->pageSize = 1000;
 
@@ -111,7 +122,8 @@ class AlunoSearch extends Aluno
             ->andFilterWhere(['like', 'EncarregadoEducacao', $this->EncarregadoEducacao])
             ->andFilterWhere(['like', 'Sexo', $this->Sexo])
             ->andFilterWhere(['like', 'escalao.Valor', $this-> Escalao_idEscalao])
-        //    ->andFilterWhere(['like','categorizacaos',$this->Categorizacaos])
+           // ->andFilterWhere(['like','categorias.Valor',$this-> categorias_idCategorias])
+           // ->andFilterWhere(['like','Categorias.Valor',$this->categorias])
         ;
 
 

@@ -131,19 +131,18 @@ class Aluno extends \yii\db\ActiveRecord
         return $this->hasMany(Categorias::className(), ['idCategorias' => 'Categorias_idCategorias'])->via('categorizacaos');
     }
 
-
-    public function getCenas(){
-
-        $query = new \yii\db\Query();
-        $data = $query->select(['Valor','Aluno.idAluno'])
-            ->from('Categorias')
-            ->join('INNER JOIN ', 'Categorizacao','Categorizacao.Categorias_idCategorias = Categorias.idCategorias')
-            ->join('INNER JOIN','Aluno','Categorizacao.Aluno_idAluno = Aluno.idAluno')
-            ->distinct()
-            ->all();
-        return $data;
-      //  var_dump($data);
-    }
+//    public function getCategorias ()
+//    {
+//        $categoriaS = $this -> hasMany(Categorias::className(),['idCategorias'=>'Categorias_idCategorias']) -> via('categorizacaos');
+//
+//        $str = '';
+//        foreach($categoriaS as $cc){
+//            $str .= $cc->Valor. ',';
+//        }
+//
+//
+//        return $str;
+//    }
 
 
    /* public static function getAllCategorias($id){

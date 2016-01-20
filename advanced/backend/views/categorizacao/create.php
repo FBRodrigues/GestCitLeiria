@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model backend\models\Categorizacao */
 
 $this->title = 'Associar';
-$this->params['breadcrumbs'][] = ['label' => 'Categorizacaos', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Associações', 'url' => ['create']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="categorizacao-create">

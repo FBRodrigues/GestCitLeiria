@@ -63,10 +63,19 @@ class CategorizacaoController extends Controller
     public function actionCreate()
     {
         $model = new Categorizacao();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idCategorizacao]);
-        } else {
+        $listaalunos= Yii::$app->request->post('Categorizacao')['Aluno_idAluno'];
+        if (count($listaalunos)>0) {
+            foreach ($listaalunos as $aluno) {
+                $model->alunoIdAluno = $aluno->aluno_idAluno;
+            if ($model->load(Yii::$app->request->post()) && $model->save()) {
+                return $this->redirect(['create', 'id' => $model->idCategorizacao]);
+            } else {
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
+        }
+        }else{
             return $this->render('create', [
                 'model' => $model,
             ]);
