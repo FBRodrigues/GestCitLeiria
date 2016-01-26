@@ -5,12 +5,12 @@ namespace backend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\Pagamento;
+use backend\models\Inscricao;
 
 /**
- * PagamentoSearch represents the model behind the search form about `backend\models\Pagamento`.
+ * InscricaoSearch represents the model behind the search form about `backend\models\Inscricao`.
  */
-class PagamentoSearch extends Pagamento
+class InscricaoSearch extends Inscricao
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class PagamentoSearch extends Pagamento
     public function rules()
     {
         return [
-            [['idPagamento', 'idInscricao', 'valor', 'nrFatura'], 'integer'],
-            [['dataFatura'], 'safe'],
+            [['idInscricao', 'idAluno', 'nrAulas'], 'integer'],
+            [['dataInicio', 'dataFim', 'tipo'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class PagamentoSearch extends Pagamento
      */
     public function search($params)
     {
-        $query = Pagamento::find();
+        $query = Inscricao::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -56,12 +56,14 @@ class PagamentoSearch extends Pagamento
         }
 
         $query->andFilterWhere([
-            'idPagamento' => $this->idPagamento,
             'idInscricao' => $this->idInscricao,
-            'valor' => $this->valor,
-            'nrFatura' => $this->nrFatura,
-            'dataFatura' => $this->dataFatura,
+            'idAluno' => $this->idAluno,
+            'dataInicio' => $this->dataInicio,
+            'dataFim' => $this->dataFim,
+            'nrAulas' => $this->nrAulas,
         ]);
+
+        $query->andFilterWhere(['like', 'tipo', $this->tipo]);
 
         return $dataProvider;
     }

@@ -4,19 +4,19 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel backend\models\PagamentoSearch */
+/* @var $searchModel backend\models\InscricaoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Pagamentos';
+$this->title = 'Inscricaos';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="pagamento-index">
+<div class="inscricao-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Pagamento', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Inscricao', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -25,11 +25,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'idPagamento',
             'idInscricao',
-            'valor',
-            'nrFatura',
-            'dataFatura',
+            'idAluno',
+            'dataInicio',
+            'dataFim',
+            'nrAulas',
+            // 'tipo',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

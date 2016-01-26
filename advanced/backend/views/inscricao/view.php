@@ -4,19 +4,19 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\Pagamento */
+/* @var $model backend\models\Inscricao */
 
-$this->title = $model->idPagamento;
-$this->params['breadcrumbs'][] = ['label' => 'Pagamentos', 'url' => ['index']];
+$this->title = $model->idInscricao;
+$this->params['breadcrumbs'][] = ['label' => 'Inscricaos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="pagamento-view">
+<div class="inscricao-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->idPagamento], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->idPagamento], [
+        <?= Html::a('Update', ['update', 'id' => $model->idInscricao], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Delete', ['delete', 'id' => $model->idInscricao], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
@@ -28,11 +28,12 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'idPagamento',
             'idInscricao',
-            'valor',
-            'nrFatura',
-            'dataFatura',
+            'idAluno',
+            'dataInicio',
+            'dataFim',
+            'nrAulas',
+            'tipo',
         ],
     ]) ?>
 

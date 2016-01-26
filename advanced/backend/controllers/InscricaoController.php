@@ -3,16 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use backend\models\Categorizacao;
-use backend\models\CategorizacaoSearch;
+use backend\models\Inscricao;
+use backend\models\InscricaoSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * CategorizacaoController implements the CRUD actions for Categorizacao model.
+ * InscricaoController implements the CRUD actions for Inscricao model.
  */
-class CategorizacaoController extends Controller
+class InscricaoController extends Controller
 {
     public function behaviors()
     {
@@ -27,15 +27,13 @@ class CategorizacaoController extends Controller
     }
 
     /**
-     * Lists all Categorizacao models.
+     * Lists all Inscricao models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new CategorizacaoSearch();
+        $searchModel = new InscricaoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $model = new Categorizacao();
-
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -44,7 +42,7 @@ class CategorizacaoController extends Controller
     }
 
     /**
-     * Displays a single Categorizacao model.
+     * Displays a single Inscricao model.
      * @param integer $id
      * @return mixed
      */
@@ -56,27 +54,17 @@ class CategorizacaoController extends Controller
     }
 
     /**
-     * Creates a new Categorizacao model.
+     * Creates a new Inscricao model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
+        $model = new Inscricao();
 
-        $model = new Categorizacao();
-        $listaalunos= Yii::$app->request->post('Categorizacao')['Aluno_idAluno'];
-        if (count($listaalunos)>0) {
-            foreach ($listaalunos as $aluno) {
-                $model->alunoIdAluno = $aluno->aluno_idAluno;
-            if ($model->load(Yii::$app->request->post()) && $model->save()) {
-                return $this->redirect(['create', 'id' => $model->idCategorizacao]);
-            } else {
-                return $this->render('create', [
-                    'model' => $model,
-                ]);
-            }
-        }
-        }else{
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->idInscricao]);
+        } else {
             return $this->render('create', [
                 'model' => $model,
             ]);
@@ -84,7 +72,7 @@ class CategorizacaoController extends Controller
     }
 
     /**
-     * Updates an existing Categorizacao model.
+     * Updates an existing Inscricao model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -94,7 +82,7 @@ class CategorizacaoController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idCategorizacao]);
+            return $this->redirect(['view', 'id' => $model->idInscricao]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -103,7 +91,7 @@ class CategorizacaoController extends Controller
     }
 
     /**
-     * Deletes an existing Categorizacao model.
+     * Deletes an existing Inscricao model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -116,15 +104,15 @@ class CategorizacaoController extends Controller
     }
 
     /**
-     * Finds the Categorizacao model based on its primary key value.
+     * Finds the Inscricao model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Categorizacao the loaded model
+     * @return Inscricao the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Categorizacao::findOne($id)) !== null) {
+        if (($model = Inscricao::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

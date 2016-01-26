@@ -15,11 +15,14 @@ class CategoriasSearch extends Categorias
     /**
      * @inheritdoc
      */
+
     public function rules()
     {
         return [
             [['idCategorias'], 'integer'],
             [['Valor'], 'safe'],
+
+
         ];
     }
 
