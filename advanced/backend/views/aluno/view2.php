@@ -39,7 +39,7 @@ use yii\widgets\ActiveForm;
     ?>
     <?= $form->field($model,'Escaloes')->checkboxList($esca,['selection'=>'checked'])?>
     <?= $form->field($model, 'Sexo')->dropDownList(['M'=>'Masculino','F'=>'Feminino'],['prompt'=>'Selecione uma opção'])->label('Sexo') ?>
-    <?= $form->field($model, 'idAluno')->checkboxList($categorias,['selection1'=>'checked','separator'=>'<br>'])->label('Categorias') ?>
+    <?= $form->field($model, 'categorias')->checkboxList($categorias,['selection1'=>'checked','separator'=>'<br>'])->label('Categorias') ?>
 
 
     <?=Html::submitButton('Pesquisa Avançada',['class' => 'btn btn-info','name'=>'pes']);?>

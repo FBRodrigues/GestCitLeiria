@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\AlunoSearch */
@@ -17,7 +18,8 @@ $this->params['breadcrumbs'][] = $this->title;
    $session->open();
    $session['Sexo'] = Yii::$app->request->post('Aluno')['Sexo'];
    $session['Escaloes']=Yii::$app->request->post('Aluno')['Escaloes'];
- //  $session['Categorias2']= Yii::$app->request->post('Aluno')['Categorias2'];
+   $session['Categorias'] = Yii::$app->request->post('Aluno')['categorias'];
+
 
    ?>
     <h1><?= Html::encode($this->title) ?></h1>
@@ -38,7 +40,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php
             $itemArray = [];
             $str = '';
-            if($session['Sexo']!= null || $session['Escaloes']!=null){
+            if($session['Sexo']!= null || $session['Escaloes']!=null || $session['Categorias'!= null]){
                 $str = 'Parametros da Pesquisa Avançada :';
                 if($session['Sexo']=='M'){
                     $sexo = 'Masculino';
@@ -98,6 +100,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
                 if($session['Categorias']){
 
+                    var_dump($session['Categorias']);
+
+
 
 
                 }
@@ -155,15 +160,12 @@ $this->params['breadcrumbs'][] = $this->title;
 
             [
                 'label' => 'Categorias',
-                'value' => function($dataProvider){
-               $str ='';
-               foreach($dataProvider->categorias as $query){
-                $str .= ' ';
-                $str .= $query->Valor. ',';
-
-               }
-                    return $str;
+                'attribute'=> 'categorias.Valor',
+                'value'=> function($dataProvider){
+                  return implode(",",ArrayHelper::map($dataProvider->categorias,'idCategorias','Valor'));
                 },
+
+                'format' =>'text',
 
 
             ],

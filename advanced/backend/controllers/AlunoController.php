@@ -42,7 +42,7 @@ class AlunoController extends Controller
         $session->open();
         $session['Sexo'] = Yii::$app->request->post('Aluno')['Sexo'];
         $session['Escaloes']=Yii::$app->request->post('Aluno')['Escaloes'];
-     //   $session['Categorias2'] = Yii::$app->request->post('Aluno')['Categorias2'];
+        $session['Categorias'] = Yii::$app->request->post('Aluno')['categorias'];
 
         $searchModel = new AlunoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);

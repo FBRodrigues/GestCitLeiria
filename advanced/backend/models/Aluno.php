@@ -11,8 +11,8 @@ use yii\helpers\ArrayHelper;
  *
  * @property integer $idAluno
  * @property integer $Escalao_idEscalao
+ * @property integer $Categorias_idCategorias
  * @property string $DataNascimento
- * @property string $Categorizacao
  * @property integer $Idade
  * @property string $Contato1
  * @property string $Contato2
@@ -46,10 +46,13 @@ class Aluno extends \yii\db\ActiveRecord
     {
         return [
             [['Escalao_idEscalao'], 'required'],
-            [['Escalao_idEscalao', 'Idade'], 'integer'],
-            [['DataNascimento'], 'safe'],
+            [['Escalao_idEscalao', 'Idade','Categorias_idCategorias'], 'integer'],
+            [['DataNascimento','categorias.Valor'], 'safe'],
             [['Sexo'], 'string', 'max' => 1],
-            [['Contato1','Categorizacao', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Nome'], 'string', 'max' => 45]
+            [['Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Nome'], 'string', 'max' => 45],
+           // ['categorizacaos','in','range'=>['Transporte','Fisico','Lanche'],'allowArray'=>true],
+          //  ['categorizacaos', 'exist', 'allowArray' => true, 'when' => function ($model, $attribute) {return is_array($model->$attribute);}],
+         //   [['categorias'], 'each', 'filter', 'filter' => 'trim']
         ];
     }
 
@@ -123,15 +126,9 @@ class Aluno extends \yii\db\ActiveRecord
         return ArrayHelper::map($models, 'idEscalao', 'Valor');
     }
 
-  /*  public function getCategorias(){
-        $models = Categorias::find()->asArray()->all();
-        return ArrayHelper::map($models,'idAluno','Valor');
-    }
-*/
-
-
     public function getCategorias(){
-        return $this->hasMany(Categorias::className(), ['idCategorias' => 'Categorias_idCategorias'])->via('categorizacaos');
+       return $this->hasMany(Categorias::className(),['idCategorias'=>'Categorias_idCategorias'])->
+        viaTable('Categorizacao',['Aluno_idAluno'=>'idAluno']);
     }
 
 
