@@ -18,8 +18,8 @@ class PagamentoSearch extends Pagamento
     public function rules()
     {
         return [
-            [['idPagamento', 'Aluno_idAluno', 'valor', 'nAulas'], 'integer'],
-            [['referencia', 'data', 'periodo'], 'safe'],
+            [['idPagamento', 'idInscricao', 'valor', 'nrFatura'], 'integer'],
+            [['dataFatura'], 'safe'],
         ];
     }
 
@@ -57,14 +57,11 @@ class PagamentoSearch extends Pagamento
 
         $query->andFilterWhere([
             'idPagamento' => $this->idPagamento,
-            'Aluno_idAluno' => $this->Aluno_idAluno,
+            'idInscricao' => $this->idInscricao,
             'valor' => $this->valor,
-            'data' => $this->data,
-            'periodo' => $this->periodo,
-            'nAulas' => $this->nAulas,
+            'nrFatura' => $this->nrFatura,
+            'dataFatura' => $this->dataFatura,
         ]);
-
-        $query->andFilterWhere(['like', 'referencia', $this->referencia]);
 
         return $dataProvider;
     }

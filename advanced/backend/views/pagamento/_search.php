@@ -17,21 +17,17 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'idPagamento') ?>
 
-    <?= $form->field($model, 'Aluno_idAluno') ?>
+    <?= $form->field($model, 'idInscricao') ?>
 
     <?= $form->field($model, 'valor') ?>
 
-    <?= $form->field($model, 'referencia') ?>
+    <?= $form->field($model, 'nrFatura') ?>
 
-    <?= $form->field($model, 'data') ?>
-
-    <?php // echo $form->field($model, 'periodo') ?>
-
-    <?php // echo $form->field($model, 'nAulas') ?>
+    <?= $form->field($model, 'dataFatura') ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Procurar', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reiniciar', ['class' => 'btn btn-default']) ?>
+        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

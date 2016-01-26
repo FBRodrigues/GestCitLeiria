@@ -12,27 +12,16 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'Aluno_idAluno')->textInput()->dropDownList([$model->getAlunos()],['prompt'=>'Selecione uma opção...'])->label('Aluno') ?>
+    <?= $form->field($model, 'idInscricao')->textInput() ?>
 
-    <?= $form->field($model, 'valor')->textInput()->label('Valor do Pagamento') ?>
+    <?= $form->field($model, 'valor')->textInput() ?>
 
-    <?= $form->field($model, 'referencia')->textInput(['maxlength' => true])->label('Referência') ?>
+    <?= $form->field($model, 'nrFatura')->textInput() ?>
 
-    <?= $form->field($model, 'data')->textInput()->widget(
-        \kartik\datetime\DateTimePicker::className(),[
-            'name' => 'check_issue_date',
-            'options' => ['placeholder' => 'Selecione uma Data ...'],
-            'pluginOptions' => [
-            'format' => 'yyyy-mm-dd',
-            'todayHighlight' => true]])->label('Data do Pagamento');
-    ?>
-
-    <?= $form->field($model, 'periodo')->textInput()->label('Periodo do Pagamento') ?>
-
-    <?= $form->field($model, 'nAulas')->textInput()->label('Número de Aulas') ?>
+    <?= $form->field($model, 'dataFatura')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Criar Pagamento' : 'Atualizar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

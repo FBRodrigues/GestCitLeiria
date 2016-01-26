@@ -73,8 +73,7 @@ class AlunoSearch extends Aluno
         ){
               $query= Aluno::find();
               $query->orWhere(['Sexo'=>$value1])
-                //TODO: alterar para andWhere
-                    ->orWhere(['Escalao_idEscalao'=>$value2]);
+                    ->andWhere(['Escalao_idEscalao'=>$value2]);
                   //->orWhere(['Categorias2'=>$value3])
 
 
