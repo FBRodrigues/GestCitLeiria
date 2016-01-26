@@ -93,7 +93,7 @@ class AlunoSearch extends Aluno
                 ->andWhere(['categorias.idCategorias'=>$value3]);
 
         }elseif($value1 !='' && $value2 != '' && $value3 == '' ){
-            //pri e segun p
+            //pri e segun pjsdbkdwjfbdefbiefhiwdfiu
             $query = Aluno::find()->with('categorias');
             $query->andWhere(['Sexo'=>$value1])
                 ->andWhere(['Escalao_idEscalao'=>$value2]);
