@@ -33,4 +33,8 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]) ?>
 
+    <?= $this->render('view', [
+        'model' => $model,
+    ]) ?>
+
 </div>

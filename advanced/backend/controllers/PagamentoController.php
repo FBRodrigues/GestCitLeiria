@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\models;
+namespace backend\controllers;
 
 use Yii;
 use backend\models\Pagamento;
@@ -61,9 +61,10 @@ class PagamentoController extends Controller
     public function actionCreate()
     {
         $model = new Pagamento();
-
+        $idInsc = Yii::$app -> request -> post('Inscricao')['idInscricao'];
+        var_dump($idInsc);
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idPagamento]);
+            return $this->redirect(['view', 'id' => $model->idPagamento] );
         } else {
             return $this->render('create', [
                 'model' => $model,

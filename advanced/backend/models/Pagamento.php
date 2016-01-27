@@ -3,6 +3,7 @@
 namespace backend\models;
 
 use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "pagamento".
@@ -57,5 +58,11 @@ class Pagamento extends \yii\db\ActiveRecord
     public function getIdInscricao0()
     {
         return $this->hasOne(Inscricao::className(), ['idInscricao' => 'idInscricao']);
+    }
+
+    public function getInscricoes()
+    {
+        $models = Inscricao::find()->asArray()->all();
+        return ArrayHelper::map($models, 'idInscricao', 'idInscricao');
     }
 }

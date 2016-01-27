@@ -55,15 +55,17 @@ class InscricaoSearch extends Inscricao
             return $dataProvider;
         }
 
+
         $query->andFilterWhere([
             'idInscricao' => $this->idInscricao,
-            'idAluno' => $this->idAluno,
+            'aluno.Nome' => $this->idAluno,
             'dataInicio' => $this->dataInicio,
             'dataFim' => $this->dataFim,
             'nrAulas' => $this->nrAulas,
         ]);
 
-        $query->andFilterWhere(['like', 'tipo', $this->tipo]);
+        $query->andFilterWhere(['like', 'tipo', $this->tipo])
+        ->andFilterWhere(['like', 'aluno.Nome', $this-> idAluno]);
 
         return $dataProvider;
     }

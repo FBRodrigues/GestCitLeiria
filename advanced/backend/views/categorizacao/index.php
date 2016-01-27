@@ -18,6 +18,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <!--</*?= Html::a('Adicionar Associaçao', ['create'], ['class' => 'btn btn-success']) ?>-->
     </p>
+
+
     <?=Html::beginForm(['site/init'],'post' );?>
 
     <?=Html::checkboxList('action', array('selection'=>'checked'))?>
@@ -61,6 +63,8 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+
+
     <?=Html::submitButton('Executar',['class' => 'btn btn-info','name'=>'formal']);?>
     <?=Html::dropDownList('action','',[','=>'Operação...',
         'ePer'=>'Enviar Email Personalizado','pPag'=>'Enviar Email Pagamentos'],['class'=>'dropdown'])?>

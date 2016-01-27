@@ -61,6 +61,8 @@ class EscalaoSearch extends Escalao
 
         $query->andFilterWhere(['like', 'Valor', $this->Valor]);
 
+
+
         return $dataProvider;
     }
 }

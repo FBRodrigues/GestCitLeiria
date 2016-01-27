@@ -11,8 +11,7 @@ use yii\widgets\ActiveForm;
 <div class="categorizacao-form">
 
     <?php $form = ActiveForm::begin(); ?>
-    <?= $form->field($model, 'Aluno_idAluno')->listBox($model->getAlunos(),['multiple' => 'true',
-    ])?>
+    <?= $form->field($model, 'Aluno_idAluno')->listBox($model->getAlunos())?>
 
 
     <?= $form->field($model, 'Categorias_idCategorias')->listBox($model->getCategorias())?>
@@ -24,4 +23,6 @@ use yii\widgets\ActiveForm;
 
     <?php ActiveForm::end(); ?>
 
+
 </div>
+

@@ -5252,3 +5252,2512 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1453487057.681
     'REQUEST_TIME' => 1453487057
 ]
+2016-01-26 18:59:16 [::1][2][8chstc3uk34kldm1280pmvval7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "pagamento/index".' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('pagamento/index', Array)
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-01-26 18:59:16 [::1][2][8chstc3uk34kldm1280pmvval7][info][application] $_GET = [
+    'r' => 'pagamento/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    '__id' => 2
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52533'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pagamento%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453831156.307
+    'REQUEST_TIME' => 1453831156
+]
+2016-01-26 19:01:19 [::1][2][8chstc3uk34kldm1280pmvval7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "pagamento/index".' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('pagamento/index', Array)
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-01-26 19:01:19 [::1][2][8chstc3uk34kldm1280pmvval7][info][application] $_GET = [
+    'r' => 'pagamento/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    '__id' => 2
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52559'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pagamento%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453831279.029
+    'REQUEST_TIME' => 1453831279
+]
+2016-01-26 19:03:08 [::1][2][8chstc3uk34kldm1280pmvval7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "pagamento/index".' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('pagamento/index', Array)
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-01-26 19:03:08 [::1][2][8chstc3uk34kldm1280pmvval7][info][application] $_GET = [
+    'r' => 'pagamento/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    '__id' => 2
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52574'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pagamento%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453831388.549
+    'REQUEST_TIME' => 1453831388
+]
+2016-01-26 19:03:37 [::1][2][8chstc3uk34kldm1280pmvval7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "pagamento/index".' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('pagamento/index', Array)
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-01-26 19:03:37 [::1][2][8chstc3uk34kldm1280pmvval7][info][application] $_GET = [
+    'r' => 'pagamento/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    '__id' => 2
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=categorias%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52580'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pagamento%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453831417.881
+    'REQUEST_TIME' => 1453831417
+]
+2016-01-26 19:05:05 [::1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'backend\controllers\PagamentoController' in file: C:\wamp\www\GestCitLeiria2\advanced/backend/controllers/PagamentoController.php. Namespace missing?' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(563): class_exists('backend\\control...')
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('pagamento')
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('pagamento/index')
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('pagamento/index', Array)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-01-26 19:05:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'pagamento/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52607'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pagamento%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453831505.378
+    'REQUEST_TIME' => 1453831505
+]
+2016-01-26 19:55:07 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\models\ArrayHelper' not found' in C:\wamp\www\GestCitLeiria2\advanced\backend\models\Inscricao.php:69
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(197): yii\helpers\BaseArrayHelper::getValue()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(188): yii\helpers\BaseArrayHelper::getValue()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\grid\DataColumn->getDataCellValue()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): yii\widgets\BaseListView->yii\widgets\{closure}()
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): ::preg_replace_callback()
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#15 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#16 C:\wamp\www\GestCitLeiria2\advanced\backend\views\inscricao\index.php(42): yii\base\Widget::widget()
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#21 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\InscricaoController.php(41): yii\base\Controller->render()
+#22 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\InscricaoController->actionIndex()
+#23 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#24 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#25 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#26 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#27 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#28 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+2016-01-26 19:55:07 [::1][-][-][info][application] $_GET = [
+    'r' => 'inscricao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52874'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=inscricao%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=inscricao%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453834507.317
+    'REQUEST_TIME' => 1453834507
+]
+2016-01-26 20:01:18 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Inscricao::aluno' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('aluno')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('aluno')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(197): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Inscricao), 'aluno', NULL)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(188): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Inscricao), 'aluno.Nome')
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\grid\DataColumn->getDataCellValue(Object(backend\models\Inscricao), 1, 0)
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Inscricao), 1, 0)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell(Object(backend\models\Inscricao), 1, 0)
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow(Object(backend\models\Inscricao), 1, 0)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#15 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#16 C:\wamp\www\GestCitLeiria2\advanced\backend\views\inscricao\index.php(42): yii\base\Widget::widget(Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\InscricaoController))
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(backend\controllers\InscricaoController))
+#21 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\InscricaoController.php(41): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\InscricaoController->actionIndex()
+#23 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#26 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('inscricao/index', Array)
+#27 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+2016-01-26 20:01:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'inscricao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52887'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=inscricao%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=inscricao%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453834878.647
+    'REQUEST_TIME' => 1453834878
+]
+2016-01-26 20:02:47 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Inscricao::aluno' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('aluno')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('aluno')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(197): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Inscricao), 'aluno', NULL)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(188): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Inscricao), 'aluno.Nome')
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\grid\DataColumn->getDataCellValue(Object(backend\models\Inscricao), 1, 0)
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Inscricao), 1, 0)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell(Object(backend\models\Inscricao), 1, 0)
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow(Object(backend\models\Inscricao), 1, 0)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#15 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#16 C:\wamp\www\GestCitLeiria2\advanced\backend\views\inscricao\index.php(42): yii\base\Widget::widget(Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\InscricaoController))
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(backend\controllers\InscricaoController))
+#21 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\InscricaoController.php(41): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\InscricaoController->actionIndex()
+#23 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#26 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('inscricao/index', Array)
+#27 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+2016-01-26 20:02:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'inscricao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52906'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=inscricao%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=inscricao%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453834967.484
+    'REQUEST_TIME' => 1453834967
+]
+2016-01-26 20:03:31 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Inscricao::aluno' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('aluno')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('aluno')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(197): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Inscricao), 'aluno', NULL)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(188): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Inscricao), 'aluno.Nome')
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\grid\DataColumn->getDataCellValue(Object(backend\models\Inscricao), 1, 0)
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Inscricao), 1, 0)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell(Object(backend\models\Inscricao), 1, 0)
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow(Object(backend\models\Inscricao), 1, 0)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#15 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#16 C:\wamp\www\GestCitLeiria2\advanced\backend\views\inscricao\index.php(42): yii\base\Widget::widget(Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\InscricaoController))
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(backend\controllers\InscricaoController))
+#21 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\InscricaoController.php(41): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\InscricaoController->actionIndex()
+#23 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#26 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('inscricao/index', Array)
+#27 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+2016-01-26 20:03:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'inscricao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52914'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=inscricao%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=inscricao%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453835011.671
+    'REQUEST_TIME' => 1453835011
+]
+2016-01-26 20:06:05 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Inscricao::aluno' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('aluno')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('aluno')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(197): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Inscricao), 'aluno', NULL)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(188): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Inscricao), 'aluno.Nome')
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\grid\DataColumn->getDataCellValue(Object(backend\models\Inscricao), 1, 0)
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Inscricao), 1, 0)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell(Object(backend\models\Inscricao), 1, 0)
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow(Object(backend\models\Inscricao), 1, 0)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#15 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#16 C:\wamp\www\GestCitLeiria2\advanced\backend\views\inscricao\index.php(42): yii\base\Widget::widget(Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\InscricaoController))
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(backend\controllers\InscricaoController))
+#21 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\InscricaoController.php(41): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\InscricaoController->actionIndex()
+#23 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#26 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('inscricao/index', Array)
+#27 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+2016-01-26 20:06:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'inscricao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52929'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=inscricao%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=inscricao%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453835165.128
+    'REQUEST_TIME' => 1453835165
+]
+2016-01-26 20:17:07 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Relation names are case sensitive. backend\models\Aluno has a relation named "categorias" instead of "Categorias".' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:153
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(249): yii\db\ActiveQuery->findFor('Categorias', Object(backend\models\Aluno))
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2029): yii\db\BaseActiveRecord->__get('Categorias')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1649): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Aluno), 'Categorias')
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1588): yii\helpers\BaseHtml::activeListInput('checkboxList', Object(backend\models\Aluno), 'Categorias', Array, Array)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(612): yii\helpers\BaseHtml::activeCheckboxList(Object(backend\models\Aluno), 'Categorias', Array, Array)
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\views\aluno\_form.php(51): yii\widgets\ActiveField->checkboxList(Array, Array)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, NULL)
+#9 C:\wamp\www\GestCitLeiria2\advanced\backend\views\aluno\create.php(19): yii\base\View->render('_form', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\AlunoController))
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('create', Array, Object(backend\controllers\AlunoController))
+#14 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\AlunoController.php(99): yii\base\Controller->render('create', Array)
+#15 [internal function]: backend\controllers\AlunoController->actionCreate()
+#16 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/create', Array)
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+2016-01-26 20:17:06 [::1][-][-][info][application] $_GET = [
+    'r' => 'aluno/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52984'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=aluno%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453835826.656
+    'REQUEST_TIME' => 1453835826
+]
+2016-01-26 20:17:35 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Relation names are case sensitive. backend\models\Aluno has a relation named "categorias" instead of "Categorias".' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\ActiveRelationTrait.php:153
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(249): yii\db\ActiveQuery->findFor('Categorias', Object(backend\models\Aluno))
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2029): yii\db\BaseActiveRecord->__get('Categorias')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1649): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Aluno), 'Categorias')
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1588): yii\helpers\BaseHtml::activeListInput('checkboxList', Object(backend\models\Aluno), 'Categorias', Array, Array)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(612): yii\helpers\BaseHtml::activeCheckboxList(Object(backend\models\Aluno), 'Categorias', Array, Array)
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\views\aluno\_form.php(51): yii\widgets\ActiveField->checkboxList(Array, Array)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, NULL)
+#9 C:\wamp\www\GestCitLeiria2\advanced\backend\views\aluno\create.php(19): yii\base\View->render('_form', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\AlunoController))
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('create', Array, Object(backend\controllers\AlunoController))
+#14 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\AlunoController.php(99): yii\base\Controller->render('create', Array)
+#15 [internal function]: backend\controllers\AlunoController->actionCreate()
+#16 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/create', Array)
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+2016-01-26 20:17:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'aluno/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52995'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=aluno%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453835855.006
+    'REQUEST_TIME' => 1453835855
+]
+2016-01-26 20:26:09 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\models\ArrayHelper' not found' in C:\wamp\www\GestCitLeiria2\advanced\backend\models\Inscricao.php:69
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#3 C:\wamp\www\GestCitLeiria2\advanced\backend\views\inscricao\create.php(19): yii\base\View->render()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#8 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\InscricaoController.php(70): yii\base\Controller->render()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\InscricaoController->actionCreate()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#15 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+2016-01-26 20:26:08 [::1][-][-][info][application] $_GET = [
+    'r' => 'inscricao/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=inscricao%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '53019'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=inscricao%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=inscricao%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453836368.97
+    'REQUEST_TIME' => 1453836368
+]
+2016-01-26 20:26:46 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'DateTimePicker' not found' in C:\wamp\www\GestCitLeiria2\advanced\backend\views\inscricao\_form.php:17
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria2\advanced\backend\views\inscricao\create.php(19): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#7 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\InscricaoController.php(70): yii\base\Controller->render()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\InscricaoController->actionCreate()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#14 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2016-01-26 20:26:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'inscricao/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '53033'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=inscricao%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=inscricao%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453836406.465
+    'REQUEST_TIME' => 1453836406
+]
+2016-01-26 21:19:29 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\models\Presenca' not found' in C:\wamp\www\GestCitLeiria2\advanced\backend\models\Inscricao.php:75
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\DetailView.php(202): yii\db\BaseActiveRecord->__get()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\DetailView.php(211): yii\helpers\BaseArrayHelper::getValue()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\DetailView.php(124): yii\widgets\DetailView->normalizeAttributes()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\widgets\DetailView->init()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\di\Container.php(373): yii\base\Object->__construct()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\di\Container.php(152): yii\di\Container->build()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Widget.php(97): yii\BaseYii::createObject()
+#10 C:\wamp\www\GestCitLeiria2\advanced\backend\views\inscricao\view.php(39): yii\base\Widget::widget()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#15 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\InscricaoController.php(53): yii\base\Controller->render()
+#16 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\InscricaoController->actionView()
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#21 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#22 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#23 {main}
+2016-01-26 21:19:29 [::1][-][-][info][application] $_GET = [
+    'r' => 'inscricao/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '53287'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=inscricao%2Fview&id=1'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=inscricao%2Fview&id=1'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453839569.014
+    'REQUEST_TIME' => 1453839569
+]
+2016-01-26 23:53:49 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\models\ArrayHelper' not found' in C:\wamp\www\GestCitLeiria2\advanced\backend\models\Pagamento.php:65
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#3 C:\wamp\www\GestCitLeiria2\advanced\backend\views\pagamento\create.php(19): yii\base\View->render()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#8 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\PagamentoController.php(70): yii\base\Controller->render()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\PagamentoController->actionCreate()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#15 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+2016-01-26 23:53:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'pagamento/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54132'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pagamento%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453848828.957
+    'REQUEST_TIME' => 1453848828
+]
+2016-01-26 23:54:47 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\models\ArrayHelper' not found' in C:\wamp\www\GestCitLeiria2\advanced\backend\models\Pagamento.php:65
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#3 C:\wamp\www\GestCitLeiria2\advanced\backend\views\pagamento\create.php(19): yii\base\View->render()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#8 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\PagamentoController.php(70): yii\base\Controller->render()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\PagamentoController->actionCreate()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#15 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+2016-01-26 23:54:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'pagamento/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54136'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pagamento%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453848886.987
+    'REQUEST_TIME' => 1453848886
+]
+2016-01-26 23:58:11 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'DateTimePicker' not found' in C:\wamp\www\GestCitLeiria2\advanced\backend\views\pagamento\_form.php:22
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria2\advanced\backend\views\pagamento\create.php(19): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#7 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\PagamentoController.php(70): yii\base\Controller->render()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\PagamentoController->actionCreate()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#14 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2016-01-26 23:58:11 [::1][-][-][info][application] $_GET = [
+    'r' => 'pagamento/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54154'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pagamento%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453849091.197
+    'REQUEST_TIME' => 1453849091
+]
+2016-01-27 00:13:25 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 3 for yii\helpers\BaseArrayHelper::map(), called in C:\wamp\www\GestCitLeiria2\advanced\backend\models\Pagamento.php on line 66 and defined' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php:368
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\backend\views\pagamento\_form.php(17): backend\models\Pagamento->getInscricoes()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#4 C:\wamp\www\GestCitLeiria2\advanced\backend\views\pagamento\create.php(19): yii\base\View->render()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#9 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\PagamentoController.php(70): yii\base\Controller->render()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\PagamentoController->actionCreate()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#15 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#16 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#17 {main}
+2016-01-27 00:13:25 [::1][-][-][info][application] $_GET = [
+    'r' => 'pagamento/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54358'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pagamento%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453850005.685
+    'REQUEST_TIME' => 1453850005
+]
+2016-01-27 00:34:24 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php:70
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-27 00:34:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/create'
+]
+
+$_POST = [
+    '_csrf' => 'WC5RUnowSXQqZykGI3I/Qxp0MhNKcQEAaEQIJgIBGEE5bBhlHXNxAw=='
+    'Categorizacao' => [
+        'Aluno_idAluno' => [
+            0 => '1'
+        ]
+        'Categorias_idCategorias' => '4'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '232'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54600'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=categorizacao%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453851263.921
+    'REQUEST_TIME' => 1453851263
+]
+2016-01-27 00:35:24 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php:69
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-27 00:35:24 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/create'
+]
+
+$_POST = [
+    '_csrf' => 'RDBDZnh1alg2eTsyITccbwZqICdINCIsdFoaEgBEO20lcgpRHzZSLw=='
+    'Categorizacao' => [
+        'Aluno_idAluno' => '1'
+        'Categorias_idCategorias' => '3'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '224'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54639'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=categorizacao%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453851324.442
+    'REQUEST_TIME' => 1453851324
+]
+2016-01-27 01:05:08 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: idInscricao' in C:\wamp\www\GestCitLeiria2\advanced\backend\views\pagamento\_form.php:17
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria2\advanced\backend\views\pagamento\create.php(19): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#7 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\PagamentoController.php(71): yii\base\Controller->render()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\PagamentoController->actionCreate()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#14 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2016-01-27 01:05:08 [::1][-][-][info][application] $_GET = [
+    'r' => 'pagamento/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=inscricao%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54766'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pagamento%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453853108.669
+    'REQUEST_TIME' => 1453853108
+]
+2016-01-27 01:06:05 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: idInscricao' in C:\wamp\www\GestCitLeiria2\advanced\backend\views\pagamento\_form.php:17
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria2\advanced\backend\views\pagamento\create.php(19): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#7 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\PagamentoController.php(71): yii\base\Controller->render()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\PagamentoController->actionCreate()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#14 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2016-01-27 01:06:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'pagamento/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54772'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pagamento%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=pagamento%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453853165.602
+    'REQUEST_TIME' => 1453853165
+]
+2016-01-27 01:12:38 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php:69
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-27 01:12:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/create'
+]
+
+$_POST = [
+    '_csrf' => 'cl9SRUFVZVcAFioRGBcTYDAFMQRxFC0jQjULMTlkNGITHRtyJhZdIA=='
+    'Categorizacao' => [
+        'Aluno_idAluno' => '3'
+        'Categorias_idCategorias' => '6'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '224'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54900'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=categorizacao%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453853558.049
+    'REQUEST_TIME' => 1453853558
+]
+2016-01-27 01:17:43 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Categorizacao::Aluno' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('Aluno')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2029): yii\db\BaseActiveRecord->__get('Aluno')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1649): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Categorizacao), 'Aluno')
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1546): yii\helpers\BaseHtml::activeListInput('listBox', Object(backend\models\Categorizacao), 'Aluno', Array, Array)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(593): yii\helpers\BaseHtml::activeListBox(Object(backend\models\Categorizacao), 'Aluno', Array, Array)
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\_form.php(14): yii\widgets\ActiveField->listBox(Array)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, NULL)
+#9 C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\create.php(19): yii\base\View->render('_form', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\CategorizacaoController))
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('create', Array, Object(backend\controllers\CategorizacaoController))
+#14 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php(72): yii\base\Controller->render('create', Array)
+#15 [internal function]: backend\controllers\CategorizacaoController->actionCreate()
+#16 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('categorizacao/c...', Array)
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+2016-01-27 01:17:43 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54939'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453853863.522
+    'REQUEST_TIME' => 1453853863
+]
+2016-01-27 01:26:16 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'DetailView' not found' in C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\_form.php:43
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\create.php(19): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#7 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php(72): yii\base\Controller->render()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\CategorizacaoController->actionCreate()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#14 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2016-01-27 01:26:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54981'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453854375.785
+    'REQUEST_TIME' => 1453854375
+]
+2016-01-27 01:26:46 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Unknown format type: Aluno' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\i18n\Formatter.php:287
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\DetailView.php(155): yii\i18n\Formatter->format(NULL, 'Aluno')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\DetailView.php(136): yii\widgets\DetailView->renderAttribute(Array, 0)
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\widgets\DetailView->run()
+#3 C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\_form.php(50): yii\base\Widget::widget(Array)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, NULL)
+#7 C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\create.php(19): yii\base\View->render('_form', Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\CategorizacaoController))
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('create', Array, Object(backend\controllers\CategorizacaoController))
+#12 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php(72): yii\base\Controller->render('create', Array)
+#13 [internal function]: backend\controllers\CategorizacaoController->actionCreate()
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('categorizacao/c...', Array)
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2016-01-27 01:26:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '54991'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453854405.811
+    'REQUEST_TIME' => 1453854405
+]
+2016-01-27 01:30:00 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Unknown format type: Aluno' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\i18n\Formatter.php:287
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\DetailView.php(155): yii\i18n\Formatter->format(NULL, 'Aluno')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\DetailView.php(136): yii\widgets\DetailView->renderAttribute(Array, 0)
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\widgets\DetailView->run()
+#3 C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\view.php(34): yii\base\Widget::widget(Array)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, NULL)
+#7 C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\create.php(23): yii\base\View->render('view', Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\CategorizacaoController))
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('create', Array, Object(backend\controllers\CategorizacaoController))
+#12 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php(72): yii\base\Controller->render('create', Array)
+#13 [internal function]: backend\controllers\CategorizacaoController->actionCreate()
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('categorizacao/c...', Array)
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2016-01-27 01:29:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '55016'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453854599.696
+    'REQUEST_TIME' => 1453854599
+]
+2016-01-27 01:30:50 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Unknown format type: Aluno' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\i18n\Formatter.php:287
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\DetailView.php(155): yii\i18n\Formatter->format(NULL, 'Aluno')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\DetailView.php(136): yii\widgets\DetailView->renderAttribute(Array, 0)
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\widgets\DetailView->run()
+#3 C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\view.php(34): yii\base\Widget::widget(Array)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, NULL)
+#7 C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\create.php(19): yii\base\View->render('view', Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\CategorizacaoController))
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('create', Array, Object(backend\controllers\CategorizacaoController))
+#12 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php(72): yii\base\Controller->render('create', Array)
+#13 [internal function]: backend\controllers\CategorizacaoController->actionCreate()
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('categorizacao/c...', Array)
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2016-01-27 01:30:50 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '55037'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453854650.521
+    'REQUEST_TIME' => 1453854650
+]
+2016-01-27 01:32:30 [::1][2][8chstc3uk34kldm1280pmvval7][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('categorizacao/v...', Array)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-27 01:32:30 [::1][2][8chstc3uk34kldm1280pmvval7][info][application] $_GET = [
+    'r' => 'categorizacao/view'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    '__id' => 2
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '55072'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Fview'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fview'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453854750.408
+    'REQUEST_TIME' => 1453854750
+]
+2016-01-27 01:32:55 [::1][2][8chstc3uk34kldm1280pmvval7][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('categorizacao/v...', Array)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-01-27 01:32:54 [::1][2][8chstc3uk34kldm1280pmvval7][info][application] $_GET = [
+    'r' => 'categorizacao/view'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    '__id' => 2
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorizacaos' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '55084'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Fview'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fview'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453854774.978
+    'REQUEST_TIME' => 1453854774
+]
+2016-01-27 01:34:07 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\categorizacao-form.php' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, NULL)
+#1 C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\create.php(19): yii\base\View->render('categorizacao-f...', Array)
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\CategorizacaoController))
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('create', Array, Object(backend\controllers\CategorizacaoController))
+#6 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php(72): yii\base\Controller->render('create', Array)
+#7 [internal function]: backend\controllers\CategorizacaoController->actionCreate()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('categorizacao/c...', Array)
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2016-01-27 01:34:06 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/create'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '55115'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453854846.951
+    'REQUEST_TIME' => 1453854846
+]
+2016-01-27 01:34:57 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\index.php:71
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php(43): yii\base\Controller->render()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\CategorizacaoController->actionIndex()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-01-27 01:34:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '55127'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453854897.557
+    'REQUEST_TIME' => 1453854897
+]
+2016-01-27 01:35:25 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\index.php:23
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php(43): yii\base\Controller->render()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\CategorizacaoController->actionIndex()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-01-27 01:35:25 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '55138'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453854925.294
+    'REQUEST_TIME' => 1453854925
+]
+2016-01-27 01:35:33 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\index.php:27
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php(43): yii\base\Controller->render()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\CategorizacaoController->actionIndex()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-01-27 01:35:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '55142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453854933.328
+    'REQUEST_TIME' => 1453854933
+]
+2016-01-27 01:41:39 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\index.php:62
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(190): ::call_user_func:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php:190}()
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\grid\DataColumn->getDataCellValue()
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent()
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell()
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow()
+#5 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection()
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection()
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): yii\widgets\BaseListView->yii\widgets\{closure}()
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(129): ::preg_replace_callback()
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#13 C:\wamp\www\GestCitLeiria2\advanced\backend\views\categorizacao\index.php(80): yii\base\Widget::widget()
+#14 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#15 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#16 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#18 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\CategorizacaoController.php(43): yii\base\Controller->render()
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\CategorizacaoController->actionIndex()
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#21 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#22 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#23 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#24 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#25 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#26 {main}
+2016-01-27 01:41:39 [::1][-][-][info][application] $_GET = [
+    'r' => 'categorizacao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '55209'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=categorizacao%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=categorizacao%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453855299.306
+    'REQUEST_TIME' => 1453855299
+]

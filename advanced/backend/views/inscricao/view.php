@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model backend\models\Inscricao */
 
 $this->title = $model->idInscricao;
-$this->params['breadcrumbs'][] = ['label' => 'Inscricaos', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Inscricões', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="inscricao-view">
@@ -19,22 +19,30 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Delete', ['delete', 'id' => $model->idInscricao], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => 'Deseja apagar este Item?',
                 'method' => 'post',
             ],
         ]) ?>
+
+
     </p>
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
             'idInscricao',
-            'idAluno',
+            'idAluno0.Nome',
             'dataInicio',
             'dataFim',
             'nrAulas',
             'tipo',
+            //'AulasEfectuadas'
         ],
     ]) ?>
+    <p>
+        <?= Html::a('Criar Pagamento', ['pagamento/create'], ['class' => 'btn btn-success'],[
+        'data' => ['method' => 'post']]
+        )?>
+    </p>
 
 </div>

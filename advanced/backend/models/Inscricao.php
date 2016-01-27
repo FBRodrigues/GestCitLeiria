@@ -3,6 +3,7 @@
 namespace backend\models;
 
 use Yii;
+use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "inscricao".
@@ -61,6 +62,17 @@ class Inscricao extends \yii\db\ActiveRecord
     public function getIdAluno0()
     {
         return $this->hasOne(Aluno::className(), ['idAluno' => 'idAluno']);
+    }
+
+    public function getAlunos()
+    {
+        $models = Aluno::find()->asArray()->all();
+        return ArrayHelper::map($models, 'idAluno', 'Nome');
+    }
+
+    public function getAulasEfectuadas()
+    {
+        return $this->hasMany(Presenca::className(), ['Aluno_idAluno' => 'idAluno'])->where('Estado=1')->count('Estado');
     }
 
     /**

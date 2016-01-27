@@ -53,6 +53,7 @@ AppAsset::register($this);
             ['label' => 'Associar com Sócio', 'url' => ['categorizacao/create']],
         ]],
         ['label' => 'Pagamentos', 'url' => ['pagamento/index'],],
+        ['label' => 'Inscrições', 'url' => ['inscricao/index'],],
         //'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
 
     ];
