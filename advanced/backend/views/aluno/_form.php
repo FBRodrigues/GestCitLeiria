@@ -49,7 +49,6 @@ use kartik\datetime\DateTimePicker;
 
         <?= $form->field($model, 'Sexo')->dropDownList([ 'M' => 'M', 'F' => 'F', ], ['prompt' => 'Selecione uma opção...']) ?>
 
-        <?=$form->field($model,'Categorias0')->checkboxList($categorias,array('selection'=>'checked'))->label('Categorias')?>
 
         <div class="form-group">
             <?= Html::submitButton($model->isNewRecord ? 'Criar' : 'Atualizar',

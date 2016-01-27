@@ -7761,3 +7761,653 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1453855299.306
     'REQUEST_TIME' => 1453855299
 ]
+2016-01-27 17:23:36 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Aluno::Categorias0' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('Categorias0')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2029): yii\db\BaseActiveRecord->__get('Categorias0')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1649): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Aluno), 'Categorias0')
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1588): yii\helpers\BaseHtml::activeListInput('checkboxList', Object(backend\models\Aluno), 'Categorias0', Array, Array)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(612): yii\helpers\BaseHtml::activeCheckboxList(Object(backend\models\Aluno), 'Categorias0', Array, Array)
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\views\aluno\_form.php(52): yii\widgets\ActiveField->checkboxList(Array, Array)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, NULL)
+#9 C:\wamp\www\GestCitLeiria2\advanced\backend\views\aluno\update.php(19): yii\base\View->render('_form', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\AlunoController))
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('update', Array, Object(backend\controllers\AlunoController))
+#14 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\AlunoController.php(118): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AlunoController->actionUpdate('1')
+#16 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/update', Array)
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+2016-01-27 17:23:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'aluno/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Findex&sort=Sexo'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56175'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=aluno%2Fupdate&id=1'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453911816.347
+    'REQUEST_TIME' => 1453911816
+]
+2016-01-27 17:23:45 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Aluno::Categorias0' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('Categorias0')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2029): yii\db\BaseActiveRecord->__get('Categorias0')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1649): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Aluno), 'Categorias0')
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1588): yii\helpers\BaseHtml::activeListInput('checkboxList', Object(backend\models\Aluno), 'Categorias0', Array, Array)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(612): yii\helpers\BaseHtml::activeCheckboxList(Object(backend\models\Aluno), 'Categorias0', Array, Array)
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\views\aluno\_form.php(52): yii\widgets\ActiveField->checkboxList(Array, Array)
+#6 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, NULL)
+#9 C:\wamp\www\GestCitLeiria2\advanced\backend\views\aluno\update.php(19): yii\base\View->render('_form', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\wamp\\www\\Ges...')
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\wamp\\www\\Ges...', Array)
+#12 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\wamp\\www\\Ges...', Array, Object(backend\controllers\AlunoController))
+#13 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('update', Array, Object(backend\controllers\AlunoController))
+#14 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\AlunoController.php(118): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AlunoController->actionUpdate('1')
+#16 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#19 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/update', Array)
+#20 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+2016-01-27 17:23:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'aluno/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Findex&sort=Sexo'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56177'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=aluno%2Fupdate&id=1'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453911824.91
+    'REQUEST_TIME' => 1453911824
+]
+2016-01-27 17:26:30 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Aluno::Categorias_idCategorias' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('Categorias_idCa...')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\validators\Validator.php(237): yii\db\BaseActiveRecord->__get('Categorias_idCa...')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(backend\models\Aluno), Array)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(524): yii\base\Model->validate(NULL)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\AlunoController.php(113): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AlunoController->actionUpdate('1')
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/update', Array)
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-01-27 17:26:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'aluno/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'eVhNdk9HUjQLETUiFgUkAzsCLjd/BhpASTIUAjd2AwEYGgRBKARqQw=='
+    'Aluno' => [
+        'Escalao_idEscalao' => '4'
+        'Nome' => 'Artur Morcela'
+        'DataNascimento' => '2000-01-03 00:00:00'
+        'Idade' => '15'
+        'Contato1' => '964324452'
+        'Contato2' => '964324453'
+        'Contato3_Email' => ''
+        'EncarregadoEducacao' => 'Jos? Morcela'
+        'Sexo' => 'M'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '350'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56221'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Fupdate&id=1'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453911990.469
+    'REQUEST_TIME' => 1453911990
+]
+2016-01-27 17:27:31 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Aluno::Categorias_idCategorias' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('Categorias_idCa...')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\validators\Validator.php(237): yii\db\BaseActiveRecord->__get('Categorias_idCa...')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(backend\models\Aluno), Array)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(524): yii\base\Model->validate(NULL)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\AlunoController.php(113): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AlunoController->actionUpdate('1')
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/update', Array)
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-01-27 17:27:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'aluno/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'Sm1yM1RqUXA4JApnDSgnRwg3EXJkKxkEegcrRyxbAEUrLzsEMylpBw=='
+    'Aluno' => [
+        'Escalao_idEscalao' => '4'
+        'Nome' => 'Artur Morcela'
+        'DataNascimento' => '2000-01-03 00:00:00'
+        'Idade' => '15'
+        'Contato1' => '964324452'
+        'Contato2' => '964324453'
+        'Contato3_Email' => ''
+        'EncarregadoEducacao' => 'Jos? Morcela'
+        'Sexo' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '347'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56230'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Fupdate&id=1'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453912050.916
+    'REQUEST_TIME' => 1453912050
+]
+2016-01-27 17:30:18 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Aluno::Categorias_idCategorias' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('Categorias_idCa...')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\validators\Validator.php(237): yii\db\BaseActiveRecord->__get('Categorias_idCa...')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(backend\models\Aluno), Array)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(418): yii\base\Model->validate(NULL)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\AlunoController.php(94): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AlunoController->actionCreate()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/create', Array)
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-01-27 17:30:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'aluno/create'
+]
+
+$_POST = [
+    '_csrf' => 'a1BhVUdzQ2EZGRkBHjE1VikKAhR3MgsVWzo4IT9CElQKEihiIDB7Fg=='
+    'Aluno' => [
+        'Escalao_idEscalao' => '1'
+        'Nome' => 'Fábio Rodrigues'
+        'DataNascimento' => '2004-02-04'
+        'Idade' => '8'
+        'Contato1' => '123456789'
+        'Contato2' => ''
+        'Contato3_Email' => ''
+        'EncarregadoEducacao' => ''
+        'Sexo' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '317'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56262'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453912218.373
+    'REQUEST_TIME' => 1453912218
+]
+2016-01-27 17:30:24 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Aluno::Categorias_idCategorias' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('Categorias_idCa...')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\validators\Validator.php(237): yii\db\BaseActiveRecord->__get('Categorias_idCa...')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(backend\models\Aluno), Array)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(418): yii\base\Model->validate(NULL)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(593): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\AlunoController.php(94): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AlunoController->actionCreate()
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('create', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/create', Array)
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-01-27 17:30:24 [::1][-][-][info][application] $_GET = [
+    'r' => 'aluno/create'
+]
+
+$_POST = [
+    '_csrf' => 'Q3NqQ2hPLXUxOhIXMQ1bQgEpCQJYDmUBcxkzNxB.fEAiMSN0DwwVAg=='
+    'Aluno' => [
+        'Escalao_idEscalao' => '1'
+        'Nome' => 'Fábio Rodrigues'
+        'DataNascimento' => '2004-02-04'
+        'Idade' => '8'
+        'Contato1' => '123456789'
+        'Contato2' => ''
+        'Contato3_Email' => ''
+        'EncarregadoEducacao' => ''
+        'Sexo' => 'M'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '318'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56264'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453912224.33
+    'REQUEST_TIME' => 1453912224
+]
+2016-01-27 17:33:53 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Aluno::Categorias_idCategorias' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('Categorias_idCa...')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\validators\Validator.php(237): yii\db\BaseActiveRecord->__get('Categorias_idCa...')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(backend\models\Aluno), Array)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(524): yii\base\Model->validate(NULL)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\AlunoController.php(113): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AlunoController->actionUpdate('1')
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/update', Array)
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-01-27 17:33:53 [::1][-][-][info][application] $_GET = [
+    'r' => 'aluno/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'RjNMdnZRZ2g0ejQiLxMRXwRpLzdGEC8cdlkVAg5gNl0ncQVBERJfHw=='
+    'Aluno' => [
+        'Escalao_idEscalao' => '4'
+        'Nome' => 'Artur Morcela'
+        'DataNascimento' => '2000-01-03 00:00:00'
+        'Idade' => '15'
+        'Contato1' => '964324452'
+        'Contato2' => '964324453'
+        'Contato3_Email' => ''
+        'EncarregadoEducacao' => 'Jos? Morcela'
+        'Sexo' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '347'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56322'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Fupdate&id=1'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453912433.156
+    'REQUEST_TIME' => 1453912433
+]
+2016-01-27 17:38:33 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Aluno::categorias.Valor' in C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('categorias.Valo...')
+#1 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\validators\Validator.php(237): yii\db\BaseActiveRecord->__get('categorias.Valo...')
+#2 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Model.php(352): yii\validators\Validator->validateAttributes(Object(backend\models\Aluno), Array)
+#3 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(524): yii\base\Model->validate(NULL)
+#4 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(595): yii\db\ActiveRecord->update(true, NULL)
+#5 C:\wamp\www\GestCitLeiria2\advanced\backend\controllers\AlunoController.php(113): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AlunoController->actionUpdate('1')
+#7 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#10 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('aluno/update', Array)
+#11 C:\wamp\www\GestCitLeiria2\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\wamp\www\GestCitLeiria2\advanced\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-01-27 17:38:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'aluno/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'N2JMWk8zdXhFKzQOFnEDT3U4Lxt/cj0MBwgVLjcCJE1WIAVtKHBNDw=='
+    'Aluno' => [
+        'Escalao_idEscalao' => '4'
+        'Nome' => 'Artur Morcela'
+        'DataNascimento' => '2000-01-03 00:00:00'
+        'Idade' => '15'
+        'Contato1' => '964324452'
+        'Contato2' => '964324453'
+        'Contato3_Email' => ''
+        'EncarregadoEducacao' => 'Jos? Morcela'
+        'Sexo' => ''
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w\";}'
+    'PHPSESSID' => '8chstc3uk34kldm1280pmvval7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '349'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=23faecea116ac411a1c66a8d1a5b2227f7e21a10c9bbd45d1601486a4fb74b8ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rIxTYBv7BZcA0AHt0jYtx1Q5aBI7gC8w%22%3B%7D; PHPSESSID=8chstc3uk34kldm1280pmvval7'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria2/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56384'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aluno%2Fupdate&id=1'
+    'REQUEST_URI' => '/GestCitLeiria2/advanced/backend/web/index.php?r=aluno%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria2/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1453912713.351
+    'REQUEST_TIME' => 1453912713
+]

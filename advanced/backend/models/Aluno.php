@@ -46,8 +46,8 @@ class Aluno extends \yii\db\ActiveRecord
     {
         return [
             [['Escalao_idEscalao'], 'required'],
-            [['Escalao_idEscalao', 'Idade','Categorias_idCategorias'], 'integer'],
-            [['DataNascimento','categorias.Valor'], 'safe'],
+            [['Escalao_idEscalao', 'Idade'], 'integer'],
+            [['DataNascimento'], 'safe'],
             [['Sexo'], 'string', 'max' => 1],
             [['Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Nome'], 'string', 'max' => 45],
            // ['categorizacaos','in','range'=>['Transporte','Fisico','Lanche'],'allowArray'=>true],
@@ -66,7 +66,7 @@ class Aluno extends \yii\db\ActiveRecord
             'Valor' => Yii::t('app','Escalao'),
             'idAluno' => 'Id Aluno',
             'Escalao_idEscalao'=> 'Id Escalao',
-            'Categorizacao'=>'Categorias',
+            //'Categorizacao'=>'Categorias',
             'Nome' => 'Nome',
             'DataNascimento' => 'Data Nascimento',
             'Idade' => 'Idade',

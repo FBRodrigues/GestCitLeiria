@@ -100,10 +100,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
                 if($session['Categorias']){
 
-                    var_dump($session['Categorias']);
-
-
-
+                    $str .= $session['categorias'];
 
                 }
 
