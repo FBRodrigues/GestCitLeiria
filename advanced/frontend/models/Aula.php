@@ -14,6 +14,8 @@ use yii\helpers\ArrayHelper;
  * @property string $horaFim
  * @property string $choveu
  * @property Presenca $presenca
+ * @property integer $DiaSemana
+ * @property string $Data
  *
  * @property Presenca[] $presencas
  * @property Turma[] $turmas
@@ -34,11 +36,11 @@ class Aula extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idAula', 'nome', 'horaInicio', 'horaFim', 'choveu'], 'required'],
-            [['idAula'], 'integer'],
-            [['horaInicio', 'horaFim'], 'safe'],
-            [['nome'], 'string', 'max' => 10],
-            [['choveu'], 'string', 'max' => 1]
+            [['Nome', 'HoraInicio', 'HoraFim', 'Data'], 'required'],
+            [['HoraInicio', 'HoraFim'], 'safe'],
+            [['DiaSemana'], 'integer'],
+            [['Nome'], 'string', 'max' => 20],
+            [['Estado'], 'string', 'max' => 20]
         ];
     }
 
@@ -52,7 +54,10 @@ class Aula extends \yii\db\ActiveRecord
             'Nome' => 'Nome',
             'HoraInicio' => 'Hora Inicio',
             'HoraFim' => 'Hora Fim',
-            'Choveu' => 'Choveu',
+            'Estado' => 'Estado',
+            'DiaSemana' => 'DiaSemana',
+            'Data' => 'Data',
+            'nrPresentes' => Yii::t('app', 'Numero de Alunos Presentes'),
         ];
     }
 
@@ -61,7 +66,17 @@ class Aula extends \yii\db\ActiveRecord
      */
     public function getPresencas()
     {
-        return $this->hasMany(Presenca::className(), ['Aula_idAula' => 'idAula']);
+        $presencas = $this->hasMany(Presenca::className(), ['Aula_idAula' => 'idAula']);
+        if($presencas == null){
+            return 0;
+        } else {
+            return $presencas;
+        }
+
+    }
+
+    public function getNrPresentes(){
+        return $this->hasMany(Presenca::className(), ['Aula_idAula' => 'idAula'])->where('Estado=1')->count('Estado');
     }
 
     /**
@@ -84,17 +99,21 @@ class Aula extends \yii\db\ActiveRecord
             'Aula_idAula' => $idAula,
         ]);
 
-        $array = [];
+        $alunosInscritos = [];
         foreach($listaPresencas as $presenca){
-            $array[$presenca->Aluno_idAluno] = $presenca->alunoIdAluno->Nome;
+            $alunosInscritos[$presenca->idPresenca] = [
+                'idAluno' => $presenca->alunoIdAluno->idAluno,
+                'nomeAluno' => $presenca->alunoIdAluno->Nome,
+                'contatoAluno' => $presenca->alunoIdAluno->Contato1];
+            //$alunosInscritos[$presenca->Aluno_idAluno] = [$presenca->alunoIdAluno->NomeAluno, $presenca->alunoIdAluno->Contato1];
             // $v[] = $presenca->Aluno_idAluno;
         }
 
         //var_dump($alunosIncritos);
 
-        $alunosIncritos = $array;
+        //$alunosIncritos = $array;
 
-        return $alunosIncritos;
+        return $alunosInscritos;
 
         /*
         return [
@@ -126,4 +145,7 @@ class Aula extends \yii\db\ActiveRecord
 
         //return [0, 2];
     }
+
+
+
 }

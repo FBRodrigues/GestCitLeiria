@@ -60,7 +60,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     }*/
     ?>-->
-    <?php
+  <!-- </*?php
     foreach($emails as $value){
         echo '<br>'. $value . '    '.  Html::a('Remover', ['delete','valor'=>$value], [
         'class' => 'btn btn-danger',
@@ -68,7 +68,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 
-    }
-    ?>
+    }*/
+    ?>-->
 
 </div>

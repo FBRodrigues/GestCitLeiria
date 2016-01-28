@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'yii\\swiftmailer\\' => array($vendorDir . '/yiisoft/yii2-swiftmailer'),
+    'yii\\jui\\' => array($vendorDir . '/yiisoft/yii2-jui'),
     'yii\\gii\\' => array($vendorDir . '/yiisoft/yii2-gii'),
     'yii\\faker\\' => array($vendorDir . '/yiisoft/yii2-faker'),
     'yii\\debug\\' => array($vendorDir . '/yiisoft/yii2-debug'),
@@ -14,11 +15,13 @@ return array(
     'yii\\codeception\\' => array($vendorDir . '/yiisoft/yii2-codeception'),
     'yii\\bootstrap\\' => array($vendorDir . '/yiisoft/yii2-bootstrap'),
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
+    'kartik\\time\\' => array($vendorDir . '/kartik-v/yii2-widget-timepicker'),
     'kartik\\datetime\\' => array($vendorDir . '/kartik-v/yii2-widget-datetimepicker'),
     'kartik\\date\\' => array($vendorDir . '/kartik-v/yii2-widget-datepicker'),
     'kartik\\base\\' => array($vendorDir . '/kartik-v/yii2-krajee-base'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
+    'Fxp\\Composer\\AssetPlugin\\' => array($vendorDir . '/fxp/composer-asset-plugin'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
 );

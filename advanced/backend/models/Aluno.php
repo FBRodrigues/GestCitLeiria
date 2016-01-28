@@ -42,8 +42,8 @@ class Aluno extends \yii\db\ActiveRecord
         return [
             [['Escalao_idEscalao'], 'required'],
             [['Escalao_idEscalao', 'Idade'], 'integer'],
-            [['DataNascimento'], 'safe'],
-            [['Nome', 'Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao'], 'string', 'max' => 45],
+            [['DataNascimento','Valor'], 'safe'],
+            [['Nome', 'Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao','Valor'], 'string', 'max' => 45],
             [['Sexo'], 'string', 'max' => 1]
         ];
     }
@@ -51,11 +51,17 @@ class Aluno extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public function getValor() {
+        return $this->escalaoIdEscalao->Valor;
+
+    }
+
     public function attributeLabels()
     {
         return [
+            'Valor' => Yii::t('app','Escalao'),
             'idAluno' => 'Id Aluno',
-            'Escalao_idEscalao' => 'Escalao Id Escalao',
+            'Escalao_idEscalao'=> 'Id Escalao',
             'Nome' => 'Nome',
             'DataNascimento' => 'Data Nascimento',
             'Idade' => 'Idade',
@@ -72,8 +78,13 @@ class Aluno extends \yii\db\ActiveRecord
      */
     public function getEscalaoIdEscalao()
     {
-        return $this->hasOne(Escalao::className(), ['idEscalao' => 'Escalao_idEscalao']);
+
+       return $this->hasOne(Escalao::className(), ['idEscalao' => 'Escalao_idEscalao']);
+
     }
+
+
+
 
     /**
      * @return \yii\db\ActiveQuery

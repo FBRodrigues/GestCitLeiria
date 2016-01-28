@@ -80,6 +80,19 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        if (!\Yii::$app->user->isGuest) {
+//            $user = \Yii::$app->user->TipoUtilizador;
+//            if($user->TipoUtilizador == 'T'){
+//                return $this->goAgenda();
+//            }
+//            if($user->TipoUtilizador == 'A'){
+//                //return $this->goAgenda();
+//            } else {
+//                return $this->goHome();
+//            }
+
+        }
+
         return $this->render('index');
     }
 
@@ -90,13 +103,18 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        if (!\Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            $tipoUtilizador = Yii::$app->user->identity->TipoUtilizador;
+            if($tipoUtilizador == 'T'){
+                return $this->goAgenda();
+            }else if($tipoUtilizador == 'A'){
+                return $this->goAgenda();
+            }
+            else {
+                return $this->goBack();
+            }
+
         } else {
             return $this->render('login', [
                 'model' => $model,
@@ -280,6 +298,8 @@ class SiteController extends Controller
         ]);
 
     }
+
+
 
 
 }

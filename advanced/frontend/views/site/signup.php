@@ -25,6 +25,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'password')->passwordInput() ?>
 
+                <?= $form->field($model, 'TipoUtilizador')->dropDownList(['T' => 'Treinador', 'A' => 'Aluno']) ?>
+
                 <div class="form-group">
                     <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
                 </div>

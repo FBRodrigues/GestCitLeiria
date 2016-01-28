@@ -36,8 +36,8 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'Aluno',
-            'url'=>['aluno/index'],
+        //['label' => 'Aulas', 'url' => ['/aula/index']],
+        //['label' => 'Aluno', 'url'=>['aluno/index'],
            // 'options'=>['class'=>'dropdown'],
             //'template' => '<a href="{url}" class="href_class">{label}</a>',
          /*   'items' => [
@@ -45,14 +45,27 @@ AppAsset::register($this);
                 ['label' => 'Enviar Email Assunto Formal', 'url' => ['site/init']],
                 ['label' => 'Aluno', 'url'=>['aluno/index']],
             ]*/
-
-        ],
+        //],
         //'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
-
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
+        $menuItems = [
+            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Aulas', 'url' => ['/aula/index']],
+            ['label' => 'Aluno', 'url'=>['aluno/index'],
+
+                // 'options'=>['class'=>'dropdown'],
+                //'template' => '<a href="{url}" class="href_class">{label}</a>',
+                /*   'items' => [
+                       ['label' => 'Enviar Email Pagamentos', 'url' => ['site/pagamentos']],
+                       ['label' => 'Enviar Email Assunto Formal', 'url' => ['site/init']],
+                       ['label' => 'Aluno', 'url'=>['aluno/index']],
+                   ]*/
+
+            ],
+            ];
         $menuItems[] = [
             'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
             'url' => ['/site/logout'],

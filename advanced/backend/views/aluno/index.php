@@ -6,7 +6,7 @@ use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\AlunoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-
+$escalao = null;
 $this->title = 'Sócios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -14,17 +14,26 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
 
+    <div class="criarSo" >
     <p>
         <?= Html::a('Criar Sócio', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+    </div>
+
 
     <?=Html::beginForm(['site/init'],'post' );?>
+
     <?=Html::checkboxList('action', array('selection'=>'checked'))?>
 
+
+    <?=Html::submitButton('Executar',['class' => 'btn btn-info','name'=>'formal1']);?>
+    <?=Html::dropDownList('action1','',[','=>'Operação...',
+        'ePer'=>'Enviar Email Personalizado','pPag'=>'Enviar Email Pagamentos'],['class'=>'dropdown'])?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+
         'columns' => [
             ['class'=>'yii\grid\CheckboxColumn',
                 'checkboxOptions' => function($model, $key, $index, $widget) {
@@ -34,14 +43,34 @@ $this->params['breadcrumbs'][] = $this->title;
                 }],
 
             //['class' => 'yii\grid\SerialColumn'],
-            'idAluno',
-            'Escalao_idEscalao',
+            /*['label'=> ' ID Aluno',
+              'attribute'=> 'idAluno',
+               ],*/
+
             'Nome',
+            [
+                'label'=>'Escalao',
+                'attribute'=>'Escalao_idEscalao',
+                'filter' => true
+
+            ],
+
+            [
+                'label'=>'Escalao',
+                'attribute'=>'Valor',
+
+            ],
             // 'DataNascimento',
-            'Idade',
-            'Contato1',
-            'Contato2',
-            'Contato3_Email:email',
+            //'Idade',
+            ['label'=> ' Contato 1 ',
+                'attribute'=> 'Contato1',
+            ],
+            ['label'=> ' Contato 2 ',
+                'attribute'=> 'Contato2',
+            ],
+            ['label'=> 'Email',
+                'attribute'=> 'Contato3_Email',
+            ],
             // 'EncarregadoEducacao',
             'Sexo',
 
@@ -50,6 +79,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     ]);
     ?>
+
 
     <?=Html::submitButton('Executar',['class' => 'btn btn-info','name'=>'formal']);?>
     <?=Html::dropDownList('action','',[','=>'Operação...',

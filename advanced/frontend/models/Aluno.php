@@ -38,11 +38,13 @@ class Aluno extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Nome', 'DataNascimento', 'Idade', 'Sexo'], 'required'],
-            [['idAluno', 'Pessoa_idPessoa', 'Horario_idHorario', 'Escalao_idEscalao', 'Idade'], 'integer'],
+            [['idAluno', 'Escalao_idEscalao', 'Nome', 'DataNascimento', 'Idade', 'Sexo', 'Contato1'], 'required'],
+            [['idAluno', 'Escalao_idEscalao', 'Idade'], 'integer'],
             [['DataNascimento'], 'safe'],
             [['Nome'], 'string', 'max' => 20],
-            [['Sexo'], 'string', 'max' => 1]
+            [['Sexo'], 'string', 'max' => 1],
+            [['Contato1'], 'string', 'max' => 45],
+
         ];
     }
 
@@ -53,13 +55,13 @@ class Aluno extends \yii\db\ActiveRecord
     {
         return [
             'idAluno' => 'Id Aluno',
-            'Pessoa_idPessoa' => 'Pessoa Id Pessoa',
-            'Horario_idHorario' => 'Horario Id Horario',
             'Escalao_idEscalao' => 'Escalao Id Escalao',
-            'Nome' => 'Nome',
+            'Nome' => 'NomeAluno',
             'DataNascimento' => 'Data Nascimento',
             'Idade' => 'Idade',
             'Sexo' => 'Sexo',
+            'Contato1' => 'Contato1',
+
         ];
     }
 
@@ -74,18 +76,18 @@ class Aluno extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getHorarioIdHorario()
+   /* public function getHorarioIdHorario()
     {
         return $this->hasOne(Horario::className(), ['idHorario' => 'Horario_idHorario']);
-    }
+    }*/
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getPessoaIdPessoa()
+   /* public function getPessoaIdPessoa()
     {
         return $this->hasOne(Pessoa::className(), ['idPessoa' => 'Pessoa_idPessoa']);
-    }
+    }*/
 
     /**
      * @return \yii\db\ActiveQuery

@@ -33,13 +33,32 @@ class AlunoController extends Controller
      */
     public function actionIndex()
     {
+
         $searchModel = new AlunoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $esc = $this->traduzIdEscalao();
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'esc' => $esc
+
+
+
         ]);
+    }
+
+    public function traduzIdEscalao(){
+        $sea = new Aluno();
+        switch($sea->Escalao_idEscalao){
+            case 1:
+                 $sea = 'Seniores';
+                break;
+            case 3:
+                $sea ='Cadetes';
+                break;
+            return $sea;
+        }
     }
 
     /**

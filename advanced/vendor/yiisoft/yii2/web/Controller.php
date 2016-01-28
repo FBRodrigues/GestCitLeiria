@@ -159,8 +159,14 @@ class Controller extends \yii\base\Controller
      * @return Response the current response object
      */
     public function goHome()
+{
+    return Yii::$app->getResponse()->redirect(Yii::$app->getHomeUrl());
+}
+
+
+    public function goAgenda()
     {
-        return Yii::$app->getResponse()->redirect(Yii::$app->getHomeUrl());
+        return Yii::$app->response->redirect(Url::to(['aula/index']));
     }
 
     /**

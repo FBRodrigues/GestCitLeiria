@@ -21,7 +21,10 @@
         "yiisoft/yii2-debug": "^2.0",
         "backplane/phpunit": "4.6.x-dev",
         "kartik-v/yii2-widget-datepicker": "@dev",
-        "kartik-v/yii2-widget-datetimepicker": "*"
+        "kartik-v/yii2-widget-datetimepicker": "*",
+        "kartik-v/yii2-widget-timepicker": "*",
+        "fxp/composer-asset-plugin":"~1.0",
+        "yiisoft/yii2-jui": "~2.0.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

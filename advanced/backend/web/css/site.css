@@ -93,3 +93,24 @@ a.desc:after {
 select.dropdown{
     font-style: italic;
 }
+.criarSo {
+    float: right;
+}
+
+.botao-create{
+    float: right;
+
+}
+
+
+.botao-create2{
+    float: right;
+    clear: right;
+
+}
+
+
+
+
+
+

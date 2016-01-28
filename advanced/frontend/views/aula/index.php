@@ -9,24 +9,47 @@ use frontend\controllers\PresencaController;
 /* @var $searchModel frontend\models\AulaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Aulas';
+
+$this->title = 'Agenda';
 $this->params['breadcrumbs'][] = $this->title;
+$nomeUser = Yii::$app->user->identity->username;
+$idUser = Yii::$app->user->getId();
+$tipoUtilizador = Yii::$app->user->identity->TipoUtilizador;
+$visibility = true;
+if($tipoUtilizador == 'A'){
+    $visibility = false;
+}
 ?>
 <div class="aula-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode("Bem vindo ".$nomeUser) ?></h1>
+
+    <h3><?= Html::encode("$this->title") ?></h3>
     <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <!-- <?= Html::a('Create Aula', ['create'], ['class' => 'btn btn-success']) ?> -->
-    </p>
+    <div class="botao-create">
+
+        <p>
+            <?= Html::a('Adicionar Aula', ['create'], ['class' => 'btn btn-success']) ?>
+        </p>
+
+
+    </div>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         //'filterModel' => $searchModel,
 
-        //Experiencia
+//        'rowOptions' => function($model){
+//            if($model->nrPresentes == '0'){
+//                //return ['class' => 'danger'];
+//                return ['style'=>'color: white; background-color:red;'];
+//            }else{
+//                return ['class' => 'sucess'];
+//            }
+//        },
 
+        //Experiencia
        /* 'columns' => array(
             array(
                 'id' => 'selectedIds',
@@ -34,45 +57,34 @@ $this->params['breadcrumbs'][] = $this->title;
             ),*/
 
         'columns' => [
-         //   ['class'=>'yii\grid\CheckboxColumn'],
-
+         //['class'=>'yii\grid\CheckboxColumn'],
             //['class' => 'yii\grid\SerialColumn'],
-
             //'idAula',
+            //'Choveu',
             'Nome',
+            'nrPresentes' => [
+                'visible' => $visibility,
+            ],
+            'Data',
+            //'Estado',
             'HoraInicio',
             'HoraFim',
-            //'Choveu',
-
             //linha seguinte gera os 3 bot�es (ver, editar e apagar)
-            //['class' => 'yii\grid\ActionColumn', 'template' => '{view}'],
+            ['class' => 'yii\grid\ActionColumn', 'template' => '{delete}'],
 
-           /* $model = new SomeForm();
-        if ($model->load(Yii::$app->request->post())) {
-            if ($model->checkbox == true){
+        ],
 
-                $model->scenario = 'checked';
-            }
+            /*'rowOptions' => function($model, $key, $index, $grid) {
+                return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view',array('idPresenca'=>'0', 'Aula_idAula'=>'0')).'"'];
+            }*/
+
+            /*'rowOptions' => function($model, $key, $index, $grid) {
+            return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view').'&idPresenca="+(this.id)/&Aula_idAula="(idAula)'];
         }*/
-    ],
-
-        /*'rowOptions' => function($model, $key, $index, $grid) {
-            return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view',array('idPresenca'=>'0', 'Aula_idAula'=>'0')).'"'];
-        }*/
-
-
-        /*'rowOptions' => function($model, $key, $index, $grid) {
-        return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view').'&idPresenca="+(this.id)/&Aula_idAula="(idAula)'];
-    }*/
-
-
-         'rowOptions' => function($model, $key, $index, $grid) {
-             //echo $model->idAula.'__';
-             return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('presenca/view').'&idAula="+(this.id)'];
-    }
-
-
-
+             'rowOptions' => function($model, $key, $index, $grid) {
+                 //echo $model->idAula.'__';
+                 return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)'];
+        }
     ]);
 
 

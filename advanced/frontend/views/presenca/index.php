@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $searchModel frontend\models\PresencaSearch */
@@ -19,6 +20,9 @@ $id = Yii::$app->getRequest()->getQueryParam('idAula');
     <p>
        <!-- <?=  Html::a('Create Presenca', ['create'], ['class' => 'btn btn-success']) ?> -->
     </p>
+
+
+
 
     <?=
         $id = Yii::$app->getRequest()->getQueryParam('idAula');
@@ -40,7 +44,8 @@ $id = Yii::$app->getRequest()->getQueryParam('idAula');
             'idPresenca',
             'Aluno_idAluno',
             //'Aula_idAula',
-            'Presente',
+            'Estado',
+            'TipoAula',
 
             //['class' => 'yii\grid\ActionColumn'],
         ],
@@ -51,8 +56,17 @@ $id = Yii::$app->getRequest()->getQueryParam('idAula');
     ]); ?>
 
 
+
+
+
+
+
+
     <div class="form-group">
-        <?= Html::submitButton('Confirmar', ['class' => 'btn btn-primary']) ?>
+       <!-- <?= Html::submitButton('Confirmar', ['class' => 'btn btn-primary']) ?> -->
+        <!-- <?= Html::submitButton('Confirmar', ['class' => 'btn btn-primary', 'Presente' => 'edit-button']) ?> -->
+        <?= Html::submitButton('Apply', ['class' => 'btn btn-success', 'name' => 'submit', 'value' => 'apply']) ?>
+
     </div>
 
 
