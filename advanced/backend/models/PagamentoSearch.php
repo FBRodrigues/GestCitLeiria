@@ -5,12 +5,12 @@ namespace backend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\Escalao;
+use backend\models\Pagamento;
 
 /**
- * EscalaoSearch represents the model behind the search form about `backend\models\Escalao`.
+ * PagamentoSearch represents the model behind the search form about `backend\models\Pagamento`.
  */
-class EscalaoSearch extends Escalao
+class PagamentoSearch extends Pagamento
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class EscalaoSearch extends Escalao
     public function rules()
     {
         return [
-            [['idEscalao'], 'integer'],
-            [['Valor'], 'safe'],
+            [['idPagamento', 'idInscricao', 'valor', 'nrFatura'], 'integer'],
+            [['dataFatura'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class EscalaoSearch extends Escalao
      */
     public function search($params)
     {
-        $query = Escalao::find();
+        $query = Pagamento::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -56,12 +56,12 @@ class EscalaoSearch extends Escalao
         }
 
         $query->andFilterWhere([
-            'idEscalao' => $this->idEscalao,
+            'idPagamento' => $this->idPagamento,
+            'idInscricao' => $this->idInscricao,
+            'valor' => $this->valor,
+            'nrFatura' => $this->nrFatura,
+            'dataFatura' => $this->dataFatura,
         ]);
-
-        $query->andFilterWhere(['like', 'Valor', $this->Valor]);
-
-
 
         return $dataProvider;
     }

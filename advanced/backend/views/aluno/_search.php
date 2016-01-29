@@ -19,14 +19,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Escalao_idEscalao') ?>
 
-    <?= $form->field($model, 'Nome') ?>
-
     <?= $form->field($model, 'DataNascimento') ?>
 
     <?= $form->field($model, 'Idade') ?>
 
-
-    <?php // echo $form->field($model, 'Contato1') ?>
+    <?= $form->field($model, 'Contato1') ?>
 
     <?php // echo $form->field($model, 'Contato2') ?>
 
@@ -35,6 +32,8 @@ use yii\widgets\ActiveForm;
     <?php // echo $form->field($model, 'EncarregadoEducacao') ?>
 
     <?php // echo $form->field($model, 'Sexo') ?>
+
+    <?php // echo $form->field($model, 'Nome') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Procurar', ['class' => 'btn btn-primary']) ?>

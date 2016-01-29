@@ -3,6 +3,7 @@
 namespace backend\models;
 
 use Yii;
+use yii\data\ActiveDataProvider;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -10,7 +11,7 @@ use yii\helpers\ArrayHelper;
  *
  * @property integer $idAluno
  * @property integer $Escalao_idEscalao
- * @property string $Nome
+ * @property integer $Categorias_idCategorias
  * @property string $DataNascimento
  * @property integer $Idade
  * @property string $Contato1
@@ -18,14 +19,17 @@ use yii\helpers\ArrayHelper;
  * @property string $Contato3_Email
  * @property string $EncarregadoEducacao
  * @property string $Sexo
- *
+ * @property string $Nome
  * @property Escalao $escalaoIdEscalao
+ * @property Categorizacao[] $categorizacaos
  * @property Marcacao[] $marcacaos
  * @property Pagamento[] $pagamentos
  * @property Presenca[] $presencas
  */
 class Aluno extends \yii\db\ActiveRecord
 {
+
+
     /**
      * @inheritdoc
      */
@@ -37,31 +41,32 @@ class Aluno extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+
     public function rules()
     {
         return [
             [['Escalao_idEscalao'], 'required'],
             [['Escalao_idEscalao', 'Idade'], 'integer'],
-            [['DataNascimento','Valor'], 'safe'],
-            [['Nome', 'Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao','Valor'], 'string', 'max' => 45],
-            [['Sexo'], 'string', 'max' => 1]
+            [['DataNascimento'], 'safe'],
+            [['Sexo'], 'string', 'max' => 1],
+            [['Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Nome'], 'string', 'max' => 45],
+           // ['categorizacaos','in','range'=>['Transporte','Fisico','Lanche'],'allowArray'=>true],
+          //  ['categorizacaos', 'exist', 'allowArray' => true, 'when' => function ($model, $attribute) {return is_array($model->$attribute);}],
+         //   [['categorias'], 'each', 'filter', 'filter' => 'trim']
         ];
     }
 
     /**
      * @inheritdoc
      */
-    public function getValor() {
-        return $this->escalaoIdEscalao->Valor;
-
-    }
-
     public function attributeLabels()
     {
         return [
+
             'Valor' => Yii::t('app','Escalao'),
             'idAluno' => 'Id Aluno',
             'Escalao_idEscalao'=> 'Id Escalao',
+            //'Categorizacao'=>'Categorias',
             'Nome' => 'Nome',
             'DataNascimento' => 'Data Nascimento',
             'Idade' => 'Idade',
@@ -78,13 +83,18 @@ class Aluno extends \yii\db\ActiveRecord
      */
     public function getEscalaoIdEscalao()
     {
-
-       return $this->hasOne(Escalao::className(), ['idEscalao' => 'Escalao_idEscalao']);
-
+        return $this->hasOne(Escalao::className(), ['idEscalao' => 'Escalao_idEscalao']);
     }
 
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCategorizacaos()
+    {
 
+       return $this->hasMany(Categorizacao::className(), ['Aluno_idAluno' => 'idAluno']);
 
+    }
 
     /**
      * @return \yii\db\ActiveQuery
@@ -92,6 +102,7 @@ class Aluno extends \yii\db\ActiveRecord
     public function getMarcacaos()
     {
         return $this->hasMany(Marcacao::className(), ['Aluno_idAluno' => 'idAluno']);
+
     }
 
     /**
@@ -109,10 +120,17 @@ class Aluno extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Presenca::className(), ['Aluno_idAluno' => 'idAluno']);
     }
-
     public function getEscaloes()
     {
         $models = Escalao::find()->asArray()->all();
         return ArrayHelper::map($models, 'idEscalao', 'Valor');
     }
+
+    public function getCategorias(){
+       return $this->hasMany(Categorias::className(),['idCategorias'=>'Categorias_idCategorias'])->
+        viaTable('Categorizacao',['Aluno_idAluno'=>'idAluno']);
+    }
+
+
+
 }

@@ -2,20 +2,17 @@
 
 namespace backend\controllers;
 
-use backend\models\Categorias;
-use backend\models\Categorizacao;
 use Yii;
-use backend\models\Aluno;
-use backend\models\AlunoSearch;
-use yii\db\Query;
+use backend\models\Categorizacao;
+use backend\models\CategorizacaoSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * AlunoController implements the CRUD actions for Aluno model.
+ * CategorizacaoController implements the CRUD actions for Categorizacao model.
  */
-class AlunoController extends Controller
+class CategorizacaoController extends Controller
 {
     public function behaviors()
     {
@@ -24,38 +21,30 @@ class AlunoController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
-
                 ],
-
             ],
         ];
     }
 
     /**
-     * Lists all Aluno models.
+     * Lists all Categorizacao models.
      * @return mixed
      */
     public function actionIndex()
     {
-
-        $session = new Yii::$app->session;
-        $session->open();
-        $session['Sexo'] = Yii::$app->request->post('Aluno')['Sexo'];
-        $session['Escaloes']=Yii::$app->request->post('Aluno')['Escaloes'];
-        $session['Categorias'] = Yii::$app->request->post('Aluno')['categorias'];
-
-        $searchModel = new AlunoSearch();
+        $searchModel = new CategorizacaoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $model = new Categorizacao();
+
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
-
     }
 
-
     /**
-     * Displays a single Aluno model.
+     * Displays a single Categorizacao model.
      * @param integer $id
      * @return mixed
      */
@@ -66,33 +55,17 @@ class AlunoController extends Controller
         ]);
     }
 
-    public function actionView2(){
-
-        $model = new Aluno();
-      //  $escolhCate = (array)Yii::$app->request->post('selection');
-
-       // var_dump($escolhCate);
-        //     //   return \yii\helpers\Json::encode($escolhCate);
-     //   $model->Escalao_idEscalao = $escolhCate;
-     //   var_dump( $model->Escalao_idEscalao);
-        return $this->render('view2', [
-            'model'=>$model,
-
-        ]);
-    }
-
-
     /**
-     * Creates a new Aluno model.
+     * Creates a new Categorizacao model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Aluno();
 
+        $model = new Categorizacao();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idAluno]);
+            return $this->redirect(['create', 'id' => $model->idCategorizacao]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -101,7 +74,7 @@ class AlunoController extends Controller
     }
 
     /**
-     * Updates an existing Aluno model.
+     * Updates an existing Categorizacao model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -111,7 +84,7 @@ class AlunoController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idAluno]);
+            return $this->redirect(['view', 'id' => $model->idCategorizacao]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -120,7 +93,7 @@ class AlunoController extends Controller
     }
 
     /**
-     * Deletes an existing Aluno model.
+     * Deletes an existing Categorizacao model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -133,15 +106,15 @@ class AlunoController extends Controller
     }
 
     /**
-     * Finds the Aluno model based on its primary key value.
+     * Finds the Categorizacao model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Aluno the loaded model
+     * @return Categorizacao the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Aluno::findOne($id)) !== null) {
+        if (($model = Categorizacao::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

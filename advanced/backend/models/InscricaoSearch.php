@@ -5,12 +5,12 @@ namespace backend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\Escalao;
+use backend\models\Inscricao;
 
 /**
- * EscalaoSearch represents the model behind the search form about `backend\models\Escalao`.
+ * InscricaoSearch represents the model behind the search form about `backend\models\Inscricao`.
  */
-class EscalaoSearch extends Escalao
+class InscricaoSearch extends Inscricao
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class EscalaoSearch extends Escalao
     public function rules()
     {
         return [
-            [['idEscalao'], 'integer'],
-            [['Valor'], 'safe'],
+            [['idInscricao', 'idAluno', 'nrAulas'], 'integer'],
+            [['dataInicio', 'dataFim', 'tipo'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class EscalaoSearch extends Escalao
      */
     public function search($params)
     {
-        $query = Escalao::find();
+        $query = Inscricao::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -55,13 +55,17 @@ class EscalaoSearch extends Escalao
             return $dataProvider;
         }
 
+
         $query->andFilterWhere([
-            'idEscalao' => $this->idEscalao,
+            'idInscricao' => $this->idInscricao,
+            'aluno.Nome' => $this->idAluno,
+            'dataInicio' => $this->dataInicio,
+            'dataFim' => $this->dataFim,
+            'nrAulas' => $this->nrAulas,
         ]);
 
-        $query->andFilterWhere(['like', 'Valor', $this->Valor]);
-
-
+        $query->andFilterWhere(['like', 'tipo', $this->tipo])
+        ->andFilterWhere(['like', 'aluno.Nome', $this-> idAluno]);
 
         return $dataProvider;
     }

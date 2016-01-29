@@ -90,27 +90,10 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
-select.dropdown{
-    font-style: italic;
-}
 .criarSo {
     float: right;
 }
-
-.botao-create{
-    float: right;
-
+option{
+    font-style:italic;
+    font-weight: bolder;
 }
-
-
-.botao-create2{
-    float: right;
-    clear: right;
-
-}
-
-
-
-
-
-

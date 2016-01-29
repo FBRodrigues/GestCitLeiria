@@ -5,21 +5,24 @@ namespace backend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\Escalao;
+use backend\models\Categorias;
 
 /**
- * EscalaoSearch represents the model behind the search form about `backend\models\Escalao`.
+ * CategoriasSearch represents the model behind the search form about `backend\models\Categorias`.
  */
-class EscalaoSearch extends Escalao
+class CategoriasSearch extends Categorias
 {
     /**
      * @inheritdoc
      */
+
     public function rules()
     {
         return [
-            [['idEscalao'], 'integer'],
+            [['idCategorias'], 'integer'],
             [['Valor'], 'safe'],
+
+
         ];
     }
 
@@ -41,12 +44,12 @@ class EscalaoSearch extends Escalao
      */
     public function search($params)
     {
-        $query = Escalao::find();
+        $query = Categorias::find();
+
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
-
         $this->load($params);
 
         if (!$this->validate()) {
@@ -56,13 +59,13 @@ class EscalaoSearch extends Escalao
         }
 
         $query->andFilterWhere([
-            'idEscalao' => $this->idEscalao,
+            'idCategorias' => $this->idCategorias,
         ]);
 
         $query->andFilterWhere(['like', 'Valor', $this->Valor]);
 
-
-
         return $dataProvider;
+       // var_dump($dataProvider);
+        //return \yii\helpers\Json::encode($dataProvider);
     }
 }

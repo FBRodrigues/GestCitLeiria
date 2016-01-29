@@ -5,12 +5,12 @@ namespace backend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\Escalao;
+use backend\models\Categorizacao;
 
 /**
- * EscalaoSearch represents the model behind the search form about `backend\models\Escalao`.
+ * CategorizacaoSearch represents the model behind the search form about `backend\models\Categorizacao`.
  */
-class EscalaoSearch extends Escalao
+class CategorizacaoSearch extends Categorizacao
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class EscalaoSearch extends Escalao
     public function rules()
     {
         return [
-            [['idEscalao'], 'integer'],
-            [['Valor'], 'safe'],
+            [['idCategorizacao', 'Categorias_idCategorias'], 'integer'],
+            [['Aluno_idAluno'],'safe']
         ];
     }
 
@@ -41,11 +41,13 @@ class EscalaoSearch extends Escalao
      */
     public function search($params)
     {
-        $query = Escalao::find();
+        $query = Categorizacao::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
+        $query->joinWith('categoriasIdCategorias');
+        $query->joinWith('alunoIdAluno');
 
         $this->load($params);
 
@@ -55,13 +57,12 @@ class EscalaoSearch extends Escalao
             return $dataProvider;
         }
 
-        $query->andFilterWhere([
-            'idEscalao' => $this->idEscalao,
+        $query->orFilterWhere([
+           // 'idCategorizacao' => $this->idCategorizacao,
+           // 'Aluno_idAluno' => $this->Aluno_idAluno,
+            'categorias.Valor' => $this->Categorias_idCategorias,
         ]);
-
-        $query->andFilterWhere(['like', 'Valor', $this->Valor]);
-
-
+        $query->orFilterWhere(['like','aluno.Sexo',$this->Aluno_idAluno]);
 
         return $dataProvider;
     }
