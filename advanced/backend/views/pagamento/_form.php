@@ -21,8 +21,7 @@ $id = $session->get('id');
 
 
 
-
-    <?= $form->field($model, 'idInscricao')->textInput(array('readonly'=>true , 'value'=>  ' ' . $id));?>
+    <?= $form->field($model, 'idInscricao')->textInput(array('readonly'=>true , 'value'=>  ' cdj ' . $id));?>
     <?= $form->field($model, 'valor')->textInput() ?>
 
     <?= $form->field($model, 'nrFatura')->textInput() ?>
