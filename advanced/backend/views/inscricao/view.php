@@ -9,6 +9,10 @@ use yii\widgets\DetailView;
 $this->title = $model->idInscricao;
 $this->params['breadcrumbs'][] = ['label' => 'Inscricões', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+$session = Yii::$app->session;
+$session['id'] = $model->idInscricao;
+$id = $session->get('id');
+var_dump($id);
 ?>
 <div class="inscricao-view">
 
@@ -40,9 +44,12 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]) ?>
     <p>
-        <?= Html::a('Criar Pagamento', ['pagamento/create'], ['class' => 'btn btn-success'],[
-        'data' => ['method' => 'post']]
-        )?>
-    </p>
+        <?=Html::beginForm(['pagamento/create'],'post' );?>
 
+        <?=Html::submitButton('Executar',['class' => 'btn btn-info','name'=>'formal2']);?>
+
+
+        <?//= Html::a('Criar Pagamento', ['pagamento/create', 'onclick' => , ['class' => 'btn btn-success']]);?>
+    </p>
+    <?=Html::endForm();?>
 </div>

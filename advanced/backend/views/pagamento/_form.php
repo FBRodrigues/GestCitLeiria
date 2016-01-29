@@ -10,12 +10,19 @@ use kartik\datetime\DateTimePicker;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
+<?php
+$session = Yii::$app->session;
+$id = $session->get('id');
+?>
 <div class="pagamento-form">
+
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'idInscricao')->dropDownList([$model->getInscricoes(),],['prompt'=>'Selecione uma opção...'])->label('Inscrição')?>
 
+
+
+    <?= $form->field($model, 'idInscricao')->textInput(array('readonly'=>true , 'value'=>  ' ' . $id));?>
     <?= $form->field($model, 'valor')->textInput() ?>
 
     <?= $form->field($model, 'nrFatura')->textInput() ?>

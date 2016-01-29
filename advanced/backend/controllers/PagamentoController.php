@@ -2,9 +2,12 @@
 
 namespace backend\controllers;
 
+use backend\models\Categorias;
+use backend\models\Inscricao;
 use Yii;
 use backend\models\Pagamento;
 use backend\models\PagamentoSearch;
+use yii\helpers\Json;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -60,10 +63,34 @@ class PagamentoController extends Controller
      */
     public function actionCreate()
     {
+        $session = Yii::$app->session;
+        $id = $session->get('id');
+        var_dump($id);
         $model = new Pagamento();
-        $idInsc = Yii::$app -> request -> post('Inscricao')['idInscricao'];
-        var_dump($idInsc);
+     //   $valor = Yii::$app->request->post('Inscricao')['idInscricao0'];
+
+
+     //   return Json::encode($idInscricao);
+           // QUERY
+//         $idInsc = Pagamento::find()->select('pagamento.idInscricao')
+//            ->from('pagamento')
+//            ->join('INNER JOIN','inscricao','pagamento.idInscricao  = inscricao.idInscricao')
+//            ->Where(['pagamento.idInscricao' => $id]);
+
+
+
+      // $model->idInscricao = $idInsc;
+
+
+  //      $idInsc = $model->findOne('');
+      //  var_dump($idInsc);
+
+       // var_dump($idInsc);
+ //      return Json::encode($idInsc);
+   //     $model->idInscricao = $idInsc->idInscricao;
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
             return $this->redirect(['view', 'id' => $model->idPagamento] );
         } else {
             return $this->render('create', [
