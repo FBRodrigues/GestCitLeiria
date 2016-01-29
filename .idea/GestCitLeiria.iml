@@ -64,6 +64,7 @@
           <root url="file://$MODULE_DIR$/advanced/vendor/bower-asset/yii2-pjax" />
           <root url="file://$MODULE_DIR$/advanced/vendor/bower/bootstrap" />
           <root url="file://$MODULE_DIR$/advanced/vendor/bower/jquery" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/bower/jquery-ui" />
           <root url="file://$MODULE_DIR$/advanced/vendor/bower/jquery.inputmask" />
           <root url="file://$MODULE_DIR$/advanced/vendor/bower/punycode" />
           <root url="file://$MODULE_DIR$/advanced/vendor/bower/typeahead.js" />
@@ -72,10 +73,12 @@
           <root url="file://$MODULE_DIR$/advanced/vendor/composer" />
           <root url="file://$MODULE_DIR$/advanced/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/advanced/vendor/ezyang/htmlpurifier" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/fxp/composer-asset-plugin" />
           <root url="file://$MODULE_DIR$/advanced/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-krajee-base" />
           <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-datepicker" />
           <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-datetimepicker" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-timepicker" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpspec/prophecy" />
@@ -101,6 +104,7 @@
           <root url="file://$MODULE_DIR$/advanced/vendor/yiisoft/yii2-debug" />
           <root url="file://$MODULE_DIR$/advanced/vendor/yiisoft/yii2-faker" />
           <root url="file://$MODULE_DIR$/advanced/vendor/yiisoft/yii2-gii" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/yiisoft/yii2-jui" />
           <root url="file://$MODULE_DIR$/advanced/vendor/yiisoft/yii2-swiftmailer" />
         </CLASSES>
         <SOURCES>
@@ -113,6 +117,7 @@
           <root url="file://$MODULE_DIR$/advanced/vendor/bower-asset/yii2-pjax" />
           <root url="file://$MODULE_DIR$/advanced/vendor/bower/bootstrap" />
           <root url="file://$MODULE_DIR$/advanced/vendor/bower/jquery" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/bower/jquery-ui" />
           <root url="file://$MODULE_DIR$/advanced/vendor/bower/jquery.inputmask" />
           <root url="file://$MODULE_DIR$/advanced/vendor/bower/punycode" />
           <root url="file://$MODULE_DIR$/advanced/vendor/bower/typeahead.js" />
@@ -121,10 +126,12 @@
           <root url="file://$MODULE_DIR$/advanced/vendor/composer" />
           <root url="file://$MODULE_DIR$/advanced/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/advanced/vendor/ezyang/htmlpurifier" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/fxp/composer-asset-plugin" />
           <root url="file://$MODULE_DIR$/advanced/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-krajee-base" />
           <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-datepicker" />
           <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-datetimepicker" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/kartik-v/yii2-widget-timepicker" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/advanced/vendor/phpspec/prophecy" />
@@ -150,6 +157,7 @@
           <root url="file://$MODULE_DIR$/advanced/vendor/yiisoft/yii2-debug" />
           <root url="file://$MODULE_DIR$/advanced/vendor/yiisoft/yii2-faker" />
           <root url="file://$MODULE_DIR$/advanced/vendor/yiisoft/yii2-gii" />
+          <root url="file://$MODULE_DIR$/advanced/vendor/yiisoft/yii2-jui" />
           <root url="file://$MODULE_DIR$/advanced/vendor/yiisoft/yii2-swiftmailer" />
         </SOURCES>
       </library>
