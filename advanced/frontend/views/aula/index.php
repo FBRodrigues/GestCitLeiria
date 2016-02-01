@@ -62,7 +62,10 @@ if($tipoUtilizador == 'A'){
             //'idAula',
             //'Choveu',
             'Nome',
-            'nrPresentes' => [
+            //'nrPresentes' => ['visible' => $visibility],
+            [
+                'label' => 'Numero de Alunos Presentes',
+                'attribute' => 'nrPresentes',
                 'visible' => $visibility,
             ],
             'Data',
@@ -70,7 +73,7 @@ if($tipoUtilizador == 'A'){
             'HoraInicio',
             'HoraFim',
             //linha seguinte gera os 3 bot�es (ver, editar e apagar)
-            ['class' => 'yii\grid\ActionColumn', 'template' => '{delete}'],
+            //['class' => 'yii\grid\ActionColumn', 'template' => '{delete}'],
 
         ],
 
@@ -83,7 +86,13 @@ if($tipoUtilizador == 'A'){
         }*/
              'rowOptions' => function($model, $key, $index, $grid) {
                  //echo $model->idAula.'__';
-                 return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)'];
+                 $tipoUtilizador = Yii::$app->user->identity->TipoUtilizador;
+                 if($tipoUtilizador == 'T'){
+                     return ['id' => $model['idAula'], 'onClick' => 'location.href="'.Yii::$app->urlManager->createUrl('aula/view').'&id="+(this.id)'];
+                 }else{
+                     return null;
+                 }
+
         }
     ]);
 

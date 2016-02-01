@@ -43,25 +43,24 @@ class AulaController extends Controller
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         $idUser = Yii::$app->user->getId();
-        //TODO: verificar se user logado é treinador ou é aluno
 
         $tipoUtilizador = Yii::$app->user->identity->TipoUtilizador;
-        if($tipoUtilizador == 'T'){
-            //COISAS DO TREINADOR
-            $utilizadorLogado = Treinador::find()->where(['Id_User' => $idUser])->one();
-            $aulas_turma = Turma::find()->where(['Treinador_idTreinador' => $utilizadorLogado->idTreinador])->all();
-        }else if($tipoUtilizador == 'A'){
-            //COISAS DO ALUNO
-            $utilizadorLogado = Aluno::find()->where(['Id_User' => $idUser])->one();
-            $aulas_turma = Presenca::find()->where(['Aluno_idAluno' => $utilizadorLogado->idAluno])->all();
-        }
-
-        $aulas = [];
-
-        foreach($aulas_turma as $index => $aula_turma){
-            $aula = Aula::findOne($aula_turma->Aula_idAula);
-            array_push($aulas, $aula);
-        }
+//        if($tipoUtilizador == 'T'){
+//            //COISAS DO TREINADOR
+//            $utilizadorLogado = Treinador::find()->where(['Id_User' => $idUser])->one();
+//            $aulas_turma = Turma::find()->where(['Treinador_idTreinador' => $utilizadorLogado->idTreinador])->all();
+//        }else if($tipoUtilizador == 'A'){
+//            //COISAS DO ALUNO
+//            $utilizadorLogado = Aluno::find()->where(['Id_User' => $idUser])->one();
+//            $aulas_turma = Presenca::find()->where(['Aluno_idAluno' => $utilizadorLogado->idAluno])->all();
+//        }
+//
+//        $aulas = [];
+//
+//        foreach($aulas_turma as $index => $aula_turma){
+//            $aula = Aula::findOne($aula_turma->Aula_idAula);
+//            array_push($aulas, $aula);
+//        }
 
         //$dataProvider = new ArrayDataProvider(['allModels' => $aulas,'sort' => ['attributes' => ['Data'], 'defaultOrder' => ['Data' => SORT_DESC]] ]);
         //$aulas = Aula::find()->where(['idAula' => $aulas_turma->Aula_idAula]);
@@ -69,7 +68,7 @@ class AulaController extends Controller
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-            'aulas' => $aulas,
+            //'aulas' => $aulas,
         ]);
     }
 

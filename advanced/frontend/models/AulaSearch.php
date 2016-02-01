@@ -2,6 +2,7 @@
 
 namespace frontend\models;
 
+use backend\models\Turma;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
@@ -52,18 +53,25 @@ class AulaSearch extends Aula
             $utilizadorLogado = Treinador::find()->where(['Id_User' => $idUser])->one();
 //            $aulas_turma = Turma::find()->where(['Treinador_idTreinador' => $utilizadorLogado->idTreinador])->all();
             $query = Aula::find();
-                //->from(['aula', 'turma'])
-                //->where(['Treinador_idTreinador' => $utilizadorLogado->idTreinador]);
+//                ->from(['aula', 'turma'])
+//                ->where(['Treinador_idTreinador' => $utilizadorLogado->idTreinador]);
+            $subQuery1 = Turma::find();
+            $query->leftJoin(['turmas' => $subQuery1], 'turmas.Aula_idAula = idAula')
+                ->where(['Treinador_idTreinador' => $utilizadorLogado->idTreinador]);
 
-            $subQuery = Presenca::find()->select('Aula_idAula, COUNT(Estado)=1 as nr_presentes');
-            $query->leftJoin(['presentes' => $subQuery], 'presentes.Aula_idAula = idAula');
+            $subQuery2 = Presenca::find()->select('Aula_idAula, COUNT(Estado)=1 as nr_presentes');
+            $query->leftJoin(['presentes' => $subQuery2], 'presentes.Aula_idAula = idAula');
         }else if($tipoUtilizador == 'A'){
             //COISAS DO ALUNO
             $utilizadorLogado = Aluno::find()->where(['Id_User' => $idUser])->one();
 //            $aulas_turma = Presenca::find()->where(['Aluno_idAluno' => $utilizadorLogado->idAluno])->all();
-            $query = Aula::find()
-                ->from(['aula', 'presenca'])
-                ->where(['Aluno_idAluno' => $utilizadorLogado->idAluno]);
+            $query = Aula::find();
+//                ->from(['aula'])
+//                ->innerJoin(['presenca'])
+//                ->on(['idAula' => 'Aula_idAula'])
+//                ->where(['Aluno_idAluno' => $utilizadorLogado->idAluno]);
+            $subQuery = Presenca::find();
+            $query->leftJoin(['aulas' => $subQuery], 'aulas.Aula_idAula = idAula')->where(['Aluno_idAluno' => $utilizadorLogado->idAluno]);
 
         }
 

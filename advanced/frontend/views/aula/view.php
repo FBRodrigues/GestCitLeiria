@@ -34,6 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php
     echo 'Nome: '.$model->Nome.'</br>';
+    echo 'Treinador: '.$model->turmas[0]->treinadorIdTreinador->Nome.'</br>';
     echo 'Data: '.$model->Data.'</br>';
     echo 'Hora de inicio: '.$model->HoraInicio.'</br>';
     echo 'Hora de fim: '.$model->HoraFim.'</br>';
@@ -44,7 +45,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     ]);
 
-    echo $form->field($model, 'Estado')->dropDownList(['0'=> 'Realizada', '1'=> 'Não realizada-Condições meteorológicas', '2'=> 'Não realizada-FP', '3'=> 'Não realizada-FA']);
+    echo $form->field($model, 'Estado')->dropDownList(['0'=> 'Não Escolhida','1'=> 'Realizada', '2'=> 'Não realizada-Condições meteorológicas', '3'=> 'Não realizada-FP', '4'=> 'Não realizada-FA']);
 
     echo '<h3>'.Html::encode("Lista de inscritos").'</h3>';
 
@@ -56,8 +57,6 @@ $this->params['breadcrumbs'][] = $this->title;
             echo $form->field($model, 'presencas['.$index.'][Aluno_idAluno]')->hiddenInput(['value' => $presenca->alunoIdAluno->idAluno])->label(false);
             echo $form->field($model, 'presencas['.$index.'][Aula_idAula]')->hiddenInput(['value' => $presenca->aulaIdAula->idAula])->label(false);
             echo $form->field($model, 'presencas['.$index.'][TipoAula]')->hiddenInput(['value' => $presenca->TipoAula])->label(false);
-
-
 
             $cc;
             $contato1 = $presenca->alunoIdAluno->Contato1;
