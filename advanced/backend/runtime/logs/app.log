@@ -16725,3 +16725,404 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1454026144.368
     'REQUEST_TIME' => 1454026144
 ]
+2016-02-01 18:24:44 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AulaController.php:147
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-02-01 18:24:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'aula/create'
+]
+
+$_POST = [
+    '_csrf' => 'RXRLOVNrYXYNQnkUYDg0HhJFKkg2OlU5PQ55XH49UE4kRgVjZzoCFA=='
+    'Aula' => [
+        'Nome' => 'erro'
+        'Data' => '2016-02-25'
+        'HoraInicio' => '02:00'
+        'HoraFim' => '03:00'
+        'turmas' => ''
+        'alunos_a_adicionar' => [
+            0 => 'Artur Morcela - 964324452'
+        ]
+        'presencas' => [
+            'aluno' => ''
+        ]
+    ]
+    'hour' => '03'
+    'minute' => '00'
+]
+
+$_COOKIE = [
+    '_identity' => '83c977c1d792d9a0ffc2deefc6b85ed8efc2f20fd6ba329edf26701d1a986a93a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"_dcCOyWp5-PVPkYz2sgHyb4JQ46WCoIy\",2592000]\";}'
+    '_csrf' => 'a25c418e433ed053f28128232bb5433221131d121629e51ee28941c58b189168a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H62-3SUhW1aqeQ4Oxz2e-V18a2NZ4Qcb\";}'
+    'PHPSESSID' => 'v10qg367k1s9hk9qb181p52fm3'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '314'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost:81'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/backend/web/index.php?r=aula%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_identity=83c977c1d792d9a0ffc2deefc6b85ed8efc2f20fd6ba329edf26701d1a986a93a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22_dcCOyWp5-PVPkYz2sgHyb4JQ46WCoIy%22%2C2592000%5D%22%3B%7D; _csrf=a25c418e433ed053f28128232bb5433221131d121629e51ee28941c58b189168a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H62-3SUhW1aqeQ4Oxz2e-V18a2NZ4Qcb%22%3B%7D; PHPSESSID=v10qg367k1s9hk9qb181p52fm3'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\sdk\\platform-tools;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '33421'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aula%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aula%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1454347484.644
+    'REQUEST_TIME' => 1454347484
+]
+2016-02-01 18:25:37 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: alunos_a_adicionar' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AulaController.php:115
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-02-01 18:25:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'aula/create'
+]
+
+$_POST = [
+    '_csrf' => 'cTBaTVJIeHY5BmhgYRstHiYBOzw3GUw5CUpoKH8eSU4QAhQXZhkbFA=='
+    'Aula' => [
+        'Nome' => 'erro'
+        'Data' => '2016-02-25'
+        'HoraInicio' => '02:00'
+        'HoraFim' => '03:00'
+        'turmas' => [
+            0 => '1'
+        ]
+        'presencas' => [
+            'aluno' => ''
+        ]
+    ]
+    'hour' => '03'
+    'minute' => '00'
+]
+
+$_COOKIE = [
+    '_identity' => '83c977c1d792d9a0ffc2deefc6b85ed8efc2f20fd6ba329edf26701d1a986a93a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"_dcCOyWp5-PVPkYz2sgHyb4JQ46WCoIy\",2592000]\";}'
+    '_csrf' => 'a25c418e433ed053f28128232bb5433221131d121629e51ee28941c58b189168a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H62-3SUhW1aqeQ4Oxz2e-V18a2NZ4Qcb\";}'
+    'PHPSESSID' => 'v10qg367k1s9hk9qb181p52fm3'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '278'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost:81'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/backend/web/index.php?r=aula%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_identity=83c977c1d792d9a0ffc2deefc6b85ed8efc2f20fd6ba329edf26701d1a986a93a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22_dcCOyWp5-PVPkYz2sgHyb4JQ46WCoIy%22%2C2592000%5D%22%3B%7D; _csrf=a25c418e433ed053f28128232bb5433221131d121629e51ee28941c58b189168a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H62-3SUhW1aqeQ4Oxz2e-V18a2NZ4Qcb%22%3B%7D; PHPSESSID=v10qg367k1s9hk9qb181p52fm3'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\sdk\\platform-tools;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '33435'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aula%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aula%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1454347537.604
+    'REQUEST_TIME' => 1454347537
+]
+2016-02-01 18:27:45 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: alunos_a_adicionar' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AulaController.php:115
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-02-01 18:27:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'aula/create'
+]
+
+$_POST = [
+    '_csrf' => 'aXRzRkFkU1chQkFrcjcGPz5FEjckNWcYEQ5BI2wyYm8IRj0cdTUwNQ=='
+    'Aula' => [
+        'Nome' => 'erro_tryuijok'
+        'Data' => '2016-02-23'
+        'HoraInicio' => '00:00'
+        'HoraFim' => '00:30'
+        'turmas' => [
+            0 => '1'
+        ]
+        'presencas' => [
+            'aluno' => ''
+        ]
+    ]
+    'hour' => '00'
+    'minute' => '30'
+]
+
+$_COOKIE = [
+    '_identity' => '83c977c1d792d9a0ffc2deefc6b85ed8efc2f20fd6ba329edf26701d1a986a93a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"_dcCOyWp5-PVPkYz2sgHyb4JQ46WCoIy\",2592000]\";}'
+    '_csrf' => 'a25c418e433ed053f28128232bb5433221131d121629e51ee28941c58b189168a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H62-3SUhW1aqeQ4Oxz2e-V18a2NZ4Qcb\";}'
+    'PHPSESSID' => 'v10qg367k1s9hk9qb181p52fm3'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '287'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost:81'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/backend/web/index.php?r=aula%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => '_identity=83c977c1d792d9a0ffc2deefc6b85ed8efc2f20fd6ba329edf26701d1a986a93a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22_dcCOyWp5-PVPkYz2sgHyb4JQ46WCoIy%22%2C2592000%5D%22%3B%7D; _csrf=a25c418e433ed053f28128232bb5433221131d121629e51ee28941c58b189168a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H62-3SUhW1aqeQ4Oxz2e-V18a2NZ4Qcb%22%3B%7D; PHPSESSID=v10qg367k1s9hk9qb181p52fm3'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\sdk\\platform-tools;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '33468'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aula%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aula%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1454347665.346
+    'REQUEST_TIME' => 1454347665
+]
+2016-02-01 18:56:15 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: alunos_a_adicionar' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AulaController.php:115
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-02-01 18:56:14 [::1][-][-][info][application] $_GET = [
+    'r' => 'aula/create'
+]
+
+$_POST = [
+    '_csrf' => 'X2Q2N3VhR1FoXFJoRFQpZxciAgFENTQDDiJVfSYGDAMdFABVMQAOHw=='
+    'Aula' => [
+        'Nome' => 'ce'
+        'Data' => '2016-03-08'
+        'HoraInicio' => '00:00'
+        'HoraFim' => '00:30'
+        'turmas' => [
+            0 => '3'
+        ]
+        'presencas' => [
+            'aluno' => ''
+        ]
+    ]
+    'hour' => '00'
+    'minute' => '30'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '0aouc6u1otm30nc7qh83dv57m7'
+    '_identity' => '83c977c1d792d9a0ffc2deefc6b85ed8efc2f20fd6ba329edf26701d1a986a93a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"_dcCOyWp5-PVPkYz2sgHyb4JQ46WCoIy\",2592000]\";}'
+    '_csrf' => '173c61f5709d7020f2a555c6c9531495775f81fd54d7c9832f347370405fb42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"78d_15n6HF461TsRQFcJSgKRBp6bDaIN\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '276'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost:81'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/backend/web/index.php?r=aula%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=0aouc6u1otm30nc7qh83dv57m7; _identity=83c977c1d792d9a0ffc2deefc6b85ed8efc2f20fd6ba329edf26701d1a986a93a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22_dcCOyWp5-PVPkYz2sgHyb4JQ46WCoIy%22%2C2592000%5D%22%3B%7D; _csrf=173c61f5709d7020f2a555c6c9531495775f81fd54d7c9832f347370405fb42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2278d_15n6HF461TsRQFcJSgKRBp6bDaIN%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\sdk\\platform-tools;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '33838'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aula%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aula%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1454349374.943
+    'REQUEST_TIME' => 1454349374
+]
+2016-02-01 19:02:05 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: alunos_a_adicionar' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AulaController.php:115
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2016-02-01 19:02:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'aula/create'
+]
+
+$_POST = [
+    '_csrf' => 'TWVycWFQVFp6XRYuUGU6bAUjRkdQBCcIHCMROzI3HwgPFUQTJTEdFA=='
+    'Aula' => [
+        'Nome' => 'erro alunos'
+        'Data' => '2016-02-25'
+        'HoraInicio' => '00:00'
+        'HoraFim' => '00:30'
+        'turmas' => [
+            0 => '2'
+        ]
+        'presencas' => [
+            'aluno' => ''
+        ]
+    ]
+    'hour' => '00'
+    'minute' => '30'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '0aouc6u1otm30nc7qh83dv57m7'
+    '_identity' => '83c977c1d792d9a0ffc2deefc6b85ed8efc2f20fd6ba329edf26701d1a986a93a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"_dcCOyWp5-PVPkYz2sgHyb4JQ46WCoIy\",2592000]\";}'
+    '_csrf' => '173c61f5709d7020f2a555c6c9531495775f81fd54d7c9832f347370405fb42ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"78d_15n6HF461TsRQFcJSgKRBp6bDaIN\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '285'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost:81'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost:81/GestCitLeiria/advanced/backend/web/index.php?r=aula%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2,it;q=0.2,ko;q=0.2'
+    'HTTP_COOKIE' => 'PHPSESSID=0aouc6u1otm30nc7qh83dv57m7; _identity=83c977c1d792d9a0ffc2deefc6b85ed8efc2f20fd6ba329edf26701d1a986a93a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22_dcCOyWp5-PVPkYz2sgHyb4JQ46WCoIy%22%2C2592000%5D%22%3B%7D; _csrf=173c61f5709d7020f2a555c6c9531495775f81fd54d7c9832f347370405fb42ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2278d_15n6HF461TsRQFcJSgKRBp6bDaIN%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\sdk\\platform-tools;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '33918'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=aula%2Fcreate'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aula%2Fcreate'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1454349725.231
+    'REQUEST_TIME' => 1454349725
+]

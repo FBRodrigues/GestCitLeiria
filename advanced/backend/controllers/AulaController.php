@@ -117,12 +117,19 @@ class AulaController extends Controller
 
         if(count($alunos_adicionados) > 0){
 
-            //$dataInicio = new \DateTime($data);
-            //$diaSemanaData = date('w', $dataInicio->getTimestamp());
-            //$post['Aula']['DiaSemana'] = $diaSemanaData;
-            //$post['Aula']['Data'] = $dataInicio->format('y-m-d');
+            $horaF = Yii::$app->request->post('Aula')['HoraFim'];
+            $horaI = Yii::$app->request->post('Aula')['HoraInicio'];
+            if($horaF <= $horaI){
+                Yii::$app->getSession()->setFlash('error', 'Hora de fim tem que ser maior que a hora de inicio');
 
-            if ($model->load(Yii::$app->request->post()) && $model->save()) {
+                return $this->redirect(array('create'));
+            }else{
+                //$dataInicio = new \DateTime($data);
+                //$diaSemanaData = date('w', $dataInicio->getTimestamp());
+                //$post['Aula']['DiaSemana'] = $diaSemanaData;
+                //$post['Aula']['Data'] = $dataInicio->format('y-m-d');
+
+                if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
                     foreach($alunos_adicionados as $index => $aluno){
 
@@ -145,12 +152,15 @@ class AulaController extends Controller
 
                         $modelTurma->save();
                     }
-                return $this->redirect(['index']);
-            } else {
-                return $this->render('create', [
-                    'model' => $model,
-                ]);
+                    return $this->redirect(['index']);
+                } else {
+                    Yii::$app->getSession()->setFlash('error', 'Tem que selecionar alunos!');
+                    return $this->render('create', [
+                        'model' => $model,
+                    ]);
+                }
             }
+
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -184,6 +194,13 @@ class AulaController extends Controller
         */
 
         if (count($alunos_adicionados) > 0) {
+            $horaF = Yii::$app->request->post('Aula')['HoraFim'];
+            $horaI = Yii::$app->request->post('Aula')['HoraInicio'];
+            if($horaF <= $horaI){
+                Yii::$app->getSession()->setFlash('error', 'Hora de fim tem que ser maior que a hora de inicio');
+
+                return $this->redirect(array('create'));
+            }else{
 
             $dataInicio = new \DateTime($data);
             $dataXpto = new \DateTime($data);
@@ -203,26 +220,26 @@ class AulaController extends Controller
 
                     if ($model->load($post) && $model->save()) {
 
-                            foreach ($alunos_adicionados as $index => $aluno) {
-                                $nomeAluno = substr($aluno,0,strpos($aluno,' - '));
-                                $contato = substr($aluno,strpos($aluno,' - ') + 3);
-                                $idAluno = Aluno::findOne(['Nome' => $nomeAluno, 'Contato1' => $contato])->idAluno;
+                        foreach ($alunos_adicionados as $index => $aluno) {
+                            $nomeAluno = substr($aluno, 0, strpos($aluno, ' - '));
+                            $contato = substr($aluno, strpos($aluno, ' - ') + 3);
+                            $idAluno = Aluno::findOne(['Nome' => $nomeAluno, 'Contato1' => $contato])->idAluno;
 
-                                $modelPresenca = new Presenca();
+                            $modelPresenca = new Presenca();
 
-                                $modelPresenca->Aluno_idAluno = $idAluno;
-                                $modelPresenca->Aula_idAula = $model->idAula;
+                            $modelPresenca->Aluno_idAluno = $idAluno;
+                            $modelPresenca->Aula_idAula = $model->idAula;
 
-                                $modelPresenca->save();
-                            }
+                            $modelPresenca->save();
+                        }
 
-                            foreach ($turmas as $index => $idTreinador) {
-                                $modelTurma = new Turma();
+                        foreach ($turmas as $index => $idTreinador) {
+                            $modelTurma = new Turma();
 
-                                $modelTurma->Treinador_idTreinador = $idTreinador;
-                                $modelTurma->Aula_idAula = $model->idAula;
-                                $modelTurma->save();
-                            }
+                            $modelTurma->Treinador_idTreinador = $idTreinador;
+                            $modelTurma->Aula_idAula = $model->idAula;
+                            $modelTurma->save();
+                        }
 
 
                     } else {
@@ -234,6 +251,7 @@ class AulaController extends Controller
                 }
 
                 $dataInicio->add(new \DateInterval('P1D'));
+            }
             }
 
             return $this->redirect(['index']);

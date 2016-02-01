@@ -16,8 +16,10 @@ $nomeUser = Yii::$app->user->identity->username;
 $idUser = Yii::$app->user->getId();
 $tipoUtilizador = Yii::$app->user->identity->TipoUtilizador;
 $visibility = true;
+$btn = 'btn btn-success';
 if($tipoUtilizador == 'A'){
     $visibility = false;
+    $btn = 'visible';
 }
 ?>
 <div class="aula-index">
@@ -30,7 +32,7 @@ if($tipoUtilizador == 'A'){
     <div class="botao-create">
 
         <p>
-            <?= Html::a('Adicionar Aula', ['create'], ['class' => 'btn btn-success']) ?>
+            <?= Html::a('Adicionar Aula', ['create'], ['class' => $btn]) ?>
         </p>
 
 

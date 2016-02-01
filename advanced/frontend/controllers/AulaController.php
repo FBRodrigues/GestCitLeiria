@@ -127,46 +127,51 @@ class AulaController extends Controller
 
             if(count($alunos_adicionados) > 0){
 
-            if ($model->load(Yii::$app->request->post()) && $model->save()) {
+                $horaF = Yii::$app->request->post('Aula')['HoraFim'];
+                $horaI = Yii::$app->request->post('Aula')['HoraInicio'];
+                if($horaF <= $horaI){
+                    Yii::$app->getSession()->setFlash('error', 'Hora de fim tem que ser maior que a hora de inicio');
 
-                if($presencas == 0){
-                    echo 'Não selecionou nenhum aluno';
-                    return $this->render('create', [
-                        'model' => $model,
-                    ]);
-                } else {
-                    foreach($alunos_adicionados as $index => $aluno){
+                    return $this->redirect(array('create'));
+                }else{
+                    if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
-                        $nomeAluno = substr($aluno,0,strpos($aluno,' - '));
-                        $contato = substr($aluno,strpos($aluno,' - ') + 3);
-                        $idAluno = Aluno::findOne(['Nome' => $nomeAluno, 'Contato1' => $contato])->idAluno;
+                        if($presencas == 0){
+                            echo 'Não selecionou nenhum aluno';
+                            return $this->render('create', [
+                                'model' => $model,
+                            ]);
+                        } else {
+                            foreach($alunos_adicionados as $index => $aluno){
 
-                       $modelPresenca = new Presenca();
+                                $nomeAluno = substr($aluno,0,strpos($aluno,' - '));
+                                $contato = substr($aluno,strpos($aluno,' - ') + 3);
+                                $idAluno = Aluno::findOne(['Nome' => $nomeAluno, 'Contato1' => $contato])->idAluno;
 
-                        $modelPresenca->Aluno_idAluno = $idAluno;
-                        $modelPresenca->Aula_idAula = $model->idAula;
+                                $modelPresenca = new Presenca();
+                                $modelPresenca->Aluno_idAluno = $idAluno;
+                                $modelPresenca->Aula_idAula = $model->idAula;
 
-                        $modelPresenca->save();
-                   }
+                                $modelPresenca->save();
+                            }
 
-                    $modelTurma = new Turma();
-                    $modelTurma->Aula_idAula = $model->idAula;
+                            $modelTurma = new Turma();
+                            $modelTurma->Aula_idAula = $model->idAula;
 
-                    $idUser = Yii::$app->user->getId();
-                    $idTreinador = $modelTurma->procurarTreinadorPorID($idUser);
-                    $idT = $idTreinador[0]['idTreinador'];
+                            $idUser = Yii::$app->user->getId();
+                            $idTreinador = $modelTurma->procurarTreinadorPorID($idUser);
+                            $idT = $idTreinador[0]['idTreinador'];
 
-                    $modelTurma->Treinador_idTreinador = $idT;
-                    $modelTurma->save();
-
+                            $modelTurma->Treinador_idTreinador = $idT;
+                            $modelTurma->save();
+                        }
+                        return $this->redirect(['view', 'id' => $model->idAula]);
+                    } else {
+                        return $this->render('create', [
+                            'model' => $model,
+                        ]);
+                    }
                 }
-
-                return $this->redirect(['view', 'id' => $model->idAula]);
-            } else {
-                return $this->render('create', [
-                    'model' => $model,
-                ]);
-            }
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -190,38 +195,36 @@ class AulaController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $presencas = Yii::$app->request->post('Aula')['presencas'];
             //var_dump($presencas);
-            $guardarPresencas = true;
+            $estadoAula = Yii::$app->request->post('Aula')['Estado'];
 
-            foreach ($presencas as $index => $camposPresenca) {
-                if ($camposPresenca['Estado'] == 0) {
-
-                    $guardarPresencas = false;
-
-                }
-            }
-
-            if ($guardarPresencas == true) {
-
+            if($estadoAula != 0){
+                $guardarPresencas = true;
 
                 foreach ($presencas as $index => $camposPresenca) {
-                    $presenca = Presenca::findOne($camposPresenca['idPresenca']);
-
-                    $presenca->setAttributes($camposPresenca);
-                    $presenca->save();
-
+                    if ($camposPresenca['Estado'] == 0) {
+                        $guardarPresencas = false;
+                    }
                 }
 
-                Yii::$app->getSession()->setFlash('success', 'Alterações guardadas com sucesso!');
+                if ($guardarPresencas == true) {
+                    foreach ($presencas as $index => $camposPresenca) {
+                        $presenca = Presenca::findOne($camposPresenca['idPresenca']);
+                        $presenca->setAttributes($camposPresenca);
+                        $presenca->save();
 
+                    }
 
-                return $this->redirect(array('aula/index'));
+                    Yii::$app->getSession()->setFlash('success', 'Alterações guardadas com sucesso!');
+
+                    return $this->redirect(array('aula/index'));
+                }else{
+                    Yii::$app->getSession()->setFlash('error', 'Alunos não confirmados!');
+                    return $this->redirect(array('view', 'id' => $id));
+                }
             }else{
-                Yii::$app->getSession()->setFlash('error', 'Alunos não confirmados!');
-
+                Yii::$app->getSession()->setFlash('error', 'Estado da aula não confirmado!');
                 return $this->redirect(array('view', 'id' => $id));
-
             }
-
 
         } else {
             return $this->render('update', [

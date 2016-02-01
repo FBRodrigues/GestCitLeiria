@@ -45,7 +45,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     ]);
 
-    echo $form->field($model, 'Estado')->dropDownList(['0'=> 'Não Escolhida','1'=> 'Realizada', '2'=> 'Não realizada-Condições meteorológicas', '3'=> 'Não realizada-FP', '4'=> 'Não realizada-FA']);
+    echo $form->field($model, 'Estado')->dropDownList(['0'=> 'Não escolhido...','1'=> 'Realizada', '2'=> 'Não realizada-Condições meteorológicas', '3'=> 'Não realizada-FP', '4'=> 'Não realizada-FA']);
 
     echo '<h3>'.Html::encode("Lista de inscritos").'</h3>';
 
