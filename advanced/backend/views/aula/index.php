@@ -43,6 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     'filterModel' => $searchModel,
 
+
     //Experiencia
 
     /* 'columns' => array(

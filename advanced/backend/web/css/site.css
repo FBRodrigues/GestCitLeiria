@@ -106,3 +106,17 @@ option{
     float: right;
     clear: right;
 }
+.success {
+    color: green;
+
+}
+
+.info {
+    color: yellow;
+
+}
+
+.danger {
+    color: red;
+
+}

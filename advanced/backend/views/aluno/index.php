@@ -4,7 +4,8 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\ArrayHelper;
 
-/* @var $this yii\web\View */
+
+    /* @var $this yii\web\View */
 /* @var $searchModel backend\models\AlunoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
@@ -123,7 +124,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?=Html::dropDownList('action1','',[','=>'Operação...',
         'ePer'=>'Enviar Email Personalizado','pPag'=>'Enviar Email Pagamentos'],['class'=>'dropdown'])?>
 
-
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -174,7 +174,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ?>
 
 
-
+    <?php yii\widgets\Pjax::end(); ?>
     <?=Html::submitButton('Executar',['class' => 'btn btn-info','name'=>'formal']);?>
 
 
