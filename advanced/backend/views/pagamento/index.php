@@ -20,9 +20,24 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Create Pagamento', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'rowOptions'=> function($model) {
+            if($model->situacao == 'Concluido'){
+
+                return ['class'=>'success'];
+            }elseif($model->situacao == 'Em Atraso'){
+                return ['class'=>'danger'];
+
+            }elseif($model->situacao == 'pendente'){
+                return ['class'=>'info'];
+            }else{
+                return ['class'=>''];
+            }
+
+        },
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
@@ -37,28 +52,12 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'label' => 'Situacao',
                 'attribute'=> 'situacao',
-                /* ['class'=>'yii\grid\DataColumn',
-                     'rowOptions'=>function($dataProvider,$index,$widget,$grid){
-                         if($dataProvider->situacao == "Concluido"){
-                             return ['class'=>'sucess'];
-                         }elseif($dataProvider->situacao == "Em atraso"){
-                             return ['class'=> 'danger'];
-                         }
-                     },
-
-                 ],
-        */
-
-
                 'value'=> function($dataProvider){
                     $data = date('Y-m-d');
                     if($dataProvider->situacao != "Concluido"){
                         if($dataProvider->dataMaxPagamento < $data ){
                         $dataProvider->situacao = "Em atraso";
-                             "<span style='background-color: red'>";
                         }
-                    }else{
-                         "<span style='background-color: green '>" . $dataProvider->situacao . "</span>";
                     }
                     return  $dataProvider->situacao;//implode(",",ArrayHelper::map($dataProvider->categorias,'idCategorias','Valor'));
 
