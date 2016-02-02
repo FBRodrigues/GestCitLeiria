@@ -34,7 +34,7 @@ class Inscricao extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idAluno', 'dataInicio', 'dataFim', 'nrAulas', 'tipo'], 'required'],
+            [['idAluno', 'dataInicio', 'dataFim', 'tipo'], 'required'],
             [['idAluno', 'nrAulas'], 'integer'],
             [['dataInicio', 'dataFim'], 'safe'],
             [['tipo'], 'string', 'max' => 11]

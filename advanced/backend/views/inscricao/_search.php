@@ -23,7 +23,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'dataFim') ?>
 
-    <?= $form->field($model, 'nrAulas') ?>
+    <?= $form->field($model, 'nrAulas')->textInput()->label('Nr de aulas/semana') ?>
 
     <?php // echo $form->field($model, 'tipo') ?>
 

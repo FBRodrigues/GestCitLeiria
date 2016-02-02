@@ -25,6 +25,16 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'dataFatura') ?>
 
+    <?php // echo $form->field($model, 'nrAulas') ?>
+
+    <?$form->field($model, 'dataMaxPagamento') ?>
+
+    <?$form->field($model, 'situacao') ?>
+
+
+
+
+
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
         <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>

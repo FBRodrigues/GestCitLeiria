@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use backend\models\Categorias;
 use backend\models\Inscricao;
+use Symfony\Component\Yaml\Tests\A;
 use Yii;
 use backend\models\Pagamento;
 use backend\models\PagamentoSearch;
@@ -36,7 +37,12 @@ class PagamentoController extends Controller
     public function actionIndex()
     {
         $searchModel = new PagamentoSearch();
+       // $model = new Pagamento();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+       // $dataMaxPagamento = Yii::$app->request->post('Pagamento')['dataMaxPagamento'];
+        $dataSistema = date('Y-m-d');
+       // return Json::encode($dataMaxPagamento);
+        //var_dump($dataMaxPagamento);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -61,43 +67,28 @@ class PagamentoController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
+
+
     public function actionCreate()
     {
-        $session = Yii::$app->session;
-        $id = $session->get('id');
-        var_dump($id);
         $model = new Pagamento();
-     //   $valor = Yii::$app->request->post('Inscricao')['idInscricao0'];
-
-
-     //   return Json::encode($idInscricao);
-           // QUERY
-//         $idInsc = Pagamento::find()->select('pagamento.idInscricao')
-//            ->from('pagamento')
-//            ->join('INNER JOIN','inscricao','pagamento.idInscricao  = inscricao.idInscricao')
-//            ->Where(['pagamento.idInscricao' => $id]);
 
 
 
-      // $model->idInscricao = $idInsc;
-
-
-  //      $idInsc = $model->findOne('');
-      //  var_dump($idInsc);
-
-       // var_dump($idInsc);
- //      return Json::encode($idInsc);
-   //     $model->idInscricao = $idInsc->idInscricao;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
-            return $this->redirect(['view', 'id' => $model->idPagamento] );
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
+                return $this->redirect(['view', 'id' => $model->idPagamento] );
+            } else {
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
+
     }
+
+
+
 
     /**
      * Updates an existing Pagamento model.
@@ -110,6 +101,8 @@ class PagamentoController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $model->situacao = "Concluido";
+            $model->save();
             return $this->redirect(['view', 'id' => $model->idPagamento]);
         } else {
             return $this->render('update', [

@@ -33,6 +33,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'valor',
             'nrFatura',
             'dataFatura',
+            'nrAulas',
+            'dataMaxPagamento',
+            'situacao',
         ],
     ]) ?>
 

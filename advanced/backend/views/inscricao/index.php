@@ -34,7 +34,10 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'dataInicio',
             'dataFim',
-            'nrAulas',
+            [
+                'attribute' => 'nrAulas',
+                'label' => 'nr de Aulas/Semana',
+            ],
             'tipo',
 
             ['class' => 'yii\grid\ActionColumn'],

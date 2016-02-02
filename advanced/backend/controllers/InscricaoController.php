@@ -8,6 +8,7 @@ use backend\models\InscricaoSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use backend\models\Pagamento;
 
 /**
  * InscricaoController implements the CRUD actions for Inscricao model.
@@ -59,18 +60,63 @@ class InscricaoController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
+
+    public function  actionCreate2(){
+        $model = new Inscricao();
+        if($model->load(Yii::$app->request->post()) && $model->save()){
+
+
+        }else {
+            return $this->render('create', [
+                'model' => $model,
+            ]);
+
+        }
+    }
     public function actionCreate()
     {
         $model = new Inscricao();
 
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idInscricao]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
-    }
+
+            $tipoIns = Yii::$app->request->post('Inscricao')['tipo'];
+            $dataInicio = Yii::$app->request->post('Inscricao')['dataInicio'];
+
+            if ($tipoIns == 'anual') {
+                $numRepeticoes = 12;
+            } else {
+                $numRepeticoes = 1;
+            }
+            for ($i = 1; $i <= $numRepeticoes; $i++) {
+                $date = $dataInicio;
+                $date = strtotime(date("Y-m-d", strtotime($date)) . " " . $i . "month");
+                $date = date("Y-m-08", $date);
+             //   $date1 = date("Y-m-d ");
+                $modelPagamento = new Pagamento();
+                $modelPagamento->idInscricao = $model->idInscricao;
+                $modelPagamento->dataMaxPagamento = $date;
+                $modelPagamento->nrAulas = $model->nrAulas;
+                $modelPagamento->situacao = "pendente";
+                $modelPagamento->save();
+          //      var_dump($modelPagamento);
+            }
+                    return $this->render('view', [
+                        'model' => $model,
+                    ]);
+                }
+
+
+          //  return $this->redirect(['view', 'id' => $model->idInscricao]);
+               else {
+                  return $this->render('create', [
+                      'model' => $model,
+                  ]);
+              }
+            }
+
+
+
 
     /**
      * Updates an existing Inscricao model.

@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use kartik\datetime\DateTimePicker;
+use kartik\date\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Inscricao */
@@ -15,7 +15,7 @@ use kartik\datetime\DateTimePicker;
 
     <?= $form->field($model, 'idAluno')->dropDownList([$model->getAlunos(),],['prompt'=>'Selecione uma opção...'])->label('Aluno')?>
 
-    <?= $form->field($model, 'dataInicio')->widget(DateTimePicker::className(),[
+    <?= $form->field($model, 'dataInicio')->widget(DatePicker::className(),[
         'name' => 'check_issue_date',
         'options' => ['placeholder' => 'Selecione uma Data ...'],
         'pluginOptions' => [
@@ -25,7 +25,7 @@ use kartik\datetime\DateTimePicker;
         ]
     );?>
 
-    <?= $form->field($model, 'dataFim')->textInput() -> widget(DateTimePicker::className(),[
+    <?= $form->field($model, 'dataFim')->textInput() -> widget(DatePicker::className(),[
             'name' => 'check_issue_date',
             'options' => ['placeholder' => 'Selecione uma Data ...'],
             'pluginOptions' => [
@@ -35,12 +35,15 @@ use kartik\datetime\DateTimePicker;
         ]
     );?>
 
-    <?= $form->field($model, 'nrAulas')->textInput() ?>
+    <?= $form->field($model, 'nrAulas')->textInput()->label('Nr de aulas/semana') ?>
 
-    <?= $form->field($model, 'tipo')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'tipo')->dropDownList([ 'casual' => 'Casual', 'mensal' => 'Mensal', 'anual' => 'Anual',], ['prompt' => 'Selecione uma opção...']) ?>
+
+
+
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Criar' : 'Atualizar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Criar' : 'Atualizar', ['class' =>$model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

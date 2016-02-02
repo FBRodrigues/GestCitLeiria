@@ -12,7 +12,6 @@ $this->params['breadcrumbs'][] = $this->title;
 $session = Yii::$app->session;
 $session['id'] = $model->idInscricao;
 $id = $session->get('id');
-var_dump($id);
 ?>
 <div class="inscricao-view">
 
@@ -38,18 +37,20 @@ var_dump($id);
             'idAluno0.Nome',
             'dataInicio',
             'dataFim',
-            'nrAulas',
+            [
+                'attribute' => 'nrAulas',
+                'label' => 'nr de Aulas/Semana',
+            ],
             'tipo',
             //'AulasEfectuadas'
         ],
     ]) ?>
     <p>
-        <?=Html::beginForm(['pagamento/create'],'post' );?>
+        <?=Html::beginForm(['pagamento/create2'],'post' );?>
 
-        <?=Html::submitButton('Executar',['class' => 'btn btn-info','name'=>'formal2']);?>
+        <?=Html::submitButton('Criar Pagamento',['class' => 'btn btn-info','name'=>'formal2']);?>
 
 
-        <?//= Html::a('Criar Pagamento', ['pagamento/create', 'onclick' => , ['class' => 'btn btn-success']]);?>
     </p>
     <?=Html::endForm();?>
 </div>

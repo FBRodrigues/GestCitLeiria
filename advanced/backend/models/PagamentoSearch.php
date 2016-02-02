@@ -18,8 +18,8 @@ class PagamentoSearch extends Pagamento
     public function rules()
     {
         return [
-            [['idPagamento', 'idInscricao', 'valor', 'nrFatura'], 'integer'],
-            [['dataFatura'], 'safe'],
+            [['idPagamento', 'idInscricao', 'valor', 'nrFatura', 'nrAulas'], 'integer'],
+            [['dataFatura', 'dataMaxPagamento','situacao'], 'safe'],
         ];
     }
 
@@ -61,6 +61,9 @@ class PagamentoSearch extends Pagamento
             'valor' => $this->valor,
             'nrFatura' => $this->nrFatura,
             'dataFatura' => $this->dataFatura,
+            'nrAulas' => $this->nrAulas,
+            'dataMaxPagamento' => $this->dataMaxPagamento,
+            'situacao' => $this->situacao,
         ]);
 
         return $dataProvider;
