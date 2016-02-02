@@ -601,10 +601,19 @@ class AulaController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        $estadoAula = $this->findModel($id)->Estado;
+        if($estadoAula==0){
+            $this->findModel($id)->delete();
+            Yii::$app->getSession()->setFlash('success', 'Aula apagada com sucesso!');
+            return $this->redirect(['index']);
+        } else {
+            Yii::$app->getSession()->setFlash('error', 'Não pode apagar esta aula!');
 
-
-        return $this->redirect(['index']);
+            return $this->redirect(['index']);
+        }
+//        $this->findModel($id)->delete();
+//
+//        return $this->redirect(['index']);
     }
 
     /**
