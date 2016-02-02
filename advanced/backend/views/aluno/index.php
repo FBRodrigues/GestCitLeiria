@@ -174,7 +174,7 @@ $this->params['breadcrumbs'][] = $this->title;
     ?>
 
 
-    <?php yii\widgets\Pjax::end(); ?>
+
     <?=Html::submitButton('Executar',['class' => 'btn btn-info','name'=>'formal']);?>
 
 
