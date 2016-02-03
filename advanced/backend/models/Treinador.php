@@ -9,10 +9,10 @@ use Yii;
  *
  * @property integer $idTreinador
  * @property string $Nome
- * @property integer $Id_User
+ * @property integer $contato
+ * @property string $email
  *
  * @property Horario[] $horarios
- * @property User $idUser
  * @property Turma[] $turmas
  */
 class Treinador extends \yii\db\ActiveRecord
@@ -31,8 +31,9 @@ class Treinador extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idTreinador'], 'required'],
-            [['idTreinador', 'Id_User'], 'integer'],
+            [['idTreinador', 'contato', 'email'], 'required'],
+            [['idTreinador', 'contato'], 'integer'],
+            [['email'], 'string'],
             [['Nome'], 'string', 'max' => 45]
         ];
     }
@@ -45,7 +46,8 @@ class Treinador extends \yii\db\ActiveRecord
         return [
             'idTreinador' => 'Id Treinador',
             'Nome' => 'Nome',
-            'Id_User' => 'Id  User',
+            'contato' => 'Contato',
+            'email' => 'Email',
         ];
     }
 
@@ -55,14 +57,6 @@ class Treinador extends \yii\db\ActiveRecord
     public function getHorarios()
     {
         return $this->hasMany(Horario::className(), ['Treinador_idTreinador' => 'idTreinador']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getIdUser()
-    {
-        return $this->hasOne(User::className(), ['id' => 'Id_User']);
     }
 
     /**

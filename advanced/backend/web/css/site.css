@@ -109,14 +109,17 @@ option{
 .success {
     color: green;
 
+
 }
 
 .info {
-    color: yellow;
+    color: #0026ff;
+
 
 }
 
 .danger {
     color: red;
+
 
 }

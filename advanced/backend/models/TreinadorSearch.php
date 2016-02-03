@@ -18,8 +18,8 @@ class TreinadorSearch extends Treinador
     public function rules()
     {
         return [
-            [['idTreinador', 'Id_User'], 'integer'],
-            [['Nome'], 'safe'],
+            [['idTreinador', 'contato'], 'integer'],
+            [['Nome', 'email'], 'safe'],
         ];
     }
 
@@ -57,10 +57,11 @@ class TreinadorSearch extends Treinador
 
         $query->andFilterWhere([
             'idTreinador' => $this->idTreinador,
-            'Id_User' => $this->Id_User,
+            'contato' => $this->contato,
         ]);
 
-        $query->andFilterWhere(['like', 'Nome', $this->Nome]);
+        $query->andFilterWhere(['like', 'Nome', $this->Nome])
+            ->andFilterWhere(['like', 'email', $this->email]);
 
         return $dataProvider;
     }
