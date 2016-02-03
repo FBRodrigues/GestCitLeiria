@@ -9,8 +9,8 @@ use Yii;
  *
  * @property integer $idTreinador
  * @property string $Nome
- * @property integer $contato
- * @property string $email
+ * @property integer $Contato
+ * @property string $Email
  *
  * @property Horario[] $horarios
  * @property Turma[] $turmas
@@ -31,9 +31,9 @@ class Treinador extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idTreinador', 'contato', 'email'], 'required'],
-            [['idTreinador', 'contato'], 'integer'],
-            [['email'], 'string'],
+            [['idTreinador', 'Contato', 'Email'], 'required'],
+            [['idTreinador', 'Contato'], 'integer'],
+            [['Email'], 'string'],
             [['Nome'], 'string', 'max' => 45]
         ];
     }
@@ -46,8 +46,8 @@ class Treinador extends \yii\db\ActiveRecord
         return [
             'idTreinador' => 'Id Treinador',
             'Nome' => 'Nome',
-            'contato' => 'Contato',
-            'email' => 'Email',
+            'Contato' => 'Contato',
+            'Email' => 'Email',
         ];
     }
 

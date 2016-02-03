@@ -15,10 +15,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
+    <div class="botao-create">
     <p>
-        <?= Html::a('Create Treinador', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Criar Treinador', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
+    </div>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -27,8 +28,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'idTreinador',
             'Nome',
-            'contato',
-            'email:ntext',
+            'Contato',
+            'Email:ntext',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

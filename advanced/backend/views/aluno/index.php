@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
     <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <div class="criarSo" >
+    <div class="criarSo botao-create" >
         <p>
             <?= Html::a('Criar Sócio', ['create'], ['class' => 'btn btn-success']) ?>
         </p>
@@ -159,7 +159,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label' => 'Categorias',
                 'attribute'=> 'categorias.Valor',
                 'value'=> function($dataProvider){
-                  return implode(",",ArrayHelper::map($dataProvider->categorias,'idCategorias','Valor'));
+                    return implode(",",ArrayHelper::map($dataProvider->categorias,'idCategorias','Valor'));
                 },
 
                 'format' =>'text',

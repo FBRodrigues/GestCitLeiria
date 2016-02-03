@@ -106,16 +106,20 @@ option{
     float: right;
     clear: right;
 }
-.success {
+.successo {
     color: green;
 
 
 }
 
 .info {
-    color: #0026ff;
+    color: #fffc00;
 
 
+}
+
+.pendente{
+    color: #0009ff;
 }
 
 .danger {
@@ -123,3 +127,4 @@ option{
 
 
 }
+

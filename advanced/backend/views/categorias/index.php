@@ -15,9 +15,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
+    <div class="botao-create">
     <p>
         <?= Html::a('Criar Categoria', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+    </div>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

@@ -22,7 +22,7 @@ $id = $session->get('id');
         <?= Html::a('Delete', ['delete', 'id' => $model->idInscricao], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Deseja apagar este Item?',
+                'confirm' => 'Tem a certeza que pretende apagar este Item?',
                 'method' => 'post',
             ],
         ]) ?>

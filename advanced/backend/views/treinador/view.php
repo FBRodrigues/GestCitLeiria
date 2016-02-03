@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model backend\models\Treinador */
 
 $this->title = $model->idTreinador;
-$this->params['breadcrumbs'][] = ['label' => 'Treinadors', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Treinadores', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="treinador-view">
@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Delete', ['delete', 'id' => $model->idTreinador], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => 'Tem a certeza que pretende apagar este Item?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -30,8 +30,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'idTreinador',
             'Nome',
-            'contato',
-            'email:ntext',
+            'Contato',
+            'Email:ntext',
         ],
     ]) ?>
 

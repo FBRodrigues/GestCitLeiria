@@ -65,4 +65,11 @@ class Pagamento extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Inscricao::className(), ['idInscricao' => 'idInscricao']);
     }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function  getAluno(){
+        return $this->hasOne(Aluno::className(), ['idAluno' => 'Inscricao.idAluno']);
+    }
 }

@@ -17,24 +17,24 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
+    <div class="botao-create">
     <p>
-        <?= Html::a('Create Pagamento', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Criar Pagamento', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
+    </div>
     <style>
         .perigo {
             color: black;
-            background-color: red !important;
+            background-color: #ff000b !important;
         }
 
         .sucesso {
             color: black;
-            background-color: #C0FFBE !important;
+            background-color: #55ff00 !important;
         }
         .infor{
             color: black;
-            background-color: yellow;
+            background-color: yellow !important;
         }
     </style>
     <?= GridView::widget([
@@ -55,6 +55,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
+//            [
+//                'attribute' => 'aluno',
+//                'value' => 'aluno.Nome'
+//            ],
 
             'idPagamento',
             'idInscricao',

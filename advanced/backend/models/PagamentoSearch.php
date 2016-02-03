@@ -2,6 +2,7 @@
 
 namespace backend\models;
 
+use frontend\models\Aluno;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
@@ -15,6 +16,8 @@ class PagamentoSearch extends Pagamento
     /**
      * @inheritdoc
      */
+    public $nomeA;
+
     public function rules()
     {
         return [
@@ -43,6 +46,9 @@ class PagamentoSearch extends Pagamento
     {
         $query = Pagamento::find();
 
+        //$subquery = Aluno::find()->select('idAluno, Nome as NomeAluno');
+        //$query->leftJoin(['nomeA' => $subquery], 'nomeA.idInscricao=idInscricao');
+
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
@@ -65,6 +71,8 @@ class PagamentoSearch extends Pagamento
             'dataMaxPagamento' => $this->dataMaxPagamento,
             'situacao' => $this->situacao,
         ]);
+
+        //$query->andFilterWhere(['like', 'nomeA.NomeAluno', $this->nomeA]);
 
         return $dataProvider;
     }
