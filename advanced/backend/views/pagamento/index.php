@@ -22,20 +22,33 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Create Pagamento', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
+    <style>
+        .perigo {
+            color: black;
+            background-color: red !important;
+        }
 
+        .sucesso {
+            color: black;
+            background-color: #C0FFBE !important;
+        }
+        .infor{
+            color: black;
+            background-color: yellow;
+        }
+    </style>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
-        //dksdnsddffdfd
         'rowOptions'=> function($model) {
             if($model->situacao == 'Concluido'){
 
-                return ['class'=>'success'];
+                return ['class'=>'sucesso'];
             }elseif($model->situacao == 'Em Atraso'){
-                return ['class'=>'danger'];
+                return ['class'=>'perigo'];
 
             }elseif($model->situacao == 'pendente'){
-                return ['class'=>'info'];
+                return ['class'=>'infor'];
             }else{
                 return ['class'=>''];
             }
