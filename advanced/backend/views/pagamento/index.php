@@ -49,8 +49,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
             }elseif($model->situacao == 'pendente'){
                 return ['class'=>'infor'];
-            }else{
-                return ['class'=>''];
             }
 
         },
