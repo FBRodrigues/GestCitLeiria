@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\TreinadorSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Treinadors';
+$this->title = 'Treinadores';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="treinador-index">
