@@ -124,9 +124,14 @@ class AulaController extends Controller
         $contato = substr($presencas['aluno'],strpos($presencas['aluno'],' - ') + 3);
         $idAluno = Aluno::findOne(['Nome' => $nomeAluno, 'Contato1' => $contato])->idAluno;
         $alunos_adicionados = Yii::$app->request->post('Aula')['alunos_a_adicionar'];
+//        if(Yii::$app->request->post('Aula')['presencas'][0] != ''){
+//            $alunos_adicionados = Yii::$app->request->post('Aula')['alunos_a_adicionar'];
+//        }else{
+//            $alunos_adicionados = '';
+//        }
 
             if(count($alunos_adicionados) > 0){
-
+            //if($alunos_adicionados!=''){
                 $horaF = Yii::$app->request->post('Aula')['HoraFim'];
                 $horaI = Yii::$app->request->post('Aula')['HoraInicio'];
                 if($horaF <= $horaI){
@@ -137,7 +142,7 @@ class AulaController extends Controller
                     if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
                         if($presencas == 0){
-                            echo 'Não selecionou nenhum aluno';
+                            Yii::$app->getSession()->setFlash('error', 'Não selecionou nenhum aluno!');
                             return $this->render('create', [
                                 'model' => $model,
                             ]);
@@ -167,6 +172,7 @@ class AulaController extends Controller
                         }
                         return $this->redirect(['view', 'id' => $model->idAula]);
                     } else {
+                        Yii::$app->getSession()->setFlash('error', 'Não selecionou nenhum aluno!');
                         return $this->render('create', [
                             'model' => $model,
                         ]);
