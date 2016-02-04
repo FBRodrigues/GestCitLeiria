@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 $estadoNumerico = $model->Estado;
 switch($estadoNumerico){
     case 0:
-        $estadoSTR = 'Não escolhido..';
+        $estadoSTR = 'Não escolhido';
         break;
     case 1:
         $estadoSTR = 'Realizada';
