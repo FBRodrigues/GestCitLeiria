@@ -103,3 +103,8 @@ a.desc:after {
 .visible{
     visibility: hidden;
 }
+
+.img-peq{
+    width: 50%;
+    height: 50%;
+}

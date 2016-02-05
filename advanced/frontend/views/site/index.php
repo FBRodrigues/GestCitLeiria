@@ -38,9 +38,9 @@ $this->title = 'My Yii Application';
       ?>-->
 
     <div class="jumbotron">
-        <h1>Centro Internacional Ténis de Leiria</h1>
+        <!-- <h1>Centro Internacional Ténis de Leiria</h1> -->
 
-        <?php echo \yii\helpers\Html::img('@web/img/citl.jpg', ['class' => 'center-block img-responsive']); ?>
+        <?php echo \yii\helpers\Html::img('@web/img/citl.jpg', ['class' => 'center-block img-responsive img-peq']); ?>
 
     </div>
 

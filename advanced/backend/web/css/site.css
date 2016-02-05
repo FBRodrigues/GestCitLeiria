@@ -124,7 +124,10 @@ option{
 
 .danger {
     color: red;
+}
 
-
+.img-peq{
+    width: 50%;
+    height: 50%;
 }
 
