@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model backend\models\Inscricao */
 
 $this->title = 'Criar Inscricão';
-$this->params['breadcrumbs'][] = ['label' => 'Inscricoes', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Inscricôes', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="inscricao-create">

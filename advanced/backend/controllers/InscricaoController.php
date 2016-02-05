@@ -96,11 +96,11 @@ class InscricaoController extends Controller
                 $modelPagamento->idInscricao = $model->idInscricao;
                 $modelPagamento->dataMaxPagamento = $date;
                 $modelPagamento->nrAulas = $model->nrAulas;
-                $modelPagamento->situacao = "pendente";
+                $modelPagamento->situacao = "Pendente";
                 $modelPagamento->save();
                 //      var_dump($modelPagamento);
             }
-            return $this->render('view', [
+            return $this->render('index', [
                 'model' => $model,
             ]);
         } else {

@@ -15,20 +15,10 @@ $id = $session->get('id');
 ?>
 <div class="inscricao-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->idInscricao], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->idInscricao], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Tem a certeza que pretende apagar este Item?',
-                'method' => 'post',
-            ],
-        ]) ?>
+    <h1>Inscrição número: <?= Html::encode($this->title) ?></h1>
 
 
-    </p>
 
     <?= DetailView::widget([
         'model' => $model,
