@@ -17,10 +17,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-    <div class="botao-create">
-    <p>
-        <?= Html::a('Criar Pagamento', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
     </div>
     <style>
         .perigo {
@@ -64,7 +60,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'idInscricao',
             'valor',
             'nrFatura',
-            'dataFatura',
             // 'nrAulas',
              'dataMaxPagamento',
             [

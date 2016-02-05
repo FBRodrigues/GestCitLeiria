@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use backend\models\PagamentoSearch;
 use Yii;
 use backend\models\Inscricao;
 use backend\models\InscricaoSearch;
@@ -49,8 +50,11 @@ class InscricaoController extends Controller
      */
     public function actionView($id)
     {
+
         return $this->render('view', [
             'model' => $this->findModel($id),
+
+
 
         ]);
     }
@@ -76,6 +80,9 @@ class InscricaoController extends Controller
     public function actionCreate()
     {
         $model = new Inscricao();
+        $searchModel = new InscricaoSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
@@ -102,6 +109,8 @@ class InscricaoController extends Controller
             }
             return $this->render('index', [
                 'model' => $model,
+                'searchModel'=>$searchModel,
+                'dataProvider'=> $dataProvider,
             ]);
         } else {
             return $this->render('create', [
