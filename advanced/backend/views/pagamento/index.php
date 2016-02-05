@@ -53,14 +53,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
         },
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            //['class' => 'yii\grid\SerialColumn'],
 
 //            [
 //                'attribute' => 'aluno',
 //                'value' => 'aluno.Nome'
 //            ],
 
-            'idPagamento',
+            //'idPagamento',
             'idInscricao',
             'valor',
             'nrFatura',

@@ -74,7 +74,7 @@ use backend\models\Treinador;
 
 
 
-        <!-- <?= $form->field($model, 'Estado')->textInput(['maxlength' => true]) ?> -->
+        <!-- echo $form->field($model, 'Estado')->dropDownList(['0'=> 'Não escolhido...','1'=> 'Realizada', '2'=> 'Não realizada-Condições meteorológicas', '3'=> 'Não realizada-FP', '4'=> 'Não realizada-FA']); -->
 
 
 

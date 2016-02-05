@@ -9,6 +9,27 @@ use yii\widgets\DetailView;
 //$this->title = $model->idAula;
 $this->params['breadcrumbs'][] = ['label' => 'Aulas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+$estadoNumerico = $model->Estado;
+switch($estadoNumerico){
+    case 0:
+        $estadoSTR = 'Não escolhido';
+        break;
+    case 1:
+        $estadoSTR = 'Realizada';
+        break;
+    case 2:
+        $estadoSTR = 'Não realizada-Condições meteorológicas';
+        break;
+    case 3:
+        $estadoSTR = 'Não realizada-FP';
+        break;
+    case 4:
+        $estadoSTR = 'Não realizada-FA';
+        break;
+    default:
+        $estadoSTR = 'Estado da aula não existente';
+        //break;
+}
 ?>
 <div class="aula-view">
 
@@ -31,7 +52,7 @@ $this->params['breadcrumbs'][] = $this->title;
     echo 'Hora de inicio: '.$model->HoraInicio.'</br>'.'</br>';
     echo 'Hora de fim: '.$model->HoraFim.'</br>'.'</br>';
     echo 'Treinador: '.$model->turmas[0]->treinadorIdTreinador->Nome.'</br>'.'</br>';
-    echo 'Estado: '.$model->Estado.'</br>'.'</br>';
+    echo 'Estado: '.$estadoSTR.'</br>'.'</br>';
     ?>
 
 

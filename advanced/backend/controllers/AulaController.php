@@ -116,12 +116,10 @@ class AulaController extends Controller
         //$data = Yii::$app->request->post('Aula')['Data'];
 
         if(count($alunos_adicionados) > 0){
-
             $horaF = Yii::$app->request->post('Aula')['HoraFim'];
             $horaI = Yii::$app->request->post('Aula')['HoraInicio'];
             if($horaF <= $horaI){
                 Yii::$app->getSession()->setFlash('error', 'Hora de fim tem que ser maior que a hora de inicio');
-
                 return $this->redirect(array('create'));
             }else{
                 //$dataInicio = new \DateTime($data);
@@ -160,7 +158,6 @@ class AulaController extends Controller
                     ]);
                 }
             }
-
         } else {
             return $this->render('create', [
                 'model' => $model,
