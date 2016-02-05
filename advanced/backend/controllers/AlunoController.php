@@ -61,6 +61,7 @@ class AlunoController extends Controller
      */
     public function actionView($id)
     {
+
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -69,12 +70,7 @@ class AlunoController extends Controller
     public function actionView2(){
 
         $model = new Aluno();
-      //  $escolhCate = (array)Yii::$app->request->post('selection');
 
-       // var_dump($escolhCate);
-        //     //   return \yii\helpers\Json::encode($escolhCate);
-     //   $model->Escalao_idEscalao = $escolhCate;
-     //   var_dump( $model->Escalao_idEscalao);
         return $this->render('view2', [
             'model'=>$model,
 
@@ -92,11 +88,14 @@ class AlunoController extends Controller
         $model = new Aluno();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            Yii::$app->getSession()->setFlash('success', 'Aluno adicionado  com sucesso!');
             return $this->redirect(['view', 'id' => $model->idAluno]);
         } else {
             return $this->render('create', [
                 'model' => $model,
             ]);
+
         }
     }
 
@@ -111,8 +110,11 @@ class AlunoController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            Yii::$app->getSession()->setFlash('success', 'Aluno editado  com sucesso!');
             return $this->redirect(['view', 'id' => $model->idAluno]);
         } else {
+
             return $this->render('update', [
                 'model' => $model,
             ]);
@@ -128,7 +130,7 @@ class AlunoController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-
+        Yii::$app->getSession()->setFlash('success','Aluno apagado com  sucesso');
         return $this->redirect(['index']);
     }
 

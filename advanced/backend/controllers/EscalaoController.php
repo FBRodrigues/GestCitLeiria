@@ -65,6 +65,7 @@ class EscalaoController extends Controller
         $model = new Escalao();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            Yii::$app->getSession()->setFlash('success','Escalao ' . $model->Valor . 'adicionada com sucesso!');
             return $this->redirect(['view', 'id' => $model->idEscalao]);
         } else {
             return $this->render('create', [

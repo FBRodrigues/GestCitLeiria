@@ -36,8 +36,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'Contato3_Email:email',
             'EncarregadoEducacao',
             'Sexo',
-            'Nome',
-          //  'categorias.Valor'
+            'Nome'
+
+
+
         ],
     ]) ?>
 

@@ -65,6 +65,8 @@ class CategorizacaoController extends Controller
 
         $model = new Categorizacao();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            Yii::$app->getSession()->setFlash('success','Categoria ' . $model->categoriasIdCategorias->Valor .
+                ' adicionada ao Aluno ' . $model->alunoIdAluno->Nome . ' com sucesso!');
             return $this->redirect(['create', 'id' => $model->idCategorizacao]);
         } else {
             return $this->render('create', [
