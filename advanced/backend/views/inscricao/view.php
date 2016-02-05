@@ -45,12 +45,5 @@ $id = $session->get('id');
             //'AulasEfectuadas'
         ],
     ]) ?>
-    <p>
-        <?=Html::beginForm(['pagamento/create2'],'post' );?>
 
-        <?=Html::submitButton('Criar Pagamento',['class' => 'btn btn-info','name'=>'formal2']);?>
-
-
-    </p>
-    <?=Html::endForm();?>
 </div>

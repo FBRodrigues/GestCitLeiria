@@ -37,6 +37,7 @@ class Inscricao extends \yii\db\ActiveRecord
             [['idAluno', 'dataInicio', 'dataFim', 'tipo'], 'required'],
             [['idAluno', 'nrAulas'], 'integer'],
             [['dataInicio', 'dataFim'], 'safe'],
+            ['dataInicio','validateDates'],
             [['tipo'], 'string', 'max' => 11]
         ];
     }
@@ -59,6 +60,12 @@ class Inscricao extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
+    public function validateDates(){
+        if(strtotime($this->dataFim) <= strtotime($this->dataInicio)){
+            $this->addError('start_date','Please give correct Start and End dates');
+            $this->addError('end_date','Please give correct Start and End dates');
+        }
+    }
     public function getIdAluno0()
     {
         return $this->hasOne(Aluno::className(), ['idAluno' => 'idAluno']);

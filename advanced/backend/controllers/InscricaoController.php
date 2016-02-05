@@ -77,7 +77,6 @@ class InscricaoController extends Controller
     {
         $model = new Inscricao();
 
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
             $tipoIns = Yii::$app->request->post('Inscricao')['tipo'];
@@ -92,28 +91,24 @@ class InscricaoController extends Controller
                 $date = $dataInicio;
                 $date = strtotime(date("Y-m-d", strtotime($date)) . " " . $i . "month");
                 $date = date("Y-m-08", $date);
-             //   $date1 = date("Y-m-d ");
+                //   $date1 = date("Y-m-d ");
                 $modelPagamento = new Pagamento();
                 $modelPagamento->idInscricao = $model->idInscricao;
                 $modelPagamento->dataMaxPagamento = $date;
                 $modelPagamento->nrAulas = $model->nrAulas;
                 $modelPagamento->situacao = "pendente";
                 $modelPagamento->save();
-          //      var_dump($modelPagamento);
+                //      var_dump($modelPagamento);
             }
-                    return $this->render('view', [
-                        'model' => $model,
-                    ]);
-                }
-
-
-          //  return $this->redirect(['view', 'id' => $model->idInscricao]);
-               else {
-                  return $this->render('create', [
-                      'model' => $model,
-                  ]);
-              }
-            }
+            return $this->render('view', [
+                'model' => $model,
+            ]);
+        } else {
+            return $this->render('create', [
+                'model' => $model,
+            ]);
+        }
+    }
 
 
 
