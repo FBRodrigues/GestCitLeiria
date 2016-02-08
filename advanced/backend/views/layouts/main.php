@@ -36,25 +36,6 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
-//        ['label' => 'Aluno',
-//            'url'=>['aluno/index'],
-//           // 'options'=>['class'=>'dropdown'],
-//            //'template' => '<a href="{url}" class="href_class">{label}</a>',
-//         /*   'items' => [
-//                ['label' => 'Enviar Email Pagamentos', 'url' => ['site/pagamentos']],
-//                ['label' => 'Enviar Email Assunto Formal', 'url' => ['site/init']],
-//                ['label' => 'Aluno', 'url'=>['aluno/index']],
-//            ]*/
-//
-//        ],
-//        ['label' => 'Categorias', 'items' => [
-//            ['label' => 'Consultar Categorias', 'url' => ['categorias/index']],
-//            ['label' => 'Criar Categorias', 'url' => ['categorias/create']],
-//            ['label' => 'Associar com Sócio', 'url' => ['categorizacao/create']],
-//        ]],
-//        ['label' => 'Pagamentos', 'url' => ['pagamento/index'],],
-//        ['label' => 'Inscrições', 'url' => ['inscricao/index'],],
-        //'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
 
     ];
     if (Yii::$app->user->isGuest) {
