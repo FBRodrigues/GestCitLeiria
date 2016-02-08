@@ -16,6 +16,7 @@ class AulaSearch extends Aula
      * @inheritdoc
      */
     public $nrPresentes;
+    public $nomeTreinador;
 
     public function rules()
     {
@@ -23,7 +24,7 @@ class AulaSearch extends Aula
             [['idAula', 'DiaSemana'], 'integer'],
             [['Estado'], 'string'],
             [['Nome', 'HoraInicio', 'HoraFim', 'Data'], 'safe'],
-            [['nrPresentes'], 'safe'],
+            [['nrPresentes', 'nomeTreinador'], 'safe'],
         ];
     }
 
@@ -66,39 +67,17 @@ class AulaSearch extends Aula
             $utilizadorLogado = Aluno::find()->where(['Id_User' => $idUser])->one();
 //            $aulas_turma = Presenca::find()->where(['Aluno_idAluno' => $utilizadorLogado->idAluno])->all();
             $query = Aula::find();
-//                ->from(['aula'])
-//                ->innerJoin(['presenca'])
-//                ->on(['idAula' => 'Aula_idAula'])
-//                ->where(['Aluno_idAluno' => $utilizadorLogado->idAluno]);
-            $subQuery = Presenca::find();
-            $query->leftJoin(['aulas' => $subQuery], 'aulas.Aula_idAula = idAula')->where(['Aluno_idAluno' => $utilizadorLogado->idAluno]);
 
+            $subQuery = Presenca::find();
+            $query->leftJoin(['aulas' => $subQuery], 'aulas.Aula_idAula = idAula')
+                ->where(['Aluno_idAluno' => $utilizadorLogado->idAluno]);
         }
 
-        //$query = Aula::find();
-
-//        $idUser = Yii::$app->user->getId();
-//        $tipoUtilizador = Yii::$app->user->identity->TipoUtilizador;
-//        $utilizadorLogado = Aluno::find()->where(['Id_User' => $idUser])->one();
-
-//        $subQuery = Presenca::find()->select('Aula_idAula, COUNT(Estado)=1 as nr_presentes');
-//        $query->leftJoin(['presentes' => $subQuery], 'presentes.Aula_idAula = idAula');
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
 
-        //$dataProvider->sort->$this->attributes['HoraInicio'] = ['desc' => ['HoraInicio' => SORT_DESC]];
-
-//        $dataProvider->setSort([
-//            'attributes' => [
-//                'nrPresentes' => [
-//                    'asc' => ['presentes.nr_presentes' => SORT_ASC],
-//                    'desc' => ['presentes.nr_presentes' => SORT_DESC],
-//                    'label' => 'Nr Name'
-//                ]
-//            ]
-//        ]);
 
         $this->load($params);
 
@@ -117,6 +96,7 @@ class AulaSearch extends Aula
 
         $query->andFilterWhere(['like', 'Nome', $this->Nome])
             ->andFilterWhere(['like', 'presentes.nr_presentes', $this->nrPresentes])
+            ->andFilterWhere(['like', 'treinadores.nome_treinador', $this->nomeTreinador])
         ;
 
         if($tipoUtilizador == 'T'){

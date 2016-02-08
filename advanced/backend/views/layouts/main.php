@@ -59,7 +59,7 @@ AppAsset::register($this);
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
+    } else if(Yii::$app->user->identity->TipoUtilizador=='T' || Yii::$app->user->identity->TipoUtilizador=='P') {
         $menuItems = [
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Agenda', 'url' => ['/aula/index']],
@@ -86,6 +86,14 @@ AppAsset::register($this);
             //'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
 
         ];
+        $menuItems[] = [
+            'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
+            'url' => ['/site/logout'],
+            'linkOptions' => ['data-method' => 'post']
+        ];
+    } else {
+        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+
         $menuItems[] = [
             'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
             'url' => ['/site/logout'],

@@ -8,6 +8,7 @@ use frontend\controllers\PresencaController;
 /* @var $this yii\web\View */
 /* @var $searchModel frontend\models\AulaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
+/* @var $model frontend\models\Aula */
 
 
 $this->title = 'Agenda';
@@ -15,12 +16,17 @@ $this->params['breadcrumbs'][] = $this->title;
 $nomeUser = Yii::$app->user->identity->username;
 $idUser = Yii::$app->user->getId();
 $tipoUtilizador = Yii::$app->user->identity->TipoUtilizador;
-$visibility = true;
+$visibilityPresentes = true;
 $btn = 'btn btn-success';
 if($tipoUtilizador == 'A'){
-    $visibility = false;
+    $visibilityPresentes = false;
     $btn = 'visible';
 }
+$visibilityNomeT = true;
+if($tipoUtilizador == 'T'){
+    $visibilityNomeT = false;
+}
+
 ?>
 <div class="aula-index">
 
@@ -68,7 +74,7 @@ if($tipoUtilizador == 'A'){
             [
                 'label' => 'Numero de Alunos Presentes',
                 'attribute' => 'nrPresentes',
-                'visible' => $visibility,
+                'visible' => $visibilityPresentes,
             ],
             'Data',
             //'Estado',
