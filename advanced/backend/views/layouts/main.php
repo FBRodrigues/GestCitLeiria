@@ -65,14 +65,6 @@ AppAsset::register($this);
             ['label' => 'Agenda', 'url' => ['/aula/index']],
             ['label' => 'Aluno',
                 'url'=>['aluno/index'],
-                // 'options'=>['class'=>'dropdown'],
-                //'template' => '<a href="{url}" class="href_class">{label}</a>',
-                /*   'items' => [
-                       ['label' => 'Enviar Email Pagamentos', 'url' => ['site/pagamentos']],
-                       ['label' => 'Enviar Email Assunto Formal', 'url' => ['site/init']],
-                       ['label' => 'Aluno', 'url'=>['aluno/index']],
-                   ]*/
-
             ],
             ['label' => 'Categorias', 'items' => [
                 ['label' => 'Consultar Categorias', 'url' => ['categorias/index']],
