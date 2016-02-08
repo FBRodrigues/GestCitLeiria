@@ -138,7 +138,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'Escalao_idEscalao',
                 'value' => 'escalaoIdEscalao.Valor',
                 'label' => 'Escalão',
-                'format'=>'text'
+                'format'=>'text',
+
             ],
 
             [
@@ -153,7 +154,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label'=> 'Email',
                 'attribute'=> 'Contato3_Email',
             ],
-            'Sexo',
+            [
+                'attribute'=>'Sexo',
+
+
+            ],
 
             [
                 'label' => 'Categorias',

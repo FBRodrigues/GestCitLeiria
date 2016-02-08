@@ -34,7 +34,7 @@ class Pagamento extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idInscricao', 'nrAulas', 'dataMaxPagamento', 'situacao'], 'required'],
+            [['idInscricao', 'dataMaxPagamento', 'situacao'], 'required'],
             [['idInscricao', 'valor', 'nrFatura', 'nrAulas'], 'integer'],
             [['dataFatura', 'dataMaxPagamento'], 'safe'],
             [['situacao'], 'string']

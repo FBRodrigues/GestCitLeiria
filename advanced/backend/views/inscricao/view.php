@@ -9,26 +9,17 @@ use yii\widgets\DetailView;
 $this->title = $model->idInscricao;
 $this->params['breadcrumbs'][] = ['label' => 'Inscricões', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
-$session = Yii::$app->session;
-$session['id'] = $model->idInscricao;
-$id = $session->get('id');
+$session = new Yii::$app->session;
+$session ['id'] = $model->idInscricao;
+
+
 ?>
 <div class="inscricao-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->idInscricao], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->idInscricao], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Tem a certeza que pretende apagar este Item?',
-                'method' => 'post',
-            ],
-        ]) ?>
+    <h1>Inscrição Número: <?= Html::encode($this->title) ?></h1>
 
 
-    </p>
 
     <?= DetailView::widget([
         'model' => $model,
@@ -39,11 +30,18 @@ $id = $session->get('id');
             'dataFim',
             [
                 'attribute' => 'nrAulas',
-                'label' => 'nr de Aulas/Semana',
+                'label' => 'Nº de Aulas/Semana',
             ],
             'tipo',
-            //'AulasEfectuadas'
+            'AulasEfectuadas'
         ],
     ]) ?>
+
+
+    <div class="botao-vista">
+        <p>
+            <?= Html::a('Ver Pagamentos', ['pagamento/index'], ['class' => 'btn btn-success']) ?>
+        </p>
+    </div>
 
 </div>

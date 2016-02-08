@@ -1,4 +1,4 @@
-/*!
+/*cannot be blank!
  * jQuery UI Datepicker 1.11.4
  * http://jqueryui.com
  *

@@ -27,16 +27,6 @@ $id = $session->get('id');
 
     <?= $form->field($model, 'nrFatura')->textInput() ?>
 
-    <?= $form->field($model, 'nrAulas')->textInput() ?>
-
-    <?= $form->field($model, 'dataFatura')->widget(DateTimePicker::className(),[
-        'name' => 'check_issue_date',
-        'options' => ['placeholder' => 'Selecione uma Data ...'],
-        'pluginOptions' => [
-            'format' => 'yyyy-mm-dd',
-            'todayHighlight' => true
-        ]
-    ]
     ); ?>
 
     <?= $form->field($model, 'dataMaxPagamento')->widget(DatePicker::className(),[

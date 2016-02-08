@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use backend\models\Categorias;
 use backend\models\Inscricao;
+use backend\models\InscricaoSearch;
 use Symfony\Component\Yaml\Tests\A;
 use Yii;
 use backend\models\Pagamento;
@@ -37,14 +38,9 @@ class PagamentoController extends Controller
     public function actionIndex()
     {
         $searchModel = new PagamentoSearch();
-       // $model = new Pagamento();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-       // $dataMaxPagamento = Yii::$app->request->post('Pagamento')['dataMaxPagamento'];
-        $dataSistema = date('Y-m-d');
-       // return Json::encode($dataMaxPagamento);
-        //var_dump($dataMaxPagamento);
 
-        return $this->render('index', [
+  return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
@@ -99,11 +95,13 @@ class PagamentoController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $searchModel = new PagamentoSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             $model->situacao = "Concluido";
             $model->save();
-            return $this->redirect(['view', 'id' => $model->idPagamento]);
+            return $this->redirect(['index', 'id' => $model->idPagamento , 'searchModel' => $searchModel, 'dataProvider' => $dataProvider]);
         } else {
             return $this->render('update', [
                 'model' => $model,

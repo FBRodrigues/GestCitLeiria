@@ -7,6 +7,8 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use backend\models\Pagamento;
+use yii\helpers\Json;
+use yii\web\Session;
 
 /**
  * PagamentoSearch represents the model behind the search form about `backend\models\Pagamento`.
@@ -17,6 +19,7 @@ class PagamentoSearch extends Pagamento
      * @inheritdoc
      */
     public $nomeA;
+
 
     public function rules()
     {
@@ -44,10 +47,17 @@ class PagamentoSearch extends Pagamento
      */
     public function search($params)
     {
-        $query = Pagamento::find();
+        $session = new Session();
+        $session->open();
+        $value1 = $session -> get ('id');
+        var_dump($value1);
 
-        //$subquery = Aluno::find()->select('idAluno, Nome as NomeAluno');
-        //$query->leftJoin(['nomeA' => $subquery], 'nomeA.idInscricao=idInscricao');
+            $query = Pagamento::find()->where(['idInscricao'=> $value1]);
+
+
+
+
+
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
