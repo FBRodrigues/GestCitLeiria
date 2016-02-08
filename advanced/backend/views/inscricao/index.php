@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'dataFim',
             [
                 'attribute' => 'nrAulas',
-                'label' => 'nr de Aulas/Semana',
+                'label' => 'Nº de Aulas/Semana',
             ],
             'tipo',
 

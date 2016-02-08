@@ -5,6 +5,7 @@ namespace backend\controllers;
 use Yii;
 use backend\models\Categorias;
 use backend\models\CategoriasSearch;
+use yii\helpers\Json;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -63,6 +64,7 @@ class CategoriasController extends Controller
         $model = new Categorias();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            Yii::$app->getSession()->setFlash('success','Categoria ' . $model->Valor . ' adicionada com sucesso!');
             return $this->redirect(['view', 'id' => $model->idCategorias]);
         } else {
             return $this->render('create', [
@@ -81,14 +83,34 @@ class CategoriasController extends Controller
     {
         $model = $this->findModel($id);
 
+
+
+        //return Json::encode($valor->Valor);
+     // return Json::decode($search);
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+       /*     if ($search == $model->Valor) {
+                Yii::$app->getSession()->setFlash('error', 'Categoria ' . $model->Valor .
+                    ' tem o mesmo Nome! Escreva outra nome!');
+                return $this->render('update', [
+                    'model' => $model,
+                ]);
+
+            } else {
+                Yii::$app->getSession()->setFlash('success', 'Categoria ' . $model->Valor . ' editada com sucesso!');
+
+                return $this->redirect(['view', 'id' => $model->idCategorias]);
+            }*/
+            Yii::$app->getSession()->setFlash('success', 'Categoria ' . $model->Valor . ' editada com sucesso!');
+
             return $this->redirect(['view', 'id' => $model->idCategorias]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
         }
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
+            //return $this->redirect(['view', 'id' => $model->idCategorias]);
+
+
 
     /**
      * Deletes an existing Categorias model.
@@ -99,7 +121,7 @@ class CategoriasController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-
+        Yii::$app->getSession()->setFlash('success','Categoria apagada com sucesso!');
         return $this->redirect(['index']);
     }
 

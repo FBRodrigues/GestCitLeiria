@@ -36,30 +36,11 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
-//        ['label' => 'Aluno',
-//            'url'=>['aluno/index'],
-//           // 'options'=>['class'=>'dropdown'],
-//            //'template' => '<a href="{url}" class="href_class">{label}</a>',
-//         /*   'items' => [
-//                ['label' => 'Enviar Email Pagamentos', 'url' => ['site/pagamentos']],
-//                ['label' => 'Enviar Email Assunto Formal', 'url' => ['site/init']],
-//                ['label' => 'Aluno', 'url'=>['aluno/index']],
-//            ]*/
-//
-//        ],
-//        ['label' => 'Categorias', 'items' => [
-//            ['label' => 'Consultar Categorias', 'url' => ['categorias/index']],
-//            ['label' => 'Criar Categorias', 'url' => ['categorias/create']],
-//            ['label' => 'Associar com Sócio', 'url' => ['categorizacao/create']],
-//        ]],
-//        ['label' => 'Pagamentos', 'url' => ['pagamento/index'],],
-//        ['label' => 'Inscrições', 'url' => ['inscricao/index'],],
-        //'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
 
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
+    } else if(Yii::$app->user->identity->TipoUtilizador=='T' || Yii::$app->user->identity->TipoUtilizador=='P') {
         $menuItems = [
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Agenda', 'url' => ['/aula/index']],
@@ -78,6 +59,14 @@ AppAsset::register($this);
             //'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
 
         ];
+        $menuItems[] = [
+            'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
+            'url' => ['/site/logout'],
+            'linkOptions' => ['data-method' => 'post']
+        ];
+    } else {
+        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+
         $menuItems[] = [
             'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
             'url' => ['/site/logout'],

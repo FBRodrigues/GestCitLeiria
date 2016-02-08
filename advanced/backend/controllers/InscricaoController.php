@@ -106,7 +106,12 @@ class InscricaoController extends Controller
                 $modelPagamento->situacao = "Pendente";
                 $modelPagamento->save();
                 //      var_dump($modelPagamento);
+
+
             }
+            Yii::$app->getSession()->setFlash('success','Inscrição adicionada com sucesso!');
+            Yii::$app->getSession()->setFlash('success', $numRepeticoes . ' Pagamentos gerados com sucesso');
+
             return $this->render('index', [
                 'model' => $model,
                 'searchModel'=>$searchModel,

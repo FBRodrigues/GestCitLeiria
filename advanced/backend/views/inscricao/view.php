@@ -33,7 +33,7 @@ $session ['id'] = $model->idInscricao;
                 'label' => 'Nº de Aulas/Semana',
             ],
             'tipo',
-            //'AulasEfectuadas'
+            'AulasEfectuadas'
         ],
     ]) ?>
 

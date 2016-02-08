@@ -54,7 +54,9 @@ use kartik\date\DatePicker;
                 ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
         </div>
 
+    </div>
 
     <?php ActiveForm::end(); ?>
+
 
 </div>
