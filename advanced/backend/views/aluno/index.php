@@ -159,6 +159,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
             ],
+            [
+                'attribute'=>'Idade',
+                'value' => function($dataProvider){
+                    $now = new \DateTime('now');
+                    $dataNas = new \DateTime($dataProvider->DataNascimento);
+                    $idade = date_diff($dataNas,$now);
+                    $idade = $idade->format('%y');
+                    $dataProvider->Idade = $idade;
+                    return $dataProvider->Idade->hidden;
+
+                },
+                'visible'=> '0',
+            ],
 
             [
                 'label' => 'Categorias',

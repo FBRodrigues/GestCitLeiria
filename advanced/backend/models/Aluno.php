@@ -2,6 +2,7 @@
 
 namespace backend\models;
 
+use Faker\Provider\zh_TW\DateTime;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\helpers\ArrayHelper;
@@ -12,7 +13,7 @@ use yii\helpers\ArrayHelper;
  * @property integer $idAluno
  * @property integer $Escalao_idEscalao
  * @property integer $Categorias_idCategorias
- * @property string $DataNascimento
+ * @property DateTime $DataNascimento
  * @property integer $Idade
  * @property string $Contato1
  * @property string $Contato2
@@ -134,15 +135,16 @@ class Aluno extends \yii\db\ActiveRecord
     }
 
 
-    public function getDataNascimento()
+  /*  public function getDataNascimento($data_Nascimento)
     {
-        $data_nascimento = new DateTime($this->DataNascimento);
-        $now = new DateTime();
-        $idade = $data_nascimento->diff($now);
+
+        $data_Nascimento = new \DateTime($this->DataNascimento);
+        $now = new \DateTime();
+        $idade = $data_Nascimento->diff($now);
         $idade= $idade->format('%y');
         return $idade;
 
     }
-
+*/
 
 }

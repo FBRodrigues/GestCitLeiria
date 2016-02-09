@@ -4,10 +4,12 @@ namespace backend\controllers;
 
 use backend\models\Categorias;
 use backend\models\Categorizacao;
+use Faker\Provider\zh_TW\DateTime;
 use Yii;
 use backend\models\Aluno;
 use backend\models\AlunoSearch;
 use yii\db\Query;
+use yii\helpers\Json;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -62,9 +64,6 @@ class AlunoController extends Controller
     public function actionView($id)
     {
 
-        $model = new Aluno();
-        $model->Idade = $model->getDataNascimento();
-
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -90,9 +89,26 @@ class AlunoController extends Controller
     {
         $model = new Aluno();
 
+
+        $now = new \DateTime('now');
+        $dataNas = new \DateTime($model->DataNascimento);
+        $idade = date_diff($dataNas,$now);
+
+        $idade = $idade->format('%y');
+        $model->Idade = $idade;
+
+        $model->save();
+
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
-            Yii::$app->getSession()->setFlash('success', 'Aluno adicionado  com sucesso!');
+            $now = new \DateTime('now');
+            $dataNas = new \DateTime($model->DataNascimento);
+            $idade = date_diff($dataNas,$now);
+            $idade = $idade->format('%y');
+            $model->Idade = $idade;
+            $model->save();
+            Yii::$app->getSession()->setFlash('success', 'Aluno ' . $model->Nome . ' adicionado  com sucesso!');
             return $this->redirect(['view', 'id' => $model->idAluno]);
         } else {
             return $this->render('create', [
@@ -112,9 +128,35 @@ class AlunoController extends Controller
     {
         $model = $this->findModel($id);
 
+
+        $now = new \DateTime('now');
+        $dataNas = new \DateTime($model->DataNascimento);
+
+        $idade = date_diff($dataNas,$now);
+
+        $idade = $idade->format('%y');
+        $model->Idade = $idade;
+
+        $model->save();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
-            Yii::$app->getSession()->setFlash('success', 'Aluno editado  com sucesso!');
+            date_default_timezone_set("Europe/Lisbon");
+            $now = new \DateTime('now');
+
+            $dataNas = new \DateTime($model->DataNascimento);
+
+
+
+            $idade = date_diff($dataNas,$now);
+
+
+            $idade = $idade->format('%y');
+            $model->Idade = $idade;
+
+            $model->save();
+
+
+            Yii::$app->getSession()->setFlash('success', 'Aluno ' . $model->Nome . ' editado  com sucesso!');
             return $this->redirect(['view', 'id' => $model->idAluno]);
         } else {
 

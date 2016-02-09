@@ -106,25 +106,6 @@ option{
     float: right;
     clear: right;
 }
-.successo {
-    color: green;
-
-
-}
-
-.info {
-    color: #fffc00;
-
-
-}
-
-.pendente{
-    color: #0009ff;
-}
-
-.danger {
-    color: red;
-}
 
 .img-peq{
     width: 50%;

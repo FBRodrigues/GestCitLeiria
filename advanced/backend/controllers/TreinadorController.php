@@ -63,6 +63,7 @@ class TreinadorController extends Controller
         $model = new Treinador();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            Yii::$app->getSession()->setFlash('O Treinador ' . $model->Nome . ' adicionado com sucesso!');
             return $this->redirect(['view', 'id' => $model->idTreinador]);
         } else {
             return $this->render('create', [
@@ -82,6 +83,7 @@ class TreinadorController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            Yii::$app->getSession()->setFlash('O Treinador ' . $model->Nome . ' editado com sucesso!');
             return $this->redirect(['view', 'id' => $model->idTreinador]);
         } else {
             return $this->render('update', [
@@ -99,7 +101,6 @@ class TreinadorController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-
         return $this->redirect(['index']);
     }
 

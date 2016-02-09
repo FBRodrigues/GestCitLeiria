@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <style>
         .perigo {
             color: black;
-            background-color: #ffa58e !important;
+            background-color: #ff0000 !important;
         }
 
         .sucesso {
@@ -36,27 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
-//        'rowOptions'=> function($model) {
-//            if($model->situacao == 'Concluido'){
-//
-//                return ['class'=>'sucesso'];
-//            }elseif($model->situacao == 'Em Atraso'){
-//                return ['class'=>'perigo'];
-//
-//            }elseif($model->situacao == 'pendente'){
-//                return ['class'=>'infor'];
-//            }
-//
-//        },
         'columns' => [
-            //['class' => 'yii\grid\SerialColumn'],
-
-//            [
-//                'attribute' => 'aluno',
-//                'value' => 'aluno.Nome'
-//            ],
-
-            //'idPagamento',
             'idInscricao',
             'valor',
             'nrFatura',
@@ -72,18 +52,20 @@ $this->params['breadcrumbs'][] = $this->title;
                   }elseif ($model->situacao == 'Pendente'){
                       return ['class'=> 'infor'];
                   }else{
-                      return ['class'=> 'perigo'];
+                      return ['class'=>'perigo'];
                   }
                 },
                 'value'=> function($dataProvider){
                     $data = date('Y-m-d');
                     if($dataProvider->situacao != "Concluido"){
-                        if($dataProvider->dataMaxPagamento < $data ){
-                        $dataProvider->situacao = "Em atraso";
-                        }
-                    }
-                    return  $dataProvider->situacao;//implode(",",ArrayHelper::map($dataProvider->categorias,'idCategorias','Valor'));
+                        if($dataProvider->dataMaxPagamento <= $data ){
+                        $dataProvider->situacao = "Atraso";
 
+                        }
+
+                    }
+                    $dataProvider->save();
+                    return  $dataProvider->situacao;
                 },
 
                 'format' =>'text',

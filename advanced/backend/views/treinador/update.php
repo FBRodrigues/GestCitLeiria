@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Treinador */
 
-$this->title = 'Atualizar Treinador: ' . ' ' . $model->idTreinador;
+$this->title = 'Atualizar Treinador: ' . ' ' . $model->Nome;
 $this->params['breadcrumbs'][] = ['label' => 'Treinadors', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->idTreinador, 'url' => ['view', 'id' => $model->idTreinador]];
 $this->params['breadcrumbs'][] = 'Update';

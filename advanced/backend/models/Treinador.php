@@ -31,7 +31,7 @@ class Treinador extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idTreinador', 'Contato', 'Email'], 'required'],
+            [['Nome'], 'required'],
             [['idTreinador', 'Contato'], 'integer'],
             [['Email'], 'string'],
             [['Nome'], 'string', 'max' => 45]
