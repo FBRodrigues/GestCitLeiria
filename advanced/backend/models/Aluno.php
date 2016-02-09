@@ -134,12 +134,13 @@ class Aluno extends \yii\db\ActiveRecord
     }
 
 
-    public function getDataNascimento($dataNasc)
+    public function getDataNascimento()
     {
-        $date = new \DateTime('yyyy-dd-mm');
-        var_dump($date);
-        return $idade = $dataNasc->diff($date)->y;
-
+        $data_nascimento = new DateTime($this->DataNascimento);
+        $now = new DateTime();
+        $idade = $data_nascimento->diff($now);
+        $idade= $idade->format('%y');
+        return $idade;
 
     }
 

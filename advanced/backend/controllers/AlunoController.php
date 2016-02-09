@@ -62,6 +62,9 @@ class AlunoController extends Controller
     public function actionView($id)
     {
 
+        $model = new Aluno();
+        $model->Idade = $model->getDataNascimento();
+
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);

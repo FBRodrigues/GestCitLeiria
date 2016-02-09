@@ -29,10 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'Nome',
-            [' attribute'  =>'Idade',
-              'value' =>  function($model){
-                return  $model->getDataNascimento($model->DataNascimento);
-              }],
+            'Idade',
             'idAluno',
             'escalaoIdEscalao.Valor',
             'DataNascimento',
