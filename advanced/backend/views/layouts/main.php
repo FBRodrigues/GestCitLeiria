@@ -43,10 +43,8 @@ AppAsset::register($this);
     } else if(Yii::$app->user->identity->TipoUtilizador=='T' || Yii::$app->user->identity->TipoUtilizador=='P') {
         $menuItems = [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Agenda', 'url' => ['/aula/index']],
-            ['label' => 'Aluno',
-                'url'=>['aluno/index'],
-            ],
+            ['label' => 'Aulas', 'url' => ['/aula/index']],
+            ['label' => 'Alunos', 'url'=>['aluno/index']],
             ['label' => 'Categorias', 'items' => [
                 ['label' => 'Consultar Categorias', 'url' => ['categorias/index']],
                 ['label' => 'Criar Categorias', 'url' => ['categorias/create']],
