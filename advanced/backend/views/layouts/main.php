@@ -54,7 +54,7 @@ AppAsset::register($this);
             ]],
             ['label' => 'Treinador', 'url' => ['treinador/index'],],
             ['label' => 'Inscrições', 'url' => ['inscricao/index'],],
-            ['label' => 'Pagamentos', 'url' => ['pagamento/index'],],
+            //['label' => 'Pagamentos', 'url' => ['pagamento/index'],],
 
             //'submenuTemplate' => "\n<ul class='dropdown-menu' role='menu'>\n{items}\n</ul>\n",
 

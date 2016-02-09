@@ -29,9 +29,11 @@ use kartik\date\DatePicker;
         <?= $form->field($model, 'DataNascimento')->widget(DatePicker::className(),[
                 'name' => 'check_issue_date',
                 'options' => ['placeholder' => 'Selecione uma Data ...'],
+                'type' => \kartik\date\DatePicker::TYPE_COMPONENT_APPEND,
                 'pluginOptions' => [
                     'format' => 'yyyy-mm-dd',
-                    'todayHighlight' => true
+                    'todayHighlight' => true,
+                     'autoclose' => true,
                 ]
             ]
 

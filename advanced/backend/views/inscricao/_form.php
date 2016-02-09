@@ -17,20 +17,24 @@ use kartik\date\DatePicker;
 
     <?= $form->field($model, 'dataInicio')->widget(DatePicker::className(),[
         'name' => 'check_issue_date',
+            'type' => \kartik\date\DatePicker::TYPE_COMPONENT_APPEND,
         'options' => ['placeholder' => 'Selecione uma Data ...'],
         'pluginOptions' => [
             'format' => 'yyyy-mm-dd',
-            'todayHighlight' => true
+            'todayHighlight' => true,
+            'autoclose' => true,
         ]
         ]
     );?>
 
     <?= $form->field($model, 'dataFim')->textInput() -> widget(DatePicker::className(),[
             'name' => 'check_issue_date',
+            'type' => \kartik\date\DatePicker::TYPE_COMPONENT_APPEND,
             'options' => ['placeholder' => 'Selecione uma Data ...'],
             'pluginOptions' => [
                 'format' => 'yyyy-mm-dd',
-                'todayHighlight' => true
+                'todayHighlight' => true,
+                'autoclose' => true,
             ]
         ]
     );?>
