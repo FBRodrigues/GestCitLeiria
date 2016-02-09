@@ -26847,3 +26847,535 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1455041005.493
     'REQUEST_TIME' => 1455041005
 ]
+2016-02-09 19:06:43 [::1][-][-][warning][yii\web\User::loginByCookie] Invalid auth key attempted for user '1': cCFlkdSv9RupBJp6MzNnmqK3apryaf0M
+    in C:\wamp\www\GestCitLeiria\advanced\backend\views\layouts\main.php:41
+    in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\TreinadorController.php:91
+2016-02-09 19:06:43 [::1][-][-][info][application] $_GET = [
+    'r' => 'treinador/update'
+    'id' => '4'
+]
+
+$_COOKIE = [
+    '_csrf' => 'bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"egDhfS1EC04BRAYkJJGyMIaYc_4Njogn\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+    'PHPSESSID' => '0uu8850ncmvcacsevdv1l183m0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=treinador%2Fview&id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22egDhfS1EC04BRAYkJJGyMIaYc_4Njogn%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D; PHPSESSID=0uu8850ncmvcacsevdv1l183m0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '48732'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=treinador%2Fupdate&id=4'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=treinador%2Fupdate&id=4'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1455041203.181
+    'REQUEST_TIME' => 1455041203
+]
+2016-02-09 19:06:46 [::1][-][-][warning][yii\web\User::loginByCookie] Invalid auth key attempted for user '1': cCFlkdSv9RupBJp6MzNnmqK3apryaf0M
+    in C:\wamp\www\GestCitLeiria\advanced\backend\views\layouts\main.php:41
+    in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\TreinadorController.php:53
+2016-02-09 19:06:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'treinador/view'
+    'id' => '4'
+]
+
+$_COOKIE = [
+    '_csrf' => 'bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"egDhfS1EC04BRAYkJJGyMIaYc_4Njogn\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+    'PHPSESSID' => '0uu8850ncmvcacsevdv1l183m0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=treinador%2Fupdate&id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22egDhfS1EC04BRAYkJJGyMIaYc_4Njogn%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D; PHPSESSID=0uu8850ncmvcacsevdv1l183m0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '48732'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=treinador%2Fview&id=4'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=treinador%2Fview&id=4'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1455041206.133
+    'REQUEST_TIME' => 1455041206
+]
+2016-02-09 19:34:46 [::1][-][-][warning][yii\web\User::loginByCookie] Invalid auth key attempted for user '1': cCFlkdSv9RupBJp6MzNnmqK3apryaf0M
+    in C:\wamp\www\GestCitLeiria\advanced\backend\views\layouts\main.php:41
+    in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\AlunoController.php:54
+2016-02-09 19:34:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'aluno'
+]
+
+$_COOKIE = [
+    '_csrf' => 'bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"egDhfS1EC04BRAYkJJGyMIaYc_4Njogn\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+    'PHPSESSID' => '0uu8850ncmvcacsevdv1l183m0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorias' => null
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22egDhfS1EC04BRAYkJJGyMIaYc_4Njogn%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D; PHPSESSID=0uu8850ncmvcacsevdv1l183m0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49281'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=aluno'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=aluno'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1455042885.082
+    'REQUEST_TIME' => 1455042885
+]
+2016-02-09 19:34:51 [::1][-][-][warning][yii\web\User::loginByCookie] Invalid auth key attempted for user '1': cCFlkdSv9RupBJp6MzNnmqK3apryaf0M
+2016-02-09 19:34:51 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"egDhfS1EC04BRAYkJJGyMIaYc_4Njogn\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+    'PHPSESSID' => '0uu8850ncmvcacsevdv1l183m0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorias' => null
+    '__returnUrl' => '/GestCitLeiria/advanced/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22egDhfS1EC04BRAYkJJGyMIaYc_4Njogn%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D; PHPSESSID=0uu8850ncmvcacsevdv1l183m0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49282'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1455042891.109
+    'REQUEST_TIME' => 1455042891
+]
+2016-02-09 19:34:51 [::1][-][-][warning][yii\web\User::loginByCookie] Invalid auth key attempted for user '1': cCFlkdSv9RupBJp6MzNnmqK3apryaf0M
+    in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\SiteController.php:91
+2016-02-09 19:34:51 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => 'bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"egDhfS1EC04BRAYkJJGyMIaYc_4Njogn\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+    'PHPSESSID' => '0uu8850ncmvcacsevdv1l183m0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorias' => null
+    '__returnUrl' => '/GestCitLeiria/advanced/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=aluno'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22egDhfS1EC04BRAYkJJGyMIaYc_4Njogn%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D; PHPSESSID=0uu8850ncmvcacsevdv1l183m0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49282'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1455042891.481
+    'REQUEST_TIME' => 1455042891
+]
+2016-02-09 19:34:54 [::1][-][-][warning][yii\web\User::loginByCookie] Invalid auth key attempted for user '1': cCFlkdSv9RupBJp6MzNnmqK3apryaf0M
+    in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\SiteController.php:91
+2016-02-09 19:34:54 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => 'bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"egDhfS1EC04BRAYkJJGyMIaYc_4Njogn\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+    'PHPSESSID' => '0uu8850ncmvcacsevdv1l183m0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorias' => null
+    '__returnUrl' => '/GestCitLeiria/advanced/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22egDhfS1EC04BRAYkJJGyMIaYc_4Njogn%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D; PHPSESSID=0uu8850ncmvcacsevdv1l183m0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49282'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1455042894.891
+    'REQUEST_TIME' => 1455042894
+]
+2016-02-09 19:34:55 [::1][-][-][warning][yii\web\User::loginByCookie] Invalid auth key attempted for user '1': cCFlkdSv9RupBJp6MzNnmqK3apryaf0M
+2016-02-09 19:34:55 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"egDhfS1EC04BRAYkJJGyMIaYc_4Njogn\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+    'PHPSESSID' => '0uu8850ncmvcacsevdv1l183m0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorias' => null
+    '__returnUrl' => '/GestCitLeiria/advanced/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22egDhfS1EC04BRAYkJJGyMIaYc_4Njogn%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D; PHPSESSID=0uu8850ncmvcacsevdv1l183m0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49282'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1455042895.864
+    'REQUEST_TIME' => 1455042895
+]
+2016-02-09 19:34:56 [::1][-][-][warning][yii\web\User::loginByCookie] Invalid auth key attempted for user '1': cCFlkdSv9RupBJp6MzNnmqK3apryaf0M
+    in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\SiteController.php:91
+2016-02-09 19:34:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => 'bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"egDhfS1EC04BRAYkJJGyMIaYc_4Njogn\";}'
+    '_identity' => '0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"cCFlkdSv9RupBJp6MzNnmqK3apryaf0M\",2592000]\";}'
+    'PHPSESSID' => '0uu8850ncmvcacsevdv1l183m0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'Sexo' => null
+    'Escaloes' => null
+    'Categorias' => null
+    '__returnUrl' => '/GestCitLeiria/advanced/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/GestCitLeiria/advanced/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=bff202e1a75ca4dddc70fa31b2ad06983cbb914a8c5d894b542efe2bdab7fca2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22egDhfS1EC04BRAYkJJGyMIaYc_4Njogn%22%3B%7D; _identity=0ca01710e63965038f4f83371c0ea26cee626c9f46cb977613f02f41b2cf7cb5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22cCFlkdSv9RupBJp6MzNnmqK3apryaf0M%22%2C2592000%5D%22%3B%7D; PHPSESSID=0uu8850ncmvcacsevdv1l183m0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49282'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1455042896.177
+    'REQUEST_TIME' => 1455042896
+]
+2016-02-09 19:48:27 [::1][11][jjnk37jo773ecjsdtetut3o6h2][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'The requested page does not exist.' in C:\wamp\www\GestCitLeiria\advanced\backend\controllers\TreinadorController.php:119
+Stack trace:
+#0 C:\wamp\www\GestCitLeiria\advanced\backend\controllers\TreinadorController.php(52): backend\controllers\TreinadorController->findModel('5')
+#1 [internal function]: backend\controllers\TreinadorController->actionView('5')
+#2 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('treinador/view', Array)
+#6 C:\wamp\www\GestCitLeiria\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp\www\GestCitLeiria\advanced\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-02-09 19:48:27 [::1][11][jjnk37jo773ecjsdtetut3o6h2][info][application] $_GET = [
+    'r' => 'treinador/view'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    '_csrf' => '57c0f004362c53f10057dc14c09bd8524338b0f197774d325f6afd3565cbc49fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"16vpI3DNlFi8XFbh9Uen48aUn5zYFHGg\";}'
+    'PHPSESSID' => 'jjnk37jo773ecjsdtetut3o6h2'
+    '_identity' => '9df1dcaf7d20ebac116caa98205fbbf823709a0641dcb1a4ce02c31018b19e7ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"oE4lq-HPQ0-Ius3i1C7OKmWhe8yxL7ao\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 11
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=57c0f004362c53f10057dc14c09bd8524338b0f197774d325f6afd3565cbc49fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2216vpI3DNlFi8XFbh9Uen48aUn5zYFHGg%22%3B%7D; PHPSESSID=jjnk37jo773ecjsdtetut3o6h2; _identity=9df1dcaf7d20ebac116caa98205fbbf823709a0641dcb1a4ce02c31018b19e7ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22oE4lq-HPQ0-Ius3i1C7OKmWhe8yxL7ao%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_45\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/GestCitLeiria/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49684'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=treinador%2Fview&id=5'
+    'REQUEST_URI' => '/GestCitLeiria/advanced/backend/web/index.php?r=treinador%2Fview&id=5'
+    'SCRIPT_NAME' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'PHP_SELF' => '/GestCitLeiria/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1455043707.532
+    'REQUEST_TIME' => 1455043707
+]
