@@ -50,9 +50,9 @@ class Aluno extends \yii\db\ActiveRecord
             [['DataNascimento'], 'safe'],
             [['Sexo'], 'string', 'max' => 1],
             [['Contato1', 'Contato2', 'Contato3_Email', 'EncarregadoEducacao', 'Nome'], 'string', 'max' => 45],
-           // ['categorizacaos','in','range'=>['Transporte','Fisico','Lanche'],'allowArray'=>true],
-          //  ['categorizacaos', 'exist', 'allowArray' => true, 'when' => function ($model, $attribute) {return is_array($model->$attribute);}],
-         //   [['categorias'], 'each', 'filter', 'filter' => 'trim']
+            // ['categorizacaos','in','range'=>['Transporte','Fisico','Lanche'],'allowArray'=>true],
+            //  ['categorizacaos', 'exist', 'allowArray' => true, 'when' => function ($model, $attribute) {return is_array($model->$attribute);}],
+            //   [['categorias'], 'each', 'filter', 'filter' => 'trim']
         ];
     }
 
@@ -63,9 +63,9 @@ class Aluno extends \yii\db\ActiveRecord
     {
         return [
 
-            'Valor' => Yii::t('app','Escalao'),
+            'Valor' => Yii::t('app', 'Escalao'),
             'idAluno' => 'Id Aluno',
-            'Escalao_idEscalao'=> 'Id Escalao',
+            'Escalao_idEscalao' => 'Id Escalao',
             //'Categorizacao'=>'Categorias',
             'Nome' => 'Nome',
             'DataNascimento' => 'Data Nascimento',
@@ -92,7 +92,7 @@ class Aluno extends \yii\db\ActiveRecord
     public function getCategorizacaos()
     {
 
-       return $this->hasMany(Categorizacao::className(), ['Aluno_idAluno' => 'idAluno']);
+        return $this->hasMany(Categorizacao::className(), ['Aluno_idAluno' => 'idAluno']);
 
     }
 
@@ -120,18 +120,28 @@ class Aluno extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Presenca::className(), ['Aluno_idAluno' => 'idAluno']);
     }
+
     public function getEscaloes()
     {
         $models = Escalao::find()->asArray()->all();
         return ArrayHelper::map($models, 'idEscalao', 'Valor');
     }
 
-    public function getCategorias(){
-       return $this->hasMany(Categorias::className(),['idCategorias'=>'Categorias_idCategorias'])->
-        viaTable('Categorizacao',['Aluno_idAluno'=>'idAluno']);
+    public function getCategorias()
+    {
+        return $this->hasMany(Categorias::className(), ['idCategorias' => 'Categorias_idCategorias'])->
+        viaTable('Categorizacao', ['Aluno_idAluno' => 'idAluno']);
     }
 
 
+    public function getDataNascimento($dataNasc)
+    {
+        $date = new \DateTime('yyyy-dd-mm');
+        var_dump($date);
+        return $idade = $dataNasc->diff($date)->y;
+
+
+    }
 
 
 }
