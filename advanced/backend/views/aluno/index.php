@@ -167,7 +167,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     $idade = date_diff($dataNas,$now);
                     $idade = $idade->format('%y');
                     $dataProvider->Idade = $idade;
-                    return $dataProvider->Idade->hidden;
+                    return $dataProvider->Idade;
 
                 },
                 'visible'=> '0',
